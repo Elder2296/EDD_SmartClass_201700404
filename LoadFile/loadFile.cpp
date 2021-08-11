@@ -1,7 +1,10 @@
-#include <iostream>
+#ifndef LOADFILE_H
+#define LOADFILE_H
 
 #include <fstream>
 #include <sstream>
+#include <cstdlib>
+#include "../DoubleList/DoubleList.cpp"
 
 using namespace std;
 
@@ -19,10 +22,10 @@ loadFile::loadFile(/* args */)
 {
 }
 void loadFile::loadStudents(string path){
-    cout<<"the path: "<<path<<endl;
+    List * list = List::getList();
     string url = path.c_str();
 
-    cout<<"nuevo path: "<<url<<endl;
+    
     ifstream file(url);
 
     string line;
@@ -32,8 +35,20 @@ void loadFile::loadStudents(string path){
 
     while(getline(file,line)){
         cout<<line<<endl;
-    }
 
-    cout<<"llego aca"<<endl;
+        stringstream stream(line);
+        string carnet, dpi, name;
+        getline(stream, carnet, delimitador);
+        getline(stream, dpi, delimitador);
+        getline(stream, name, delimitador);
+        
+        int newDpi = atoi(dpi.c_str());
+        int newCarnet= atoi(carnet.c_str());
+        Student * stud = new Student(newDpi,newCarnet,name);
+        list->insert(*stud);
+    }
+    list->print();
+    //cout<<"llego aca"<<endl;
 }
 
+#endif
