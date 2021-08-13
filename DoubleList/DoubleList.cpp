@@ -8,9 +8,10 @@ class List
 {
     private:
     /* data */
+        
+    public:
         Nodo * first;
         Nodo * last;
-    public:
         List(/* args */);
         void insert(Student student);
         void print();

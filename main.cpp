@@ -14,7 +14,7 @@ int main(){
     list->insert(*student3);
     
     list->print();*/
-
+    
     system("PAUSE");
     return 0;
 

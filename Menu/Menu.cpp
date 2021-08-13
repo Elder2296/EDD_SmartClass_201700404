@@ -1,6 +1,8 @@
 #include <iostream>
 #include <string>
-#include "../LoadFile/loadFile.cpp"
+#include "../WorkFiles/loadFile.cpp"
+#include "../WorkFiles/GenerateFile.cpp"
+
 
 
 using namespace std;
@@ -56,12 +58,17 @@ void Menu::Manual_Input(){
 void Menu::Reports(){
     cout<<"\n\n1    Lista de Usuarios "<<endl;
     cout<<"2    Linealizacion de Tareas"<<endl;
-    cout<<"Regresar al Menu principal\n\n"<<endl;
+    cout<<"3    Regresar al Menu principal\n\n"<<endl;
     cout<<"Ingrese el numero de opcion"<<endl;
     int option;
     cin>>option;
 
-    if(option==3){principal();} 
+    if(option==3){principal();}
+    else if(option==1){
+        GenerateFile generator;
+        generator.generateFileUsers();
+        
+    } 
 
 
 
@@ -72,6 +79,6 @@ void Menu::Reports(){
     cin>>path;
     loadFile load;
     load.loadStudents(path);
-    
+    principal();    
 
 }
