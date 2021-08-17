@@ -2,6 +2,7 @@
 #include <string>
 #include "../WorkFiles/loadFile.cpp"
 #include "../WorkFiles/GenerateFile.cpp"
+#include "../WorkFiles/loadTasks.cpp"
 
 
 
@@ -14,6 +15,8 @@ class Menu
         void Manual_Input();
         void Reports();
         void loadUsers();
+        void subMenuTasks();
+        void loadTasksMenu();
     /* data */
 public:
     Menu(/* args */);
@@ -37,6 +40,7 @@ void Menu::principal(){
     if(option == 3){Manual_Input();}
     else if(option == 4){Reports();}
     else if(option ==1){loadUsers();}
+    else if(option ==2){loadTasksMenu();}
 }
 void Menu::subMenuUsers(){
     cout<<"\n\nIngrese la ruta del archivo:"<<endl;
@@ -45,6 +49,7 @@ void Menu::subMenuUsers(){
     cout<<"Archivo cargado"<<endl;
 
 }
+
 void Menu::Manual_Input(){
     cout << "\n\n1     Usuarios"<<endl;
     cout << "2     Tareas"<<endl;
@@ -72,13 +77,27 @@ void Menu::Reports(){
 
 
 
-}void Menu::loadUsers(){
+}
+void Menu::loadUsers(){
 
     cout<<"\nIngrese una direccion:"<<endl;
     string path;
     cin>>path;
     loadFile load;
     load.loadStudents(path);
+    principal();    
+
+}
+void Menu::loadTasksMenu(){
+
+    cout<<"\nIngrese una direccion:"<<endl;
+    string path;
+    cin>>path;
+    loadTasks load;
+    
+    load.load(path);
+
+
     principal();    
 
 }

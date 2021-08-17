@@ -18,8 +18,7 @@ public:
     void loadStudents(string path);
 };
 
-loadFile::loadFile(/* args */)
-{
+loadFile::loadFile(/* args */){
 }
 void loadFile::loadStudents(string path){
     List * list = List::getList();

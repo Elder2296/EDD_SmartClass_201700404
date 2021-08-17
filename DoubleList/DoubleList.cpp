@@ -16,6 +16,7 @@ class List
         void insert(Student student);
         void print();
         static List * getList();
+        bool search(int carnet);
     
 };
 
@@ -53,6 +54,22 @@ void List::print(){
     }while (aux!= this->first);
     
     
+}
+bool List::search(int carnet){  
+    Nodo * aux = this->first;
+    int i = 0;
+    do{
+        if(aux->student.getCarnet() == carnet){
+            i = -1;
+            break;
+        }
+        aux = aux->next;
+        
+
+    }while(aux != this->first);
+    if(i!=0){return true;}
+    else{return false;}
+
 }
 List * List::getList(){
     static List list;
