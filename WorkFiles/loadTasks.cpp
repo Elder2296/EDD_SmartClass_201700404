@@ -88,18 +88,30 @@ void loadTasks::load(string path){
             int col = atoi(day.c_str());
             int  d = atoi(hour.c_str());
             Date *date = new Date();
-        
+            if(fil > 6 && fil<12 ){
+                if(col >0 && col < 31){
+                    if(d > 7 && d < 17){
+                        tasks[fil-1-6][col-1][d-1-7]  = new Task(Task::identi,newCarnet,name,description,course,*date,d,state);
+                        Task::identi = Task::identi+1;
+                    }else{
+                        cout<<"Error en el la hora"<<endl;
+                    }
+                }else{
+                    cout<<"error en el día"<<endl;
+                }
+            }else{
+                cout<<"Error en el mes"<<endl;
+            }
             //Task * homework 
-            tasks[fil-1-5][col-1][d-1-8]  = new Task(Task::identi,newCarnet,name,description,course,*date,d,state);
-            Task::identi = Task::identi+1;
+            
         }else{
-            cout<<"Error"<<endl;
+            cout<<"Error not found carnet"<<endl;
             //Error
         }
         //cout<<"carnet: "<<carnet<<endl;
     }
-    this->printMatriz();
-
+    //this->printMatriz();
+    this->lineation();
 }
 bool loadTasks::existCarnet(int carnet){
     List * students  = List::getList();
@@ -109,19 +121,23 @@ bool loadTasks::existCarnet(int carnet){
 
 void loadTasks::lineation(){
     doubleList * list = doubleList::getList();
-
+    Task * vector[1350]; 
     for (int  i = 0; i < 5; i++){
         for (int j = 0; j < 30; j++){
             for (int k = 0; k < 9; k++){
-                if(!(tasks[i][j][k]->getId()!=-1)){
-                    
-                }
-                
+                vector[k+9*(j+30*i)] = tasks[i][j][k];
             }
+                    
             
         }
         
     }
+
+    for (int i = 0; i < 1350; i++){
+        list->insert(*vector[i]);
+    }
+    
+    list->print();
     
 }
 

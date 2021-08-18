@@ -13,6 +13,7 @@ private:
 public:
     GenerateFile(/* args */);
     void generateFileUsers();
+    void generateFileTasks();
     
 };
 
@@ -56,6 +57,9 @@ void GenerateFile::generateFileUsers(){
 
 
 
+}
+void GenerateFile::generateFileTasks(){
+    
 }
 
 #endif
