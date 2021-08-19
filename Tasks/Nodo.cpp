@@ -2,6 +2,7 @@
 #define loadTask_H
 #include "Task.cpp"
 #include <stdlib.h>
+#include "../WorkFiles/Casilla.cpp"
 
 class NodoT
 {
@@ -10,13 +11,13 @@ class NodoT
     public:
         NodoT * back;
         NodoT * next;
-        Task task;
-        NodoT(Task &task);
+        Casilla casilla;
+        NodoT(Casilla &casilla);
     
 };
 
-NodoT::NodoT(Task &task){
-    this->task = task;
+NodoT::NodoT(Casilla &casilla){
+    this->casilla = casilla;
     this->back = NULL;
     this->next = NULL;
 }

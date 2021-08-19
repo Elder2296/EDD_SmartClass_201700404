@@ -4,6 +4,7 @@
 #include "../Tasks/Task.cpp"
 #include "../DoubleList/DoubleList.cpp"
 #include "../Tasks/doubleList.cpp"
+#include "Casilla.cpp"
 #include <fstream>
 #include <sstream>
 #include <cstdlib>
@@ -121,11 +122,14 @@ bool loadTasks::existCarnet(int carnet){
 
 void loadTasks::lineation(){
     doubleList * list = doubleList::getList();
-    Task * vector[1350]; 
+    Casilla * vector[1350];
+    int id = 0; 
     for (int  i = 0; i < 5; i++){
         for (int j = 0; j < 30; j++){
             for (int k = 0; k < 9; k++){
-                vector[k+9*(j+30*i)] = tasks[i][j][k];
+                //tasks[i][j][k]
+                vector[k+9*(j+30*i)] = new Casilla(id,*tasks[i][j][k]);
+                id++;
             }
                     
             

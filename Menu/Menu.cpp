@@ -67,12 +67,14 @@ void Menu::Reports(){
     cout<<"Ingrese el numero de opcion"<<endl;
     int option;
     cin>>option;
-
+    GenerateFile generator;
     if(option==3){principal();}
     else if(option==1){
-        GenerateFile generator;
+        
         generator.generateFileUsers();
         
+    }else if(option ==2){
+        generator.generateFileTasks();
     } 
 
 

@@ -9,7 +9,7 @@ class doubleList
         NodoT * first;
         NodoT * last;
         doubleList(/* args */);
-        void insert(Task task);
+        void insert(Casilla casilla);
         void print();
         static doubleList * getList();
     
@@ -19,8 +19,8 @@ doubleList::doubleList(/* args */){
     this->first  = NULL;
     this->last = NULL;
 }
-void doubleList::insert(Task task){
-    NodoT * newNodo = new NodoT(task);
+void doubleList::insert(Casilla casilla){
+    NodoT * newNodo = new NodoT(casilla);
     if(this->first == NULL){
         this->first = newNodo;
         this->last = newNodo;
@@ -42,7 +42,7 @@ void doubleList::print(){
     NodoT * aux = this->first;
 
     while(aux != NULL){
-        cout<<"id task: "<<aux->task.getId()<<endl;
+        cout<<"id task: "<<aux->casilla.task.getId()<<endl;
         aux = aux->next;
 
     }

@@ -41,17 +41,20 @@ void loadFile::loadStudents(string path){
         getline(stream, dpi, delimitador);
         getline(stream, name, delimitador);
         getline(stream, run, delimitador);
-        getline(stream, email, delimitador);
         getline(stream, pass, delimitador);
         getline(stream, credits, delimitador);
         getline(stream, age, delimitador);
+        getline(stream, email, delimitador);
+       
+       
+        
 
-        int newDpi = atoi(dpi.c_str());
+        
         int newCarnet= atoi(carnet.c_str());
         int newCredits = atoi(credits.c_str());
         int newAge = atoi(age.c_str());
 
-        Student * stud = new Student(newDpi,newCarnet,name,run,email,pass,newCredits,newAge);
+        Student * stud = new Student(dpi,newCarnet,name,run,email,pass,newCredits,newAge);
         list->insert(*stud);
     }
     list->print();

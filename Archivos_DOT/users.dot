@@ -1,15 +1,15 @@
 digraph A{
 rankdir = LR;
-node [label="Emilia Miramontes"] 201700886
-node [label="Juan Curiel"] 201501786
-node [label="Eloisa Rincón"] 201822186
-node [label="Bernardo Hinojosa"] 201901425
-node [label="Manuel Manzanares"] 201503186
-node [label="Julia Corona"] 201123146
-node [label="Berta Carrasco"] 201704186
-node [label="Lola Delapaz"] 202000786
-node [label="Sonia Arteaga"] 201611446
-node [label="Benjamín Asencio"] 201819852
+node [shape = box label="Carnet: 201700886\nDPI: 3502451230508\nNombre: Emilia Miramontes\nCarrera: Ingeniería en Ciencias y Sistemas\nPassword: roxodiciqi\nCreditos: 205\nEdad: 21\n Email: nicols36@hotmail.com"] 201700886
+node [shape = box label="Carnet: 201501786\nDPI: 7249529279753\nNombre: Juan Curiel\nCarrera: Ingeniería Industrial\nPassword: zanolexima\nCreditos: 245\nEdad: 24\n Email: jernimo.caballero@yahoo.com"] 201501786
+node [shape = box label="Carnet: 201822186\nDPI: 9298434863898\nNombre: Eloisa Rincón\nCarrera: Ingeniería Civil\nPassword: toqelijanu\nCreditos: 95\nEdad: 19\n Email: carolinaelizondo85@yahoo.com"] 201822186
+node [shape = box label="Carnet: 201901425\nDPI: 4131766125532\nNombre: Bernardo Hinojosa\nCarrera: Ingeniería Mecánica\nPassword: wosopumano\nCreditos: 100\nEdad: 20\n Email: alfonso03@hotmail.com"] 201901425
+node [shape = box label="Carnet: 201503186\nDPI: 8549191766348\nNombre: Manuel Manzanares\nCarrera: Ingeniería Eléctrica\nPassword: rejumudore\nCreditos: 226\nEdad: 24\n Email: benitoarmas92@gmail.com"] 201503186
+node [shape = box label="Carnet: 201123146\nDPI: 9616636196552\nNombre: Julia Corona\nCarrera: Ingeniería Electrónica\nPassword: xojobavuji\nCreditos: 237\nEdad: 26\n Email: ngela.solorio86@yahoo.com"] 201123146
+node [shape = box label="Carnet: 201704186\nDPI: 4778315315575\nNombre: Berta Carrasco\nCarrera: Ingeniería Ambiental\nPassword: gayahizatu\nCreditos: 210\nEdad: 22\n Email: carmen.montenegro@yahoo.com"] 201704186
+node [shape = box label="Carnet: 202000786\nDPI: 7382344774121\nNombre: Lola Delapaz\nCarrera: Ingeniería Química\nPassword: hujocikimi\nCreditos: 45\nEdad: 19\n Email: adriana56@gmail.com"] 202000786
+node [shape = box label="Carnet: 201611446\nDPI: 2511893949443\nNombre: Sonia Arteaga\nCarrera: Ingeniería Mecánica Industrial\nPassword: rezutafila\nCreditos: 195\nEdad: 23\n Email: esperanza.meza41@hotmail.com"] 201611446
+node [shape = box label="Carnet: 201819852\nDPI: 3423442386382\nNombre: Benjamín Asencio\nCarrera: Ingeniería Mecánica Eléctrica\nPassword: runoqozepo\nCreditos: 117\nEdad: 20\n Email: horacio.tejada15@yahoo.com"] 201819852
 201700886 -> 201501786
 201501786 -> 201700886
 201501786 -> 201822186

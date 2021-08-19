@@ -8,7 +8,7 @@ class Student
 {
 private:
     /* data */
-    int dpi;
+    string dpi;
     int carnet;
     string nombre;
     string carrera;
@@ -17,9 +17,9 @@ private:
     int credits;
     int age;
 public:
-    Student(int dpi, int carnet, string name, string carrera, string email, string password, int credits, int age);
+    Student(string dpi, int carnet, string name, string carrera, string email, string password, int credits, int age);
     Student();
-    int getDpi();
+    string getDpi();
     int getCarnet();
     string getName();
     string getCarrera();
@@ -38,7 +38,7 @@ public:
     
 };
 
-Student::Student(int dpi, int carnet, string name, string carrera, string email, string password, int credits, int age)
+Student::Student(string dpi, int carnet, string name, string carrera, string email, string password, int credits, int age)
 {
     this->dpi = dpi;
     this->carnet= carnet;
@@ -53,7 +53,7 @@ Student::Student(){
 
 }
 
-int Student::getDpi(){return this->dpi;}
+string Student::getDpi(){return this->dpi;}
 int Student::getCarnet(){return this->carnet;}
 string Student::getName(){return this->nombre;}
 string Student::getCarrera(){return this->carrera; }
