@@ -15,6 +15,7 @@ public:
     GenerateFile(/* args */);
     void generateFileUsers();
     void generateFileTasks();
+    void  getTaskofLineation();
     
 };
 
@@ -92,6 +93,36 @@ void GenerateFile::generateFileTasks(){
     file.close();
     cout<<"archivo generado con exito"<<endl;
 
+}
+void  GenerateFile::getTaskofLineation(){
+    cout<<"ingrese la hora"<<endl;
+    int hour;
+    cin>>hour;
+    cout<<"Ingrese el mes"<<endl;
+    int mes;
+    cin>>mes;
+    cout<<"Ingrese el dia"<<endl;
+    int day;
+    cin>>day;
+    
+    int  index = (hour-8)+9*((day-1)+30*(mes-7));
+    doubleList * list = doubleList::getList();
+    Task * task = &list->searchForIndex(index);
+    if(task->getId()!=-1){
+            cout<<"Carnet: "<<task->getCarnet()<<endl;
+            cout<<"Nombre: "<<task->getDescription()<<endl;
+            cout<<"Materia: "<<task->getMateria()<<endl;
+            cout<<"Fecha: "<<task->getDate()<<endl;
+            cout<<"Hora: "<<task->getHour()<<endl;
+            cout<<"Estado: "<<task->getState()<<endl;
+            cout<<"\n\n"<<endl;
+            
+
+        }else{
+            cout<<"\n\nPosicion vacia!!\n\n"<<endl;
+        }
+
+    
 }
 
 #endif

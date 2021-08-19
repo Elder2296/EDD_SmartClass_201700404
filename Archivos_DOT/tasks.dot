@@ -1,9 +1,9 @@
 digraph A{
 rankdir = LR;
-node [shape = box label = "Carnet: 201901425\nNombre:Tarea de Matematica\nDescription: ...\nMateria: Matemática Intermedia 1\nFecha: 17/8/2021\nHora: 8:00\nEstado: Incumplido"]0
+node [shape = box label = "Carnet: 201901425\nNombre:Tarea de Matematica\nDescription: ...\nMateria: Matemática Intermedia 1\nFecha: 1/7/2021\nHora: 8:00\nEstado: Incumplido"]0
 node [shape = box label = "SIN TAREA ASIGNADA "]1
 node [shape = box label = "SIN TAREA ASIGNADA "]2
-node [shape = box label = "Carnet: 202000786\nNombre:Tarea de Fisica\nDescription: ...\nMateria: Física 1\nFecha: 17/8/2021\nHora: 11:00\nEstado: Pendiente"]3
+node [shape = box label = "Carnet: 202000786\nNombre:Tarea de Fisica\nDescription: ...\nMateria: Física 1\nFecha: 1/7/2021\nHora: 11:00\nEstado: Pendiente"]3
 node [shape = box label = "SIN TAREA ASIGNADA "]4
 node [shape = box label = "SIN TAREA ASIGNADA "]5
 node [shape = box label = "SIN TAREA ASIGNADA "]6
@@ -119,13 +119,13 @@ node [shape = box label = "SIN TAREA ASIGNADA "]115
 node [shape = box label = "SIN TAREA ASIGNADA "]116
 node [shape = box label = "SIN TAREA ASIGNADA "]117
 node [shape = box label = "SIN TAREA ASIGNADA "]118
-node [shape = box label = "Carnet: 201704186\nNombre:Tarea de Estadística\nDescription: ...\nMateria: Estadística 1\nFecha: 17/8/2021\nHora: 10:00\nEstado: Cumplido"]119
+node [shape = box label = "Carnet: 201704186\nNombre:Tarea de Estadística\nDescription: ...\nMateria: Estadística 1\nFecha: 14/7/2021\nHora: 10:00\nEstado: Cumplido"]119
 node [shape = box label = "SIN TAREA ASIGNADA "]120
 node [shape = box label = "SIN TAREA ASIGNADA "]121
 node [shape = box label = "SIN TAREA ASIGNADA "]122
 node [shape = box label = "SIN TAREA ASIGNADA "]123
 node [shape = box label = "SIN TAREA ASIGNADA "]124
-node [shape = box label = "Carnet: 201700886\nNombre:Codificar en C++\nDescription: ...\nMateria: Estructuras de Datos\nFecha: 17/8/2021\nHora: 16:00\nEstado: Pendiente"]125
+node [shape = box label = "Carnet: 201700886\nNombre:Codificar en C++\nDescription: ...\nMateria: Estructuras de Datos\nFecha: 14/7/2021\nHora: 16:00\nEstado: Pendiente"]125
 node [shape = box label = "SIN TAREA ASIGNADA "]126
 node [shape = box label = "SIN TAREA ASIGNADA "]127
 node [shape = box label = "SIN TAREA ASIGNADA "]128
@@ -838,9 +838,9 @@ node [shape = box label = "SIN TAREA ASIGNADA "]834
 node [shape = box label = "SIN TAREA ASIGNADA "]835
 node [shape = box label = "SIN TAREA ASIGNADA "]836
 node [shape = box label = "SIN TAREA ASIGNADA "]837
-node [shape = box label = "Carnet: 201901425\nNombre:Tarea de Lógica\nDescription: ...\nMateria: Lógica\nFecha: 17/8/2021\nHora: 9:00\nEstado: Pendiente"]838
+node [shape = box label = "Carnet: 201901425\nNombre:Tarea de Lógica\nDescription: ...\nMateria: Lógica\nFecha: 4/10/2021\nHora: 9:00\nEstado: Pendiente"]838
 node [shape = box label = "SIN TAREA ASIGNADA "]839
-node [shape = box label = "Carnet: 201704186\nNombre:Tarea 2 de Física 3\nDescription: ...\nMateria: FÍsica 3\nFecha: 17/8/2021\nHora: 11:00\nEstado: Pendiente"]840
+node [shape = box label = "Carnet: 201704186\nNombre:Tarea 2 de Física 3\nDescription: ...\nMateria: FÍsica 3\nFecha: 4/10/2021\nHora: 11:00\nEstado: Pendiente"]840
 node [shape = box label = "SIN TAREA ASIGNADA "]841
 node [shape = box label = "SIN TAREA ASIGNADA "]842
 node [shape = box label = "SIN TAREA ASIGNADA "]843
@@ -995,7 +995,7 @@ node [shape = box label = "SIN TAREA ASIGNADA "]991
 node [shape = box label = "SIN TAREA ASIGNADA "]992
 node [shape = box label = "SIN TAREA ASIGNADA "]993
 node [shape = box label = "SIN TAREA ASIGNADA "]994
-node [shape = box label = "Carnet: 201700886\nNombre:Proyecto de Lenguajes\nDescription: ...\nMateria: Lenguajes Formales y de Programación\nFecha: 17/8/2021\nHora: 13:00\nEstado: Pendiente"]995
+node [shape = box label = "Carnet: 201700886\nNombre:Proyecto de Lenguajes\nDescription: ...\nMateria: Lenguajes Formales y de Programación\nFecha: 21/10/2021\nHora: 13:00\nEstado: Pendiente"]995
 node [shape = box label = "SIN TAREA ASIGNADA "]996
 node [shape = box label = "SIN TAREA ASIGNADA "]997
 node [shape = box label = "SIN TAREA ASIGNADA "]998

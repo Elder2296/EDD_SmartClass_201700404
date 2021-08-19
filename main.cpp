@@ -66,7 +66,7 @@ int main(){
     Student * student2 = new Student(789,246,"Ariel");
 
     list->insert(*student1);
-    list->insert(*student2);
+    list->insert(*student2);Carnet: 
     list->insert(*student3);
     
     list->print();*/

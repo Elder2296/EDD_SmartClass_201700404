@@ -63,20 +63,34 @@ void Menu::Manual_Input(){
 void Menu::Reports(){
     cout<<"\n\n1    Lista de Usuarios "<<endl;
     cout<<"2    Linealizacion de Tareas"<<endl;
-    cout<<"3    Regresar al Menu principal\n\n"<<endl;
+    cout<<"3    Busqueda en estructura linealizada"<<endl;
+    cout<<"4    Busqueda en posicion de lista linealizada"<<endl;
+    cout<<"5    Cola de Errores"<<endl;
+    cout<<"6    Codigo generado de salida"<<endl;
+    cout<<"7    Regresar al Menu principal\n\n"<<endl;
+        
     cout<<"Ingrese el numero de opcion"<<endl;
     int option;
     cin>>option;
     GenerateFile generator;
-    if(option==3){principal();}
+    if(option==7){principal();}
     else if(option==1){
         
         generator.generateFileUsers();
         
     }else if(option ==2){
         generator.generateFileTasks();
-    } 
+    }else if(option == 3){
+        generator.getTaskofLineation();
+        
+    }else if(option == 4){
 
+    }else if(option == 5){
+
+    }else if(option == 6){
+
+    } 
+    this->principal();
 
 
 }

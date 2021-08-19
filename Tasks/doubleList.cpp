@@ -12,12 +12,25 @@ class doubleList
         void insert(Casilla casilla);
         void print();
         static doubleList * getList();
+        Task &searchForIndex(int id);
     
 };
 
 doubleList::doubleList(/* args */){
     this->first  = NULL;
     this->last = NULL;
+}
+Task &doubleList::searchForIndex(int id){
+    NodoT * aux = this->first;
+    Task * task;
+    while(aux != NULL){
+        if(aux->casilla.id == id){
+            task = &(aux->casilla.task);
+            break;
+        }
+        aux = aux->next;
+    }
+    return *task;
 }
 void doubleList::insert(Casilla casilla){
     NodoT * newNodo = new NodoT(casilla);

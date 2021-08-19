@@ -88,7 +88,7 @@ void loadTasks::load(string path){
             int fil = atoi(mounth.c_str());
             int col = atoi(day.c_str());
             int  d = atoi(hour.c_str());
-            Date *date = new Date();
+            Date *date = new Date(2021,fil,col);
             if(fil > 6 && fil<12 ){
                 if(col >0 && col < 31){
                     if(d > 7 && d < 17){
