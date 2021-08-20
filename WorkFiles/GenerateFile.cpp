@@ -16,6 +16,8 @@ public:
     void generateFileUsers();
     void generateFileTasks();
     void  getTaskofLineation();
+    void getPosicion();
+    void generateTxt();
     
 };
 
@@ -123,6 +125,72 @@ void  GenerateFile::getTaskofLineation(){
         }
 
     
+}
+void GenerateFile::generateTxt(){
+    ofstream file;
+    List * list = List::getList();
+    doubleList * lst = doubleList::getList();
+
+    file.open("/home/losa/Ciencias_y_Sistemas/2021/Segundo_Semestre/Lab_Estructuras/Fase1/EDD_SmartClass_201700404/Archivos_DOT/Students.txt");
+    file<<"¿Elemets?\n";
+    Nodo * aux = list->first;
+    do{
+        file<<"\t¿element type=\"user\"?\n";
+        file<<"\t\t¿item Carnet = \""<<aux->student.getCarnet()<<"\" $?\n";
+        file<<"\t\t¿item DPI = \""<<aux->student.getDpi()<<"\" $?\n";
+        file<<"\t\t¿item Nombre = \""<<aux->student.getName()<<"\" $?\n";
+        file<<"\t\t¿item Carrera = \""<<aux->student.getCarrera()<<"\" $?\n";
+        file<<"\t\t¿item Password = \""<<aux->student.getPass()<<"\" $?\n";
+        file<<"\t\t¿item Creditos = "<<aux->student.getCredits()<<" $?\n";
+        file<<"\t\t¿item Edad = "<<aux->student.getAge()<<" $?\n";
+        
+        file<<"\t¿$element?\n";
+        
+        NodoT * temp = lst->first;
+        while(temp != NULL){
+            if(temp->casilla.task.getId()!=-1){
+                if(temp->casilla.task.getCarnet() == aux->student.getCarnet()){
+                    file<<"\t¿element type=\"task\"?\n";
+                        file<<"\t\t¿item Carnet = \""<<temp->casilla.task.getCarnet()<<"\" $?\n";
+                        file<<"\t\t¿item Nombre = \""<<temp->casilla.task.getName()<<"\" $?\n";
+                        file<<"\t\t¿item Descripcion = \""<<temp->casilla.task.getDescription()<<"\" $?\n";
+                        file<<"\t\t¿item Materia = \""<<temp->casilla.task.getMateria()<<"\" $?\n";
+                        file<<"\t\t¿item Fecha = \""<<temp->casilla.task.getDate()<<"\" $?\n";
+                        file<<"\t\t¿item Hora = \""<<temp->casilla.task.getHour()<<"\" $?\n";
+                        file<<"\t\t¿item Estado = \""<<temp->casilla.task.getState()<<"\" $?\n";
+        
+                    file<<"\t¿$element?\n";
+                }
+            }
+            
+
+            temp = temp->next;
+
+        }
+
+        aux = aux->next;
+
+    }while(aux != list->first);
+    
+    file<<"¿$Elemets?\n";
+    file.close();
+    cout<<"Reporte .txt generado!!!"<<endl;
+
+}
+
+void GenerateFile::getPosicion(){
+    cout<<"ingrese la hora"<<endl;
+    int hour;
+    cin>>hour;
+    cout<<"Ingrese el mes"<<endl;
+    int mes;
+    cin>>mes;
+    cout<<"Ingrese el dia"<<endl;
+    int day;
+    cin>>day;
+    
+    int  index = (hour-8)+9*((day-1)+30*(mes-7));
+    cout<<"La posicion donde se encuentra la tareas es: "<<index<<endl;        
 }
 
 #endif

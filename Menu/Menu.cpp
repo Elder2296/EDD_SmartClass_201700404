@@ -84,11 +84,11 @@ void Menu::Reports(){
         generator.getTaskofLineation();
         
     }else if(option == 4){
-
+        generator.getPosicion();
     }else if(option == 5){
 
     }else if(option == 6){
-
+        generator.generateTxt();
     } 
     this->principal();
 
