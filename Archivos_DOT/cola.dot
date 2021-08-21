@@ -1,0 +1,14 @@
+digraph A{
+rankdir = LR;
+node [shape = box label = "Id: 1\nTipo:Task\nDescription: La fecha no coincide."]1
+node [shape = box label = "Id: 2\nTipo:Task\nDescription: La fecha no coincide."]2
+node [shape = box label = "Id: 3\nTipo:Task\nDescription: La fecha no coincide."]3
+node [shape = box label = "Id: 4\nTipo:Task\nDescription: La fecha no coincide."]4
+node [shape = box label = "Id: 5\nTipo:Task\nDescription: La fecha no coincide."]5
+node [shape = box label = "Id: 6\nTipo:Task\nDescription: La fecha no coincide."]6
+1 -> 2
+2 -> 3
+3 -> 4
+4 -> 5
+5 -> 6
+}

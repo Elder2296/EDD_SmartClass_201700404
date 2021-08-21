@@ -86,6 +86,13 @@ void Menu::Reports(){
     }else if(option == 4){
         generator.getPosicion();
     }else if(option == 5){
+        Cola * cola =  Cola::getCola();
+        if(cola->tamanio == 0 ){
+            cout<<"\n\n No hay ningun error.\n\n"<<endl;
+        }else{
+            generator.generateCola();
+        }
+        
 
     }else if(option == 6){
         generator.generateTxt();

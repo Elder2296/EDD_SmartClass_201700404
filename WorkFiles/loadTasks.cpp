@@ -4,6 +4,7 @@
 #include "../Tasks/Task.cpp"
 #include "../DoubleList/DoubleList.cpp"
 #include "../Tasks/doubleList.cpp"
+#include "../Errors/Cola.cpp"
 #include "Casilla.cpp"
 #include <fstream>
 #include <sstream>
@@ -64,11 +65,12 @@ void loadTasks::load(string path){
     string line;
     char delimitador=',';
     List * students = List::getList();
+    Cola * cola = Cola::getCola();
     
     while(getline(file,line)){
         //cout<<"paso aca"<<endl;
         stringstream stream(line);
-        string mounth, day, hour,carnet, name,description,course,date,state;
+        string mounth, day, hour,carnet, name,description,course,falsedate,state;
 
         getline(stream, mounth, delimitador);
         getline(stream, day, delimitador);
@@ -77,38 +79,38 @@ void loadTasks::load(string path){
         getline(stream, name, delimitador);
         getline(stream, description, delimitador);
         getline(stream, course, delimitador);
-        getline(stream, date, delimitador);
+        getline(stream, falsedate, delimitador);
         getline(stream, state, delimitador);
         
-        
-        
         int newCarnet =  atoi(carnet.c_str());
-        if(students->search(newCarnet)){
-            cout<<"encontro coincidencia"<<endl;
-            int fil = atoi(mounth.c_str());
-            int col = atoi(day.c_str());
-            int  d = atoi(hour.c_str());
-            Date *date = new Date(2021,fil,col);
-            if(fil > 6 && fil<12 ){
-                if(col >0 && col < 31){
-                    if(d > 7 && d < 17){
-                        tasks[fil-1-6][col-1][d-1-7]  = new Task(Task::identi,newCarnet,name,description,course,*date,d,state);
-                        Task::identi = Task::identi+1;
-                    }else{
-                        cout<<"Error en el la hora"<<endl;
-                    }
-                }else{
-                    cout<<"error en el día"<<endl;
-                }
-            }else{
-                cout<<"Error en el mes"<<endl;
-            }
-            //Task * homework 
-            
-        }else{
-            cout<<"Error not found carnet"<<endl;
-            //Error
+
+        int fil = atoi(mounth.c_str());
+        int col = atoi(day.c_str());
+        int  d = atoi(hour.c_str());
+
+        Date *date = new Date(2021,fil,col);
+        
+        tasks[fil-1-6][col-1][d-1-7]  = new Task(Task::identi,newCarnet,name,description,course,*date,d,state,falsedate);
+
+        //cout<<date->getYear()<<"/"<<date->getMounth()<<"/"<<date->getDay()<<"  ---  "<<date->getYYMMDD()<<"  ---  "<<falsedate.c_str()<<endl;
+        if(!(date->getYYMMDD() == falsedate.c_str()) ){
+            Error * error = new Error(Error::index,Task::identi,"Task","La fecha no coincide.");
+            cola->push(*error);
+
+            Error::index = Error::index + 1;
         }
+        
+
+
+        if(!students->search(newCarnet)){
+
+            Error * error = new Error(Error::index,Task::identi,"Task","Carnet no encontrado.");
+            cola->push(*error);
+
+            Error::index = Error::index + 1;
+         
+        }
+        Task::identi = Task::identi+1;
         //cout<<"carnet: "<<carnet<<endl;
     }
     //this->printMatriz();
@@ -141,7 +143,7 @@ void loadTasks::lineation(){
         list->insert(*vector[i]);
     }
     
-    list->print();
+    //list->print();
     
 }
 

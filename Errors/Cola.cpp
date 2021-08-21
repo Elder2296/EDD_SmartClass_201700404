@@ -8,6 +8,7 @@ private:
 public:
     NodoE * first;
     NodoE * last;
+    int tamanio;
     Cola(/* args */);
     void push(Error error);
     Error getOut();
@@ -16,6 +17,7 @@ public:
 };
 
 Cola::Cola(/* args */){
+    this->tamanio = 0;
     this->first = NULL;
     this->last = NULL;
 
@@ -35,10 +37,12 @@ void Cola::push(Error error){
         this->last = newNodo;
 
     }
+    tamanio++;
     
 }
 void Cola::pop(){
     this->first =this->first->next;
+    tamanio--;
 
 }
 

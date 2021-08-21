@@ -14,6 +14,7 @@ class Task
     string taskname;
     string description;
     string materia;
+    string falsedate;
     Date  date;
     int hour;
     string state;
@@ -22,7 +23,7 @@ public:
     static int identi;
     
     Task();
-    Task(int id, int carnet, string nombre, string description, string materia, Date &date, int hour, string state );
+    Task(int id, int carnet, string nombre, string description, string materia, Date &date, int hour, string state, string falsedate );
     int getId();
     int getCarnet();
     string getName();
@@ -38,7 +39,7 @@ int Task::identi=1;
 
 
 
-Task::Task(int id, int carnet, string nombre, string description, string materia, Date &date, int hour, string state ){
+Task::Task(int id, int carnet, string nombre, string description, string materia, Date &date, int hour, string state,string falsedate ){
     this->id = id;
     this->carnet = carnet;
     this->taskname  = nombre;
@@ -47,6 +48,7 @@ Task::Task(int id, int carnet, string nombre, string description, string materia
     this->date = date;
     this->hour = hour;
     this->state = state;
+    this->falsedate = falsedate;
     
 }
 Task::Task(){this->id = -1;}
