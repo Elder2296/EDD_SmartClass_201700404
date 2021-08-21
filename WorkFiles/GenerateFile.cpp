@@ -3,6 +3,7 @@
 
 #include "../DoubleList/DoubleList.cpp"
 #include "../Tasks/doubleList.cpp"
+#include "../Errors/Cola.cpp"
 #include <iostream>
 #include <fstream>
 
@@ -18,6 +19,7 @@ public:
     void  getTaskofLineation();
     void getPosicion();
     void generateTxt();
+    void generateCola();
     
 };
 
@@ -191,6 +193,32 @@ void GenerateFile::getPosicion(){
     
     int  index = (hour-8)+9*((day-1)+30*(mes-7));
     cout<<"La posicion donde se encuentra la tareas es: "<<index<<endl;        
+}
+
+void GenerateFile::generateCola(){
+    Cola * cola = Cola::getCola();
+    ofstream file;
+    file.open("/home/losa/Ciencias_y_Sistemas/2021/Segundo_Semestre/Lab_Estructuras/Fase1/EDD_SmartClass_201700404/Archivos_DOT/cola.dot");
+    
+    file<<"digraph A{\n";
+    file<<"rankdir = LR;\n";
+    NodoE * aux = cola->first;
+
+    while (aux != NULL){
+        file<<"node [shape = box label = \"Id: "<<aux->error.id<<"\\nTipo:"<<aux->error.type<<"\\nDescription: "<<aux->error.description<<"\"]"<<aux->error.id<<"\n";
+        aux = aux->next;
+    }
+    NodoE * temp = cola->first;
+    while(temp->next != NULL){
+        file<<temp->error.id<<" -> "<<temp->next->error.id<<"\n";
+        temp = temp->next;
+    }
+
+    file<<"}";
+    file.close();
+    cout<<"COLA GENEREADA CON EXITO!!!"<<endl;
+    
+
 }
 
 #endif
