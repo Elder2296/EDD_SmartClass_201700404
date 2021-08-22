@@ -16,7 +16,10 @@ class Menu
         void Reports();
         void loadUsers();
         void subMenuTasks();
+        void subMenuCola();
         void loadTasksMenu();
+        void MenuCorrections();
+        bool validarCorreo(const string& mail);
     /* data */
 public:
     Menu(/* args */);
@@ -60,6 +63,125 @@ void Menu::Manual_Input(){
     if(option==3){principal();}
 
 }
+void Menu::subMenuCola(){
+    cout<<"\n\n"<<endl;
+    cout<<"1    Corregir errores"<<endl;
+    cout<<"2    generar grafo "<<endl;
+    int option;
+    cin>>option;
+    GenerateFile generator;
+    Cola * cola =  Cola::getCola();
+    if(option == 1){
+        if(cola->tamanio == 0){
+            cout<<"\n\nNo hay errores que corregir!!!\n\n"<<endl;
+
+        }else{
+            cout<<"id: "<<cola->getOut().index<<endl;
+            cout<<"tipo: "<<cola->getOut().type<<endl;
+            cout<<"Description: "<<cola->getOut().description<<"\n"<<endl;
+            this->MenuCorrections();
+        }
+
+    }else if(option == 2){
+        
+        if(cola->tamanio == 0 ){
+            cout<<"\n\n No hay ningun error.\n\n"<<endl;
+        }else{
+            generator.generateCola();
+        }
+
+    }
+    this->principal();
+    
+    
+}
+void Menu::MenuCorrections(){
+    Cola *cola = Cola::getCola();
+    List * students = List::getList();
+    doubleList * tasks = doubleList::getList();
+    if(cola->getOut().type=="Estudiante"){
+        cout<<"1    Corregir Carnet"<<endl;
+        cout<<"2    Corregir DPI"<<endl;
+        cout<<"3    Corregir Correo"<<endl;
+        int option;
+        cin>>option;
+        if(option == 1){
+            cout<<"Carnet actual: "<<students->getStudent(cola->getOut().id).getCarnet()<<endl;
+            bool condition = true;
+            while(condition){
+                cout<<"ingrese el nuevo carnet: "<<endl;
+                string carnet;
+                cin>>carnet;
+                if(carnet.length()==9){
+                    int newCarnet= atoi(carnet.c_str());
+                    students->getStudent(cola->getOut().id).setCarnet(newCarnet);
+                    condition = false;
+                }
+            }
+        }else if(option == 2){
+            cout<<"DPI actual: "<<students->getStudent(cola->getOut().id).getDpi()<<endl;
+            bool condition = true;
+            while(condition){
+                cout<<"ingrese el nuevo DPI: "<<endl;
+                string dpi;
+                cin>>dpi;
+                if(dpi.length()==13){
+                    //int newCarnet= atoi(carnet.c_str());
+                    students->getStudent(cola->getOut().id).setDpi(dpi);
+                    condition = false;
+                }
+            }
+
+        }else if(option == 3){
+            cout<<"Correo actual: "<<students->getStudent(cola->getOut().id).getMail()<<endl;
+            bool condition = true;
+            while(condition){
+                cout<<"ingrese el nuevo correo: "<<endl;
+                string correo;
+                cin>>correo;
+                if(validarCorreo(correo)){
+                    //int newCarnet= atoi(carnet.c_str());
+                    students->getStudent(cola->getOut().id).setMail(correo);
+                    condition = false;
+                }
+            }
+
+        }
+
+        
+    }else if(cola->getOut().type == "Task"){
+        cout<<"1    Corregir Carnet"<<endl;
+        cout<<"2    Corregir Fecha"<<endl;
+        int option;
+        cin>>option;
+        if(option ==  1){
+            cout<<"Carnet actual: "<<tasks->getTask(cola->getOut().id).getCarnet()<<endl;
+            bool condition = true;
+            while(condition){
+                cout<<"ingrese el nuevo carnet: "<<endl;
+                string carnet;
+                cin>>carnet;
+                if(carnet.length()==9){
+                    int newCarnet= atoi(carnet.c_str());
+                    if(students->search(newCarnet)){
+                        tasks->getTask(cola->getOut().id).setCarnet(newCarnet);
+                        students->getStudent(cola->getOut().id).setCarnet(newCarnet);
+                        condition = false;
+                    }
+                    
+                }
+            }
+            
+        }else if(option == 2){
+            tasks->getTask(cola->getOut().id).ChangeDate();
+            
+        }
+    }
+    cout<<"CAMBIO HECHO CORRECTAMENTE!!!"<<endl;
+    cola->pop();
+    this->subMenuCola();
+
+}
 void Menu::Reports(){
     cout<<"\n\n1    Lista de Usuarios "<<endl;
     cout<<"2    Linealizacion de Tareas"<<endl;
@@ -86,12 +208,7 @@ void Menu::Reports(){
     }else if(option == 4){
         generator.getPosicion();
     }else if(option == 5){
-        Cola * cola =  Cola::getCola();
-        if(cola->tamanio == 0 ){
-            cout<<"\n\n No hay ningun error.\n\n"<<endl;
-        }else{
-            generator.generateCola();
-        }
+        this->subMenuCola();
         
 
     }else if(option == 6){
@@ -123,4 +240,8 @@ void Menu::loadTasksMenu(){
 
     principal();    
 
+}
+bool Menu::validarCorreo(const string& mail){
+    const regex exReg("([a-z]|[A-Z]|[0-9]|.)+@([a-z]|[A-Z])+(.([a-z]|[A-Z]))+");
+    return regex_match(mail,exReg);
 }

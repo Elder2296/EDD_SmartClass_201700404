@@ -34,6 +34,7 @@ public:
     void setPass(string pass);
     void setCredits(int credits);
     void setAge(int age);
+    void setDpi(string dpi);
 
     
 };
@@ -68,6 +69,7 @@ void Student::setMail(string mail){this->email = mail;}
 void Student::setPass(string pass){this->password = pass;}
 void Student::setCredits(int credits){this->credits= credits;}
 void Student::setAge(int age){this->age= age;}
+void Student::setDpi(string dpi){this->dpi = dpi;};
 
 
 
