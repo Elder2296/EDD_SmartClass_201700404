@@ -15,6 +15,7 @@ class doubleList
         Task &searchForIndex(int id);
         Task &getTask(int carnet);
         void insertWithIndex(int index, Task task);
+        void Delete(int index);
         
     
 };
@@ -34,6 +35,25 @@ Task &doubleList::searchForIndex(int id){
         aux = aux->next;
     }
     return *task;
+}
+void doubleList::Delete(int index){
+    NodoT * aux = this->first;
+    if(this->first->casilla.id == index){
+        this->first = this->first->next;
+        this->first->back = NULL;
+
+    }else if(this->last->casilla.id == index){
+        this->last =this->last->back;
+        this->last->next = NULL;
+    }else{
+        while(aux!=NULL){
+            if(aux->casilla.id == index){
+                aux->back->next= aux->next;
+                aux->next->back = aux->back;
+            }
+            aux = aux->next;
+        }
+    }
 }
 void doubleList::insertWithIndex(int index, Task task){
     NodoT * aux = this->first;

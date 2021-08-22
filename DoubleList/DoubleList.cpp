@@ -17,6 +17,8 @@ class List
         void print();
         static List * getList();
         Student &getStudent(int carnet);
+        Student &getStudent(string dpi);
+        void Delete(string dpi);
         bool search(int carnet);
     
 };
@@ -43,6 +45,30 @@ void List::insert(Student student){
 
     }
 
+}
+void List::Delete(string dpi){
+    if(this->first->student.getDpi() == dpi  ){
+        this->first = this->first->next;
+        this->first->back = this->last;
+        this->last->next = this->first;
+    }else if(this->last->student.getDpi() == dpi){
+        this->last =this->last->back;
+        this->last->next = this->first;
+        this->first->back = this->last;
+    }else{
+        Nodo * aux = this->first;
+
+        do{
+            if(aux->student.getDpi()== dpi){
+                
+                aux->back->next = aux->next;
+                aux->next->back = aux->back;
+                break;
+            }
+            aux = aux->next;
+        }while(aux != this->first);
+
+    }
 }
 
 void List::print(){
@@ -83,6 +109,19 @@ Student & List::getStudent(int carnet){
     }while(aux !=  this->first);
     return aux->student;
 }
+Student & List::getStudent(string dpi){
+    Nodo * aux = this->first;
+    do{
+        if(aux->student.getDpi() == dpi){
+            break;
+        }
+        aux = aux->next;
+
+    }while(aux !=  this->first);
+    return aux->student;
+
+}
+
 List * List::getList(){
     static List list;
     return &list;
