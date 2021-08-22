@@ -80,6 +80,27 @@ void Menu::Manual_Input(){
             this->CargaManualUser();
         }else if(opt == 4){
             this->principal();
+        }else if(3){
+            List * list = List::getList();
+            bool condition = true;
+            string dpi,carnet;
+            while(condition){
+                cout<<"Ingrese el DPI:"<<endl;
+                cin>>dpi;
+                if(dpi.length()== 13){
+                    if(list->searchDPI(dpi)){
+                        condition = false;
+                    }else{
+                        cout<<"\n\nIngrese un dpi valido\n\n"<<endl;
+                    }
+                    
+
+                }
+
+            }
+            
+            list->Delete(dpi);
+            cout<<"Eliminacion exitosa!!!"<<endl;
         }
 
     }else if(option == 2){
@@ -95,8 +116,26 @@ void Menu::Manual_Input(){
             this->CargaManualTask();
         }else if(opt == 4){
             this->principal();
+        }else if(opt == 3){
+            doubleList * list = doubleList::getList();
+            bool condition = true;
+            int indice;
+            while(condition){
+                cout<<"Ingrese el indice:"<<endl;
+                cin>>indice;
+                if(indice>=0 && indice <= 1350){
+                    condition =false;
+                }
+                
+
+            }
+            
+            list->Delete(indice);
+            cout<<"Eliminacion exitosa!!!"<<endl;
         }
+
     }
+    this->principal();
 
 }
 void Menu::CargaManualUser(){

@@ -20,7 +20,7 @@ class List
         Student &getStudent(string dpi);
         void Delete(string dpi);
         bool search(int carnet);
-    
+        bool searchDPI(string dpi);
 };
 
 List::List(/* args */){
@@ -87,6 +87,22 @@ bool List::search(int carnet){
     int i = 0;
     do{
         if(aux->student.getCarnet() == carnet){
+            i = -1;
+            break;
+        }
+        aux = aux->next;
+        
+
+    }while(aux != this->first);
+    if(i!=0){return true;}
+    else{return false;}
+
+}
+bool List::searchDPI(string dpi){  
+    Nodo * aux = this->first;
+    int i = 0;
+    do{
+        if(aux->student.getDpi() == dpi){
             i = -1;
             break;
         }
