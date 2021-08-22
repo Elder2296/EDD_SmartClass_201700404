@@ -67,6 +67,36 @@ void Menu::Manual_Input(){
     int option;
     cin >>option;
     if(option==3){principal();}
+    if(option ==1 ){
+        cout << "\n\n1     Nuevo usuario"<<endl;
+        cout << "2     Modificar usuario"<<endl;
+        cout << "3     Eliminar usuario"<<endl;
+        cout << "4     Salir"<<endl;
+    
+        cout << "\nIngrese el numero de opcion"<<endl;
+        int opt;
+        cin >>opt;
+        if(opt == 1){
+            this->CargaManualUser();
+        }else if(opt == 4){
+            this->principal();
+        }
+
+    }else if(option == 2){
+        cout << "\n\n1     Nueva Tarea"<<endl;
+        cout << "2     Modificar Tarea"<<endl;
+        cout << "3     Eliminar Tarea"<<endl;
+        cout << "4     Salir"<<endl;
+    
+        cout << "\nIngrese el numero de opcion"<<endl;
+        int opt;
+        cin >>opt;
+        if(opt == 1){
+            this->CargaManualTask();
+        }else if(opt == 4){
+            this->principal();
+        }
+    }
 
 }
 void Menu::CargaManualUser(){
