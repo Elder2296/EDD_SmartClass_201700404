@@ -1,8 +1,11 @@
+#ifndef MENU_H
+#define MENU_H
 #include <iostream>
 #include <string>
 #include "../WorkFiles/loadFile.cpp"
 #include "../WorkFiles/GenerateFile.cpp"
 #include "../WorkFiles/loadTasks.cpp"
+#include <regex>
 
 
 
@@ -20,6 +23,9 @@ class Menu
         void loadTasksMenu();
         void MenuCorrections();
         bool validarCorreo(const string& mail);
+        void CargaManualUser();
+        void CargaManualTask();
+        
     /* data */
 public:
     Menu(/* args */);
@@ -62,6 +68,147 @@ void Menu::Manual_Input(){
     cin >>option;
     if(option==3){principal();}
 
+}
+void Menu::CargaManualUser(){
+    List * students = List::getList();
+    bool condition = true;
+    string dpi,carnet;
+    while(condition){
+        cout<<"Ingrese el DPI:"<<endl;
+        cin>>dpi;
+        if(dpi.length()== 13){
+            condition = false;
+        }
+
+    } 
+    condition = true;
+    while(condition){
+        cout<<"Ingrese el carnet:"<<endl;
+        cin>>carnet;
+        if(carnet.length()== 9){
+            condition = false;
+        }
+
+    } 
+    //condition = true;
+    cout<<"Ingrese el nombre:"<<endl;
+    string name;
+    cin>>name;
+    cout<<"Ingrese el carrera:"<<endl;
+    string carrera;
+    cin>>carrera;
+
+    string mail;
+
+    condition = true;
+    while(condition){
+        cout<<"Ingrese el correo:"<<endl;
+        cin>>mail;
+        if(validarCorreo(mail)){
+            condition = false;
+        }
+
+    } 
+    cout<<"Ingrese el contraseña:"<<endl;
+    string pass;
+    cin>>pass;
+
+    cout<<"Ingrese el creditos:"<<endl;
+    int  credits;
+    cin>>credits;
+
+
+    cout<<"Ingrese el Edad:"<<endl;
+    int  age;
+    cin>>age;
+    int newCarnet= atoi(carnet.c_str());
+    Student *st = new Student(dpi,newCarnet,name,carrera,mail,pass,credits,age);
+    students->insert(*st);
+    cout<<"Se agrego Correctamente!!"<<endl;
+
+    principal();
+    
+}
+void Menu::CargaManualTask(){
+    List * students = List::getList();
+    doubleList * tareas = doubleList::getList();
+    bool condition = true;
+    string carnet;
+    int newCarnet;
+    while(condition){
+        cout<<"Ingrese el carnet:"<<endl;
+        cin>>carnet;
+        if(carnet.length()== 9){
+            newCarnet = atoi(carnet.c_str());
+            if(students->search(newCarnet)){
+                condition = false;
+            }
+            
+        }
+
+    } 
+    //condition = true;
+    cout<<"Ingrese el nombre de la tarea:"<<endl;
+    string name;
+    cin>>name;
+    cout<<"Ingrese el descripcion:"<<endl;
+    string description;
+    cin>>description;
+    cout<<"Ingrese la materia:"<<endl;
+    string materia;
+    cin>>materia;
+
+    int day;
+
+    condition = true;
+    while(condition){
+        cout<<"Ingrese un dia entre 1-30:"<<endl;
+        cin>>day;
+        if(day >0 && day < 31){
+            condition = false;
+        }
+
+    } 
+
+    int mounth;
+
+    condition = true;
+    while(condition){
+        cout<<"Ingrese un dia entre 7-11:"<<endl;
+        cin>>mounth;
+        if(mounth > 6 && mounth < 12){
+            condition = false;
+        }
+
+    } 
+
+
+    int hour;
+
+    condition = true;
+    while(condition){
+        cout<<"Ingrese un dia entre 8:00-16:00:"<<endl;
+        cin>>hour;
+        if(hour > 7 && hour < 17){
+            condition = false;
+        }
+
+    }
+
+
+    cout<<"Ingrese el estado:"<<endl;
+    string estado;
+    cin>>estado;
+    Date * date = new Date(2021,mounth,day);
+    
+    int indice  = (hour-8)+9*((day-1)+30*(mounth-7));
+    Task * task = new Task(Task::identi,newCarnet,name,description,materia,*date,hour,estado,date->getYYMMDD());
+    Task::identi = Task::identi + 1;
+    tareas->insertWithIndex(indice, *task);
+    cout<<"Se agrego Correctamente!!\n\n"<<endl;
+
+    principal();
+    
 }
 void Menu::subMenuCola(){
     cout<<"\n\n"<<endl;
@@ -245,3 +392,5 @@ bool Menu::validarCorreo(const string& mail){
     const regex exReg("([a-z]|[A-Z]|[0-9]|.)+@([a-z]|[A-Z])+(.([a-z]|[A-Z]))+");
     return regex_match(mail,exReg);
 }
+
+#endif

@@ -14,6 +14,7 @@ class doubleList
         static doubleList * getList();
         Task &searchForIndex(int id);
         Task &getTask(int carnet);
+        void insertWithIndex(int index, Task task);
         
     
 };
@@ -33,6 +34,16 @@ Task &doubleList::searchForIndex(int id){
         aux = aux->next;
     }
     return *task;
+}
+void doubleList::insertWithIndex(int index, Task task){
+    NodoT * aux = this->first;
+    while (aux != NULL){
+        if(aux->casilla.id == index){
+            aux->casilla.task = task;
+        }
+        aux = aux->next;
+    }
+    
 }
 Task &doubleList::getTask(int carnet){
     NodoT * aux = this->first;

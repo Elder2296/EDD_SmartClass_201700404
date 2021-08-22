@@ -53,7 +53,7 @@ Task::Task(int id, int carnet, string nombre, string description, string materia
     this->falsedate = falsedate;
     
 }
-Task::Task(){this->id = -1;}
+Task::Task(){this->id = -1;this->carnet = -1;}
 int Task::getId(){return this->id;}
 int Task::getCarnet(){return this->carnet;}
 string Task::getName(){return this->taskname;}
