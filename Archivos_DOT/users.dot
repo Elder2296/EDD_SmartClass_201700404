@@ -10,6 +10,9 @@ node [shape = box label="Carnet: 201704186\nDPI: 4778315315575\nNombre: Berta Ca
 node [shape = box label="Carnet: 202000786\nDPI: 7382344774121\nNombre: Lola Delapaz\nCarrera: Ingeniería Química\nPassword: hujocikimi\nCreditos: 45\nEdad: 19\n Email: adriana56@gmail.com"] 202000786
 node [shape = box label="Carnet: 201611446\nDPI: 2511893949443\nNombre: Sonia Arteaga\nCarrera: Ingeniería Mecánica Industrial\nPassword: rezutafila\nCreditos: 195\nEdad: 23\n Email: esperanza.meza41@hotmail.com"] 201611446
 node [shape = box label="Carnet: 201819852\nDPI: 3423442386382\nNombre: Benjamín Asencio\nCarrera: Ingeniería Mecánica Eléctrica\nPassword: runoqozepo\nCreditos: 117\nEdad: 20\n Email: horacio.tejada15@yahoo.com"] 201819852
+node [shape = box label="Carnet: 201700404\nDPI: 3063391290315\nNombre: Elder Lopez\nCarrera: Ingenieria en Ciencias y Sistemas\nPassword: brC123abc\nCreditos: 102\nEdad: 24\n Email: el.ariel2296@gmail.com"] 201700404
+node [shape = box label="Carnet: 201800505\nDPI: 3063391290317\nNombre: Maria Jose\nCarrera: Trabajo Social\nPassword: miamiamia\nCreditos: 150\nEdad: 22\n Email: mariajosee@gmail.com"] 201800505
+node [shape = box label="Carnet: 201500406\nDPI: 5826213356546\nNombre: Desconocido\nCarrera: Desconocido\nPassword: saberquienes\nCreditos: 23\nEdad: 36\n Email: prueba.ingenieria@ingenieria.org"] 201500406
 201700886 -> 201501786
 201501786 -> 201700886
 201501786 -> 201822186
@@ -28,6 +31,12 @@ node [shape = box label="Carnet: 201819852\nDPI: 3423442386382\nNombre: Benjamí
 201611446 -> 202000786
 201611446 -> 201819852
 201819852 -> 201611446
-201700886 -> 201819852
-201819852 -> 201700886
+201819852 -> 201700404
+201700404 -> 201819852
+201700404 -> 201800505
+201800505 -> 201700404
+201800505 -> 201500406
+201500406 -> 201800505
+201700886 -> 201500406
+201500406 -> 201700886
 }

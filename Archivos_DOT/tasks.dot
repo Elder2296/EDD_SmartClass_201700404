@@ -1,1355 +1,1355 @@
 digraph A{
 rankdir = LR;
 node [shape = box label = "Carnet: 201901425\nNombre:Tarea de Matematica\nDescription: ...\nMateria: Matemática Intermedia 1\nFecha: 1/7/2021\nHora: 8:00\nEstado: Incumplido"]0
-node [shape = box label = "SIN TAREA ASIGNADA "]1
-node [shape = box label = "SIN TAREA ASIGNADA "]2
+node [shape = box label = "SIN TAREA ASIGNADA"]1
+node [shape = box label = "SIN TAREA ASIGNADA"]2
 node [shape = box label = "Carnet: 202000786\nNombre:Tarea de Fisica\nDescription: ...\nMateria: Física 1\nFecha: 1/7/2021\nHora: 11:00\nEstado: Pendiente"]3
-node [shape = box label = "SIN TAREA ASIGNADA "]4
-node [shape = box label = "SIN TAREA ASIGNADA "]5
-node [shape = box label = "SIN TAREA ASIGNADA "]6
-node [shape = box label = "SIN TAREA ASIGNADA "]7
-node [shape = box label = "SIN TAREA ASIGNADA "]8
-node [shape = box label = "SIN TAREA ASIGNADA "]9
-node [shape = box label = "SIN TAREA ASIGNADA "]10
-node [shape = box label = "SIN TAREA ASIGNADA "]11
-node [shape = box label = "SIN TAREA ASIGNADA "]12
-node [shape = box label = "SIN TAREA ASIGNADA "]13
-node [shape = box label = "SIN TAREA ASIGNADA "]14
-node [shape = box label = "SIN TAREA ASIGNADA "]15
-node [shape = box label = "SIN TAREA ASIGNADA "]16
-node [shape = box label = "SIN TAREA ASIGNADA "]17
-node [shape = box label = "SIN TAREA ASIGNADA "]18
-node [shape = box label = "SIN TAREA ASIGNADA "]19
-node [shape = box label = "SIN TAREA ASIGNADA "]20
-node [shape = box label = "SIN TAREA ASIGNADA "]21
-node [shape = box label = "SIN TAREA ASIGNADA "]22
-node [shape = box label = "SIN TAREA ASIGNADA "]23
-node [shape = box label = "SIN TAREA ASIGNADA "]24
-node [shape = box label = "SIN TAREA ASIGNADA "]25
-node [shape = box label = "SIN TAREA ASIGNADA "]26
-node [shape = box label = "SIN TAREA ASIGNADA "]27
-node [shape = box label = "SIN TAREA ASIGNADA "]28
-node [shape = box label = "SIN TAREA ASIGNADA "]29
-node [shape = box label = "SIN TAREA ASIGNADA "]30
-node [shape = box label = "SIN TAREA ASIGNADA "]31
-node [shape = box label = "SIN TAREA ASIGNADA "]32
-node [shape = box label = "SIN TAREA ASIGNADA "]33
-node [shape = box label = "SIN TAREA ASIGNADA "]34
-node [shape = box label = "SIN TAREA ASIGNADA "]35
-node [shape = box label = "SIN TAREA ASIGNADA "]36
-node [shape = box label = "SIN TAREA ASIGNADA "]37
-node [shape = box label = "SIN TAREA ASIGNADA "]38
-node [shape = box label = "SIN TAREA ASIGNADA "]39
-node [shape = box label = "SIN TAREA ASIGNADA "]40
-node [shape = box label = "SIN TAREA ASIGNADA "]41
-node [shape = box label = "SIN TAREA ASIGNADA "]42
-node [shape = box label = "SIN TAREA ASIGNADA "]43
-node [shape = box label = "SIN TAREA ASIGNADA "]44
-node [shape = box label = "SIN TAREA ASIGNADA "]45
-node [shape = box label = "SIN TAREA ASIGNADA "]46
-node [shape = box label = "SIN TAREA ASIGNADA "]47
-node [shape = box label = "SIN TAREA ASIGNADA "]48
-node [shape = box label = "SIN TAREA ASIGNADA "]49
-node [shape = box label = "SIN TAREA ASIGNADA "]50
-node [shape = box label = "SIN TAREA ASIGNADA "]51
-node [shape = box label = "SIN TAREA ASIGNADA "]52
-node [shape = box label = "SIN TAREA ASIGNADA "]53
-node [shape = box label = "SIN TAREA ASIGNADA "]54
-node [shape = box label = "SIN TAREA ASIGNADA "]55
-node [shape = box label = "SIN TAREA ASIGNADA "]56
-node [shape = box label = "SIN TAREA ASIGNADA "]57
-node [shape = box label = "SIN TAREA ASIGNADA "]58
-node [shape = box label = "SIN TAREA ASIGNADA "]59
-node [shape = box label = "SIN TAREA ASIGNADA "]60
-node [shape = box label = "SIN TAREA ASIGNADA "]61
-node [shape = box label = "SIN TAREA ASIGNADA "]62
-node [shape = box label = "SIN TAREA ASIGNADA "]63
-node [shape = box label = "SIN TAREA ASIGNADA "]64
-node [shape = box label = "SIN TAREA ASIGNADA "]65
-node [shape = box label = "SIN TAREA ASIGNADA "]66
-node [shape = box label = "SIN TAREA ASIGNADA "]67
-node [shape = box label = "SIN TAREA ASIGNADA "]68
-node [shape = box label = "SIN TAREA ASIGNADA "]69
-node [shape = box label = "SIN TAREA ASIGNADA "]70
-node [shape = box label = "SIN TAREA ASIGNADA "]71
-node [shape = box label = "SIN TAREA ASIGNADA "]72
-node [shape = box label = "SIN TAREA ASIGNADA "]73
-node [shape = box label = "SIN TAREA ASIGNADA "]74
-node [shape = box label = "SIN TAREA ASIGNADA "]75
-node [shape = box label = "SIN TAREA ASIGNADA "]76
-node [shape = box label = "SIN TAREA ASIGNADA "]77
-node [shape = box label = "SIN TAREA ASIGNADA "]78
-node [shape = box label = "SIN TAREA ASIGNADA "]79
-node [shape = box label = "SIN TAREA ASIGNADA "]80
-node [shape = box label = "SIN TAREA ASIGNADA "]81
-node [shape = box label = "SIN TAREA ASIGNADA "]82
-node [shape = box label = "SIN TAREA ASIGNADA "]83
-node [shape = box label = "SIN TAREA ASIGNADA "]84
-node [shape = box label = "SIN TAREA ASIGNADA "]85
-node [shape = box label = "SIN TAREA ASIGNADA "]86
-node [shape = box label = "SIN TAREA ASIGNADA "]87
-node [shape = box label = "SIN TAREA ASIGNADA "]88
-node [shape = box label = "SIN TAREA ASIGNADA "]89
-node [shape = box label = "SIN TAREA ASIGNADA "]90
-node [shape = box label = "SIN TAREA ASIGNADA "]91
-node [shape = box label = "SIN TAREA ASIGNADA "]92
-node [shape = box label = "SIN TAREA ASIGNADA "]93
-node [shape = box label = "SIN TAREA ASIGNADA "]94
-node [shape = box label = "SIN TAREA ASIGNADA "]95
-node [shape = box label = "SIN TAREA ASIGNADA "]96
-node [shape = box label = "SIN TAREA ASIGNADA "]97
-node [shape = box label = "SIN TAREA ASIGNADA "]98
-node [shape = box label = "SIN TAREA ASIGNADA "]99
-node [shape = box label = "SIN TAREA ASIGNADA "]100
-node [shape = box label = "SIN TAREA ASIGNADA "]101
-node [shape = box label = "SIN TAREA ASIGNADA "]102
-node [shape = box label = "SIN TAREA ASIGNADA "]103
-node [shape = box label = "SIN TAREA ASIGNADA "]104
-node [shape = box label = "SIN TAREA ASIGNADA "]105
-node [shape = box label = "SIN TAREA ASIGNADA "]106
-node [shape = box label = "SIN TAREA ASIGNADA "]107
-node [shape = box label = "SIN TAREA ASIGNADA "]108
-node [shape = box label = "SIN TAREA ASIGNADA "]109
-node [shape = box label = "SIN TAREA ASIGNADA "]110
-node [shape = box label = "SIN TAREA ASIGNADA "]111
-node [shape = box label = "SIN TAREA ASIGNADA "]112
-node [shape = box label = "SIN TAREA ASIGNADA "]113
-node [shape = box label = "SIN TAREA ASIGNADA "]114
-node [shape = box label = "SIN TAREA ASIGNADA "]115
-node [shape = box label = "SIN TAREA ASIGNADA "]116
-node [shape = box label = "SIN TAREA ASIGNADA "]117
-node [shape = box label = "SIN TAREA ASIGNADA "]118
+node [shape = box label = "SIN TAREA ASIGNADA"]4
+node [shape = box label = "SIN TAREA ASIGNADA"]5
+node [shape = box label = "SIN TAREA ASIGNADA"]6
+node [shape = box label = "SIN TAREA ASIGNADA"]7
+node [shape = box label = "SIN TAREA ASIGNADA"]8
+node [shape = box label = "SIN TAREA ASIGNADA"]9
+node [shape = box label = "SIN TAREA ASIGNADA"]10
+node [shape = box label = "SIN TAREA ASIGNADA"]11
+node [shape = box label = "SIN TAREA ASIGNADA"]12
+node [shape = box label = "SIN TAREA ASIGNADA"]13
+node [shape = box label = "SIN TAREA ASIGNADA"]14
+node [shape = box label = "SIN TAREA ASIGNADA"]15
+node [shape = box label = "SIN TAREA ASIGNADA"]16
+node [shape = box label = "SIN TAREA ASIGNADA"]17
+node [shape = box label = "SIN TAREA ASIGNADA"]18
+node [shape = box label = "SIN TAREA ASIGNADA"]19
+node [shape = box label = "SIN TAREA ASIGNADA"]20
+node [shape = box label = "SIN TAREA ASIGNADA"]21
+node [shape = box label = "SIN TAREA ASIGNADA"]22
+node [shape = box label = "SIN TAREA ASIGNADA"]23
+node [shape = box label = "SIN TAREA ASIGNADA"]24
+node [shape = box label = "SIN TAREA ASIGNADA"]25
+node [shape = box label = "SIN TAREA ASIGNADA"]26
+node [shape = box label = "SIN TAREA ASIGNADA"]27
+node [shape = box label = "SIN TAREA ASIGNADA"]28
+node [shape = box label = "SIN TAREA ASIGNADA"]29
+node [shape = box label = "SIN TAREA ASIGNADA"]30
+node [shape = box label = "SIN TAREA ASIGNADA"]31
+node [shape = box label = "SIN TAREA ASIGNADA"]32
+node [shape = box label = "SIN TAREA ASIGNADA"]33
+node [shape = box label = "SIN TAREA ASIGNADA"]34
+node [shape = box label = "SIN TAREA ASIGNADA"]35
+node [shape = box label = "SIN TAREA ASIGNADA"]36
+node [shape = box label = "SIN TAREA ASIGNADA"]37
+node [shape = box label = "SIN TAREA ASIGNADA"]38
+node [shape = box label = "SIN TAREA ASIGNADA"]39
+node [shape = box label = "SIN TAREA ASIGNADA"]40
+node [shape = box label = "SIN TAREA ASIGNADA"]41
+node [shape = box label = "SIN TAREA ASIGNADA"]42
+node [shape = box label = "SIN TAREA ASIGNADA"]43
+node [shape = box label = "SIN TAREA ASIGNADA"]44
+node [shape = box label = "SIN TAREA ASIGNADA"]45
+node [shape = box label = "SIN TAREA ASIGNADA"]46
+node [shape = box label = "SIN TAREA ASIGNADA"]47
+node [shape = box label = "SIN TAREA ASIGNADA"]48
+node [shape = box label = "SIN TAREA ASIGNADA"]49
+node [shape = box label = "SIN TAREA ASIGNADA"]50
+node [shape = box label = "SIN TAREA ASIGNADA"]51
+node [shape = box label = "SIN TAREA ASIGNADA"]52
+node [shape = box label = "SIN TAREA ASIGNADA"]53
+node [shape = box label = "SIN TAREA ASIGNADA"]54
+node [shape = box label = "SIN TAREA ASIGNADA"]55
+node [shape = box label = "SIN TAREA ASIGNADA"]56
+node [shape = box label = "SIN TAREA ASIGNADA"]57
+node [shape = box label = "SIN TAREA ASIGNADA"]58
+node [shape = box label = "SIN TAREA ASIGNADA"]59
+node [shape = box label = "SIN TAREA ASIGNADA"]60
+node [shape = box label = "SIN TAREA ASIGNADA"]61
+node [shape = box label = "SIN TAREA ASIGNADA"]62
+node [shape = box label = "SIN TAREA ASIGNADA"]63
+node [shape = box label = "SIN TAREA ASIGNADA"]64
+node [shape = box label = "SIN TAREA ASIGNADA"]65
+node [shape = box label = "SIN TAREA ASIGNADA"]66
+node [shape = box label = "SIN TAREA ASIGNADA"]67
+node [shape = box label = "SIN TAREA ASIGNADA"]68
+node [shape = box label = "SIN TAREA ASIGNADA"]69
+node [shape = box label = "SIN TAREA ASIGNADA"]70
+node [shape = box label = "SIN TAREA ASIGNADA"]71
+node [shape = box label = "SIN TAREA ASIGNADA"]72
+node [shape = box label = "SIN TAREA ASIGNADA"]73
+node [shape = box label = "SIN TAREA ASIGNADA"]74
+node [shape = box label = "SIN TAREA ASIGNADA"]75
+node [shape = box label = "SIN TAREA ASIGNADA"]76
+node [shape = box label = "SIN TAREA ASIGNADA"]77
+node [shape = box label = "SIN TAREA ASIGNADA"]78
+node [shape = box label = "SIN TAREA ASIGNADA"]79
+node [shape = box label = "SIN TAREA ASIGNADA"]80
+node [shape = box label = "SIN TAREA ASIGNADA"]81
+node [shape = box label = "SIN TAREA ASIGNADA"]82
+node [shape = box label = "SIN TAREA ASIGNADA"]83
+node [shape = box label = "SIN TAREA ASIGNADA"]84
+node [shape = box label = "SIN TAREA ASIGNADA"]85
+node [shape = box label = "SIN TAREA ASIGNADA"]86
+node [shape = box label = "SIN TAREA ASIGNADA"]87
+node [shape = box label = "SIN TAREA ASIGNADA"]88
+node [shape = box label = "SIN TAREA ASIGNADA"]89
+node [shape = box label = "SIN TAREA ASIGNADA"]90
+node [shape = box label = "SIN TAREA ASIGNADA"]91
+node [shape = box label = "SIN TAREA ASIGNADA"]92
+node [shape = box label = "SIN TAREA ASIGNADA"]93
+node [shape = box label = "SIN TAREA ASIGNADA"]94
+node [shape = box label = "SIN TAREA ASIGNADA"]95
+node [shape = box label = "SIN TAREA ASIGNADA"]96
+node [shape = box label = "SIN TAREA ASIGNADA"]97
+node [shape = box label = "SIN TAREA ASIGNADA"]98
+node [shape = box label = "SIN TAREA ASIGNADA"]99
+node [shape = box label = "SIN TAREA ASIGNADA"]100
+node [shape = box label = "SIN TAREA ASIGNADA"]101
+node [shape = box label = "SIN TAREA ASIGNADA"]102
+node [shape = box label = "SIN TAREA ASIGNADA"]103
+node [shape = box label = "SIN TAREA ASIGNADA"]104
+node [shape = box label = "SIN TAREA ASIGNADA"]105
+node [shape = box label = "SIN TAREA ASIGNADA"]106
+node [shape = box label = "SIN TAREA ASIGNADA"]107
+node [shape = box label = "SIN TAREA ASIGNADA"]108
+node [shape = box label = "SIN TAREA ASIGNADA"]109
+node [shape = box label = "SIN TAREA ASIGNADA"]110
+node [shape = box label = "SIN TAREA ASIGNADA"]111
+node [shape = box label = "SIN TAREA ASIGNADA"]112
+node [shape = box label = "SIN TAREA ASIGNADA"]113
+node [shape = box label = "SIN TAREA ASIGNADA"]114
+node [shape = box label = "SIN TAREA ASIGNADA"]115
+node [shape = box label = "SIN TAREA ASIGNADA"]116
+node [shape = box label = "SIN TAREA ASIGNADA"]117
+node [shape = box label = "SIN TAREA ASIGNADA"]118
 node [shape = box label = "Carnet: 201704186\nNombre:Tarea de Estadística\nDescription: ...\nMateria: Estadística 1\nFecha: 14/7/2021\nHora: 10:00\nEstado: Cumplido"]119
-node [shape = box label = "SIN TAREA ASIGNADA "]120
-node [shape = box label = "SIN TAREA ASIGNADA "]121
-node [shape = box label = "SIN TAREA ASIGNADA "]122
-node [shape = box label = "SIN TAREA ASIGNADA "]123
-node [shape = box label = "SIN TAREA ASIGNADA "]124
+node [shape = box label = "SIN TAREA ASIGNADA"]120
+node [shape = box label = "SIN TAREA ASIGNADA"]121
+node [shape = box label = "SIN TAREA ASIGNADA"]122
+node [shape = box label = "SIN TAREA ASIGNADA"]123
+node [shape = box label = "SIN TAREA ASIGNADA"]124
 node [shape = box label = "Carnet: 201700886\nNombre:Codificar en C++\nDescription: ...\nMateria: Estructuras de Datos\nFecha: 14/7/2021\nHora: 16:00\nEstado: Pendiente"]125
-node [shape = box label = "SIN TAREA ASIGNADA "]126
-node [shape = box label = "SIN TAREA ASIGNADA "]127
-node [shape = box label = "SIN TAREA ASIGNADA "]128
-node [shape = box label = "SIN TAREA ASIGNADA "]129
-node [shape = box label = "SIN TAREA ASIGNADA "]130
-node [shape = box label = "SIN TAREA ASIGNADA "]131
-node [shape = box label = "SIN TAREA ASIGNADA "]132
-node [shape = box label = "SIN TAREA ASIGNADA "]133
-node [shape = box label = "SIN TAREA ASIGNADA "]134
-node [shape = box label = "SIN TAREA ASIGNADA "]135
-node [shape = box label = "SIN TAREA ASIGNADA "]136
-node [shape = box label = "SIN TAREA ASIGNADA "]137
-node [shape = box label = "SIN TAREA ASIGNADA "]138
-node [shape = box label = "SIN TAREA ASIGNADA "]139
-node [shape = box label = "SIN TAREA ASIGNADA "]140
-node [shape = box label = "SIN TAREA ASIGNADA "]141
-node [shape = box label = "SIN TAREA ASIGNADA "]142
-node [shape = box label = "SIN TAREA ASIGNADA "]143
-node [shape = box label = "SIN TAREA ASIGNADA "]144
-node [shape = box label = "SIN TAREA ASIGNADA "]145
-node [shape = box label = "SIN TAREA ASIGNADA "]146
-node [shape = box label = "SIN TAREA ASIGNADA "]147
-node [shape = box label = "SIN TAREA ASIGNADA "]148
-node [shape = box label = "SIN TAREA ASIGNADA "]149
-node [shape = box label = "SIN TAREA ASIGNADA "]150
-node [shape = box label = "SIN TAREA ASIGNADA "]151
-node [shape = box label = "SIN TAREA ASIGNADA "]152
-node [shape = box label = "SIN TAREA ASIGNADA "]153
-node [shape = box label = "SIN TAREA ASIGNADA "]154
-node [shape = box label = "SIN TAREA ASIGNADA "]155
-node [shape = box label = "SIN TAREA ASIGNADA "]156
-node [shape = box label = "SIN TAREA ASIGNADA "]157
-node [shape = box label = "SIN TAREA ASIGNADA "]158
-node [shape = box label = "SIN TAREA ASIGNADA "]159
-node [shape = box label = "SIN TAREA ASIGNADA "]160
-node [shape = box label = "SIN TAREA ASIGNADA "]161
-node [shape = box label = "SIN TAREA ASIGNADA "]162
-node [shape = box label = "SIN TAREA ASIGNADA "]163
-node [shape = box label = "SIN TAREA ASIGNADA "]164
-node [shape = box label = "SIN TAREA ASIGNADA "]165
-node [shape = box label = "SIN TAREA ASIGNADA "]166
-node [shape = box label = "SIN TAREA ASIGNADA "]167
-node [shape = box label = "SIN TAREA ASIGNADA "]168
-node [shape = box label = "SIN TAREA ASIGNADA "]169
-node [shape = box label = "SIN TAREA ASIGNADA "]170
-node [shape = box label = "SIN TAREA ASIGNADA "]171
-node [shape = box label = "SIN TAREA ASIGNADA "]172
-node [shape = box label = "SIN TAREA ASIGNADA "]173
-node [shape = box label = "SIN TAREA ASIGNADA "]174
-node [shape = box label = "SIN TAREA ASIGNADA "]175
-node [shape = box label = "SIN TAREA ASIGNADA "]176
-node [shape = box label = "SIN TAREA ASIGNADA "]177
-node [shape = box label = "SIN TAREA ASIGNADA "]178
-node [shape = box label = "SIN TAREA ASIGNADA "]179
-node [shape = box label = "SIN TAREA ASIGNADA "]180
-node [shape = box label = "SIN TAREA ASIGNADA "]181
-node [shape = box label = "SIN TAREA ASIGNADA "]182
-node [shape = box label = "SIN TAREA ASIGNADA "]183
-node [shape = box label = "SIN TAREA ASIGNADA "]184
-node [shape = box label = "SIN TAREA ASIGNADA "]185
-node [shape = box label = "SIN TAREA ASIGNADA "]186
-node [shape = box label = "SIN TAREA ASIGNADA "]187
-node [shape = box label = "SIN TAREA ASIGNADA "]188
-node [shape = box label = "SIN TAREA ASIGNADA "]189
-node [shape = box label = "SIN TAREA ASIGNADA "]190
-node [shape = box label = "SIN TAREA ASIGNADA "]191
-node [shape = box label = "SIN TAREA ASIGNADA "]192
-node [shape = box label = "SIN TAREA ASIGNADA "]193
-node [shape = box label = "SIN TAREA ASIGNADA "]194
-node [shape = box label = "SIN TAREA ASIGNADA "]195
-node [shape = box label = "SIN TAREA ASIGNADA "]196
-node [shape = box label = "SIN TAREA ASIGNADA "]197
-node [shape = box label = "SIN TAREA ASIGNADA "]198
-node [shape = box label = "SIN TAREA ASIGNADA "]199
-node [shape = box label = "SIN TAREA ASIGNADA "]200
-node [shape = box label = "SIN TAREA ASIGNADA "]201
-node [shape = box label = "SIN TAREA ASIGNADA "]202
-node [shape = box label = "SIN TAREA ASIGNADA "]203
-node [shape = box label = "SIN TAREA ASIGNADA "]204
-node [shape = box label = "SIN TAREA ASIGNADA "]205
-node [shape = box label = "SIN TAREA ASIGNADA "]206
-node [shape = box label = "SIN TAREA ASIGNADA "]207
-node [shape = box label = "SIN TAREA ASIGNADA "]208
-node [shape = box label = "SIN TAREA ASIGNADA "]209
-node [shape = box label = "SIN TAREA ASIGNADA "]210
-node [shape = box label = "SIN TAREA ASIGNADA "]211
-node [shape = box label = "SIN TAREA ASIGNADA "]212
-node [shape = box label = "SIN TAREA ASIGNADA "]213
-node [shape = box label = "SIN TAREA ASIGNADA "]214
-node [shape = box label = "SIN TAREA ASIGNADA "]215
-node [shape = box label = "SIN TAREA ASIGNADA "]216
-node [shape = box label = "SIN TAREA ASIGNADA "]217
-node [shape = box label = "SIN TAREA ASIGNADA "]218
-node [shape = box label = "SIN TAREA ASIGNADA "]219
-node [shape = box label = "SIN TAREA ASIGNADA "]220
-node [shape = box label = "SIN TAREA ASIGNADA "]221
-node [shape = box label = "SIN TAREA ASIGNADA "]222
-node [shape = box label = "SIN TAREA ASIGNADA "]223
-node [shape = box label = "SIN TAREA ASIGNADA "]224
-node [shape = box label = "SIN TAREA ASIGNADA "]225
-node [shape = box label = "SIN TAREA ASIGNADA "]226
-node [shape = box label = "SIN TAREA ASIGNADA "]227
-node [shape = box label = "SIN TAREA ASIGNADA "]228
-node [shape = box label = "SIN TAREA ASIGNADA "]229
-node [shape = box label = "SIN TAREA ASIGNADA "]230
-node [shape = box label = "SIN TAREA ASIGNADA "]231
-node [shape = box label = "SIN TAREA ASIGNADA "]232
-node [shape = box label = "SIN TAREA ASIGNADA "]233
-node [shape = box label = "SIN TAREA ASIGNADA "]234
-node [shape = box label = "SIN TAREA ASIGNADA "]235
-node [shape = box label = "SIN TAREA ASIGNADA "]236
-node [shape = box label = "SIN TAREA ASIGNADA "]237
-node [shape = box label = "SIN TAREA ASIGNADA "]238
-node [shape = box label = "SIN TAREA ASIGNADA "]239
-node [shape = box label = "SIN TAREA ASIGNADA "]240
-node [shape = box label = "SIN TAREA ASIGNADA "]241
-node [shape = box label = "SIN TAREA ASIGNADA "]242
-node [shape = box label = "SIN TAREA ASIGNADA "]243
-node [shape = box label = "SIN TAREA ASIGNADA "]244
-node [shape = box label = "SIN TAREA ASIGNADA "]245
-node [shape = box label = "SIN TAREA ASIGNADA "]246
-node [shape = box label = "SIN TAREA ASIGNADA "]247
-node [shape = box label = "SIN TAREA ASIGNADA "]248
-node [shape = box label = "SIN TAREA ASIGNADA "]249
-node [shape = box label = "SIN TAREA ASIGNADA "]250
-node [shape = box label = "SIN TAREA ASIGNADA "]251
-node [shape = box label = "SIN TAREA ASIGNADA "]252
-node [shape = box label = "SIN TAREA ASIGNADA "]253
-node [shape = box label = "SIN TAREA ASIGNADA "]254
-node [shape = box label = "SIN TAREA ASIGNADA "]255
-node [shape = box label = "SIN TAREA ASIGNADA "]256
-node [shape = box label = "SIN TAREA ASIGNADA "]257
-node [shape = box label = "SIN TAREA ASIGNADA "]258
-node [shape = box label = "SIN TAREA ASIGNADA "]259
-node [shape = box label = "SIN TAREA ASIGNADA "]260
-node [shape = box label = "SIN TAREA ASIGNADA "]261
-node [shape = box label = "SIN TAREA ASIGNADA "]262
-node [shape = box label = "SIN TAREA ASIGNADA "]263
-node [shape = box label = "SIN TAREA ASIGNADA "]264
-node [shape = box label = "SIN TAREA ASIGNADA "]265
-node [shape = box label = "SIN TAREA ASIGNADA "]266
-node [shape = box label = "SIN TAREA ASIGNADA "]267
-node [shape = box label = "SIN TAREA ASIGNADA "]268
-node [shape = box label = "SIN TAREA ASIGNADA "]269
-node [shape = box label = "SIN TAREA ASIGNADA "]270
-node [shape = box label = "SIN TAREA ASIGNADA "]271
-node [shape = box label = "SIN TAREA ASIGNADA "]272
-node [shape = box label = "SIN TAREA ASIGNADA "]273
-node [shape = box label = "SIN TAREA ASIGNADA "]274
-node [shape = box label = "SIN TAREA ASIGNADA "]275
-node [shape = box label = "SIN TAREA ASIGNADA "]276
-node [shape = box label = "SIN TAREA ASIGNADA "]277
-node [shape = box label = "SIN TAREA ASIGNADA "]278
-node [shape = box label = "SIN TAREA ASIGNADA "]279
-node [shape = box label = "SIN TAREA ASIGNADA "]280
-node [shape = box label = "SIN TAREA ASIGNADA "]281
-node [shape = box label = "SIN TAREA ASIGNADA "]282
-node [shape = box label = "SIN TAREA ASIGNADA "]283
-node [shape = box label = "SIN TAREA ASIGNADA "]284
-node [shape = box label = "SIN TAREA ASIGNADA "]285
-node [shape = box label = "SIN TAREA ASIGNADA "]286
-node [shape = box label = "SIN TAREA ASIGNADA "]287
-node [shape = box label = "SIN TAREA ASIGNADA "]288
-node [shape = box label = "SIN TAREA ASIGNADA "]289
-node [shape = box label = "SIN TAREA ASIGNADA "]290
-node [shape = box label = "SIN TAREA ASIGNADA "]291
-node [shape = box label = "SIN TAREA ASIGNADA "]292
-node [shape = box label = "SIN TAREA ASIGNADA "]293
-node [shape = box label = "SIN TAREA ASIGNADA "]294
-node [shape = box label = "SIN TAREA ASIGNADA "]295
-node [shape = box label = "SIN TAREA ASIGNADA "]296
-node [shape = box label = "SIN TAREA ASIGNADA "]297
-node [shape = box label = "SIN TAREA ASIGNADA "]298
-node [shape = box label = "SIN TAREA ASIGNADA "]299
-node [shape = box label = "SIN TAREA ASIGNADA "]300
-node [shape = box label = "SIN TAREA ASIGNADA "]301
-node [shape = box label = "SIN TAREA ASIGNADA "]302
-node [shape = box label = "SIN TAREA ASIGNADA "]303
-node [shape = box label = "SIN TAREA ASIGNADA "]304
-node [shape = box label = "SIN TAREA ASIGNADA "]305
-node [shape = box label = "SIN TAREA ASIGNADA "]306
-node [shape = box label = "SIN TAREA ASIGNADA "]307
-node [shape = box label = "SIN TAREA ASIGNADA "]308
-node [shape = box label = "SIN TAREA ASIGNADA "]309
-node [shape = box label = "SIN TAREA ASIGNADA "]310
-node [shape = box label = "SIN TAREA ASIGNADA "]311
-node [shape = box label = "SIN TAREA ASIGNADA "]312
-node [shape = box label = "SIN TAREA ASIGNADA "]313
-node [shape = box label = "SIN TAREA ASIGNADA "]314
-node [shape = box label = "SIN TAREA ASIGNADA "]315
-node [shape = box label = "SIN TAREA ASIGNADA "]316
-node [shape = box label = "SIN TAREA ASIGNADA "]317
-node [shape = box label = "SIN TAREA ASIGNADA "]318
-node [shape = box label = "SIN TAREA ASIGNADA "]319
-node [shape = box label = "SIN TAREA ASIGNADA "]320
-node [shape = box label = "SIN TAREA ASIGNADA "]321
-node [shape = box label = "SIN TAREA ASIGNADA "]322
-node [shape = box label = "SIN TAREA ASIGNADA "]323
-node [shape = box label = "SIN TAREA ASIGNADA "]324
-node [shape = box label = "SIN TAREA ASIGNADA "]325
-node [shape = box label = "SIN TAREA ASIGNADA "]326
-node [shape = box label = "SIN TAREA ASIGNADA "]327
-node [shape = box label = "SIN TAREA ASIGNADA "]328
-node [shape = box label = "SIN TAREA ASIGNADA "]329
-node [shape = box label = "SIN TAREA ASIGNADA "]330
-node [shape = box label = "SIN TAREA ASIGNADA "]331
-node [shape = box label = "SIN TAREA ASIGNADA "]332
-node [shape = box label = "SIN TAREA ASIGNADA "]333
-node [shape = box label = "SIN TAREA ASIGNADA "]334
-node [shape = box label = "SIN TAREA ASIGNADA "]335
-node [shape = box label = "SIN TAREA ASIGNADA "]336
-node [shape = box label = "SIN TAREA ASIGNADA "]337
-node [shape = box label = "SIN TAREA ASIGNADA "]338
-node [shape = box label = "SIN TAREA ASIGNADA "]339
-node [shape = box label = "SIN TAREA ASIGNADA "]340
-node [shape = box label = "SIN TAREA ASIGNADA "]341
-node [shape = box label = "SIN TAREA ASIGNADA "]342
-node [shape = box label = "SIN TAREA ASIGNADA "]343
-node [shape = box label = "SIN TAREA ASIGNADA "]344
-node [shape = box label = "SIN TAREA ASIGNADA "]345
-node [shape = box label = "SIN TAREA ASIGNADA "]346
-node [shape = box label = "SIN TAREA ASIGNADA "]347
-node [shape = box label = "SIN TAREA ASIGNADA "]348
-node [shape = box label = "SIN TAREA ASIGNADA "]349
-node [shape = box label = "SIN TAREA ASIGNADA "]350
-node [shape = box label = "SIN TAREA ASIGNADA "]351
-node [shape = box label = "SIN TAREA ASIGNADA "]352
-node [shape = box label = "SIN TAREA ASIGNADA "]353
-node [shape = box label = "SIN TAREA ASIGNADA "]354
-node [shape = box label = "SIN TAREA ASIGNADA "]355
-node [shape = box label = "SIN TAREA ASIGNADA "]356
-node [shape = box label = "SIN TAREA ASIGNADA "]357
-node [shape = box label = "SIN TAREA ASIGNADA "]358
-node [shape = box label = "SIN TAREA ASIGNADA "]359
-node [shape = box label = "SIN TAREA ASIGNADA "]360
-node [shape = box label = "SIN TAREA ASIGNADA "]361
-node [shape = box label = "SIN TAREA ASIGNADA "]362
-node [shape = box label = "SIN TAREA ASIGNADA "]363
-node [shape = box label = "SIN TAREA ASIGNADA "]364
-node [shape = box label = "SIN TAREA ASIGNADA "]365
-node [shape = box label = "SIN TAREA ASIGNADA "]366
-node [shape = box label = "SIN TAREA ASIGNADA "]367
-node [shape = box label = "SIN TAREA ASIGNADA "]368
-node [shape = box label = "SIN TAREA ASIGNADA "]369
-node [shape = box label = "SIN TAREA ASIGNADA "]370
-node [shape = box label = "SIN TAREA ASIGNADA "]371
-node [shape = box label = "SIN TAREA ASIGNADA "]372
-node [shape = box label = "SIN TAREA ASIGNADA "]373
-node [shape = box label = "SIN TAREA ASIGNADA "]374
-node [shape = box label = "SIN TAREA ASIGNADA "]375
-node [shape = box label = "SIN TAREA ASIGNADA "]376
-node [shape = box label = "SIN TAREA ASIGNADA "]377
-node [shape = box label = "SIN TAREA ASIGNADA "]378
-node [shape = box label = "SIN TAREA ASIGNADA "]379
-node [shape = box label = "SIN TAREA ASIGNADA "]380
-node [shape = box label = "SIN TAREA ASIGNADA "]381
-node [shape = box label = "SIN TAREA ASIGNADA "]382
-node [shape = box label = "SIN TAREA ASIGNADA "]383
-node [shape = box label = "SIN TAREA ASIGNADA "]384
-node [shape = box label = "SIN TAREA ASIGNADA "]385
-node [shape = box label = "SIN TAREA ASIGNADA "]386
-node [shape = box label = "SIN TAREA ASIGNADA "]387
-node [shape = box label = "SIN TAREA ASIGNADA "]388
-node [shape = box label = "SIN TAREA ASIGNADA "]389
-node [shape = box label = "SIN TAREA ASIGNADA "]390
-node [shape = box label = "SIN TAREA ASIGNADA "]391
-node [shape = box label = "SIN TAREA ASIGNADA "]392
-node [shape = box label = "SIN TAREA ASIGNADA "]393
-node [shape = box label = "SIN TAREA ASIGNADA "]394
-node [shape = box label = "SIN TAREA ASIGNADA "]395
-node [shape = box label = "SIN TAREA ASIGNADA "]396
-node [shape = box label = "SIN TAREA ASIGNADA "]397
-node [shape = box label = "SIN TAREA ASIGNADA "]398
-node [shape = box label = "SIN TAREA ASIGNADA "]399
-node [shape = box label = "SIN TAREA ASIGNADA "]400
-node [shape = box label = "SIN TAREA ASIGNADA "]401
-node [shape = box label = "SIN TAREA ASIGNADA "]402
-node [shape = box label = "SIN TAREA ASIGNADA "]403
-node [shape = box label = "SIN TAREA ASIGNADA "]404
-node [shape = box label = "SIN TAREA ASIGNADA "]405
-node [shape = box label = "SIN TAREA ASIGNADA "]406
-node [shape = box label = "SIN TAREA ASIGNADA "]407
-node [shape = box label = "SIN TAREA ASIGNADA "]408
-node [shape = box label = "SIN TAREA ASIGNADA "]409
-node [shape = box label = "SIN TAREA ASIGNADA "]410
-node [shape = box label = "SIN TAREA ASIGNADA "]411
-node [shape = box label = "SIN TAREA ASIGNADA "]412
-node [shape = box label = "SIN TAREA ASIGNADA "]413
-node [shape = box label = "SIN TAREA ASIGNADA "]414
-node [shape = box label = "SIN TAREA ASIGNADA "]415
-node [shape = box label = "SIN TAREA ASIGNADA "]416
-node [shape = box label = "SIN TAREA ASIGNADA "]417
-node [shape = box label = "SIN TAREA ASIGNADA "]418
-node [shape = box label = "SIN TAREA ASIGNADA "]419
-node [shape = box label = "SIN TAREA ASIGNADA "]420
-node [shape = box label = "SIN TAREA ASIGNADA "]421
-node [shape = box label = "SIN TAREA ASIGNADA "]422
-node [shape = box label = "SIN TAREA ASIGNADA "]423
-node [shape = box label = "SIN TAREA ASIGNADA "]424
-node [shape = box label = "SIN TAREA ASIGNADA "]425
-node [shape = box label = "SIN TAREA ASIGNADA "]426
-node [shape = box label = "SIN TAREA ASIGNADA "]427
-node [shape = box label = "SIN TAREA ASIGNADA "]428
-node [shape = box label = "SIN TAREA ASIGNADA "]429
-node [shape = box label = "SIN TAREA ASIGNADA "]430
-node [shape = box label = "SIN TAREA ASIGNADA "]431
-node [shape = box label = "SIN TAREA ASIGNADA "]432
-node [shape = box label = "SIN TAREA ASIGNADA "]433
-node [shape = box label = "SIN TAREA ASIGNADA "]434
-node [shape = box label = "SIN TAREA ASIGNADA "]435
-node [shape = box label = "SIN TAREA ASIGNADA "]436
-node [shape = box label = "SIN TAREA ASIGNADA "]437
-node [shape = box label = "SIN TAREA ASIGNADA "]438
-node [shape = box label = "SIN TAREA ASIGNADA "]439
-node [shape = box label = "SIN TAREA ASIGNADA "]440
-node [shape = box label = "SIN TAREA ASIGNADA "]441
-node [shape = box label = "SIN TAREA ASIGNADA "]442
-node [shape = box label = "SIN TAREA ASIGNADA "]443
-node [shape = box label = "SIN TAREA ASIGNADA "]444
-node [shape = box label = "SIN TAREA ASIGNADA "]445
-node [shape = box label = "SIN TAREA ASIGNADA "]446
-node [shape = box label = "SIN TAREA ASIGNADA "]447
-node [shape = box label = "SIN TAREA ASIGNADA "]448
-node [shape = box label = "SIN TAREA ASIGNADA "]449
-node [shape = box label = "SIN TAREA ASIGNADA "]450
-node [shape = box label = "SIN TAREA ASIGNADA "]451
-node [shape = box label = "SIN TAREA ASIGNADA "]452
-node [shape = box label = "SIN TAREA ASIGNADA "]453
-node [shape = box label = "SIN TAREA ASIGNADA "]454
-node [shape = box label = "SIN TAREA ASIGNADA "]455
-node [shape = box label = "SIN TAREA ASIGNADA "]456
-node [shape = box label = "SIN TAREA ASIGNADA "]457
-node [shape = box label = "SIN TAREA ASIGNADA "]458
-node [shape = box label = "SIN TAREA ASIGNADA "]459
-node [shape = box label = "SIN TAREA ASIGNADA "]460
-node [shape = box label = "SIN TAREA ASIGNADA "]461
-node [shape = box label = "SIN TAREA ASIGNADA "]462
-node [shape = box label = "SIN TAREA ASIGNADA "]463
-node [shape = box label = "SIN TAREA ASIGNADA "]464
-node [shape = box label = "SIN TAREA ASIGNADA "]465
-node [shape = box label = "SIN TAREA ASIGNADA "]466
-node [shape = box label = "SIN TAREA ASIGNADA "]467
-node [shape = box label = "SIN TAREA ASIGNADA "]468
-node [shape = box label = "SIN TAREA ASIGNADA "]469
-node [shape = box label = "SIN TAREA ASIGNADA "]470
-node [shape = box label = "SIN TAREA ASIGNADA "]471
-node [shape = box label = "SIN TAREA ASIGNADA "]472
-node [shape = box label = "SIN TAREA ASIGNADA "]473
-node [shape = box label = "SIN TAREA ASIGNADA "]474
-node [shape = box label = "SIN TAREA ASIGNADA "]475
-node [shape = box label = "SIN TAREA ASIGNADA "]476
-node [shape = box label = "SIN TAREA ASIGNADA "]477
-node [shape = box label = "SIN TAREA ASIGNADA "]478
-node [shape = box label = "SIN TAREA ASIGNADA "]479
-node [shape = box label = "SIN TAREA ASIGNADA "]480
-node [shape = box label = "SIN TAREA ASIGNADA "]481
-node [shape = box label = "SIN TAREA ASIGNADA "]482
-node [shape = box label = "SIN TAREA ASIGNADA "]483
-node [shape = box label = "SIN TAREA ASIGNADA "]484
-node [shape = box label = "SIN TAREA ASIGNADA "]485
-node [shape = box label = "SIN TAREA ASIGNADA "]486
-node [shape = box label = "SIN TAREA ASIGNADA "]487
-node [shape = box label = "SIN TAREA ASIGNADA "]488
-node [shape = box label = "SIN TAREA ASIGNADA "]489
-node [shape = box label = "SIN TAREA ASIGNADA "]490
-node [shape = box label = "SIN TAREA ASIGNADA "]491
-node [shape = box label = "SIN TAREA ASIGNADA "]492
-node [shape = box label = "SIN TAREA ASIGNADA "]493
-node [shape = box label = "SIN TAREA ASIGNADA "]494
-node [shape = box label = "SIN TAREA ASIGNADA "]495
-node [shape = box label = "SIN TAREA ASIGNADA "]496
-node [shape = box label = "SIN TAREA ASIGNADA "]497
-node [shape = box label = "SIN TAREA ASIGNADA "]498
-node [shape = box label = "SIN TAREA ASIGNADA "]499
-node [shape = box label = "SIN TAREA ASIGNADA "]500
-node [shape = box label = "SIN TAREA ASIGNADA "]501
-node [shape = box label = "SIN TAREA ASIGNADA "]502
-node [shape = box label = "SIN TAREA ASIGNADA "]503
-node [shape = box label = "SIN TAREA ASIGNADA "]504
-node [shape = box label = "SIN TAREA ASIGNADA "]505
-node [shape = box label = "SIN TAREA ASIGNADA "]506
-node [shape = box label = "SIN TAREA ASIGNADA "]507
-node [shape = box label = "SIN TAREA ASIGNADA "]508
-node [shape = box label = "SIN TAREA ASIGNADA "]509
-node [shape = box label = "SIN TAREA ASIGNADA "]510
-node [shape = box label = "SIN TAREA ASIGNADA "]511
-node [shape = box label = "SIN TAREA ASIGNADA "]512
-node [shape = box label = "SIN TAREA ASIGNADA "]513
-node [shape = box label = "SIN TAREA ASIGNADA "]514
-node [shape = box label = "SIN TAREA ASIGNADA "]515
-node [shape = box label = "SIN TAREA ASIGNADA "]516
-node [shape = box label = "SIN TAREA ASIGNADA "]517
-node [shape = box label = "SIN TAREA ASIGNADA "]518
-node [shape = box label = "SIN TAREA ASIGNADA "]519
-node [shape = box label = "SIN TAREA ASIGNADA "]520
-node [shape = box label = "SIN TAREA ASIGNADA "]521
-node [shape = box label = "SIN TAREA ASIGNADA "]522
-node [shape = box label = "SIN TAREA ASIGNADA "]523
-node [shape = box label = "SIN TAREA ASIGNADA "]524
-node [shape = box label = "SIN TAREA ASIGNADA "]525
-node [shape = box label = "SIN TAREA ASIGNADA "]526
-node [shape = box label = "SIN TAREA ASIGNADA "]527
-node [shape = box label = "SIN TAREA ASIGNADA "]528
-node [shape = box label = "SIN TAREA ASIGNADA "]529
-node [shape = box label = "SIN TAREA ASIGNADA "]530
-node [shape = box label = "SIN TAREA ASIGNADA "]531
-node [shape = box label = "SIN TAREA ASIGNADA "]532
-node [shape = box label = "SIN TAREA ASIGNADA "]533
-node [shape = box label = "SIN TAREA ASIGNADA "]534
-node [shape = box label = "SIN TAREA ASIGNADA "]535
-node [shape = box label = "SIN TAREA ASIGNADA "]536
-node [shape = box label = "SIN TAREA ASIGNADA "]537
-node [shape = box label = "SIN TAREA ASIGNADA "]538
-node [shape = box label = "SIN TAREA ASIGNADA "]539
-node [shape = box label = "SIN TAREA ASIGNADA "]540
-node [shape = box label = "SIN TAREA ASIGNADA "]541
-node [shape = box label = "SIN TAREA ASIGNADA "]542
-node [shape = box label = "SIN TAREA ASIGNADA "]543
-node [shape = box label = "SIN TAREA ASIGNADA "]544
-node [shape = box label = "SIN TAREA ASIGNADA "]545
-node [shape = box label = "SIN TAREA ASIGNADA "]546
-node [shape = box label = "SIN TAREA ASIGNADA "]547
-node [shape = box label = "SIN TAREA ASIGNADA "]548
-node [shape = box label = "SIN TAREA ASIGNADA "]549
-node [shape = box label = "SIN TAREA ASIGNADA "]550
-node [shape = box label = "SIN TAREA ASIGNADA "]551
-node [shape = box label = "SIN TAREA ASIGNADA "]552
-node [shape = box label = "SIN TAREA ASIGNADA "]553
-node [shape = box label = "SIN TAREA ASIGNADA "]554
-node [shape = box label = "SIN TAREA ASIGNADA "]555
-node [shape = box label = "SIN TAREA ASIGNADA "]556
-node [shape = box label = "SIN TAREA ASIGNADA "]557
-node [shape = box label = "SIN TAREA ASIGNADA "]558
-node [shape = box label = "SIN TAREA ASIGNADA "]559
-node [shape = box label = "SIN TAREA ASIGNADA "]560
-node [shape = box label = "SIN TAREA ASIGNADA "]561
-node [shape = box label = "SIN TAREA ASIGNADA "]562
-node [shape = box label = "SIN TAREA ASIGNADA "]563
-node [shape = box label = "SIN TAREA ASIGNADA "]564
-node [shape = box label = "SIN TAREA ASIGNADA "]565
-node [shape = box label = "SIN TAREA ASIGNADA "]566
-node [shape = box label = "SIN TAREA ASIGNADA "]567
-node [shape = box label = "SIN TAREA ASIGNADA "]568
-node [shape = box label = "SIN TAREA ASIGNADA "]569
-node [shape = box label = "SIN TAREA ASIGNADA "]570
-node [shape = box label = "SIN TAREA ASIGNADA "]571
-node [shape = box label = "SIN TAREA ASIGNADA "]572
-node [shape = box label = "SIN TAREA ASIGNADA "]573
-node [shape = box label = "SIN TAREA ASIGNADA "]574
-node [shape = box label = "SIN TAREA ASIGNADA "]575
-node [shape = box label = "SIN TAREA ASIGNADA "]576
-node [shape = box label = "SIN TAREA ASIGNADA "]577
-node [shape = box label = "SIN TAREA ASIGNADA "]578
-node [shape = box label = "SIN TAREA ASIGNADA "]579
-node [shape = box label = "SIN TAREA ASIGNADA "]580
-node [shape = box label = "SIN TAREA ASIGNADA "]581
-node [shape = box label = "SIN TAREA ASIGNADA "]582
-node [shape = box label = "SIN TAREA ASIGNADA "]583
-node [shape = box label = "SIN TAREA ASIGNADA "]584
-node [shape = box label = "SIN TAREA ASIGNADA "]585
-node [shape = box label = "SIN TAREA ASIGNADA "]586
-node [shape = box label = "SIN TAREA ASIGNADA "]587
-node [shape = box label = "SIN TAREA ASIGNADA "]588
-node [shape = box label = "SIN TAREA ASIGNADA "]589
-node [shape = box label = "SIN TAREA ASIGNADA "]590
-node [shape = box label = "SIN TAREA ASIGNADA "]591
-node [shape = box label = "SIN TAREA ASIGNADA "]592
-node [shape = box label = "SIN TAREA ASIGNADA "]593
-node [shape = box label = "SIN TAREA ASIGNADA "]594
-node [shape = box label = "SIN TAREA ASIGNADA "]595
-node [shape = box label = "SIN TAREA ASIGNADA "]596
-node [shape = box label = "SIN TAREA ASIGNADA "]597
-node [shape = box label = "SIN TAREA ASIGNADA "]598
-node [shape = box label = "SIN TAREA ASIGNADA "]599
-node [shape = box label = "SIN TAREA ASIGNADA "]600
-node [shape = box label = "SIN TAREA ASIGNADA "]601
-node [shape = box label = "SIN TAREA ASIGNADA "]602
-node [shape = box label = "SIN TAREA ASIGNADA "]603
-node [shape = box label = "SIN TAREA ASIGNADA "]604
-node [shape = box label = "SIN TAREA ASIGNADA "]605
-node [shape = box label = "SIN TAREA ASIGNADA "]606
-node [shape = box label = "SIN TAREA ASIGNADA "]607
-node [shape = box label = "SIN TAREA ASIGNADA "]608
-node [shape = box label = "SIN TAREA ASIGNADA "]609
-node [shape = box label = "SIN TAREA ASIGNADA "]610
-node [shape = box label = "SIN TAREA ASIGNADA "]611
-node [shape = box label = "SIN TAREA ASIGNADA "]612
-node [shape = box label = "SIN TAREA ASIGNADA "]613
-node [shape = box label = "SIN TAREA ASIGNADA "]614
-node [shape = box label = "SIN TAREA ASIGNADA "]615
-node [shape = box label = "SIN TAREA ASIGNADA "]616
-node [shape = box label = "SIN TAREA ASIGNADA "]617
-node [shape = box label = "SIN TAREA ASIGNADA "]618
-node [shape = box label = "SIN TAREA ASIGNADA "]619
-node [shape = box label = "SIN TAREA ASIGNADA "]620
-node [shape = box label = "SIN TAREA ASIGNADA "]621
-node [shape = box label = "SIN TAREA ASIGNADA "]622
-node [shape = box label = "SIN TAREA ASIGNADA "]623
-node [shape = box label = "SIN TAREA ASIGNADA "]624
-node [shape = box label = "SIN TAREA ASIGNADA "]625
-node [shape = box label = "SIN TAREA ASIGNADA "]626
-node [shape = box label = "SIN TAREA ASIGNADA "]627
-node [shape = box label = "SIN TAREA ASIGNADA "]628
-node [shape = box label = "SIN TAREA ASIGNADA "]629
-node [shape = box label = "SIN TAREA ASIGNADA "]630
-node [shape = box label = "SIN TAREA ASIGNADA "]631
-node [shape = box label = "SIN TAREA ASIGNADA "]632
-node [shape = box label = "SIN TAREA ASIGNADA "]633
-node [shape = box label = "SIN TAREA ASIGNADA "]634
-node [shape = box label = "SIN TAREA ASIGNADA "]635
-node [shape = box label = "SIN TAREA ASIGNADA "]636
-node [shape = box label = "SIN TAREA ASIGNADA "]637
-node [shape = box label = "SIN TAREA ASIGNADA "]638
-node [shape = box label = "SIN TAREA ASIGNADA "]639
-node [shape = box label = "SIN TAREA ASIGNADA "]640
-node [shape = box label = "SIN TAREA ASIGNADA "]641
-node [shape = box label = "SIN TAREA ASIGNADA "]642
-node [shape = box label = "SIN TAREA ASIGNADA "]643
-node [shape = box label = "SIN TAREA ASIGNADA "]644
-node [shape = box label = "SIN TAREA ASIGNADA "]645
-node [shape = box label = "SIN TAREA ASIGNADA "]646
-node [shape = box label = "SIN TAREA ASIGNADA "]647
-node [shape = box label = "SIN TAREA ASIGNADA "]648
-node [shape = box label = "SIN TAREA ASIGNADA "]649
-node [shape = box label = "SIN TAREA ASIGNADA "]650
-node [shape = box label = "SIN TAREA ASIGNADA "]651
-node [shape = box label = "SIN TAREA ASIGNADA "]652
-node [shape = box label = "SIN TAREA ASIGNADA "]653
-node [shape = box label = "SIN TAREA ASIGNADA "]654
-node [shape = box label = "SIN TAREA ASIGNADA "]655
-node [shape = box label = "SIN TAREA ASIGNADA "]656
-node [shape = box label = "SIN TAREA ASIGNADA "]657
-node [shape = box label = "SIN TAREA ASIGNADA "]658
-node [shape = box label = "SIN TAREA ASIGNADA "]659
-node [shape = box label = "SIN TAREA ASIGNADA "]660
-node [shape = box label = "SIN TAREA ASIGNADA "]661
-node [shape = box label = "SIN TAREA ASIGNADA "]662
-node [shape = box label = "SIN TAREA ASIGNADA "]663
-node [shape = box label = "SIN TAREA ASIGNADA "]664
-node [shape = box label = "SIN TAREA ASIGNADA "]665
-node [shape = box label = "SIN TAREA ASIGNADA "]666
-node [shape = box label = "SIN TAREA ASIGNADA "]667
-node [shape = box label = "SIN TAREA ASIGNADA "]668
-node [shape = box label = "SIN TAREA ASIGNADA "]669
-node [shape = box label = "SIN TAREA ASIGNADA "]670
-node [shape = box label = "SIN TAREA ASIGNADA "]671
-node [shape = box label = "SIN TAREA ASIGNADA "]672
-node [shape = box label = "SIN TAREA ASIGNADA "]673
-node [shape = box label = "SIN TAREA ASIGNADA "]674
-node [shape = box label = "SIN TAREA ASIGNADA "]675
-node [shape = box label = "SIN TAREA ASIGNADA "]676
-node [shape = box label = "SIN TAREA ASIGNADA "]677
-node [shape = box label = "SIN TAREA ASIGNADA "]678
-node [shape = box label = "SIN TAREA ASIGNADA "]679
-node [shape = box label = "SIN TAREA ASIGNADA "]680
-node [shape = box label = "SIN TAREA ASIGNADA "]681
-node [shape = box label = "SIN TAREA ASIGNADA "]682
-node [shape = box label = "SIN TAREA ASIGNADA "]683
-node [shape = box label = "SIN TAREA ASIGNADA "]684
-node [shape = box label = "SIN TAREA ASIGNADA "]685
-node [shape = box label = "SIN TAREA ASIGNADA "]686
-node [shape = box label = "SIN TAREA ASIGNADA "]687
-node [shape = box label = "SIN TAREA ASIGNADA "]688
-node [shape = box label = "SIN TAREA ASIGNADA "]689
-node [shape = box label = "SIN TAREA ASIGNADA "]690
-node [shape = box label = "SIN TAREA ASIGNADA "]691
-node [shape = box label = "SIN TAREA ASIGNADA "]692
-node [shape = box label = "SIN TAREA ASIGNADA "]693
-node [shape = box label = "SIN TAREA ASIGNADA "]694
-node [shape = box label = "SIN TAREA ASIGNADA "]695
-node [shape = box label = "SIN TAREA ASIGNADA "]696
-node [shape = box label = "SIN TAREA ASIGNADA "]697
-node [shape = box label = "SIN TAREA ASIGNADA "]698
-node [shape = box label = "SIN TAREA ASIGNADA "]699
-node [shape = box label = "SIN TAREA ASIGNADA "]700
-node [shape = box label = "SIN TAREA ASIGNADA "]701
-node [shape = box label = "SIN TAREA ASIGNADA "]702
-node [shape = box label = "SIN TAREA ASIGNADA "]703
-node [shape = box label = "SIN TAREA ASIGNADA "]704
-node [shape = box label = "SIN TAREA ASIGNADA "]705
-node [shape = box label = "SIN TAREA ASIGNADA "]706
-node [shape = box label = "SIN TAREA ASIGNADA "]707
-node [shape = box label = "SIN TAREA ASIGNADA "]708
-node [shape = box label = "SIN TAREA ASIGNADA "]709
-node [shape = box label = "SIN TAREA ASIGNADA "]710
-node [shape = box label = "SIN TAREA ASIGNADA "]711
-node [shape = box label = "SIN TAREA ASIGNADA "]712
-node [shape = box label = "SIN TAREA ASIGNADA "]713
-node [shape = box label = "SIN TAREA ASIGNADA "]714
-node [shape = box label = "SIN TAREA ASIGNADA "]715
-node [shape = box label = "SIN TAREA ASIGNADA "]716
-node [shape = box label = "SIN TAREA ASIGNADA "]717
-node [shape = box label = "SIN TAREA ASIGNADA "]718
-node [shape = box label = "SIN TAREA ASIGNADA "]719
-node [shape = box label = "SIN TAREA ASIGNADA "]720
-node [shape = box label = "SIN TAREA ASIGNADA "]721
-node [shape = box label = "SIN TAREA ASIGNADA "]722
-node [shape = box label = "SIN TAREA ASIGNADA "]723
-node [shape = box label = "SIN TAREA ASIGNADA "]724
-node [shape = box label = "SIN TAREA ASIGNADA "]725
-node [shape = box label = "SIN TAREA ASIGNADA "]726
-node [shape = box label = "SIN TAREA ASIGNADA "]727
-node [shape = box label = "SIN TAREA ASIGNADA "]728
-node [shape = box label = "SIN TAREA ASIGNADA "]729
-node [shape = box label = "SIN TAREA ASIGNADA "]730
-node [shape = box label = "SIN TAREA ASIGNADA "]731
-node [shape = box label = "SIN TAREA ASIGNADA "]732
-node [shape = box label = "SIN TAREA ASIGNADA "]733
-node [shape = box label = "SIN TAREA ASIGNADA "]734
-node [shape = box label = "SIN TAREA ASIGNADA "]735
-node [shape = box label = "SIN TAREA ASIGNADA "]736
-node [shape = box label = "SIN TAREA ASIGNADA "]737
-node [shape = box label = "SIN TAREA ASIGNADA "]738
-node [shape = box label = "SIN TAREA ASIGNADA "]739
-node [shape = box label = "SIN TAREA ASIGNADA "]740
-node [shape = box label = "SIN TAREA ASIGNADA "]741
-node [shape = box label = "SIN TAREA ASIGNADA "]742
-node [shape = box label = "SIN TAREA ASIGNADA "]743
-node [shape = box label = "SIN TAREA ASIGNADA "]744
-node [shape = box label = "SIN TAREA ASIGNADA "]745
-node [shape = box label = "SIN TAREA ASIGNADA "]746
-node [shape = box label = "SIN TAREA ASIGNADA "]747
-node [shape = box label = "SIN TAREA ASIGNADA "]748
-node [shape = box label = "SIN TAREA ASIGNADA "]749
-node [shape = box label = "SIN TAREA ASIGNADA "]750
-node [shape = box label = "SIN TAREA ASIGNADA "]751
-node [shape = box label = "SIN TAREA ASIGNADA "]752
-node [shape = box label = "SIN TAREA ASIGNADA "]753
-node [shape = box label = "SIN TAREA ASIGNADA "]754
-node [shape = box label = "SIN TAREA ASIGNADA "]755
-node [shape = box label = "SIN TAREA ASIGNADA "]756
-node [shape = box label = "SIN TAREA ASIGNADA "]757
-node [shape = box label = "SIN TAREA ASIGNADA "]758
-node [shape = box label = "SIN TAREA ASIGNADA "]759
-node [shape = box label = "SIN TAREA ASIGNADA "]760
-node [shape = box label = "SIN TAREA ASIGNADA "]761
-node [shape = box label = "SIN TAREA ASIGNADA "]762
-node [shape = box label = "SIN TAREA ASIGNADA "]763
-node [shape = box label = "SIN TAREA ASIGNADA "]764
-node [shape = box label = "SIN TAREA ASIGNADA "]765
-node [shape = box label = "SIN TAREA ASIGNADA "]766
-node [shape = box label = "SIN TAREA ASIGNADA "]767
-node [shape = box label = "SIN TAREA ASIGNADA "]768
-node [shape = box label = "SIN TAREA ASIGNADA "]769
-node [shape = box label = "SIN TAREA ASIGNADA "]770
-node [shape = box label = "SIN TAREA ASIGNADA "]771
-node [shape = box label = "SIN TAREA ASIGNADA "]772
-node [shape = box label = "SIN TAREA ASIGNADA "]773
-node [shape = box label = "SIN TAREA ASIGNADA "]774
-node [shape = box label = "SIN TAREA ASIGNADA "]775
-node [shape = box label = "SIN TAREA ASIGNADA "]776
-node [shape = box label = "SIN TAREA ASIGNADA "]777
-node [shape = box label = "SIN TAREA ASIGNADA "]778
-node [shape = box label = "SIN TAREA ASIGNADA "]779
-node [shape = box label = "SIN TAREA ASIGNADA "]780
-node [shape = box label = "SIN TAREA ASIGNADA "]781
-node [shape = box label = "SIN TAREA ASIGNADA "]782
-node [shape = box label = "SIN TAREA ASIGNADA "]783
-node [shape = box label = "SIN TAREA ASIGNADA "]784
-node [shape = box label = "SIN TAREA ASIGNADA "]785
-node [shape = box label = "SIN TAREA ASIGNADA "]786
-node [shape = box label = "SIN TAREA ASIGNADA "]787
-node [shape = box label = "SIN TAREA ASIGNADA "]788
-node [shape = box label = "SIN TAREA ASIGNADA "]789
-node [shape = box label = "SIN TAREA ASIGNADA "]790
-node [shape = box label = "SIN TAREA ASIGNADA "]791
-node [shape = box label = "SIN TAREA ASIGNADA "]792
-node [shape = box label = "SIN TAREA ASIGNADA "]793
-node [shape = box label = "SIN TAREA ASIGNADA "]794
-node [shape = box label = "SIN TAREA ASIGNADA "]795
-node [shape = box label = "SIN TAREA ASIGNADA "]796
-node [shape = box label = "SIN TAREA ASIGNADA "]797
-node [shape = box label = "SIN TAREA ASIGNADA "]798
-node [shape = box label = "SIN TAREA ASIGNADA "]799
-node [shape = box label = "SIN TAREA ASIGNADA "]800
-node [shape = box label = "SIN TAREA ASIGNADA "]801
-node [shape = box label = "SIN TAREA ASIGNADA "]802
-node [shape = box label = "SIN TAREA ASIGNADA "]803
-node [shape = box label = "SIN TAREA ASIGNADA "]804
-node [shape = box label = "SIN TAREA ASIGNADA "]805
-node [shape = box label = "SIN TAREA ASIGNADA "]806
-node [shape = box label = "SIN TAREA ASIGNADA "]807
-node [shape = box label = "SIN TAREA ASIGNADA "]808
-node [shape = box label = "SIN TAREA ASIGNADA "]809
-node [shape = box label = "SIN TAREA ASIGNADA "]810
-node [shape = box label = "SIN TAREA ASIGNADA "]811
-node [shape = box label = "SIN TAREA ASIGNADA "]812
-node [shape = box label = "SIN TAREA ASIGNADA "]813
-node [shape = box label = "SIN TAREA ASIGNADA "]814
-node [shape = box label = "SIN TAREA ASIGNADA "]815
-node [shape = box label = "SIN TAREA ASIGNADA "]816
-node [shape = box label = "SIN TAREA ASIGNADA "]817
-node [shape = box label = "SIN TAREA ASIGNADA "]818
-node [shape = box label = "SIN TAREA ASIGNADA "]819
-node [shape = box label = "SIN TAREA ASIGNADA "]820
-node [shape = box label = "SIN TAREA ASIGNADA "]821
-node [shape = box label = "SIN TAREA ASIGNADA "]822
-node [shape = box label = "SIN TAREA ASIGNADA "]823
-node [shape = box label = "SIN TAREA ASIGNADA "]824
-node [shape = box label = "SIN TAREA ASIGNADA "]825
-node [shape = box label = "SIN TAREA ASIGNADA "]826
-node [shape = box label = "SIN TAREA ASIGNADA "]827
-node [shape = box label = "SIN TAREA ASIGNADA "]828
-node [shape = box label = "SIN TAREA ASIGNADA "]829
-node [shape = box label = "SIN TAREA ASIGNADA "]830
-node [shape = box label = "SIN TAREA ASIGNADA "]831
-node [shape = box label = "SIN TAREA ASIGNADA "]832
-node [shape = box label = "SIN TAREA ASIGNADA "]833
-node [shape = box label = "SIN TAREA ASIGNADA "]834
-node [shape = box label = "SIN TAREA ASIGNADA "]835
-node [shape = box label = "SIN TAREA ASIGNADA "]836
-node [shape = box label = "SIN TAREA ASIGNADA "]837
+node [shape = box label = "SIN TAREA ASIGNADA"]126
+node [shape = box label = "SIN TAREA ASIGNADA"]127
+node [shape = box label = "SIN TAREA ASIGNADA"]128
+node [shape = box label = "SIN TAREA ASIGNADA"]129
+node [shape = box label = "SIN TAREA ASIGNADA"]130
+node [shape = box label = "SIN TAREA ASIGNADA"]131
+node [shape = box label = "SIN TAREA ASIGNADA"]132
+node [shape = box label = "SIN TAREA ASIGNADA"]133
+node [shape = box label = "SIN TAREA ASIGNADA"]134
+node [shape = box label = "SIN TAREA ASIGNADA"]135
+node [shape = box label = "SIN TAREA ASIGNADA"]136
+node [shape = box label = "SIN TAREA ASIGNADA"]137
+node [shape = box label = "SIN TAREA ASIGNADA"]138
+node [shape = box label = "SIN TAREA ASIGNADA"]139
+node [shape = box label = "SIN TAREA ASIGNADA"]140
+node [shape = box label = "SIN TAREA ASIGNADA"]141
+node [shape = box label = "SIN TAREA ASIGNADA"]142
+node [shape = box label = "SIN TAREA ASIGNADA"]143
+node [shape = box label = "SIN TAREA ASIGNADA"]144
+node [shape = box label = "SIN TAREA ASIGNADA"]145
+node [shape = box label = "SIN TAREA ASIGNADA"]146
+node [shape = box label = "SIN TAREA ASIGNADA"]147
+node [shape = box label = "SIN TAREA ASIGNADA"]148
+node [shape = box label = "SIN TAREA ASIGNADA"]149
+node [shape = box label = "SIN TAREA ASIGNADA"]150
+node [shape = box label = "SIN TAREA ASIGNADA"]151
+node [shape = box label = "SIN TAREA ASIGNADA"]152
+node [shape = box label = "SIN TAREA ASIGNADA"]153
+node [shape = box label = "SIN TAREA ASIGNADA"]154
+node [shape = box label = "SIN TAREA ASIGNADA"]155
+node [shape = box label = "SIN TAREA ASIGNADA"]156
+node [shape = box label = "SIN TAREA ASIGNADA"]157
+node [shape = box label = "SIN TAREA ASIGNADA"]158
+node [shape = box label = "SIN TAREA ASIGNADA"]159
+node [shape = box label = "SIN TAREA ASIGNADA"]160
+node [shape = box label = "SIN TAREA ASIGNADA"]161
+node [shape = box label = "SIN TAREA ASIGNADA"]162
+node [shape = box label = "SIN TAREA ASIGNADA"]163
+node [shape = box label = "SIN TAREA ASIGNADA"]164
+node [shape = box label = "SIN TAREA ASIGNADA"]165
+node [shape = box label = "SIN TAREA ASIGNADA"]166
+node [shape = box label = "SIN TAREA ASIGNADA"]167
+node [shape = box label = "SIN TAREA ASIGNADA"]168
+node [shape = box label = "SIN TAREA ASIGNADA"]169
+node [shape = box label = "SIN TAREA ASIGNADA"]170
+node [shape = box label = "SIN TAREA ASIGNADA"]171
+node [shape = box label = "SIN TAREA ASIGNADA"]172
+node [shape = box label = "SIN TAREA ASIGNADA"]173
+node [shape = box label = "SIN TAREA ASIGNADA"]174
+node [shape = box label = "SIN TAREA ASIGNADA"]175
+node [shape = box label = "SIN TAREA ASIGNADA"]176
+node [shape = box label = "SIN TAREA ASIGNADA"]177
+node [shape = box label = "SIN TAREA ASIGNADA"]178
+node [shape = box label = "SIN TAREA ASIGNADA"]179
+node [shape = box label = "SIN TAREA ASIGNADA"]180
+node [shape = box label = "SIN TAREA ASIGNADA"]181
+node [shape = box label = "SIN TAREA ASIGNADA"]182
+node [shape = box label = "SIN TAREA ASIGNADA"]183
+node [shape = box label = "SIN TAREA ASIGNADA"]184
+node [shape = box label = "SIN TAREA ASIGNADA"]185
+node [shape = box label = "SIN TAREA ASIGNADA"]186
+node [shape = box label = "SIN TAREA ASIGNADA"]187
+node [shape = box label = "SIN TAREA ASIGNADA"]188
+node [shape = box label = "SIN TAREA ASIGNADA"]189
+node [shape = box label = "SIN TAREA ASIGNADA"]190
+node [shape = box label = "SIN TAREA ASIGNADA"]191
+node [shape = box label = "SIN TAREA ASIGNADA"]192
+node [shape = box label = "SIN TAREA ASIGNADA"]193
+node [shape = box label = "SIN TAREA ASIGNADA"]194
+node [shape = box label = "SIN TAREA ASIGNADA"]195
+node [shape = box label = "SIN TAREA ASIGNADA"]196
+node [shape = box label = "SIN TAREA ASIGNADA"]197
+node [shape = box label = "SIN TAREA ASIGNADA"]198
+node [shape = box label = "SIN TAREA ASIGNADA"]199
+node [shape = box label = "SIN TAREA ASIGNADA"]200
+node [shape = box label = "SIN TAREA ASIGNADA"]201
+node [shape = box label = "SIN TAREA ASIGNADA"]202
+node [shape = box label = "SIN TAREA ASIGNADA"]203
+node [shape = box label = "SIN TAREA ASIGNADA"]204
+node [shape = box label = "SIN TAREA ASIGNADA"]205
+node [shape = box label = "SIN TAREA ASIGNADA"]206
+node [shape = box label = "SIN TAREA ASIGNADA"]207
+node [shape = box label = "SIN TAREA ASIGNADA"]208
+node [shape = box label = "SIN TAREA ASIGNADA"]209
+node [shape = box label = "SIN TAREA ASIGNADA"]210
+node [shape = box label = "SIN TAREA ASIGNADA"]211
+node [shape = box label = "SIN TAREA ASIGNADA"]212
+node [shape = box label = "SIN TAREA ASIGNADA"]213
+node [shape = box label = "SIN TAREA ASIGNADA"]214
+node [shape = box label = "SIN TAREA ASIGNADA"]215
+node [shape = box label = "SIN TAREA ASIGNADA"]216
+node [shape = box label = "SIN TAREA ASIGNADA"]217
+node [shape = box label = "SIN TAREA ASIGNADA"]218
+node [shape = box label = "SIN TAREA ASIGNADA"]219
+node [shape = box label = "SIN TAREA ASIGNADA"]220
+node [shape = box label = "SIN TAREA ASIGNADA"]221
+node [shape = box label = "SIN TAREA ASIGNADA"]222
+node [shape = box label = "SIN TAREA ASIGNADA"]223
+node [shape = box label = "SIN TAREA ASIGNADA"]224
+node [shape = box label = "SIN TAREA ASIGNADA"]225
+node [shape = box label = "SIN TAREA ASIGNADA"]226
+node [shape = box label = "SIN TAREA ASIGNADA"]227
+node [shape = box label = "SIN TAREA ASIGNADA"]228
+node [shape = box label = "SIN TAREA ASIGNADA"]229
+node [shape = box label = "SIN TAREA ASIGNADA"]230
+node [shape = box label = "SIN TAREA ASIGNADA"]231
+node [shape = box label = "SIN TAREA ASIGNADA"]232
+node [shape = box label = "SIN TAREA ASIGNADA"]233
+node [shape = box label = "SIN TAREA ASIGNADA"]234
+node [shape = box label = "SIN TAREA ASIGNADA"]235
+node [shape = box label = "SIN TAREA ASIGNADA"]236
+node [shape = box label = "SIN TAREA ASIGNADA"]237
+node [shape = box label = "SIN TAREA ASIGNADA"]238
+node [shape = box label = "SIN TAREA ASIGNADA"]239
+node [shape = box label = "SIN TAREA ASIGNADA"]240
+node [shape = box label = "SIN TAREA ASIGNADA"]241
+node [shape = box label = "SIN TAREA ASIGNADA"]242
+node [shape = box label = "SIN TAREA ASIGNADA"]243
+node [shape = box label = "SIN TAREA ASIGNADA"]244
+node [shape = box label = "SIN TAREA ASIGNADA"]245
+node [shape = box label = "SIN TAREA ASIGNADA"]246
+node [shape = box label = "SIN TAREA ASIGNADA"]247
+node [shape = box label = "SIN TAREA ASIGNADA"]248
+node [shape = box label = "SIN TAREA ASIGNADA"]249
+node [shape = box label = "SIN TAREA ASIGNADA"]250
+node [shape = box label = "SIN TAREA ASIGNADA"]251
+node [shape = box label = "SIN TAREA ASIGNADA"]252
+node [shape = box label = "SIN TAREA ASIGNADA"]253
+node [shape = box label = "SIN TAREA ASIGNADA"]254
+node [shape = box label = "SIN TAREA ASIGNADA"]255
+node [shape = box label = "SIN TAREA ASIGNADA"]256
+node [shape = box label = "SIN TAREA ASIGNADA"]257
+node [shape = box label = "SIN TAREA ASIGNADA"]258
+node [shape = box label = "SIN TAREA ASIGNADA"]259
+node [shape = box label = "SIN TAREA ASIGNADA"]260
+node [shape = box label = "SIN TAREA ASIGNADA"]261
+node [shape = box label = "SIN TAREA ASIGNADA"]262
+node [shape = box label = "SIN TAREA ASIGNADA"]263
+node [shape = box label = "SIN TAREA ASIGNADA"]264
+node [shape = box label = "SIN TAREA ASIGNADA"]265
+node [shape = box label = "SIN TAREA ASIGNADA"]266
+node [shape = box label = "SIN TAREA ASIGNADA"]267
+node [shape = box label = "SIN TAREA ASIGNADA"]268
+node [shape = box label = "SIN TAREA ASIGNADA"]269
+node [shape = box label = "SIN TAREA ASIGNADA"]270
+node [shape = box label = "SIN TAREA ASIGNADA"]271
+node [shape = box label = "SIN TAREA ASIGNADA"]272
+node [shape = box label = "SIN TAREA ASIGNADA"]273
+node [shape = box label = "SIN TAREA ASIGNADA"]274
+node [shape = box label = "SIN TAREA ASIGNADA"]275
+node [shape = box label = "SIN TAREA ASIGNADA"]276
+node [shape = box label = "SIN TAREA ASIGNADA"]277
+node [shape = box label = "SIN TAREA ASIGNADA"]278
+node [shape = box label = "SIN TAREA ASIGNADA"]279
+node [shape = box label = "SIN TAREA ASIGNADA"]280
+node [shape = box label = "SIN TAREA ASIGNADA"]281
+node [shape = box label = "SIN TAREA ASIGNADA"]282
+node [shape = box label = "SIN TAREA ASIGNADA"]283
+node [shape = box label = "SIN TAREA ASIGNADA"]284
+node [shape = box label = "SIN TAREA ASIGNADA"]285
+node [shape = box label = "SIN TAREA ASIGNADA"]286
+node [shape = box label = "SIN TAREA ASIGNADA"]287
+node [shape = box label = "SIN TAREA ASIGNADA"]288
+node [shape = box label = "SIN TAREA ASIGNADA"]289
+node [shape = box label = "SIN TAREA ASIGNADA"]290
+node [shape = box label = "SIN TAREA ASIGNADA"]291
+node [shape = box label = "SIN TAREA ASIGNADA"]292
+node [shape = box label = "SIN TAREA ASIGNADA"]293
+node [shape = box label = "SIN TAREA ASIGNADA"]294
+node [shape = box label = "SIN TAREA ASIGNADA"]295
+node [shape = box label = "SIN TAREA ASIGNADA"]296
+node [shape = box label = "SIN TAREA ASIGNADA"]297
+node [shape = box label = "SIN TAREA ASIGNADA"]298
+node [shape = box label = "SIN TAREA ASIGNADA"]299
+node [shape = box label = "SIN TAREA ASIGNADA"]300
+node [shape = box label = "SIN TAREA ASIGNADA"]301
+node [shape = box label = "SIN TAREA ASIGNADA"]302
+node [shape = box label = "SIN TAREA ASIGNADA"]303
+node [shape = box label = "SIN TAREA ASIGNADA"]304
+node [shape = box label = "SIN TAREA ASIGNADA"]305
+node [shape = box label = "SIN TAREA ASIGNADA"]306
+node [shape = box label = "SIN TAREA ASIGNADA"]307
+node [shape = box label = "SIN TAREA ASIGNADA"]308
+node [shape = box label = "SIN TAREA ASIGNADA"]309
+node [shape = box label = "SIN TAREA ASIGNADA"]310
+node [shape = box label = "SIN TAREA ASIGNADA"]311
+node [shape = box label = "SIN TAREA ASIGNADA"]312
+node [shape = box label = "SIN TAREA ASIGNADA"]313
+node [shape = box label = "SIN TAREA ASIGNADA"]314
+node [shape = box label = "SIN TAREA ASIGNADA"]315
+node [shape = box label = "SIN TAREA ASIGNADA"]316
+node [shape = box label = "SIN TAREA ASIGNADA"]317
+node [shape = box label = "SIN TAREA ASIGNADA"]318
+node [shape = box label = "SIN TAREA ASIGNADA"]319
+node [shape = box label = "SIN TAREA ASIGNADA"]320
+node [shape = box label = "SIN TAREA ASIGNADA"]321
+node [shape = box label = "SIN TAREA ASIGNADA"]322
+node [shape = box label = "SIN TAREA ASIGNADA"]323
+node [shape = box label = "SIN TAREA ASIGNADA"]324
+node [shape = box label = "SIN TAREA ASIGNADA"]325
+node [shape = box label = "SIN TAREA ASIGNADA"]326
+node [shape = box label = "SIN TAREA ASIGNADA"]327
+node [shape = box label = "SIN TAREA ASIGNADA"]328
+node [shape = box label = "SIN TAREA ASIGNADA"]329
+node [shape = box label = "SIN TAREA ASIGNADA"]330
+node [shape = box label = "SIN TAREA ASIGNADA"]331
+node [shape = box label = "SIN TAREA ASIGNADA"]332
+node [shape = box label = "SIN TAREA ASIGNADA"]333
+node [shape = box label = "SIN TAREA ASIGNADA"]334
+node [shape = box label = "SIN TAREA ASIGNADA"]335
+node [shape = box label = "SIN TAREA ASIGNADA"]336
+node [shape = box label = "SIN TAREA ASIGNADA"]337
+node [shape = box label = "SIN TAREA ASIGNADA"]338
+node [shape = box label = "SIN TAREA ASIGNADA"]339
+node [shape = box label = "SIN TAREA ASIGNADA"]340
+node [shape = box label = "SIN TAREA ASIGNADA"]341
+node [shape = box label = "SIN TAREA ASIGNADA"]342
+node [shape = box label = "SIN TAREA ASIGNADA"]343
+node [shape = box label = "SIN TAREA ASIGNADA"]344
+node [shape = box label = "SIN TAREA ASIGNADA"]345
+node [shape = box label = "SIN TAREA ASIGNADA"]346
+node [shape = box label = "SIN TAREA ASIGNADA"]347
+node [shape = box label = "SIN TAREA ASIGNADA"]348
+node [shape = box label = "SIN TAREA ASIGNADA"]349
+node [shape = box label = "SIN TAREA ASIGNADA"]350
+node [shape = box label = "SIN TAREA ASIGNADA"]351
+node [shape = box label = "SIN TAREA ASIGNADA"]352
+node [shape = box label = "SIN TAREA ASIGNADA"]353
+node [shape = box label = "SIN TAREA ASIGNADA"]354
+node [shape = box label = "SIN TAREA ASIGNADA"]355
+node [shape = box label = "SIN TAREA ASIGNADA"]356
+node [shape = box label = "SIN TAREA ASIGNADA"]357
+node [shape = box label = "SIN TAREA ASIGNADA"]358
+node [shape = box label = "SIN TAREA ASIGNADA"]359
+node [shape = box label = "SIN TAREA ASIGNADA"]360
+node [shape = box label = "SIN TAREA ASIGNADA"]361
+node [shape = box label = "SIN TAREA ASIGNADA"]362
+node [shape = box label = "SIN TAREA ASIGNADA"]363
+node [shape = box label = "SIN TAREA ASIGNADA"]364
+node [shape = box label = "SIN TAREA ASIGNADA"]365
+node [shape = box label = "SIN TAREA ASIGNADA"]366
+node [shape = box label = "SIN TAREA ASIGNADA"]367
+node [shape = box label = "SIN TAREA ASIGNADA"]368
+node [shape = box label = "SIN TAREA ASIGNADA"]369
+node [shape = box label = "SIN TAREA ASIGNADA"]370
+node [shape = box label = "SIN TAREA ASIGNADA"]371
+node [shape = box label = "SIN TAREA ASIGNADA"]372
+node [shape = box label = "SIN TAREA ASIGNADA"]373
+node [shape = box label = "SIN TAREA ASIGNADA"]374
+node [shape = box label = "SIN TAREA ASIGNADA"]375
+node [shape = box label = "SIN TAREA ASIGNADA"]376
+node [shape = box label = "SIN TAREA ASIGNADA"]377
+node [shape = box label = "SIN TAREA ASIGNADA"]378
+node [shape = box label = "SIN TAREA ASIGNADA"]379
+node [shape = box label = "SIN TAREA ASIGNADA"]380
+node [shape = box label = "SIN TAREA ASIGNADA"]381
+node [shape = box label = "SIN TAREA ASIGNADA"]382
+node [shape = box label = "SIN TAREA ASIGNADA"]383
+node [shape = box label = "SIN TAREA ASIGNADA"]384
+node [shape = box label = "SIN TAREA ASIGNADA"]385
+node [shape = box label = "SIN TAREA ASIGNADA"]386
+node [shape = box label = "SIN TAREA ASIGNADA"]387
+node [shape = box label = "SIN TAREA ASIGNADA"]388
+node [shape = box label = "SIN TAREA ASIGNADA"]389
+node [shape = box label = "SIN TAREA ASIGNADA"]390
+node [shape = box label = "SIN TAREA ASIGNADA"]391
+node [shape = box label = "SIN TAREA ASIGNADA"]392
+node [shape = box label = "SIN TAREA ASIGNADA"]393
+node [shape = box label = "SIN TAREA ASIGNADA"]394
+node [shape = box label = "SIN TAREA ASIGNADA"]395
+node [shape = box label = "SIN TAREA ASIGNADA"]396
+node [shape = box label = "SIN TAREA ASIGNADA"]397
+node [shape = box label = "SIN TAREA ASIGNADA"]398
+node [shape = box label = "SIN TAREA ASIGNADA"]399
+node [shape = box label = "SIN TAREA ASIGNADA"]400
+node [shape = box label = "SIN TAREA ASIGNADA"]401
+node [shape = box label = "SIN TAREA ASIGNADA"]402
+node [shape = box label = "SIN TAREA ASIGNADA"]403
+node [shape = box label = "SIN TAREA ASIGNADA"]404
+node [shape = box label = "SIN TAREA ASIGNADA"]405
+node [shape = box label = "SIN TAREA ASIGNADA"]406
+node [shape = box label = "SIN TAREA ASIGNADA"]407
+node [shape = box label = "SIN TAREA ASIGNADA"]408
+node [shape = box label = "SIN TAREA ASIGNADA"]409
+node [shape = box label = "SIN TAREA ASIGNADA"]410
+node [shape = box label = "SIN TAREA ASIGNADA"]411
+node [shape = box label = "SIN TAREA ASIGNADA"]412
+node [shape = box label = "SIN TAREA ASIGNADA"]413
+node [shape = box label = "SIN TAREA ASIGNADA"]414
+node [shape = box label = "SIN TAREA ASIGNADA"]415
+node [shape = box label = "SIN TAREA ASIGNADA"]416
+node [shape = box label = "SIN TAREA ASIGNADA"]417
+node [shape = box label = "SIN TAREA ASIGNADA"]418
+node [shape = box label = "SIN TAREA ASIGNADA"]419
+node [shape = box label = "SIN TAREA ASIGNADA"]420
+node [shape = box label = "SIN TAREA ASIGNADA"]421
+node [shape = box label = "SIN TAREA ASIGNADA"]422
+node [shape = box label = "SIN TAREA ASIGNADA"]423
+node [shape = box label = "SIN TAREA ASIGNADA"]424
+node [shape = box label = "SIN TAREA ASIGNADA"]425
+node [shape = box label = "SIN TAREA ASIGNADA"]426
+node [shape = box label = "SIN TAREA ASIGNADA"]427
+node [shape = box label = "SIN TAREA ASIGNADA"]428
+node [shape = box label = "SIN TAREA ASIGNADA"]429
+node [shape = box label = "SIN TAREA ASIGNADA"]430
+node [shape = box label = "SIN TAREA ASIGNADA"]431
+node [shape = box label = "SIN TAREA ASIGNADA"]432
+node [shape = box label = "SIN TAREA ASIGNADA"]433
+node [shape = box label = "SIN TAREA ASIGNADA"]434
+node [shape = box label = "SIN TAREA ASIGNADA"]435
+node [shape = box label = "SIN TAREA ASIGNADA"]436
+node [shape = box label = "SIN TAREA ASIGNADA"]437
+node [shape = box label = "SIN TAREA ASIGNADA"]438
+node [shape = box label = "SIN TAREA ASIGNADA"]439
+node [shape = box label = "SIN TAREA ASIGNADA"]440
+node [shape = box label = "SIN TAREA ASIGNADA"]441
+node [shape = box label = "SIN TAREA ASIGNADA"]442
+node [shape = box label = "SIN TAREA ASIGNADA"]443
+node [shape = box label = "SIN TAREA ASIGNADA"]444
+node [shape = box label = "SIN TAREA ASIGNADA"]445
+node [shape = box label = "SIN TAREA ASIGNADA"]446
+node [shape = box label = "SIN TAREA ASIGNADA"]447
+node [shape = box label = "SIN TAREA ASIGNADA"]448
+node [shape = box label = "SIN TAREA ASIGNADA"]449
+node [shape = box label = "SIN TAREA ASIGNADA"]450
+node [shape = box label = "SIN TAREA ASIGNADA"]451
+node [shape = box label = "SIN TAREA ASIGNADA"]452
+node [shape = box label = "SIN TAREA ASIGNADA"]453
+node [shape = box label = "SIN TAREA ASIGNADA"]454
+node [shape = box label = "SIN TAREA ASIGNADA"]455
+node [shape = box label = "SIN TAREA ASIGNADA"]456
+node [shape = box label = "SIN TAREA ASIGNADA"]457
+node [shape = box label = "SIN TAREA ASIGNADA"]458
+node [shape = box label = "SIN TAREA ASIGNADA"]459
+node [shape = box label = "SIN TAREA ASIGNADA"]460
+node [shape = box label = "SIN TAREA ASIGNADA"]461
+node [shape = box label = "SIN TAREA ASIGNADA"]462
+node [shape = box label = "SIN TAREA ASIGNADA"]463
+node [shape = box label = "SIN TAREA ASIGNADA"]464
+node [shape = box label = "SIN TAREA ASIGNADA"]465
+node [shape = box label = "SIN TAREA ASIGNADA"]466
+node [shape = box label = "SIN TAREA ASIGNADA"]467
+node [shape = box label = "SIN TAREA ASIGNADA"]468
+node [shape = box label = "SIN TAREA ASIGNADA"]469
+node [shape = box label = "SIN TAREA ASIGNADA"]470
+node [shape = box label = "SIN TAREA ASIGNADA"]471
+node [shape = box label = "SIN TAREA ASIGNADA"]472
+node [shape = box label = "SIN TAREA ASIGNADA"]473
+node [shape = box label = "SIN TAREA ASIGNADA"]474
+node [shape = box label = "SIN TAREA ASIGNADA"]475
+node [shape = box label = "SIN TAREA ASIGNADA"]476
+node [shape = box label = "SIN TAREA ASIGNADA"]477
+node [shape = box label = "SIN TAREA ASIGNADA"]478
+node [shape = box label = "SIN TAREA ASIGNADA"]479
+node [shape = box label = "SIN TAREA ASIGNADA"]480
+node [shape = box label = "SIN TAREA ASIGNADA"]481
+node [shape = box label = "SIN TAREA ASIGNADA"]482
+node [shape = box label = "SIN TAREA ASIGNADA"]483
+node [shape = box label = "SIN TAREA ASIGNADA"]484
+node [shape = box label = "SIN TAREA ASIGNADA"]485
+node [shape = box label = "SIN TAREA ASIGNADA"]486
+node [shape = box label = "SIN TAREA ASIGNADA"]487
+node [shape = box label = "SIN TAREA ASIGNADA"]488
+node [shape = box label = "Carnet: 201901425\nNombre:Tarea 5 Aplicada 5\nDescription: ...\nMateria: Matemática Intermedia 5\nFecha: 25/8/2021\nHora: 11:00\nEstado: Incumplido"]489
+node [shape = box label = "SIN TAREA ASIGNADA"]490
+node [shape = box label = "SIN TAREA ASIGNADA"]491
+node [shape = box label = "SIN TAREA ASIGNADA"]492
+node [shape = box label = "SIN TAREA ASIGNADA"]493
+node [shape = box label = "SIN TAREA ASIGNADA"]494
+node [shape = box label = "SIN TAREA ASIGNADA"]495
+node [shape = box label = "SIN TAREA ASIGNADA"]496
+node [shape = box label = "SIN TAREA ASIGNADA"]497
+node [shape = box label = "SIN TAREA ASIGNADA"]498
+node [shape = box label = "SIN TAREA ASIGNADA"]499
+node [shape = box label = "SIN TAREA ASIGNADA"]500
+node [shape = box label = "SIN TAREA ASIGNADA"]501
+node [shape = box label = "SIN TAREA ASIGNADA"]502
+node [shape = box label = "SIN TAREA ASIGNADA"]503
+node [shape = box label = "SIN TAREA ASIGNADA"]504
+node [shape = box label = "SIN TAREA ASIGNADA"]505
+node [shape = box label = "SIN TAREA ASIGNADA"]506
+node [shape = box label = "SIN TAREA ASIGNADA"]507
+node [shape = box label = "SIN TAREA ASIGNADA"]508
+node [shape = box label = "SIN TAREA ASIGNADA"]509
+node [shape = box label = "SIN TAREA ASIGNADA"]510
+node [shape = box label = "SIN TAREA ASIGNADA"]511
+node [shape = box label = "SIN TAREA ASIGNADA"]512
+node [shape = box label = "SIN TAREA ASIGNADA"]513
+node [shape = box label = "SIN TAREA ASIGNADA"]514
+node [shape = box label = "SIN TAREA ASIGNADA"]515
+node [shape = box label = "SIN TAREA ASIGNADA"]516
+node [shape = box label = "SIN TAREA ASIGNADA"]517
+node [shape = box label = "SIN TAREA ASIGNADA"]518
+node [shape = box label = "SIN TAREA ASIGNADA"]519
+node [shape = box label = "SIN TAREA ASIGNADA"]520
+node [shape = box label = "SIN TAREA ASIGNADA"]521
+node [shape = box label = "SIN TAREA ASIGNADA"]522
+node [shape = box label = "SIN TAREA ASIGNADA"]523
+node [shape = box label = "SIN TAREA ASIGNADA"]524
+node [shape = box label = "SIN TAREA ASIGNADA"]525
+node [shape = box label = "SIN TAREA ASIGNADA"]526
+node [shape = box label = "SIN TAREA ASIGNADA"]527
+node [shape = box label = "SIN TAREA ASIGNADA"]528
+node [shape = box label = "SIN TAREA ASIGNADA"]529
+node [shape = box label = "SIN TAREA ASIGNADA"]530
+node [shape = box label = "SIN TAREA ASIGNADA"]531
+node [shape = box label = "SIN TAREA ASIGNADA"]532
+node [shape = box label = "SIN TAREA ASIGNADA"]533
+node [shape = box label = "SIN TAREA ASIGNADA"]534
+node [shape = box label = "SIN TAREA ASIGNADA"]535
+node [shape = box label = "SIN TAREA ASIGNADA"]536
+node [shape = box label = "SIN TAREA ASIGNADA"]537
+node [shape = box label = "SIN TAREA ASIGNADA"]538
+node [shape = box label = "SIN TAREA ASIGNADA"]539
+node [shape = box label = "SIN TAREA ASIGNADA"]540
+node [shape = box label = "SIN TAREA ASIGNADA"]541
+node [shape = box label = "SIN TAREA ASIGNADA"]542
+node [shape = box label = "SIN TAREA ASIGNADA"]543
+node [shape = box label = "SIN TAREA ASIGNADA"]544
+node [shape = box label = "SIN TAREA ASIGNADA"]545
+node [shape = box label = "SIN TAREA ASIGNADA"]546
+node [shape = box label = "SIN TAREA ASIGNADA"]547
+node [shape = box label = "SIN TAREA ASIGNADA"]548
+node [shape = box label = "SIN TAREA ASIGNADA"]549
+node [shape = box label = "SIN TAREA ASIGNADA"]550
+node [shape = box label = "SIN TAREA ASIGNADA"]551
+node [shape = box label = "SIN TAREA ASIGNADA"]552
+node [shape = box label = "SIN TAREA ASIGNADA"]553
+node [shape = box label = "SIN TAREA ASIGNADA"]554
+node [shape = box label = "SIN TAREA ASIGNADA"]555
+node [shape = box label = "SIN TAREA ASIGNADA"]556
+node [shape = box label = "SIN TAREA ASIGNADA"]557
+node [shape = box label = "SIN TAREA ASIGNADA"]558
+node [shape = box label = "SIN TAREA ASIGNADA"]559
+node [shape = box label = "SIN TAREA ASIGNADA"]560
+node [shape = box label = "SIN TAREA ASIGNADA"]561
+node [shape = box label = "SIN TAREA ASIGNADA"]562
+node [shape = box label = "SIN TAREA ASIGNADA"]563
+node [shape = box label = "SIN TAREA ASIGNADA"]564
+node [shape = box label = "SIN TAREA ASIGNADA"]565
+node [shape = box label = "SIN TAREA ASIGNADA"]566
+node [shape = box label = "SIN TAREA ASIGNADA"]567
+node [shape = box label = "SIN TAREA ASIGNADA"]568
+node [shape = box label = "SIN TAREA ASIGNADA"]569
+node [shape = box label = "SIN TAREA ASIGNADA"]570
+node [shape = box label = "SIN TAREA ASIGNADA"]571
+node [shape = box label = "SIN TAREA ASIGNADA"]572
+node [shape = box label = "SIN TAREA ASIGNADA"]573
+node [shape = box label = "SIN TAREA ASIGNADA"]574
+node [shape = box label = "SIN TAREA ASIGNADA"]575
+node [shape = box label = "SIN TAREA ASIGNADA"]576
+node [shape = box label = "SIN TAREA ASIGNADA"]577
+node [shape = box label = "SIN TAREA ASIGNADA"]578
+node [shape = box label = "SIN TAREA ASIGNADA"]579
+node [shape = box label = "SIN TAREA ASIGNADA"]580
+node [shape = box label = "SIN TAREA ASIGNADA"]581
+node [shape = box label = "SIN TAREA ASIGNADA"]582
+node [shape = box label = "SIN TAREA ASIGNADA"]583
+node [shape = box label = "SIN TAREA ASIGNADA"]584
+node [shape = box label = "SIN TAREA ASIGNADA"]585
+node [shape = box label = "SIN TAREA ASIGNADA"]586
+node [shape = box label = "SIN TAREA ASIGNADA"]587
+node [shape = box label = "SIN TAREA ASIGNADA"]588
+node [shape = box label = "SIN TAREA ASIGNADA"]589
+node [shape = box label = "SIN TAREA ASIGNADA"]590
+node [shape = box label = "SIN TAREA ASIGNADA"]591
+node [shape = box label = "SIN TAREA ASIGNADA"]592
+node [shape = box label = "SIN TAREA ASIGNADA"]593
+node [shape = box label = "SIN TAREA ASIGNADA"]594
+node [shape = box label = "SIN TAREA ASIGNADA"]595
+node [shape = box label = "SIN TAREA ASIGNADA"]596
+node [shape = box label = "SIN TAREA ASIGNADA"]597
+node [shape = box label = "SIN TAREA ASIGNADA"]598
+node [shape = box label = "SIN TAREA ASIGNADA"]599
+node [shape = box label = "SIN TAREA ASIGNADA"]600
+node [shape = box label = "SIN TAREA ASIGNADA"]601
+node [shape = box label = "SIN TAREA ASIGNADA"]602
+node [shape = box label = "SIN TAREA ASIGNADA"]603
+node [shape = box label = "SIN TAREA ASIGNADA"]604
+node [shape = box label = "SIN TAREA ASIGNADA"]605
+node [shape = box label = "SIN TAREA ASIGNADA"]606
+node [shape = box label = "SIN TAREA ASIGNADA"]607
+node [shape = box label = "SIN TAREA ASIGNADA"]608
+node [shape = box label = "SIN TAREA ASIGNADA"]609
+node [shape = box label = "SIN TAREA ASIGNADA"]610
+node [shape = box label = "SIN TAREA ASIGNADA"]611
+node [shape = box label = "SIN TAREA ASIGNADA"]612
+node [shape = box label = "SIN TAREA ASIGNADA"]613
+node [shape = box label = "SIN TAREA ASIGNADA"]614
+node [shape = box label = "SIN TAREA ASIGNADA"]615
+node [shape = box label = "SIN TAREA ASIGNADA"]616
+node [shape = box label = "SIN TAREA ASIGNADA"]617
+node [shape = box label = "SIN TAREA ASIGNADA"]618
+node [shape = box label = "SIN TAREA ASIGNADA"]619
+node [shape = box label = "SIN TAREA ASIGNADA"]620
+node [shape = box label = "SIN TAREA ASIGNADA"]621
+node [shape = box label = "SIN TAREA ASIGNADA"]622
+node [shape = box label = "SIN TAREA ASIGNADA"]623
+node [shape = box label = "SIN TAREA ASIGNADA"]624
+node [shape = box label = "SIN TAREA ASIGNADA"]625
+node [shape = box label = "SIN TAREA ASIGNADA"]626
+node [shape = box label = "SIN TAREA ASIGNADA"]627
+node [shape = box label = "SIN TAREA ASIGNADA"]628
+node [shape = box label = "SIN TAREA ASIGNADA"]629
+node [shape = box label = "SIN TAREA ASIGNADA"]630
+node [shape = box label = "SIN TAREA ASIGNADA"]631
+node [shape = box label = "SIN TAREA ASIGNADA"]632
+node [shape = box label = "SIN TAREA ASIGNADA"]633
+node [shape = box label = "SIN TAREA ASIGNADA"]634
+node [shape = box label = "SIN TAREA ASIGNADA"]635
+node [shape = box label = "SIN TAREA ASIGNADA"]636
+node [shape = box label = "SIN TAREA ASIGNADA"]637
+node [shape = box label = "SIN TAREA ASIGNADA"]638
+node [shape = box label = "SIN TAREA ASIGNADA"]639
+node [shape = box label = "SIN TAREA ASIGNADA"]640
+node [shape = box label = "SIN TAREA ASIGNADA"]641
+node [shape = box label = "SIN TAREA ASIGNADA"]642
+node [shape = box label = "SIN TAREA ASIGNADA"]643
+node [shape = box label = "SIN TAREA ASIGNADA"]644
+node [shape = box label = "SIN TAREA ASIGNADA"]645
+node [shape = box label = "SIN TAREA ASIGNADA"]646
+node [shape = box label = "SIN TAREA ASIGNADA"]647
+node [shape = box label = "SIN TAREA ASIGNADA"]648
+node [shape = box label = "SIN TAREA ASIGNADA"]649
+node [shape = box label = "SIN TAREA ASIGNADA"]650
+node [shape = box label = "SIN TAREA ASIGNADA"]651
+node [shape = box label = "SIN TAREA ASIGNADA"]652
+node [shape = box label = "SIN TAREA ASIGNADA"]653
+node [shape = box label = "SIN TAREA ASIGNADA"]654
+node [shape = box label = "SIN TAREA ASIGNADA"]655
+node [shape = box label = "SIN TAREA ASIGNADA"]656
+node [shape = box label = "SIN TAREA ASIGNADA"]657
+node [shape = box label = "SIN TAREA ASIGNADA"]658
+node [shape = box label = "SIN TAREA ASIGNADA"]659
+node [shape = box label = "SIN TAREA ASIGNADA"]660
+node [shape = box label = "SIN TAREA ASIGNADA"]661
+node [shape = box label = "SIN TAREA ASIGNADA"]662
+node [shape = box label = "SIN TAREA ASIGNADA"]663
+node [shape = box label = "SIN TAREA ASIGNADA"]664
+node [shape = box label = "SIN TAREA ASIGNADA"]665
+node [shape = box label = "SIN TAREA ASIGNADA"]666
+node [shape = box label = "SIN TAREA ASIGNADA"]667
+node [shape = box label = "SIN TAREA ASIGNADA"]668
+node [shape = box label = "SIN TAREA ASIGNADA"]669
+node [shape = box label = "SIN TAREA ASIGNADA"]670
+node [shape = box label = "SIN TAREA ASIGNADA"]671
+node [shape = box label = "SIN TAREA ASIGNADA"]672
+node [shape = box label = "SIN TAREA ASIGNADA"]673
+node [shape = box label = "SIN TAREA ASIGNADA"]674
+node [shape = box label = "SIN TAREA ASIGNADA"]675
+node [shape = box label = "SIN TAREA ASIGNADA"]676
+node [shape = box label = "SIN TAREA ASIGNADA"]677
+node [shape = box label = "SIN TAREA ASIGNADA"]678
+node [shape = box label = "SIN TAREA ASIGNADA"]679
+node [shape = box label = "SIN TAREA ASIGNADA"]680
+node [shape = box label = "SIN TAREA ASIGNADA"]681
+node [shape = box label = "SIN TAREA ASIGNADA"]682
+node [shape = box label = "SIN TAREA ASIGNADA"]683
+node [shape = box label = "SIN TAREA ASIGNADA"]684
+node [shape = box label = "SIN TAREA ASIGNADA"]685
+node [shape = box label = "SIN TAREA ASIGNADA"]686
+node [shape = box label = "SIN TAREA ASIGNADA"]687
+node [shape = box label = "SIN TAREA ASIGNADA"]688
+node [shape = box label = "SIN TAREA ASIGNADA"]689
+node [shape = box label = "SIN TAREA ASIGNADA"]690
+node [shape = box label = "SIN TAREA ASIGNADA"]691
+node [shape = box label = "SIN TAREA ASIGNADA"]692
+node [shape = box label = "SIN TAREA ASIGNADA"]693
+node [shape = box label = "SIN TAREA ASIGNADA"]694
+node [shape = box label = "SIN TAREA ASIGNADA"]695
+node [shape = box label = "SIN TAREA ASIGNADA"]696
+node [shape = box label = "SIN TAREA ASIGNADA"]697
+node [shape = box label = "SIN TAREA ASIGNADA"]698
+node [shape = box label = "SIN TAREA ASIGNADA"]699
+node [shape = box label = "SIN TAREA ASIGNADA"]700
+node [shape = box label = "SIN TAREA ASIGNADA"]701
+node [shape = box label = "SIN TAREA ASIGNADA"]702
+node [shape = box label = "SIN TAREA ASIGNADA"]703
+node [shape = box label = "SIN TAREA ASIGNADA"]704
+node [shape = box label = "SIN TAREA ASIGNADA"]705
+node [shape = box label = "SIN TAREA ASIGNADA"]706
+node [shape = box label = "SIN TAREA ASIGNADA"]707
+node [shape = box label = "SIN TAREA ASIGNADA"]708
+node [shape = box label = "SIN TAREA ASIGNADA"]709
+node [shape = box label = "SIN TAREA ASIGNADA"]710
+node [shape = box label = "SIN TAREA ASIGNADA"]711
+node [shape = box label = "SIN TAREA ASIGNADA"]712
+node [shape = box label = "SIN TAREA ASIGNADA"]713
+node [shape = box label = "SIN TAREA ASIGNADA"]714
+node [shape = box label = "SIN TAREA ASIGNADA"]715
+node [shape = box label = "SIN TAREA ASIGNADA"]716
+node [shape = box label = "SIN TAREA ASIGNADA"]717
+node [shape = box label = "SIN TAREA ASIGNADA"]718
+node [shape = box label = "SIN TAREA ASIGNADA"]719
+node [shape = box label = "SIN TAREA ASIGNADA"]720
+node [shape = box label = "SIN TAREA ASIGNADA"]721
+node [shape = box label = "SIN TAREA ASIGNADA"]722
+node [shape = box label = "SIN TAREA ASIGNADA"]723
+node [shape = box label = "SIN TAREA ASIGNADA"]724
+node [shape = box label = "SIN TAREA ASIGNADA"]725
+node [shape = box label = "SIN TAREA ASIGNADA"]726
+node [shape = box label = "SIN TAREA ASIGNADA"]727
+node [shape = box label = "SIN TAREA ASIGNADA"]728
+node [shape = box label = "SIN TAREA ASIGNADA"]729
+node [shape = box label = "SIN TAREA ASIGNADA"]730
+node [shape = box label = "SIN TAREA ASIGNADA"]731
+node [shape = box label = "SIN TAREA ASIGNADA"]732
+node [shape = box label = "SIN TAREA ASIGNADA"]733
+node [shape = box label = "SIN TAREA ASIGNADA"]734
+node [shape = box label = "SIN TAREA ASIGNADA"]735
+node [shape = box label = "SIN TAREA ASIGNADA"]736
+node [shape = box label = "SIN TAREA ASIGNADA"]737
+node [shape = box label = "SIN TAREA ASIGNADA"]738
+node [shape = box label = "SIN TAREA ASIGNADA"]739
+node [shape = box label = "SIN TAREA ASIGNADA"]740
+node [shape = box label = "SIN TAREA ASIGNADA"]741
+node [shape = box label = "SIN TAREA ASIGNADA"]742
+node [shape = box label = "SIN TAREA ASIGNADA"]743
+node [shape = box label = "SIN TAREA ASIGNADA"]744
+node [shape = box label = "SIN TAREA ASIGNADA"]745
+node [shape = box label = "SIN TAREA ASIGNADA"]746
+node [shape = box label = "SIN TAREA ASIGNADA"]747
+node [shape = box label = "SIN TAREA ASIGNADA"]748
+node [shape = box label = "SIN TAREA ASIGNADA"]749
+node [shape = box label = "SIN TAREA ASIGNADA"]750
+node [shape = box label = "SIN TAREA ASIGNADA"]751
+node [shape = box label = "SIN TAREA ASIGNADA"]752
+node [shape = box label = "Carnet: 200415366\nNombre:Tarea 1 de Compiladores\nDescription: ...\nMateria: Compiladores 1\nFecha: 24/9/2021\nHora: 14:00\nEstado: Pendiente"]753
+node [shape = box label = "SIN TAREA ASIGNADA"]754
+node [shape = box label = "SIN TAREA ASIGNADA"]755
+node [shape = box label = "SIN TAREA ASIGNADA"]756
+node [shape = box label = "SIN TAREA ASIGNADA"]757
+node [shape = box label = "SIN TAREA ASIGNADA"]758
+node [shape = box label = "SIN TAREA ASIGNADA"]759
+node [shape = box label = "SIN TAREA ASIGNADA"]760
+node [shape = box label = "SIN TAREA ASIGNADA"]761
+node [shape = box label = "SIN TAREA ASIGNADA"]762
+node [shape = box label = "SIN TAREA ASIGNADA"]763
+node [shape = box label = "SIN TAREA ASIGNADA"]764
+node [shape = box label = "SIN TAREA ASIGNADA"]765
+node [shape = box label = "SIN TAREA ASIGNADA"]766
+node [shape = box label = "SIN TAREA ASIGNADA"]767
+node [shape = box label = "SIN TAREA ASIGNADA"]768
+node [shape = box label = "SIN TAREA ASIGNADA"]769
+node [shape = box label = "SIN TAREA ASIGNADA"]770
+node [shape = box label = "SIN TAREA ASIGNADA"]771
+node [shape = box label = "SIN TAREA ASIGNADA"]772
+node [shape = box label = "SIN TAREA ASIGNADA"]773
+node [shape = box label = "SIN TAREA ASIGNADA"]774
+node [shape = box label = "SIN TAREA ASIGNADA"]775
+node [shape = box label = "SIN TAREA ASIGNADA"]776
+node [shape = box label = "SIN TAREA ASIGNADA"]777
+node [shape = box label = "SIN TAREA ASIGNADA"]778
+node [shape = box label = "SIN TAREA ASIGNADA"]779
+node [shape = box label = "SIN TAREA ASIGNADA"]780
+node [shape = box label = "SIN TAREA ASIGNADA"]781
+node [shape = box label = "SIN TAREA ASIGNADA"]782
+node [shape = box label = "SIN TAREA ASIGNADA"]783
+node [shape = box label = "SIN TAREA ASIGNADA"]784
+node [shape = box label = "SIN TAREA ASIGNADA"]785
+node [shape = box label = "SIN TAREA ASIGNADA"]786
+node [shape = box label = "SIN TAREA ASIGNADA"]787
+node [shape = box label = "SIN TAREA ASIGNADA"]788
+node [shape = box label = "SIN TAREA ASIGNADA"]789
+node [shape = box label = "SIN TAREA ASIGNADA"]790
+node [shape = box label = "SIN TAREA ASIGNADA"]791
+node [shape = box label = "SIN TAREA ASIGNADA"]792
+node [shape = box label = "SIN TAREA ASIGNADA"]793
+node [shape = box label = "SIN TAREA ASIGNADA"]794
+node [shape = box label = "SIN TAREA ASIGNADA"]795
+node [shape = box label = "SIN TAREA ASIGNADA"]796
+node [shape = box label = "SIN TAREA ASIGNADA"]797
+node [shape = box label = "SIN TAREA ASIGNADA"]798
+node [shape = box label = "SIN TAREA ASIGNADA"]799
+node [shape = box label = "SIN TAREA ASIGNADA"]800
+node [shape = box label = "SIN TAREA ASIGNADA"]801
+node [shape = box label = "SIN TAREA ASIGNADA"]802
+node [shape = box label = "SIN TAREA ASIGNADA"]803
+node [shape = box label = "SIN TAREA ASIGNADA"]804
+node [shape = box label = "SIN TAREA ASIGNADA"]805
+node [shape = box label = "SIN TAREA ASIGNADA"]806
+node [shape = box label = "SIN TAREA ASIGNADA"]807
+node [shape = box label = "SIN TAREA ASIGNADA"]808
+node [shape = box label = "SIN TAREA ASIGNADA"]809
+node [shape = box label = "SIN TAREA ASIGNADA"]810
+node [shape = box label = "SIN TAREA ASIGNADA"]811
+node [shape = box label = "SIN TAREA ASIGNADA"]812
+node [shape = box label = "SIN TAREA ASIGNADA"]813
+node [shape = box label = "SIN TAREA ASIGNADA"]814
+node [shape = box label = "SIN TAREA ASIGNADA"]815
+node [shape = box label = "SIN TAREA ASIGNADA"]816
+node [shape = box label = "SIN TAREA ASIGNADA"]817
+node [shape = box label = "SIN TAREA ASIGNADA"]818
+node [shape = box label = "SIN TAREA ASIGNADA"]819
+node [shape = box label = "SIN TAREA ASIGNADA"]820
+node [shape = box label = "SIN TAREA ASIGNADA"]821
+node [shape = box label = "SIN TAREA ASIGNADA"]822
+node [shape = box label = "SIN TAREA ASIGNADA"]823
+node [shape = box label = "SIN TAREA ASIGNADA"]824
+node [shape = box label = "SIN TAREA ASIGNADA"]825
+node [shape = box label = "SIN TAREA ASIGNADA"]826
+node [shape = box label = "SIN TAREA ASIGNADA"]827
+node [shape = box label = "SIN TAREA ASIGNADA"]828
+node [shape = box label = "SIN TAREA ASIGNADA"]829
+node [shape = box label = "SIN TAREA ASIGNADA"]830
+node [shape = box label = "SIN TAREA ASIGNADA"]831
+node [shape = box label = "SIN TAREA ASIGNADA"]832
+node [shape = box label = "SIN TAREA ASIGNADA"]833
+node [shape = box label = "SIN TAREA ASIGNADA"]834
+node [shape = box label = "SIN TAREA ASIGNADA"]835
+node [shape = box label = "SIN TAREA ASIGNADA"]836
+node [shape = box label = "SIN TAREA ASIGNADA"]837
 node [shape = box label = "Carnet: 201901425\nNombre:Tarea de Lógica\nDescription: ...\nMateria: Lógica\nFecha: 4/10/2021\nHora: 9:00\nEstado: Pendiente"]838
-node [shape = box label = "SIN TAREA ASIGNADA "]839
+node [shape = box label = "SIN TAREA ASIGNADA"]839
 node [shape = box label = "Carnet: 201704186\nNombre:Tarea 2 de Física 3\nDescription: ...\nMateria: FÍsica 3\nFecha: 4/10/2021\nHora: 11:00\nEstado: Pendiente"]840
-node [shape = box label = "SIN TAREA ASIGNADA "]841
-node [shape = box label = "SIN TAREA ASIGNADA "]842
-node [shape = box label = "SIN TAREA ASIGNADA "]843
-node [shape = box label = "SIN TAREA ASIGNADA "]844
-node [shape = box label = "SIN TAREA ASIGNADA "]845
-node [shape = box label = "SIN TAREA ASIGNADA "]846
-node [shape = box label = "SIN TAREA ASIGNADA "]847
-node [shape = box label = "SIN TAREA ASIGNADA "]848
-node [shape = box label = "SIN TAREA ASIGNADA "]849
-node [shape = box label = "SIN TAREA ASIGNADA "]850
-node [shape = box label = "SIN TAREA ASIGNADA "]851
-node [shape = box label = "SIN TAREA ASIGNADA "]852
-node [shape = box label = "SIN TAREA ASIGNADA "]853
-node [shape = box label = "SIN TAREA ASIGNADA "]854
-node [shape = box label = "SIN TAREA ASIGNADA "]855
-node [shape = box label = "SIN TAREA ASIGNADA "]856
-node [shape = box label = "SIN TAREA ASIGNADA "]857
-node [shape = box label = "SIN TAREA ASIGNADA "]858
-node [shape = box label = "SIN TAREA ASIGNADA "]859
-node [shape = box label = "SIN TAREA ASIGNADA "]860
-node [shape = box label = "SIN TAREA ASIGNADA "]861
-node [shape = box label = "SIN TAREA ASIGNADA "]862
-node [shape = box label = "SIN TAREA ASIGNADA "]863
-node [shape = box label = "SIN TAREA ASIGNADA "]864
-node [shape = box label = "SIN TAREA ASIGNADA "]865
-node [shape = box label = "SIN TAREA ASIGNADA "]866
-node [shape = box label = "SIN TAREA ASIGNADA "]867
-node [shape = box label = "SIN TAREA ASIGNADA "]868
-node [shape = box label = "SIN TAREA ASIGNADA "]869
-node [shape = box label = "SIN TAREA ASIGNADA "]870
-node [shape = box label = "SIN TAREA ASIGNADA "]871
-node [shape = box label = "SIN TAREA ASIGNADA "]872
-node [shape = box label = "SIN TAREA ASIGNADA "]873
-node [shape = box label = "SIN TAREA ASIGNADA "]874
-node [shape = box label = "SIN TAREA ASIGNADA "]875
-node [shape = box label = "SIN TAREA ASIGNADA "]876
-node [shape = box label = "SIN TAREA ASIGNADA "]877
-node [shape = box label = "SIN TAREA ASIGNADA "]878
-node [shape = box label = "SIN TAREA ASIGNADA "]879
-node [shape = box label = "SIN TAREA ASIGNADA "]880
-node [shape = box label = "SIN TAREA ASIGNADA "]881
-node [shape = box label = "SIN TAREA ASIGNADA "]882
-node [shape = box label = "SIN TAREA ASIGNADA "]883
-node [shape = box label = "SIN TAREA ASIGNADA "]884
-node [shape = box label = "SIN TAREA ASIGNADA "]885
-node [shape = box label = "SIN TAREA ASIGNADA "]886
-node [shape = box label = "SIN TAREA ASIGNADA "]887
-node [shape = box label = "SIN TAREA ASIGNADA "]888
-node [shape = box label = "SIN TAREA ASIGNADA "]889
-node [shape = box label = "SIN TAREA ASIGNADA "]890
-node [shape = box label = "SIN TAREA ASIGNADA "]891
-node [shape = box label = "SIN TAREA ASIGNADA "]892
-node [shape = box label = "SIN TAREA ASIGNADA "]893
-node [shape = box label = "SIN TAREA ASIGNADA "]894
-node [shape = box label = "SIN TAREA ASIGNADA "]895
-node [shape = box label = "SIN TAREA ASIGNADA "]896
-node [shape = box label = "SIN TAREA ASIGNADA "]897
-node [shape = box label = "SIN TAREA ASIGNADA "]898
-node [shape = box label = "SIN TAREA ASIGNADA "]899
-node [shape = box label = "SIN TAREA ASIGNADA "]900
-node [shape = box label = "SIN TAREA ASIGNADA "]901
-node [shape = box label = "SIN TAREA ASIGNADA "]902
-node [shape = box label = "SIN TAREA ASIGNADA "]903
-node [shape = box label = "SIN TAREA ASIGNADA "]904
-node [shape = box label = "SIN TAREA ASIGNADA "]905
-node [shape = box label = "SIN TAREA ASIGNADA "]906
-node [shape = box label = "SIN TAREA ASIGNADA "]907
-node [shape = box label = "SIN TAREA ASIGNADA "]908
-node [shape = box label = "SIN TAREA ASIGNADA "]909
-node [shape = box label = "SIN TAREA ASIGNADA "]910
-node [shape = box label = "SIN TAREA ASIGNADA "]911
-node [shape = box label = "SIN TAREA ASIGNADA "]912
-node [shape = box label = "SIN TAREA ASIGNADA "]913
-node [shape = box label = "SIN TAREA ASIGNADA "]914
-node [shape = box label = "SIN TAREA ASIGNADA "]915
-node [shape = box label = "SIN TAREA ASIGNADA "]916
-node [shape = box label = "SIN TAREA ASIGNADA "]917
-node [shape = box label = "SIN TAREA ASIGNADA "]918
-node [shape = box label = "SIN TAREA ASIGNADA "]919
-node [shape = box label = "SIN TAREA ASIGNADA "]920
-node [shape = box label = "SIN TAREA ASIGNADA "]921
-node [shape = box label = "SIN TAREA ASIGNADA "]922
-node [shape = box label = "SIN TAREA ASIGNADA "]923
-node [shape = box label = "SIN TAREA ASIGNADA "]924
-node [shape = box label = "SIN TAREA ASIGNADA "]925
-node [shape = box label = "SIN TAREA ASIGNADA "]926
-node [shape = box label = "SIN TAREA ASIGNADA "]927
-node [shape = box label = "SIN TAREA ASIGNADA "]928
-node [shape = box label = "SIN TAREA ASIGNADA "]929
-node [shape = box label = "SIN TAREA ASIGNADA "]930
-node [shape = box label = "SIN TAREA ASIGNADA "]931
-node [shape = box label = "SIN TAREA ASIGNADA "]932
-node [shape = box label = "SIN TAREA ASIGNADA "]933
-node [shape = box label = "SIN TAREA ASIGNADA "]934
-node [shape = box label = "SIN TAREA ASIGNADA "]935
-node [shape = box label = "SIN TAREA ASIGNADA "]936
-node [shape = box label = "SIN TAREA ASIGNADA "]937
-node [shape = box label = "SIN TAREA ASIGNADA "]938
-node [shape = box label = "SIN TAREA ASIGNADA "]939
-node [shape = box label = "SIN TAREA ASIGNADA "]940
-node [shape = box label = "SIN TAREA ASIGNADA "]941
-node [shape = box label = "SIN TAREA ASIGNADA "]942
-node [shape = box label = "SIN TAREA ASIGNADA "]943
-node [shape = box label = "SIN TAREA ASIGNADA "]944
-node [shape = box label = "SIN TAREA ASIGNADA "]945
-node [shape = box label = "SIN TAREA ASIGNADA "]946
-node [shape = box label = "SIN TAREA ASIGNADA "]947
-node [shape = box label = "SIN TAREA ASIGNADA "]948
-node [shape = box label = "SIN TAREA ASIGNADA "]949
-node [shape = box label = "SIN TAREA ASIGNADA "]950
-node [shape = box label = "SIN TAREA ASIGNADA "]951
-node [shape = box label = "SIN TAREA ASIGNADA "]952
-node [shape = box label = "SIN TAREA ASIGNADA "]953
-node [shape = box label = "SIN TAREA ASIGNADA "]954
-node [shape = box label = "SIN TAREA ASIGNADA "]955
-node [shape = box label = "SIN TAREA ASIGNADA "]956
-node [shape = box label = "SIN TAREA ASIGNADA "]957
-node [shape = box label = "SIN TAREA ASIGNADA "]958
-node [shape = box label = "SIN TAREA ASIGNADA "]959
-node [shape = box label = "SIN TAREA ASIGNADA "]960
-node [shape = box label = "SIN TAREA ASIGNADA "]961
-node [shape = box label = "SIN TAREA ASIGNADA "]962
-node [shape = box label = "SIN TAREA ASIGNADA "]963
-node [shape = box label = "SIN TAREA ASIGNADA "]964
-node [shape = box label = "SIN TAREA ASIGNADA "]965
-node [shape = box label = "SIN TAREA ASIGNADA "]966
-node [shape = box label = "SIN TAREA ASIGNADA "]967
-node [shape = box label = "SIN TAREA ASIGNADA "]968
-node [shape = box label = "SIN TAREA ASIGNADA "]969
-node [shape = box label = "SIN TAREA ASIGNADA "]970
-node [shape = box label = "SIN TAREA ASIGNADA "]971
-node [shape = box label = "SIN TAREA ASIGNADA "]972
-node [shape = box label = "SIN TAREA ASIGNADA "]973
-node [shape = box label = "SIN TAREA ASIGNADA "]974
-node [shape = box label = "SIN TAREA ASIGNADA "]975
-node [shape = box label = "SIN TAREA ASIGNADA "]976
-node [shape = box label = "SIN TAREA ASIGNADA "]977
-node [shape = box label = "SIN TAREA ASIGNADA "]978
-node [shape = box label = "SIN TAREA ASIGNADA "]979
-node [shape = box label = "SIN TAREA ASIGNADA "]980
-node [shape = box label = "SIN TAREA ASIGNADA "]981
-node [shape = box label = "SIN TAREA ASIGNADA "]982
-node [shape = box label = "SIN TAREA ASIGNADA "]983
-node [shape = box label = "SIN TAREA ASIGNADA "]984
-node [shape = box label = "SIN TAREA ASIGNADA "]985
-node [shape = box label = "SIN TAREA ASIGNADA "]986
-node [shape = box label = "SIN TAREA ASIGNADA "]987
-node [shape = box label = "SIN TAREA ASIGNADA "]988
-node [shape = box label = "SIN TAREA ASIGNADA "]989
-node [shape = box label = "SIN TAREA ASIGNADA "]990
-node [shape = box label = "SIN TAREA ASIGNADA "]991
-node [shape = box label = "SIN TAREA ASIGNADA "]992
-node [shape = box label = "SIN TAREA ASIGNADA "]993
-node [shape = box label = "SIN TAREA ASIGNADA "]994
+node [shape = box label = "SIN TAREA ASIGNADA"]841
+node [shape = box label = "SIN TAREA ASIGNADA"]842
+node [shape = box label = "SIN TAREA ASIGNADA"]843
+node [shape = box label = "SIN TAREA ASIGNADA"]844
+node [shape = box label = "SIN TAREA ASIGNADA"]845
+node [shape = box label = "SIN TAREA ASIGNADA"]846
+node [shape = box label = "SIN TAREA ASIGNADA"]847
+node [shape = box label = "SIN TAREA ASIGNADA"]848
+node [shape = box label = "SIN TAREA ASIGNADA"]849
+node [shape = box label = "SIN TAREA ASIGNADA"]850
+node [shape = box label = "SIN TAREA ASIGNADA"]851
+node [shape = box label = "SIN TAREA ASIGNADA"]852
+node [shape = box label = "SIN TAREA ASIGNADA"]853
+node [shape = box label = "SIN TAREA ASIGNADA"]854
+node [shape = box label = "SIN TAREA ASIGNADA"]855
+node [shape = box label = "SIN TAREA ASIGNADA"]856
+node [shape = box label = "SIN TAREA ASIGNADA"]857
+node [shape = box label = "SIN TAREA ASIGNADA"]858
+node [shape = box label = "SIN TAREA ASIGNADA"]859
+node [shape = box label = "SIN TAREA ASIGNADA"]860
+node [shape = box label = "SIN TAREA ASIGNADA"]861
+node [shape = box label = "SIN TAREA ASIGNADA"]862
+node [shape = box label = "SIN TAREA ASIGNADA"]863
+node [shape = box label = "SIN TAREA ASIGNADA"]864
+node [shape = box label = "SIN TAREA ASIGNADA"]865
+node [shape = box label = "SIN TAREA ASIGNADA"]866
+node [shape = box label = "SIN TAREA ASIGNADA"]867
+node [shape = box label = "SIN TAREA ASIGNADA"]868
+node [shape = box label = "SIN TAREA ASIGNADA"]869
+node [shape = box label = "SIN TAREA ASIGNADA"]870
+node [shape = box label = "SIN TAREA ASIGNADA"]871
+node [shape = box label = "SIN TAREA ASIGNADA"]872
+node [shape = box label = "SIN TAREA ASIGNADA"]873
+node [shape = box label = "SIN TAREA ASIGNADA"]874
+node [shape = box label = "SIN TAREA ASIGNADA"]875
+node [shape = box label = "SIN TAREA ASIGNADA"]876
+node [shape = box label = "SIN TAREA ASIGNADA"]877
+node [shape = box label = "SIN TAREA ASIGNADA"]878
+node [shape = box label = "SIN TAREA ASIGNADA"]879
+node [shape = box label = "SIN TAREA ASIGNADA"]880
+node [shape = box label = "SIN TAREA ASIGNADA"]881
+node [shape = box label = "SIN TAREA ASIGNADA"]882
+node [shape = box label = "SIN TAREA ASIGNADA"]883
+node [shape = box label = "SIN TAREA ASIGNADA"]884
+node [shape = box label = "SIN TAREA ASIGNADA"]885
+node [shape = box label = "SIN TAREA ASIGNADA"]886
+node [shape = box label = "SIN TAREA ASIGNADA"]887
+node [shape = box label = "SIN TAREA ASIGNADA"]888
+node [shape = box label = "SIN TAREA ASIGNADA"]889
+node [shape = box label = "SIN TAREA ASIGNADA"]890
+node [shape = box label = "SIN TAREA ASIGNADA"]891
+node [shape = box label = "SIN TAREA ASIGNADA"]892
+node [shape = box label = "SIN TAREA ASIGNADA"]893
+node [shape = box label = "SIN TAREA ASIGNADA"]894
+node [shape = box label = "SIN TAREA ASIGNADA"]895
+node [shape = box label = "SIN TAREA ASIGNADA"]896
+node [shape = box label = "SIN TAREA ASIGNADA"]897
+node [shape = box label = "SIN TAREA ASIGNADA"]898
+node [shape = box label = "SIN TAREA ASIGNADA"]899
+node [shape = box label = "SIN TAREA ASIGNADA"]900
+node [shape = box label = "SIN TAREA ASIGNADA"]901
+node [shape = box label = "SIN TAREA ASIGNADA"]902
+node [shape = box label = "SIN TAREA ASIGNADA"]903
+node [shape = box label = "SIN TAREA ASIGNADA"]904
+node [shape = box label = "SIN TAREA ASIGNADA"]905
+node [shape = box label = "SIN TAREA ASIGNADA"]906
+node [shape = box label = "SIN TAREA ASIGNADA"]907
+node [shape = box label = "SIN TAREA ASIGNADA"]908
+node [shape = box label = "SIN TAREA ASIGNADA"]909
+node [shape = box label = "SIN TAREA ASIGNADA"]910
+node [shape = box label = "SIN TAREA ASIGNADA"]911
+node [shape = box label = "SIN TAREA ASIGNADA"]912
+node [shape = box label = "SIN TAREA ASIGNADA"]913
+node [shape = box label = "SIN TAREA ASIGNADA"]914
+node [shape = box label = "SIN TAREA ASIGNADA"]915
+node [shape = box label = "SIN TAREA ASIGNADA"]916
+node [shape = box label = "SIN TAREA ASIGNADA"]917
+node [shape = box label = "SIN TAREA ASIGNADA"]918
+node [shape = box label = "SIN TAREA ASIGNADA"]919
+node [shape = box label = "SIN TAREA ASIGNADA"]920
+node [shape = box label = "SIN TAREA ASIGNADA"]921
+node [shape = box label = "SIN TAREA ASIGNADA"]922
+node [shape = box label = "SIN TAREA ASIGNADA"]923
+node [shape = box label = "SIN TAREA ASIGNADA"]924
+node [shape = box label = "SIN TAREA ASIGNADA"]925
+node [shape = box label = "SIN TAREA ASIGNADA"]926
+node [shape = box label = "SIN TAREA ASIGNADA"]927
+node [shape = box label = "SIN TAREA ASIGNADA"]928
+node [shape = box label = "SIN TAREA ASIGNADA"]929
+node [shape = box label = "SIN TAREA ASIGNADA"]930
+node [shape = box label = "SIN TAREA ASIGNADA"]931
+node [shape = box label = "SIN TAREA ASIGNADA"]932
+node [shape = box label = "SIN TAREA ASIGNADA"]933
+node [shape = box label = "SIN TAREA ASIGNADA"]934
+node [shape = box label = "SIN TAREA ASIGNADA"]935
+node [shape = box label = "SIN TAREA ASIGNADA"]936
+node [shape = box label = "SIN TAREA ASIGNADA"]937
+node [shape = box label = "SIN TAREA ASIGNADA"]938
+node [shape = box label = "SIN TAREA ASIGNADA"]939
+node [shape = box label = "SIN TAREA ASIGNADA"]940
+node [shape = box label = "SIN TAREA ASIGNADA"]941
+node [shape = box label = "SIN TAREA ASIGNADA"]942
+node [shape = box label = "SIN TAREA ASIGNADA"]943
+node [shape = box label = "SIN TAREA ASIGNADA"]944
+node [shape = box label = "SIN TAREA ASIGNADA"]945
+node [shape = box label = "SIN TAREA ASIGNADA"]946
+node [shape = box label = "SIN TAREA ASIGNADA"]947
+node [shape = box label = "SIN TAREA ASIGNADA"]948
+node [shape = box label = "SIN TAREA ASIGNADA"]949
+node [shape = box label = "SIN TAREA ASIGNADA"]950
+node [shape = box label = "SIN TAREA ASIGNADA"]951
+node [shape = box label = "SIN TAREA ASIGNADA"]952
+node [shape = box label = "SIN TAREA ASIGNADA"]953
+node [shape = box label = "SIN TAREA ASIGNADA"]954
+node [shape = box label = "SIN TAREA ASIGNADA"]955
+node [shape = box label = "SIN TAREA ASIGNADA"]956
+node [shape = box label = "SIN TAREA ASIGNADA"]957
+node [shape = box label = "SIN TAREA ASIGNADA"]958
+node [shape = box label = "SIN TAREA ASIGNADA"]959
+node [shape = box label = "SIN TAREA ASIGNADA"]960
+node [shape = box label = "SIN TAREA ASIGNADA"]961
+node [shape = box label = "SIN TAREA ASIGNADA"]962
+node [shape = box label = "SIN TAREA ASIGNADA"]963
+node [shape = box label = "SIN TAREA ASIGNADA"]964
+node [shape = box label = "SIN TAREA ASIGNADA"]965
+node [shape = box label = "SIN TAREA ASIGNADA"]966
+node [shape = box label = "SIN TAREA ASIGNADA"]967
+node [shape = box label = "SIN TAREA ASIGNADA"]968
+node [shape = box label = "SIN TAREA ASIGNADA"]969
+node [shape = box label = "SIN TAREA ASIGNADA"]970
+node [shape = box label = "SIN TAREA ASIGNADA"]971
+node [shape = box label = "SIN TAREA ASIGNADA"]972
+node [shape = box label = "SIN TAREA ASIGNADA"]973
+node [shape = box label = "SIN TAREA ASIGNADA"]974
+node [shape = box label = "SIN TAREA ASIGNADA"]975
+node [shape = box label = "SIN TAREA ASIGNADA"]976
+node [shape = box label = "SIN TAREA ASIGNADA"]977
+node [shape = box label = "SIN TAREA ASIGNADA"]978
+node [shape = box label = "SIN TAREA ASIGNADA"]979
+node [shape = box label = "SIN TAREA ASIGNADA"]980
+node [shape = box label = "SIN TAREA ASIGNADA"]981
+node [shape = box label = "SIN TAREA ASIGNADA"]982
+node [shape = box label = "SIN TAREA ASIGNADA"]983
+node [shape = box label = "SIN TAREA ASIGNADA"]984
+node [shape = box label = "SIN TAREA ASIGNADA"]985
+node [shape = box label = "SIN TAREA ASIGNADA"]986
+node [shape = box label = "SIN TAREA ASIGNADA"]987
+node [shape = box label = "SIN TAREA ASIGNADA"]988
+node [shape = box label = "SIN TAREA ASIGNADA"]989
+node [shape = box label = "Carnet: 201501786\nNombre:Encuesta de Estadística\nDescription: ...\nMateria: Estadística 1\nFecha: 21/10/2021\nHora: 8:00\nEstado: Pendiente"]990
+node [shape = box label = "SIN TAREA ASIGNADA"]991
+node [shape = box label = "SIN TAREA ASIGNADA"]992
+node [shape = box label = "SIN TAREA ASIGNADA"]993
+node [shape = box label = "SIN TAREA ASIGNADA"]994
 node [shape = box label = "Carnet: 201700886\nNombre:Proyecto de Lenguajes\nDescription: ...\nMateria: Lenguajes Formales y de Programación\nFecha: 21/10/2021\nHora: 13:00\nEstado: Pendiente"]995
-node [shape = box label = "SIN TAREA ASIGNADA "]996
-node [shape = box label = "SIN TAREA ASIGNADA "]997
-node [shape = box label = "SIN TAREA ASIGNADA "]998
-node [shape = box label = "SIN TAREA ASIGNADA "]999
-node [shape = box label = "SIN TAREA ASIGNADA "]1000
-node [shape = box label = "SIN TAREA ASIGNADA "]1001
-node [shape = box label = "SIN TAREA ASIGNADA "]1002
-node [shape = box label = "SIN TAREA ASIGNADA "]1003
-node [shape = box label = "SIN TAREA ASIGNADA "]1004
-node [shape = box label = "SIN TAREA ASIGNADA "]1005
-node [shape = box label = "SIN TAREA ASIGNADA "]1006
-node [shape = box label = "SIN TAREA ASIGNADA "]1007
-node [shape = box label = "SIN TAREA ASIGNADA "]1008
-node [shape = box label = "SIN TAREA ASIGNADA "]1009
-node [shape = box label = "SIN TAREA ASIGNADA "]1010
-node [shape = box label = "SIN TAREA ASIGNADA "]1011
-node [shape = box label = "SIN TAREA ASIGNADA "]1012
-node [shape = box label = "SIN TAREA ASIGNADA "]1013
-node [shape = box label = "SIN TAREA ASIGNADA "]1014
-node [shape = box label = "SIN TAREA ASIGNADA "]1015
-node [shape = box label = "SIN TAREA ASIGNADA "]1016
-node [shape = box label = "SIN TAREA ASIGNADA "]1017
-node [shape = box label = "SIN TAREA ASIGNADA "]1018
-node [shape = box label = "SIN TAREA ASIGNADA "]1019
-node [shape = box label = "SIN TAREA ASIGNADA "]1020
-node [shape = box label = "SIN TAREA ASIGNADA "]1021
-node [shape = box label = "SIN TAREA ASIGNADA "]1022
-node [shape = box label = "SIN TAREA ASIGNADA "]1023
-node [shape = box label = "SIN TAREA ASIGNADA "]1024
-node [shape = box label = "SIN TAREA ASIGNADA "]1025
-node [shape = box label = "SIN TAREA ASIGNADA "]1026
-node [shape = box label = "SIN TAREA ASIGNADA "]1027
-node [shape = box label = "SIN TAREA ASIGNADA "]1028
-node [shape = box label = "SIN TAREA ASIGNADA "]1029
-node [shape = box label = "SIN TAREA ASIGNADA "]1030
-node [shape = box label = "SIN TAREA ASIGNADA "]1031
-node [shape = box label = "SIN TAREA ASIGNADA "]1032
-node [shape = box label = "SIN TAREA ASIGNADA "]1033
-node [shape = box label = "SIN TAREA ASIGNADA "]1034
-node [shape = box label = "SIN TAREA ASIGNADA "]1035
-node [shape = box label = "SIN TAREA ASIGNADA "]1036
-node [shape = box label = "SIN TAREA ASIGNADA "]1037
-node [shape = box label = "SIN TAREA ASIGNADA "]1038
-node [shape = box label = "SIN TAREA ASIGNADA "]1039
-node [shape = box label = "SIN TAREA ASIGNADA "]1040
-node [shape = box label = "SIN TAREA ASIGNADA "]1041
-node [shape = box label = "SIN TAREA ASIGNADA "]1042
-node [shape = box label = "SIN TAREA ASIGNADA "]1043
-node [shape = box label = "SIN TAREA ASIGNADA "]1044
-node [shape = box label = "SIN TAREA ASIGNADA "]1045
-node [shape = box label = "SIN TAREA ASIGNADA "]1046
-node [shape = box label = "SIN TAREA ASIGNADA "]1047
-node [shape = box label = "SIN TAREA ASIGNADA "]1048
-node [shape = box label = "SIN TAREA ASIGNADA "]1049
-node [shape = box label = "SIN TAREA ASIGNADA "]1050
-node [shape = box label = "SIN TAREA ASIGNADA "]1051
-node [shape = box label = "SIN TAREA ASIGNADA "]1052
-node [shape = box label = "SIN TAREA ASIGNADA "]1053
-node [shape = box label = "SIN TAREA ASIGNADA "]1054
-node [shape = box label = "SIN TAREA ASIGNADA "]1055
-node [shape = box label = "SIN TAREA ASIGNADA "]1056
-node [shape = box label = "SIN TAREA ASIGNADA "]1057
-node [shape = box label = "SIN TAREA ASIGNADA "]1058
-node [shape = box label = "SIN TAREA ASIGNADA "]1059
-node [shape = box label = "SIN TAREA ASIGNADA "]1060
-node [shape = box label = "SIN TAREA ASIGNADA "]1061
-node [shape = box label = "SIN TAREA ASIGNADA "]1062
-node [shape = box label = "SIN TAREA ASIGNADA "]1063
-node [shape = box label = "SIN TAREA ASIGNADA "]1064
-node [shape = box label = "SIN TAREA ASIGNADA "]1065
-node [shape = box label = "SIN TAREA ASIGNADA "]1066
-node [shape = box label = "SIN TAREA ASIGNADA "]1067
-node [shape = box label = "SIN TAREA ASIGNADA "]1068
-node [shape = box label = "SIN TAREA ASIGNADA "]1069
-node [shape = box label = "SIN TAREA ASIGNADA "]1070
-node [shape = box label = "SIN TAREA ASIGNADA "]1071
-node [shape = box label = "SIN TAREA ASIGNADA "]1072
-node [shape = box label = "SIN TAREA ASIGNADA "]1073
-node [shape = box label = "SIN TAREA ASIGNADA "]1074
-node [shape = box label = "SIN TAREA ASIGNADA "]1075
-node [shape = box label = "SIN TAREA ASIGNADA "]1076
-node [shape = box label = "SIN TAREA ASIGNADA "]1077
-node [shape = box label = "SIN TAREA ASIGNADA "]1078
-node [shape = box label = "SIN TAREA ASIGNADA "]1079
-node [shape = box label = "SIN TAREA ASIGNADA "]1080
-node [shape = box label = "SIN TAREA ASIGNADA "]1081
-node [shape = box label = "SIN TAREA ASIGNADA "]1082
-node [shape = box label = "SIN TAREA ASIGNADA "]1083
-node [shape = box label = "SIN TAREA ASIGNADA "]1084
-node [shape = box label = "SIN TAREA ASIGNADA "]1085
-node [shape = box label = "SIN TAREA ASIGNADA "]1086
-node [shape = box label = "SIN TAREA ASIGNADA "]1087
-node [shape = box label = "SIN TAREA ASIGNADA "]1088
-node [shape = box label = "SIN TAREA ASIGNADA "]1089
-node [shape = box label = "SIN TAREA ASIGNADA "]1090
-node [shape = box label = "SIN TAREA ASIGNADA "]1091
-node [shape = box label = "SIN TAREA ASIGNADA "]1092
-node [shape = box label = "SIN TAREA ASIGNADA "]1093
-node [shape = box label = "SIN TAREA ASIGNADA "]1094
-node [shape = box label = "SIN TAREA ASIGNADA "]1095
-node [shape = box label = "SIN TAREA ASIGNADA "]1096
-node [shape = box label = "SIN TAREA ASIGNADA "]1097
-node [shape = box label = "SIN TAREA ASIGNADA "]1098
-node [shape = box label = "SIN TAREA ASIGNADA "]1099
-node [shape = box label = "SIN TAREA ASIGNADA "]1100
-node [shape = box label = "SIN TAREA ASIGNADA "]1101
-node [shape = box label = "SIN TAREA ASIGNADA "]1102
-node [shape = box label = "SIN TAREA ASIGNADA "]1103
-node [shape = box label = "SIN TAREA ASIGNADA "]1104
-node [shape = box label = "SIN TAREA ASIGNADA "]1105
-node [shape = box label = "SIN TAREA ASIGNADA "]1106
-node [shape = box label = "SIN TAREA ASIGNADA "]1107
-node [shape = box label = "SIN TAREA ASIGNADA "]1108
-node [shape = box label = "SIN TAREA ASIGNADA "]1109
-node [shape = box label = "SIN TAREA ASIGNADA "]1110
-node [shape = box label = "SIN TAREA ASIGNADA "]1111
-node [shape = box label = "SIN TAREA ASIGNADA "]1112
-node [shape = box label = "SIN TAREA ASIGNADA "]1113
-node [shape = box label = "SIN TAREA ASIGNADA "]1114
-node [shape = box label = "SIN TAREA ASIGNADA "]1115
-node [shape = box label = "SIN TAREA ASIGNADA "]1116
-node [shape = box label = "SIN TAREA ASIGNADA "]1117
-node [shape = box label = "SIN TAREA ASIGNADA "]1118
-node [shape = box label = "SIN TAREA ASIGNADA "]1119
-node [shape = box label = "SIN TAREA ASIGNADA "]1120
-node [shape = box label = "SIN TAREA ASIGNADA "]1121
-node [shape = box label = "SIN TAREA ASIGNADA "]1122
-node [shape = box label = "SIN TAREA ASIGNADA "]1123
-node [shape = box label = "SIN TAREA ASIGNADA "]1124
-node [shape = box label = "SIN TAREA ASIGNADA "]1125
-node [shape = box label = "SIN TAREA ASIGNADA "]1126
-node [shape = box label = "SIN TAREA ASIGNADA "]1127
-node [shape = box label = "SIN TAREA ASIGNADA "]1128
-node [shape = box label = "SIN TAREA ASIGNADA "]1129
-node [shape = box label = "SIN TAREA ASIGNADA "]1130
-node [shape = box label = "SIN TAREA ASIGNADA "]1131
-node [shape = box label = "SIN TAREA ASIGNADA "]1132
-node [shape = box label = "SIN TAREA ASIGNADA "]1133
-node [shape = box label = "SIN TAREA ASIGNADA "]1134
-node [shape = box label = "SIN TAREA ASIGNADA "]1135
-node [shape = box label = "SIN TAREA ASIGNADA "]1136
-node [shape = box label = "SIN TAREA ASIGNADA "]1137
-node [shape = box label = "SIN TAREA ASIGNADA "]1138
-node [shape = box label = "SIN TAREA ASIGNADA "]1139
-node [shape = box label = "SIN TAREA ASIGNADA "]1140
-node [shape = box label = "SIN TAREA ASIGNADA "]1141
-node [shape = box label = "SIN TAREA ASIGNADA "]1142
-node [shape = box label = "SIN TAREA ASIGNADA "]1143
-node [shape = box label = "SIN TAREA ASIGNADA "]1144
-node [shape = box label = "SIN TAREA ASIGNADA "]1145
-node [shape = box label = "SIN TAREA ASIGNADA "]1146
-node [shape = box label = "SIN TAREA ASIGNADA "]1147
-node [shape = box label = "SIN TAREA ASIGNADA "]1148
-node [shape = box label = "SIN TAREA ASIGNADA "]1149
-node [shape = box label = "SIN TAREA ASIGNADA "]1150
-node [shape = box label = "SIN TAREA ASIGNADA "]1151
-node [shape = box label = "SIN TAREA ASIGNADA "]1152
-node [shape = box label = "SIN TAREA ASIGNADA "]1153
-node [shape = box label = "SIN TAREA ASIGNADA "]1154
-node [shape = box label = "SIN TAREA ASIGNADA "]1155
-node [shape = box label = "SIN TAREA ASIGNADA "]1156
-node [shape = box label = "SIN TAREA ASIGNADA "]1157
-node [shape = box label = "SIN TAREA ASIGNADA "]1158
-node [shape = box label = "SIN TAREA ASIGNADA "]1159
-node [shape = box label = "SIN TAREA ASIGNADA "]1160
-node [shape = box label = "SIN TAREA ASIGNADA "]1161
-node [shape = box label = "SIN TAREA ASIGNADA "]1162
-node [shape = box label = "SIN TAREA ASIGNADA "]1163
-node [shape = box label = "SIN TAREA ASIGNADA "]1164
-node [shape = box label = "SIN TAREA ASIGNADA "]1165
-node [shape = box label = "SIN TAREA ASIGNADA "]1166
-node [shape = box label = "SIN TAREA ASIGNADA "]1167
-node [shape = box label = "SIN TAREA ASIGNADA "]1168
-node [shape = box label = "SIN TAREA ASIGNADA "]1169
-node [shape = box label = "SIN TAREA ASIGNADA "]1170
-node [shape = box label = "SIN TAREA ASIGNADA "]1171
-node [shape = box label = "SIN TAREA ASIGNADA "]1172
-node [shape = box label = "SIN TAREA ASIGNADA "]1173
-node [shape = box label = "SIN TAREA ASIGNADA "]1174
-node [shape = box label = "SIN TAREA ASIGNADA "]1175
-node [shape = box label = "SIN TAREA ASIGNADA "]1176
-node [shape = box label = "SIN TAREA ASIGNADA "]1177
-node [shape = box label = "SIN TAREA ASIGNADA "]1178
-node [shape = box label = "SIN TAREA ASIGNADA "]1179
-node [shape = box label = "SIN TAREA ASIGNADA "]1180
-node [shape = box label = "SIN TAREA ASIGNADA "]1181
-node [shape = box label = "SIN TAREA ASIGNADA "]1182
-node [shape = box label = "SIN TAREA ASIGNADA "]1183
-node [shape = box label = "SIN TAREA ASIGNADA "]1184
-node [shape = box label = "SIN TAREA ASIGNADA "]1185
-node [shape = box label = "SIN TAREA ASIGNADA "]1186
-node [shape = box label = "SIN TAREA ASIGNADA "]1187
-node [shape = box label = "SIN TAREA ASIGNADA "]1188
-node [shape = box label = "SIN TAREA ASIGNADA "]1189
-node [shape = box label = "SIN TAREA ASIGNADA "]1190
-node [shape = box label = "SIN TAREA ASIGNADA "]1191
-node [shape = box label = "SIN TAREA ASIGNADA "]1192
-node [shape = box label = "SIN TAREA ASIGNADA "]1193
-node [shape = box label = "SIN TAREA ASIGNADA "]1194
-node [shape = box label = "SIN TAREA ASIGNADA "]1195
-node [shape = box label = "SIN TAREA ASIGNADA "]1196
-node [shape = box label = "SIN TAREA ASIGNADA "]1197
-node [shape = box label = "SIN TAREA ASIGNADA "]1198
-node [shape = box label = "SIN TAREA ASIGNADA "]1199
-node [shape = box label = "SIN TAREA ASIGNADA "]1200
-node [shape = box label = "SIN TAREA ASIGNADA "]1201
-node [shape = box label = "SIN TAREA ASIGNADA "]1202
-node [shape = box label = "SIN TAREA ASIGNADA "]1203
-node [shape = box label = "SIN TAREA ASIGNADA "]1204
-node [shape = box label = "SIN TAREA ASIGNADA "]1205
-node [shape = box label = "SIN TAREA ASIGNADA "]1206
-node [shape = box label = "SIN TAREA ASIGNADA "]1207
-node [shape = box label = "SIN TAREA ASIGNADA "]1208
-node [shape = box label = "SIN TAREA ASIGNADA "]1209
-node [shape = box label = "SIN TAREA ASIGNADA "]1210
-node [shape = box label = "SIN TAREA ASIGNADA "]1211
-node [shape = box label = "SIN TAREA ASIGNADA "]1212
-node [shape = box label = "SIN TAREA ASIGNADA "]1213
-node [shape = box label = "SIN TAREA ASIGNADA "]1214
-node [shape = box label = "SIN TAREA ASIGNADA "]1215
-node [shape = box label = "SIN TAREA ASIGNADA "]1216
-node [shape = box label = "SIN TAREA ASIGNADA "]1217
-node [shape = box label = "SIN TAREA ASIGNADA "]1218
-node [shape = box label = "SIN TAREA ASIGNADA "]1219
-node [shape = box label = "SIN TAREA ASIGNADA "]1220
-node [shape = box label = "SIN TAREA ASIGNADA "]1221
-node [shape = box label = "SIN TAREA ASIGNADA "]1222
-node [shape = box label = "SIN TAREA ASIGNADA "]1223
-node [shape = box label = "SIN TAREA ASIGNADA "]1224
-node [shape = box label = "SIN TAREA ASIGNADA "]1225
-node [shape = box label = "SIN TAREA ASIGNADA "]1226
-node [shape = box label = "SIN TAREA ASIGNADA "]1227
-node [shape = box label = "SIN TAREA ASIGNADA "]1228
-node [shape = box label = "SIN TAREA ASIGNADA "]1229
-node [shape = box label = "SIN TAREA ASIGNADA "]1230
-node [shape = box label = "SIN TAREA ASIGNADA "]1231
-node [shape = box label = "SIN TAREA ASIGNADA "]1232
-node [shape = box label = "SIN TAREA ASIGNADA "]1233
-node [shape = box label = "SIN TAREA ASIGNADA "]1234
-node [shape = box label = "SIN TAREA ASIGNADA "]1235
-node [shape = box label = "SIN TAREA ASIGNADA "]1236
-node [shape = box label = "SIN TAREA ASIGNADA "]1237
-node [shape = box label = "SIN TAREA ASIGNADA "]1238
-node [shape = box label = "SIN TAREA ASIGNADA "]1239
-node [shape = box label = "SIN TAREA ASIGNADA "]1240
-node [shape = box label = "SIN TAREA ASIGNADA "]1241
-node [shape = box label = "SIN TAREA ASIGNADA "]1242
-node [shape = box label = "SIN TAREA ASIGNADA "]1243
-node [shape = box label = "SIN TAREA ASIGNADA "]1244
-node [shape = box label = "SIN TAREA ASIGNADA "]1245
-node [shape = box label = "SIN TAREA ASIGNADA "]1246
-node [shape = box label = "SIN TAREA ASIGNADA "]1247
-node [shape = box label = "SIN TAREA ASIGNADA "]1248
-node [shape = box label = "SIN TAREA ASIGNADA "]1249
-node [shape = box label = "SIN TAREA ASIGNADA "]1250
-node [shape = box label = "SIN TAREA ASIGNADA "]1251
-node [shape = box label = "SIN TAREA ASIGNADA "]1252
-node [shape = box label = "SIN TAREA ASIGNADA "]1253
-node [shape = box label = "SIN TAREA ASIGNADA "]1254
-node [shape = box label = "SIN TAREA ASIGNADA "]1255
-node [shape = box label = "SIN TAREA ASIGNADA "]1256
-node [shape = box label = "SIN TAREA ASIGNADA "]1257
-node [shape = box label = "SIN TAREA ASIGNADA "]1258
-node [shape = box label = "SIN TAREA ASIGNADA "]1259
-node [shape = box label = "SIN TAREA ASIGNADA "]1260
-node [shape = box label = "SIN TAREA ASIGNADA "]1261
-node [shape = box label = "SIN TAREA ASIGNADA "]1262
-node [shape = box label = "SIN TAREA ASIGNADA "]1263
-node [shape = box label = "SIN TAREA ASIGNADA "]1264
-node [shape = box label = "SIN TAREA ASIGNADA "]1265
-node [shape = box label = "SIN TAREA ASIGNADA "]1266
-node [shape = box label = "SIN TAREA ASIGNADA "]1267
-node [shape = box label = "SIN TAREA ASIGNADA "]1268
-node [shape = box label = "SIN TAREA ASIGNADA "]1269
-node [shape = box label = "SIN TAREA ASIGNADA "]1270
-node [shape = box label = "SIN TAREA ASIGNADA "]1271
-node [shape = box label = "SIN TAREA ASIGNADA "]1272
-node [shape = box label = "SIN TAREA ASIGNADA "]1273
-node [shape = box label = "SIN TAREA ASIGNADA "]1274
-node [shape = box label = "SIN TAREA ASIGNADA "]1275
-node [shape = box label = "SIN TAREA ASIGNADA "]1276
-node [shape = box label = "SIN TAREA ASIGNADA "]1277
-node [shape = box label = "SIN TAREA ASIGNADA "]1278
-node [shape = box label = "SIN TAREA ASIGNADA "]1279
-node [shape = box label = "SIN TAREA ASIGNADA "]1280
-node [shape = box label = "SIN TAREA ASIGNADA "]1281
-node [shape = box label = "SIN TAREA ASIGNADA "]1282
-node [shape = box label = "SIN TAREA ASIGNADA "]1283
-node [shape = box label = "SIN TAREA ASIGNADA "]1284
-node [shape = box label = "SIN TAREA ASIGNADA "]1285
-node [shape = box label = "SIN TAREA ASIGNADA "]1286
-node [shape = box label = "SIN TAREA ASIGNADA "]1287
-node [shape = box label = "SIN TAREA ASIGNADA "]1288
-node [shape = box label = "SIN TAREA ASIGNADA "]1289
-node [shape = box label = "SIN TAREA ASIGNADA "]1290
-node [shape = box label = "SIN TAREA ASIGNADA "]1291
-node [shape = box label = "SIN TAREA ASIGNADA "]1292
-node [shape = box label = "SIN TAREA ASIGNADA "]1293
-node [shape = box label = "SIN TAREA ASIGNADA "]1294
-node [shape = box label = "SIN TAREA ASIGNADA "]1295
-node [shape = box label = "SIN TAREA ASIGNADA "]1296
-node [shape = box label = "SIN TAREA ASIGNADA "]1297
-node [shape = box label = "SIN TAREA ASIGNADA "]1298
-node [shape = box label = "SIN TAREA ASIGNADA "]1299
-node [shape = box label = "SIN TAREA ASIGNADA "]1300
-node [shape = box label = "SIN TAREA ASIGNADA "]1301
-node [shape = box label = "SIN TAREA ASIGNADA "]1302
-node [shape = box label = "SIN TAREA ASIGNADA "]1303
-node [shape = box label = "SIN TAREA ASIGNADA "]1304
-node [shape = box label = "SIN TAREA ASIGNADA "]1305
-node [shape = box label = "SIN TAREA ASIGNADA "]1306
-node [shape = box label = "SIN TAREA ASIGNADA "]1307
-node [shape = box label = "SIN TAREA ASIGNADA "]1308
-node [shape = box label = "SIN TAREA ASIGNADA "]1309
-node [shape = box label = "SIN TAREA ASIGNADA "]1310
-node [shape = box label = "SIN TAREA ASIGNADA "]1311
-node [shape = box label = "SIN TAREA ASIGNADA "]1312
-node [shape = box label = "SIN TAREA ASIGNADA "]1313
-node [shape = box label = "SIN TAREA ASIGNADA "]1314
-node [shape = box label = "SIN TAREA ASIGNADA "]1315
-node [shape = box label = "SIN TAREA ASIGNADA "]1316
-node [shape = box label = "SIN TAREA ASIGNADA "]1317
-node [shape = box label = "SIN TAREA ASIGNADA "]1318
-node [shape = box label = "SIN TAREA ASIGNADA "]1319
-node [shape = box label = "SIN TAREA ASIGNADA "]1320
-node [shape = box label = "SIN TAREA ASIGNADA "]1321
-node [shape = box label = "SIN TAREA ASIGNADA "]1322
-node [shape = box label = "SIN TAREA ASIGNADA "]1323
-node [shape = box label = "SIN TAREA ASIGNADA "]1324
-node [shape = box label = "SIN TAREA ASIGNADA "]1325
-node [shape = box label = "SIN TAREA ASIGNADA "]1326
-node [shape = box label = "SIN TAREA ASIGNADA "]1327
-node [shape = box label = "SIN TAREA ASIGNADA "]1328
-node [shape = box label = "SIN TAREA ASIGNADA "]1329
-node [shape = box label = "SIN TAREA ASIGNADA "]1330
-node [shape = box label = "SIN TAREA ASIGNADA "]1331
-node [shape = box label = "SIN TAREA ASIGNADA "]1332
-node [shape = box label = "SIN TAREA ASIGNADA "]1333
-node [shape = box label = "SIN TAREA ASIGNADA "]1334
-node [shape = box label = "SIN TAREA ASIGNADA "]1335
-node [shape = box label = "SIN TAREA ASIGNADA "]1336
-node [shape = box label = "SIN TAREA ASIGNADA "]1337
-node [shape = box label = "SIN TAREA ASIGNADA "]1338
-node [shape = box label = "SIN TAREA ASIGNADA "]1339
-node [shape = box label = "SIN TAREA ASIGNADA "]1340
-node [shape = box label = "SIN TAREA ASIGNADA "]1341
-node [shape = box label = "SIN TAREA ASIGNADA "]1342
-node [shape = box label = "SIN TAREA ASIGNADA "]1343
-node [shape = box label = "SIN TAREA ASIGNADA "]1344
-node [shape = box label = "SIN TAREA ASIGNADA "]1345
-node [shape = box label = "SIN TAREA ASIGNADA "]1346
-node [shape = box label = "SIN TAREA ASIGNADA "]1347
-node [shape = box label = "SIN TAREA ASIGNADA "]1348
-node [shape = box label = "SIN TAREA ASIGNADA "]1349
+node [shape = box label = "SIN TAREA ASIGNADA"]996
+node [shape = box label = "SIN TAREA ASIGNADA"]997
+node [shape = box label = "SIN TAREA ASIGNADA"]998
+node [shape = box label = "SIN TAREA ASIGNADA"]999
+node [shape = box label = "SIN TAREA ASIGNADA"]1000
+node [shape = box label = "SIN TAREA ASIGNADA"]1001
+node [shape = box label = "SIN TAREA ASIGNADA"]1002
+node [shape = box label = "SIN TAREA ASIGNADA"]1003
+node [shape = box label = "SIN TAREA ASIGNADA"]1004
+node [shape = box label = "SIN TAREA ASIGNADA"]1005
+node [shape = box label = "SIN TAREA ASIGNADA"]1006
+node [shape = box label = "SIN TAREA ASIGNADA"]1007
+node [shape = box label = "SIN TAREA ASIGNADA"]1008
+node [shape = box label = "SIN TAREA ASIGNADA"]1009
+node [shape = box label = "SIN TAREA ASIGNADA"]1010
+node [shape = box label = "SIN TAREA ASIGNADA"]1011
+node [shape = box label = "SIN TAREA ASIGNADA"]1012
+node [shape = box label = "SIN TAREA ASIGNADA"]1013
+node [shape = box label = "SIN TAREA ASIGNADA"]1014
+node [shape = box label = "SIN TAREA ASIGNADA"]1015
+node [shape = box label = "SIN TAREA ASIGNADA"]1016
+node [shape = box label = "SIN TAREA ASIGNADA"]1017
+node [shape = box label = "SIN TAREA ASIGNADA"]1018
+node [shape = box label = "SIN TAREA ASIGNADA"]1019
+node [shape = box label = "SIN TAREA ASIGNADA"]1020
+node [shape = box label = "SIN TAREA ASIGNADA"]1021
+node [shape = box label = "SIN TAREA ASIGNADA"]1022
+node [shape = box label = "SIN TAREA ASIGNADA"]1023
+node [shape = box label = "SIN TAREA ASIGNADA"]1024
+node [shape = box label = "SIN TAREA ASIGNADA"]1025
+node [shape = box label = "SIN TAREA ASIGNADA"]1026
+node [shape = box label = "SIN TAREA ASIGNADA"]1027
+node [shape = box label = "SIN TAREA ASIGNADA"]1028
+node [shape = box label = "SIN TAREA ASIGNADA"]1029
+node [shape = box label = "SIN TAREA ASIGNADA"]1030
+node [shape = box label = "SIN TAREA ASIGNADA"]1031
+node [shape = box label = "SIN TAREA ASIGNADA"]1032
+node [shape = box label = "SIN TAREA ASIGNADA"]1033
+node [shape = box label = "SIN TAREA ASIGNADA"]1034
+node [shape = box label = "SIN TAREA ASIGNADA"]1035
+node [shape = box label = "SIN TAREA ASIGNADA"]1036
+node [shape = box label = "SIN TAREA ASIGNADA"]1037
+node [shape = box label = "SIN TAREA ASIGNADA"]1038
+node [shape = box label = "SIN TAREA ASIGNADA"]1039
+node [shape = box label = "SIN TAREA ASIGNADA"]1040
+node [shape = box label = "SIN TAREA ASIGNADA"]1041
+node [shape = box label = "SIN TAREA ASIGNADA"]1042
+node [shape = box label = "SIN TAREA ASIGNADA"]1043
+node [shape = box label = "SIN TAREA ASIGNADA"]1044
+node [shape = box label = "SIN TAREA ASIGNADA"]1045
+node [shape = box label = "SIN TAREA ASIGNADA"]1046
+node [shape = box label = "SIN TAREA ASIGNADA"]1047
+node [shape = box label = "SIN TAREA ASIGNADA"]1048
+node [shape = box label = "SIN TAREA ASIGNADA"]1049
+node [shape = box label = "SIN TAREA ASIGNADA"]1050
+node [shape = box label = "SIN TAREA ASIGNADA"]1051
+node [shape = box label = "SIN TAREA ASIGNADA"]1052
+node [shape = box label = "SIN TAREA ASIGNADA"]1053
+node [shape = box label = "SIN TAREA ASIGNADA"]1054
+node [shape = box label = "SIN TAREA ASIGNADA"]1055
+node [shape = box label = "SIN TAREA ASIGNADA"]1056
+node [shape = box label = "SIN TAREA ASIGNADA"]1057
+node [shape = box label = "SIN TAREA ASIGNADA"]1058
+node [shape = box label = "SIN TAREA ASIGNADA"]1059
+node [shape = box label = "SIN TAREA ASIGNADA"]1060
+node [shape = box label = "SIN TAREA ASIGNADA"]1061
+node [shape = box label = "SIN TAREA ASIGNADA"]1062
+node [shape = box label = "SIN TAREA ASIGNADA"]1063
+node [shape = box label = "SIN TAREA ASIGNADA"]1064
+node [shape = box label = "SIN TAREA ASIGNADA"]1065
+node [shape = box label = "SIN TAREA ASIGNADA"]1066
+node [shape = box label = "SIN TAREA ASIGNADA"]1067
+node [shape = box label = "SIN TAREA ASIGNADA"]1068
+node [shape = box label = "SIN TAREA ASIGNADA"]1069
+node [shape = box label = "SIN TAREA ASIGNADA"]1070
+node [shape = box label = "SIN TAREA ASIGNADA"]1071
+node [shape = box label = "SIN TAREA ASIGNADA"]1072
+node [shape = box label = "SIN TAREA ASIGNADA"]1073
+node [shape = box label = "SIN TAREA ASIGNADA"]1074
+node [shape = box label = "SIN TAREA ASIGNADA"]1075
+node [shape = box label = "SIN TAREA ASIGNADA"]1076
+node [shape = box label = "SIN TAREA ASIGNADA"]1077
+node [shape = box label = "SIN TAREA ASIGNADA"]1078
+node [shape = box label = "SIN TAREA ASIGNADA"]1079
+node [shape = box label = "SIN TAREA ASIGNADA"]1080
+node [shape = box label = "SIN TAREA ASIGNADA"]1081
+node [shape = box label = "SIN TAREA ASIGNADA"]1082
+node [shape = box label = "SIN TAREA ASIGNADA"]1083
+node [shape = box label = "SIN TAREA ASIGNADA"]1084
+node [shape = box label = "SIN TAREA ASIGNADA"]1085
+node [shape = box label = "SIN TAREA ASIGNADA"]1086
+node [shape = box label = "SIN TAREA ASIGNADA"]1087
+node [shape = box label = "SIN TAREA ASIGNADA"]1088
+node [shape = box label = "SIN TAREA ASIGNADA"]1089
+node [shape = box label = "SIN TAREA ASIGNADA"]1090
+node [shape = box label = "SIN TAREA ASIGNADA"]1091
+node [shape = box label = "SIN TAREA ASIGNADA"]1092
+node [shape = box label = "SIN TAREA ASIGNADA"]1093
+node [shape = box label = "SIN TAREA ASIGNADA"]1094
+node [shape = box label = "SIN TAREA ASIGNADA"]1095
+node [shape = box label = "SIN TAREA ASIGNADA"]1096
+node [shape = box label = "SIN TAREA ASIGNADA"]1097
+node [shape = box label = "SIN TAREA ASIGNADA"]1098
+node [shape = box label = "SIN TAREA ASIGNADA"]1099
+node [shape = box label = "SIN TAREA ASIGNADA"]1100
+node [shape = box label = "SIN TAREA ASIGNADA"]1101
+node [shape = box label = "SIN TAREA ASIGNADA"]1102
+node [shape = box label = "SIN TAREA ASIGNADA"]1103
+node [shape = box label = "SIN TAREA ASIGNADA"]1104
+node [shape = box label = "SIN TAREA ASIGNADA"]1105
+node [shape = box label = "SIN TAREA ASIGNADA"]1106
+node [shape = box label = "SIN TAREA ASIGNADA"]1107
+node [shape = box label = "SIN TAREA ASIGNADA"]1108
+node [shape = box label = "SIN TAREA ASIGNADA"]1109
+node [shape = box label = "SIN TAREA ASIGNADA"]1110
+node [shape = box label = "SIN TAREA ASIGNADA"]1111
+node [shape = box label = "SIN TAREA ASIGNADA"]1112
+node [shape = box label = "SIN TAREA ASIGNADA"]1113
+node [shape = box label = "SIN TAREA ASIGNADA"]1114
+node [shape = box label = "SIN TAREA ASIGNADA"]1115
+node [shape = box label = "SIN TAREA ASIGNADA"]1116
+node [shape = box label = "SIN TAREA ASIGNADA"]1117
+node [shape = box label = "SIN TAREA ASIGNADA"]1118
+node [shape = box label = "SIN TAREA ASIGNADA"]1119
+node [shape = box label = "SIN TAREA ASIGNADA"]1120
+node [shape = box label = "SIN TAREA ASIGNADA"]1121
+node [shape = box label = "SIN TAREA ASIGNADA"]1122
+node [shape = box label = "SIN TAREA ASIGNADA"]1123
+node [shape = box label = "SIN TAREA ASIGNADA"]1124
+node [shape = box label = "SIN TAREA ASIGNADA"]1125
+node [shape = box label = "SIN TAREA ASIGNADA"]1126
+node [shape = box label = "SIN TAREA ASIGNADA"]1127
+node [shape = box label = "SIN TAREA ASIGNADA"]1128
+node [shape = box label = "SIN TAREA ASIGNADA"]1129
+node [shape = box label = "SIN TAREA ASIGNADA"]1130
+node [shape = box label = "SIN TAREA ASIGNADA"]1131
+node [shape = box label = "SIN TAREA ASIGNADA"]1132
+node [shape = box label = "SIN TAREA ASIGNADA"]1133
+node [shape = box label = "SIN TAREA ASIGNADA"]1134
+node [shape = box label = "SIN TAREA ASIGNADA"]1135
+node [shape = box label = "SIN TAREA ASIGNADA"]1136
+node [shape = box label = "SIN TAREA ASIGNADA"]1137
+node [shape = box label = "SIN TAREA ASIGNADA"]1138
+node [shape = box label = "SIN TAREA ASIGNADA"]1139
+node [shape = box label = "SIN TAREA ASIGNADA"]1140
+node [shape = box label = "SIN TAREA ASIGNADA"]1141
+node [shape = box label = "SIN TAREA ASIGNADA"]1142
+node [shape = box label = "SIN TAREA ASIGNADA"]1143
+node [shape = box label = "SIN TAREA ASIGNADA"]1144
+node [shape = box label = "SIN TAREA ASIGNADA"]1145
+node [shape = box label = "SIN TAREA ASIGNADA"]1146
+node [shape = box label = "SIN TAREA ASIGNADA"]1147
+node [shape = box label = "SIN TAREA ASIGNADA"]1148
+node [shape = box label = "SIN TAREA ASIGNADA"]1149
+node [shape = box label = "SIN TAREA ASIGNADA"]1150
+node [shape = box label = "SIN TAREA ASIGNADA"]1151
+node [shape = box label = "SIN TAREA ASIGNADA"]1152
+node [shape = box label = "SIN TAREA ASIGNADA"]1153
+node [shape = box label = "SIN TAREA ASIGNADA"]1154
+node [shape = box label = "SIN TAREA ASIGNADA"]1155
+node [shape = box label = "SIN TAREA ASIGNADA"]1156
+node [shape = box label = "SIN TAREA ASIGNADA"]1157
+node [shape = box label = "SIN TAREA ASIGNADA"]1158
+node [shape = box label = "SIN TAREA ASIGNADA"]1159
+node [shape = box label = "SIN TAREA ASIGNADA"]1160
+node [shape = box label = "SIN TAREA ASIGNADA"]1161
+node [shape = box label = "SIN TAREA ASIGNADA"]1162
+node [shape = box label = "SIN TAREA ASIGNADA"]1163
+node [shape = box label = "SIN TAREA ASIGNADA"]1164
+node [shape = box label = "SIN TAREA ASIGNADA"]1165
+node [shape = box label = "SIN TAREA ASIGNADA"]1166
+node [shape = box label = "SIN TAREA ASIGNADA"]1167
+node [shape = box label = "SIN TAREA ASIGNADA"]1168
+node [shape = box label = "SIN TAREA ASIGNADA"]1169
+node [shape = box label = "SIN TAREA ASIGNADA"]1170
+node [shape = box label = "SIN TAREA ASIGNADA"]1171
+node [shape = box label = "SIN TAREA ASIGNADA"]1172
+node [shape = box label = "SIN TAREA ASIGNADA"]1173
+node [shape = box label = "SIN TAREA ASIGNADA"]1174
+node [shape = box label = "SIN TAREA ASIGNADA"]1175
+node [shape = box label = "SIN TAREA ASIGNADA"]1176
+node [shape = box label = "SIN TAREA ASIGNADA"]1177
+node [shape = box label = "SIN TAREA ASIGNADA"]1178
+node [shape = box label = "SIN TAREA ASIGNADA"]1179
+node [shape = box label = "SIN TAREA ASIGNADA"]1180
+node [shape = box label = "SIN TAREA ASIGNADA"]1181
+node [shape = box label = "SIN TAREA ASIGNADA"]1182
+node [shape = box label = "SIN TAREA ASIGNADA"]1183
+node [shape = box label = "SIN TAREA ASIGNADA"]1184
+node [shape = box label = "SIN TAREA ASIGNADA"]1185
+node [shape = box label = "SIN TAREA ASIGNADA"]1186
+node [shape = box label = "SIN TAREA ASIGNADA"]1187
+node [shape = box label = "SIN TAREA ASIGNADA"]1188
+node [shape = box label = "SIN TAREA ASIGNADA"]1189
+node [shape = box label = "SIN TAREA ASIGNADA"]1190
+node [shape = box label = "SIN TAREA ASIGNADA"]1191
+node [shape = box label = "SIN TAREA ASIGNADA"]1192
+node [shape = box label = "SIN TAREA ASIGNADA"]1193
+node [shape = box label = "SIN TAREA ASIGNADA"]1194
+node [shape = box label = "SIN TAREA ASIGNADA"]1195
+node [shape = box label = "SIN TAREA ASIGNADA"]1196
+node [shape = box label = "SIN TAREA ASIGNADA"]1197
+node [shape = box label = "SIN TAREA ASIGNADA"]1198
+node [shape = box label = "SIN TAREA ASIGNADA"]1199
+node [shape = box label = "SIN TAREA ASIGNADA"]1200
+node [shape = box label = "SIN TAREA ASIGNADA"]1201
+node [shape = box label = "SIN TAREA ASIGNADA"]1202
+node [shape = box label = "SIN TAREA ASIGNADA"]1203
+node [shape = box label = "SIN TAREA ASIGNADA"]1204
+node [shape = box label = "SIN TAREA ASIGNADA"]1205
+node [shape = box label = "SIN TAREA ASIGNADA"]1206
+node [shape = box label = "SIN TAREA ASIGNADA"]1207
+node [shape = box label = "SIN TAREA ASIGNADA"]1208
+node [shape = box label = "SIN TAREA ASIGNADA"]1209
+node [shape = box label = "SIN TAREA ASIGNADA"]1210
+node [shape = box label = "SIN TAREA ASIGNADA"]1211
+node [shape = box label = "SIN TAREA ASIGNADA"]1212
+node [shape = box label = "SIN TAREA ASIGNADA"]1213
+node [shape = box label = "SIN TAREA ASIGNADA"]1214
+node [shape = box label = "SIN TAREA ASIGNADA"]1215
+node [shape = box label = "SIN TAREA ASIGNADA"]1216
+node [shape = box label = "SIN TAREA ASIGNADA"]1217
+node [shape = box label = "SIN TAREA ASIGNADA"]1218
+node [shape = box label = "SIN TAREA ASIGNADA"]1219
+node [shape = box label = "SIN TAREA ASIGNADA"]1220
+node [shape = box label = "SIN TAREA ASIGNADA"]1221
+node [shape = box label = "SIN TAREA ASIGNADA"]1222
+node [shape = box label = "SIN TAREA ASIGNADA"]1223
+node [shape = box label = "SIN TAREA ASIGNADA"]1224
+node [shape = box label = "SIN TAREA ASIGNADA"]1225
+node [shape = box label = "SIN TAREA ASIGNADA"]1226
+node [shape = box label = "SIN TAREA ASIGNADA"]1227
+node [shape = box label = "SIN TAREA ASIGNADA"]1228
+node [shape = box label = "SIN TAREA ASIGNADA"]1229
+node [shape = box label = "SIN TAREA ASIGNADA"]1230
+node [shape = box label = "SIN TAREA ASIGNADA"]1231
+node [shape = box label = "SIN TAREA ASIGNADA"]1232
+node [shape = box label = "SIN TAREA ASIGNADA"]1233
+node [shape = box label = "SIN TAREA ASIGNADA"]1234
+node [shape = box label = "SIN TAREA ASIGNADA"]1235
+node [shape = box label = "SIN TAREA ASIGNADA"]1236
+node [shape = box label = "SIN TAREA ASIGNADA"]1237
+node [shape = box label = "SIN TAREA ASIGNADA"]1238
+node [shape = box label = "SIN TAREA ASIGNADA"]1239
+node [shape = box label = "SIN TAREA ASIGNADA"]1240
+node [shape = box label = "SIN TAREA ASIGNADA"]1241
+node [shape = box label = "SIN TAREA ASIGNADA"]1242
+node [shape = box label = "SIN TAREA ASIGNADA"]1243
+node [shape = box label = "SIN TAREA ASIGNADA"]1244
+node [shape = box label = "SIN TAREA ASIGNADA"]1245
+node [shape = box label = "SIN TAREA ASIGNADA"]1246
+node [shape = box label = "SIN TAREA ASIGNADA"]1247
+node [shape = box label = "SIN TAREA ASIGNADA"]1248
+node [shape = box label = "SIN TAREA ASIGNADA"]1249
+node [shape = box label = "SIN TAREA ASIGNADA"]1250
+node [shape = box label = "SIN TAREA ASIGNADA"]1251
+node [shape = box label = "SIN TAREA ASIGNADA"]1252
+node [shape = box label = "SIN TAREA ASIGNADA"]1253
+node [shape = box label = "SIN TAREA ASIGNADA"]1254
+node [shape = box label = "SIN TAREA ASIGNADA"]1255
+node [shape = box label = "SIN TAREA ASIGNADA"]1256
+node [shape = box label = "SIN TAREA ASIGNADA"]1257
+node [shape = box label = "SIN TAREA ASIGNADA"]1258
+node [shape = box label = "SIN TAREA ASIGNADA"]1259
+node [shape = box label = "SIN TAREA ASIGNADA"]1260
+node [shape = box label = "SIN TAREA ASIGNADA"]1261
+node [shape = box label = "SIN TAREA ASIGNADA"]1262
+node [shape = box label = "SIN TAREA ASIGNADA"]1263
+node [shape = box label = "SIN TAREA ASIGNADA"]1264
+node [shape = box label = "SIN TAREA ASIGNADA"]1265
+node [shape = box label = "SIN TAREA ASIGNADA"]1266
+node [shape = box label = "SIN TAREA ASIGNADA"]1267
+node [shape = box label = "SIN TAREA ASIGNADA"]1268
+node [shape = box label = "SIN TAREA ASIGNADA"]1269
+node [shape = box label = "SIN TAREA ASIGNADA"]1270
+node [shape = box label = "SIN TAREA ASIGNADA"]1271
+node [shape = box label = "SIN TAREA ASIGNADA"]1272
+node [shape = box label = "SIN TAREA ASIGNADA"]1273
+node [shape = box label = "SIN TAREA ASIGNADA"]1274
+node [shape = box label = "SIN TAREA ASIGNADA"]1275
+node [shape = box label = "SIN TAREA ASIGNADA"]1276
+node [shape = box label = "SIN TAREA ASIGNADA"]1277
+node [shape = box label = "SIN TAREA ASIGNADA"]1278
+node [shape = box label = "SIN TAREA ASIGNADA"]1279
+node [shape = box label = "SIN TAREA ASIGNADA"]1280
+node [shape = box label = "SIN TAREA ASIGNADA"]1281
+node [shape = box label = "SIN TAREA ASIGNADA"]1282
+node [shape = box label = "SIN TAREA ASIGNADA"]1283
+node [shape = box label = "SIN TAREA ASIGNADA"]1284
+node [shape = box label = "SIN TAREA ASIGNADA"]1285
+node [shape = box label = "SIN TAREA ASIGNADA"]1286
+node [shape = box label = "SIN TAREA ASIGNADA"]1287
+node [shape = box label = "SIN TAREA ASIGNADA"]1288
+node [shape = box label = "SIN TAREA ASIGNADA"]1289
+node [shape = box label = "SIN TAREA ASIGNADA"]1290
+node [shape = box label = "SIN TAREA ASIGNADA"]1291
+node [shape = box label = "SIN TAREA ASIGNADA"]1292
+node [shape = box label = "SIN TAREA ASIGNADA"]1293
+node [shape = box label = "SIN TAREA ASIGNADA"]1294
+node [shape = box label = "SIN TAREA ASIGNADA"]1295
+node [shape = box label = "SIN TAREA ASIGNADA"]1296
+node [shape = box label = "SIN TAREA ASIGNADA"]1297
+node [shape = box label = "SIN TAREA ASIGNADA"]1298
+node [shape = box label = "SIN TAREA ASIGNADA"]1299
+node [shape = box label = "SIN TAREA ASIGNADA"]1300
+node [shape = box label = "SIN TAREA ASIGNADA"]1301
+node [shape = box label = "SIN TAREA ASIGNADA"]1302
+node [shape = box label = "SIN TAREA ASIGNADA"]1303
+node [shape = box label = "SIN TAREA ASIGNADA"]1304
+node [shape = box label = "SIN TAREA ASIGNADA"]1305
+node [shape = box label = "SIN TAREA ASIGNADA"]1306
+node [shape = box label = "SIN TAREA ASIGNADA"]1307
+node [shape = box label = "SIN TAREA ASIGNADA"]1308
+node [shape = box label = "SIN TAREA ASIGNADA"]1309
+node [shape = box label = "SIN TAREA ASIGNADA"]1310
+node [shape = box label = "SIN TAREA ASIGNADA"]1311
+node [shape = box label = "SIN TAREA ASIGNADA"]1312
+node [shape = box label = "SIN TAREA ASIGNADA"]1313
+node [shape = box label = "SIN TAREA ASIGNADA"]1314
+node [shape = box label = "SIN TAREA ASIGNADA"]1315
+node [shape = box label = "SIN TAREA ASIGNADA"]1316
+node [shape = box label = "SIN TAREA ASIGNADA"]1317
+node [shape = box label = "SIN TAREA ASIGNADA"]1318
+node [shape = box label = "SIN TAREA ASIGNADA"]1319
+node [shape = box label = "SIN TAREA ASIGNADA"]1320
+node [shape = box label = "SIN TAREA ASIGNADA"]1321
+node [shape = box label = "SIN TAREA ASIGNADA"]1322
+node [shape = box label = "SIN TAREA ASIGNADA"]1323
+node [shape = box label = "SIN TAREA ASIGNADA"]1324
+node [shape = box label = "SIN TAREA ASIGNADA"]1325
+node [shape = box label = "SIN TAREA ASIGNADA"]1326
+node [shape = box label = "SIN TAREA ASIGNADA"]1327
+node [shape = box label = "SIN TAREA ASIGNADA"]1328
+node [shape = box label = "SIN TAREA ASIGNADA"]1329
+node [shape = box label = "SIN TAREA ASIGNADA"]1330
+node [shape = box label = "SIN TAREA ASIGNADA"]1331
+node [shape = box label = "SIN TAREA ASIGNADA"]1332
+node [shape = box label = "SIN TAREA ASIGNADA"]1333
+node [shape = box label = "SIN TAREA ASIGNADA"]1334
+node [shape = box label = "SIN TAREA ASIGNADA"]1335
+node [shape = box label = "SIN TAREA ASIGNADA"]1336
+node [shape = box label = "SIN TAREA ASIGNADA"]1337
+node [shape = box label = "SIN TAREA ASIGNADA"]1338
+node [shape = box label = "SIN TAREA ASIGNADA"]1339
+node [shape = box label = "SIN TAREA ASIGNADA"]1340
+node [shape = box label = "SIN TAREA ASIGNADA"]1341
+node [shape = box label = "SIN TAREA ASIGNADA"]1342
+node [shape = box label = "SIN TAREA ASIGNADA"]1343
+node [shape = box label = "SIN TAREA ASIGNADA"]1344
+node [shape = box label = "SIN TAREA ASIGNADA"]1345
+node [shape = box label = "SIN TAREA ASIGNADA"]1346
+node [shape = box label = "SIN TAREA ASIGNADA"]1347
+node [shape = box label = "SIN TAREA ASIGNADA"]1348
+node [shape = box label = "SIN TAREA ASIGNADA"]1349
 0 -> 1
 1 -> 0
 1 -> 2

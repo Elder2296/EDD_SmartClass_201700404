@@ -1,14 +1,12 @@
 digraph A{
 rankdir = LR;
-node [shape = box label = "Id: 1\nTipo:Task\nDescription: La fecha no coincide."]1
-node [shape = box label = "Id: 2\nTipo:Task\nDescription: La fecha no coincide."]2
-node [shape = box label = "Id: 3\nTipo:Task\nDescription: La fecha no coincide."]3
-node [shape = box label = "Id: 4\nTipo:Task\nDescription: La fecha no coincide."]4
-node [shape = box label = "Id: 5\nTipo:Task\nDescription: La fecha no coincide."]5
-node [shape = box label = "Id: 6\nTipo:Task\nDescription: La fecha no coincide."]6
-1 -> 2
-2 -> 3
-3 -> 4
-4 -> 5
-5 -> 6
+node [shape = box label = "Id: 2001566\nTipo:Estudiante\nDescription: Se encontro un error en la longitud del carnet"]2001566
+node [shape = box label = "Id: 201800505\nTipo:Estudiante\nDescription: Se encontro un error en la longitud del DPI"]201800505
+node [shape = box label = "Id: 201500406\nTipo:Estudiante\nDescription: El correo no presenta el formato debido"]201500406
+node [shape = box label = "Id: 9\nTipo:Task\nDescription: Carnet no encontrado."]9
+node [shape = box label = "Id: 10\nTipo:Task\nDescription: La fecha no coincide."]10
+2001566 -> 201800505
+201800505 -> 201500406
+201500406 -> 9
+9 -> 10
 }

@@ -31,7 +31,7 @@ void GenerateFile::generateFileUsers(){
 
     ofstream file;
 
-    file.open("/home/losa/Ciencias_y_Sistemas/2021/Segundo_Semestre/Lab_Estructuras/Fase1/EDD_SmartClass_201700404/Archivos_DOT/users.dot");
+    file.open("./Archivos_DOT/users.dot");
     Nodo * aux = list->first;
     file<<"digraph A{\n";
     file<<"rankdir = LR;\n";
@@ -59,6 +59,8 @@ void GenerateFile::generateFileUsers(){
         
     
     file.close();
+    string cmd = "dot -Tpdf ./Archivos_DOT/users.dot -o ./Archivos_DOT/users.pdf";
+    system(cmd.c_str());
     cout<<"archivo generado con exito"<<endl;
 
 
@@ -68,7 +70,7 @@ void GenerateFile::generateFileTasks(){
     doubleList * list = doubleList::getList();
     ofstream file;
 
-    file.open("/home/losa/Ciencias_y_Sistemas/2021/Segundo_Semestre/Lab_Estructuras/Fase1/EDD_SmartClass_201700404/Archivos_DOT/tasks.dot");
+    file.open("./Archivos_DOT/tasks.dot");
     
     file<<"digraph A{\n";
     file<<"rankdir = LR;\n";
@@ -78,7 +80,7 @@ void GenerateFile::generateFileTasks(){
     while (aux!=NULL){
         if(aux->casilla.task.getId()==-1){
             
-            file<<"node [shape = box label = \"SIN TAREA ASIGNADA \"]"<<aux->casilla.id<<"\n";
+            file<<"node [shape = box label = \"SIN TAREA ASIGNADA\"]"<<aux->casilla.id<<"\n";
         }else{
             file<<"node [shape = box label = \"Carnet: "<<aux->casilla.task.getCarnet()<<"\\nNombre:"<<aux->casilla.task.getName()<<"\\nDescription: ..."<<"\\nMateria: "<<aux->casilla.task.getMateria()<<"\\nFecha: "<<aux->casilla.task.getDate()<<"\\nHora: "<<aux->casilla.task.getHour()<<"\\nEstado: "<<aux->casilla.task.getState()<<"\"]"<<aux->casilla.id<<"\n";      
         }
@@ -95,6 +97,8 @@ void GenerateFile::generateFileTasks(){
     
     file<<"}\n";
     file.close();
+    string cmd = "dot -Tpdf ./Archivos_DOT/tasks.dot -o ./Archivos_DOT/tasks.pdf";
+    system(cmd.c_str());
     cout<<"archivo generado con exito"<<endl;
 
 }
@@ -198,7 +202,7 @@ void GenerateFile::getPosicion(){
 void GenerateFile::generateCola(){
     Cola * cola = Cola::getCola();
     ofstream file;
-    file.open("/home/losa/Ciencias_y_Sistemas/2021/Segundo_Semestre/Lab_Estructuras/Fase1/EDD_SmartClass_201700404/Archivos_DOT/cola.dot");
+    file.open("./Archivos_DOT/cola.dot");
     
     file<<"digraph A{\n";
     file<<"rankdir = LR;\n";
@@ -216,6 +220,8 @@ void GenerateFile::generateCola(){
 
     file<<"}";
     file.close();
+    string cmd = "dot -Tpdf ./Archivos_DOT/cola.dot -o ./Archivos_DOT/cola.pdf";
+    system(cmd.c_str());
     cout<<"COLA GENEREADA CON EXITO!!!"<<endl;
     
 

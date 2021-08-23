@@ -39,20 +39,7 @@ Menu::Menu(/* args */)
     principal();
 }
 
-void Menu::principal(){
-    cout << "\n\n******** Principal Menu ********"<<endl;
-    cout << "1     Carga de Usuarios"<<endl;
-    cout << "2     Carga de Tareas"<<endl;
-    cout << "3     Ingreso Manual"<<endl;
-    cout << "4     Reportes\n\n"<<endl;
-    cout << "Ingrese el numero de opcion"<<endl;
-    int option;
-    cin >>option;
-    if(option == 3){Manual_Input();}
-    else if(option == 4){Reports();}
-    else if(option ==1){loadUsers();}
-    else if(option ==2){loadTasksMenu();}
-}
+
 void Menu::subMenuUsers(){
     cout<<"\n\nIngrese la ruta del archivo:"<<endl;
     string path;
@@ -92,6 +79,7 @@ void Menu::ChangeUser(){
     cout<<"4    Cambiar Password: "<<endl;
     cout<<"5    Cambiar Creditos: "<<endl;
     cout<<"6    Cambiar Edad: "<<endl;
+    cout<<"7    Cambiar Carnet: "<<endl;
     cout<<"\nIngrese una opcion:"<<endl;
     int t;
     cin>>t;
@@ -136,7 +124,22 @@ void Menu::ChangeUser(){
         cin>>edad;
         list->getStudent(dpi).setAge(edad);
         
+    }else if(t == 7){
+        string carnet;
+        condition = true;
+        while(condition){
+            cout<<"\nIngrese nuevo Carnet:"<<endl;
+        
+            cin>>carnet;    
+            if(carnet.length() ==9){
+                condition = false;
+            }
+        }
+        int newCarnet = atoi(carnet.c_str());
+        list->getStudent(dpi).setCarnet(newCarnet);
+        
     }
+    cout<<"\nCambio exitoso!!!\n"<<endl;
     this->principal();
     
 }
@@ -154,13 +157,7 @@ void Menu::principal(){
     else if(option ==1){loadUsers();}
     else if(option ==2){loadTasksMenu();}
 }
-void Menu::subMenuUsers(){
-    cout<<"\n\nIngrese la ruta del archivo:"<<endl;
-    string path;
-    cin>>path;
-    cout<<"Archivo cargado"<<endl;
 
-}
 void Menu::ChangeTask(){
     doubleList * list = doubleList::getList();
     List * students = List::getList();
@@ -265,6 +262,7 @@ void Menu::ChangeTask(){
         cin>>estado;
         list->searchForIndex(index).setState(estado);
     }
+    
     this->principal();
     
 }
@@ -293,7 +291,7 @@ void Menu::Manual_Input(){
         }else if(opt == 3){
             List * list = List::getList();
             bool condition = true;
-            string dpi,carnet;
+            string dpi;
             while(condition){
                 cout<<"Ingrese el DPI:"<<endl;
                 cin>>dpi;
@@ -378,7 +376,7 @@ void Menu::CargaManualUser(){
     cout<<"Ingrese el nombre:"<<endl;
     string name;
     cin>>name;
-    cout<<"Ingrese el carrera:"<<endl;
+    cout<<"Ingrese la carrera:"<<endl;
     string carrera;
     cin>>carrera;
 
@@ -458,7 +456,7 @@ void Menu::CargaManualTask(){
 
     condition = true;
     while(condition){
-        cout<<"Ingrese un dia entre 7-11:"<<endl;
+        cout<<"Ingrese un mes entre 7-11:"<<endl;
         cin>>mounth;
         if(mounth > 6 && mounth < 12){
             condition = false;
@@ -586,6 +584,7 @@ void Menu::MenuCorrections(){
         int option;
         cin>>option;
         if(option ==  1){
+            //cout<<"identificador ID del error: "<<cola->getOut().id<<endl;
             cout<<"Carnet actual: "<<tasks->getTask(cola->getOut().id).getCarnet()<<endl;
             bool condition = true;
             while(condition){

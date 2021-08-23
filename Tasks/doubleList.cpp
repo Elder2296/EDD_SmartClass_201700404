@@ -13,8 +13,8 @@ class doubleList
         void print();
         static doubleList * getList();
         Task &searchForIndex(int id);
-        Task &getTask(int carnet);
-        void insertWithIndex(int index, Task task);
+        Task &getTask(int idtask);
+        void insertWithIndex(int index, Task &task);
         void Delete(int index);
         
     
@@ -38,24 +38,25 @@ Task &doubleList::searchForIndex(int id){
 }
 void doubleList::Delete(int index){
     NodoT * aux = this->first;
+    Task * newtask =  new Task();
     if(this->first->casilla.id == index){
-        this->first = this->first->next;
+        this->first->casilla.task = *newtask; 
         this->first->back = NULL;
 
     }else if(this->last->casilla.id == index){
-        this->last =this->last->back;
+        this->last->casilla.task = *newtask;
         this->last->next = NULL;
     }else{
         while(aux!=NULL){
             if(aux->casilla.id == index){
-                aux->back->next= aux->next;
-                aux->next->back = aux->back;
+                aux->casilla.task = *newtask;
+                break;
             }
             aux = aux->next;
         }
     }
 }
-void doubleList::insertWithIndex(int index, Task task){
+void doubleList::insertWithIndex(int index, Task &task){
     NodoT * aux = this->first;
     while (aux != NULL){
         if(aux->casilla.id == index){
@@ -65,10 +66,10 @@ void doubleList::insertWithIndex(int index, Task task){
     }
     
 }
-Task &doubleList::getTask(int carnet){
+Task &doubleList::getTask(int idTask){
     NodoT * aux = this->first;
     while(aux != NULL){
-        if(aux->casilla.task.getCarnet() == carnet){
+        if(aux->casilla.task.getId() == idTask){
 
             break;     
 
