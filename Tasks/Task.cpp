@@ -33,6 +33,12 @@ public:
     string getHour();
     string getState();
     void setCarnet(int carnet);
+    void setName(string name);
+    void setDescription(string description);
+    void setMateria(string materia);
+    void setFecha(Date & date);
+    void setHour(int hour);
+    void setState(string state);
     void ChangeDate();
     
       
@@ -63,6 +69,12 @@ string Task::getDate(){return to_string(this->date.getDay())+"/"+to_string(this-
 string Task::getHour(){return to_string(this->hour)+":00";}
 string Task::getState(){return this->state;}
 void Task::setCarnet(int carnet){this->carnet = carnet;}
+void Task::setName(string name){this->taskname = name;}
+void Task::setDescription(string des){this->description = des;}
+void Task::setMateria(string materia){this->materia = materia;}
+void Task::setFecha(Date &date){this->date = date;}
+void Task::setHour(int hour){this->hour = hour;}
+void Task::setState(string state){this->state = state;}
 void Task::ChangeDate(){this->falsedate = this->getDate();}
 
 

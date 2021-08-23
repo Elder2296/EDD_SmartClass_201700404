@@ -25,6 +25,8 @@ class Menu
         bool validarCorreo(const string& mail);
         void CargaManualUser();
         void CargaManualTask();
+        void ChangeUser();
+        void ChangeTask();
         
     /* data */
 public:
@@ -58,6 +60,214 @@ void Menu::subMenuUsers(){
     cout<<"Archivo cargado"<<endl;
 
 }
+void Menu::ChangeUser(){
+    List * list = List::getList();
+    bool condition = true;
+    string dpi;
+    while(condition){
+        cout<<"Ingrese el DPI: "<<endl;
+        cin>>dpi;
+        if(dpi.length()== 13){
+            if(list->searchDPI(dpi)){
+                condition = false;         
+            }
+        }
+    }
+    Student  stud = list->getStudent(dpi);
+    cout<<"------------------------------------------"<<endl;
+    cout<<"DPI: "<<stud.getDpi()<<endl;
+    cout<<"Carnet: "<<stud.getCarnet()<<endl;
+    cout<<"Nombre: "<<stud.getName()<<endl;
+    cout<<"Carrera: "<<stud.getCarrera()<<endl;
+    cout<<"Email: "<<stud.getMail()<<endl;
+    cout<<"Password: "<<stud.getPass()<<endl;
+    cout<<"Creditos: "<<stud.getCredits()<<endl;
+    cout<<"Edad: "<<stud.getAge()<<endl;
+    cout<<"------------------------------------------"<<endl;
+    
+    
+    cout<<"1    Cambiar Nombre: "<<endl;
+    cout<<"2    Cambiar Carrera: "<<endl;
+    cout<<"3    Cambiar Email: "<<endl;
+    cout<<"4    Cambiar Password: "<<endl;
+    cout<<"5    Cambiar Creditos: "<<endl;
+    cout<<"6    Cambiar Edad: "<<endl;
+    cout<<"\nIngrese una opcion:"<<endl;
+    int t;
+    cin>>t;
+    if(t == 1){
+        cout<<"\nIngrese nuevo nombre:"<<endl;
+        string name;
+        cin>>name;
+        list->getStudent(dpi).setName(name);
+
+    }else if(t == 2){
+        cout<<"\nIngrese nueva carrera:"<<endl;
+        string carrera;
+        cin>>carrera;
+        list->getStudent(dpi).setCarrera(carrera);
+    }else if(t == 3){
+        condition = true;
+        string mail;
+        while(condition){
+            cout<<"\nIngrese nuevo correo:"<<endl;
+            string mail;
+            cin>>mail;
+            if(validarCorreo(mail)){
+                condition = false;
+            }
+        }
+        
+        list->getStudent(dpi).setMail(mail);
+    }else if(t == 4){
+        cout<<"\nIngrese nueva contraseña:"<<endl;
+        string pass;
+        cin>>pass;
+        list->getStudent(dpi).setPass(pass);
+    }else if(t == 5){
+        cout<<"\nIngrese nuevos creditos:"<<endl;
+        int cre;
+        cin>>cre;
+        list->getStudent(dpi).setCredits(cre);
+        
+    }else if(t == 6){
+        cout<<"\nIngrese nueva edad:"<<endl;
+        int edad;
+        cin>>edad;
+        list->getStudent(dpi).setAge(edad);
+        
+    }
+    this->principal();
+    
+}
+void Menu::principal(){
+    cout << "\n\n******** Principal Menu ********"<<endl;
+    cout << "1     Carga de Usuarios"<<endl;
+    cout << "2     Carga de Tareas"<<endl;
+    cout << "3     Ingreso Manual"<<endl;
+    cout << "4     Reportes\n\n"<<endl;
+    cout << "Ingrese el numero de opcion"<<endl;
+    int option;
+    cin >>option;
+    if(option == 3){Manual_Input();}
+    else if(option == 4){Reports();}
+    else if(option ==1){loadUsers();}
+    else if(option ==2){loadTasksMenu();}
+}
+void Menu::subMenuUsers(){
+    cout<<"\n\nIngrese la ruta del archivo:"<<endl;
+    string path;
+    cin>>path;
+    cout<<"Archivo cargado"<<endl;
+
+}
+void Menu::ChangeTask(){
+    doubleList * list = doubleList::getList();
+    List * students = List::getList();
+    bool condition = true;
+    int index;
+    while(condition){
+        cout<<"Ingrese el INDEX: "<<endl;
+        cin>>index;
+        if(index>= 0 && index <= 1350){
+            condition = false;
+        }
+    }
+    Task task = list->searchForIndex(index);
+    cout<<"------------------------------------------"<<endl;
+    
+    cout<<"Carnet: "<<task.getCarnet()<<endl;
+    cout<<"Nombre: "<<task.getName()<<endl;
+    cout<<"Description: "<<task.getDescription()<<endl;
+    cout<<"Materia: "<<task.getMateria()<<endl;
+    cout<<"Fecha: "<<task.getDate()<<endl;
+    cout<<"Hora: "<<task.getHour()<<endl;
+    cout<<"Estado: "<<task.getState()<<endl;
+    cout<<"------------------------------------------"<<endl;
+    
+    
+    cout<<"1    Cambiar Carnet: "<<endl;
+    cout<<"2    Cambiar Nombre: "<<endl;
+    cout<<"3    Cambiar Description: "<<endl;
+    cout<<"4    Cambiar Materia: "<<endl;
+    cout<<"5    Cambiar Fecha: "<<endl;
+    cout<<"6    Cambiar Hora: "<<endl;
+    cout<<"7    Cambiar estado: "<<endl;
+    cout<<"\nIngrese una opcion:"<<endl;
+    int t;
+    cin>>t;
+    
+    if(t == 1){
+        int newCarnet;
+        condition = true;
+        while(condition){
+            cout<<"\nIngrese nuevo carnet valido:"<<endl;
+            string carnet;
+            cin>>carnet;
+            if(carnet.length() == 9){
+                newCarnet = atoi(carnet.c_str());
+                if(students->search(newCarnet)){
+
+                }
+            }
+        }
+        
+        list->searchForIndex(index).setCarnet(newCarnet);
+
+    }else if(t == 2){
+        cout<<"\nIngrese nueva nombre:"<<endl;
+        string nombre;
+        cin>>nombre;
+        list->searchForIndex(index).setName(nombre);
+    }else if(t == 3){
+        cout<<"\nIngrese nueva Description:"<<endl;
+        string desc;
+        cin>>desc;
+        list->searchForIndex(index).setDescription(desc);
+    }else if(t == 4){
+        cout<<"\nIngrese nueva Materia:"<<endl;
+        string materia;
+        cin>>materia;
+        list->searchForIndex(index).setMateria(materia);
+    }else if(t == 5){
+        condition = true;
+        int day;
+        int mounth;
+        while(condition){
+            cout<<"\nIngrese nueva dia:"<<endl;
+            cin>>day;
+            cout<<"\nIngrese nueva mes 7-11:"<<endl;
+            cin>>mounth;
+            if(day>0 && day<31 && mounth >6 && mounth <12){
+                condition = false;
+            }
+        }
+        Date * date = new Date(2021,mounth,day);
+        
+        list->searchForIndex(index).setFecha(*date);
+        
+    }else if(t == 6){
+        condition = true;
+        int hour;
+        while(condition){
+            cout<<"\nIngrese nueva hora:"<<endl;
+            cin>>hour;
+            if(hour>7 && hour < 17){
+                condition = false;
+            }
+        }
+        
+        list->searchForIndex(index).setHour(hour);
+        
+    }else if(t == 7){
+        cout<<"\nIngrese nueva estado:"<<endl;
+        string estado;
+        cin>>estado;
+        list->searchForIndex(index).setState(estado);
+    }
+    this->principal();
+    
+}
 
 void Menu::Manual_Input(){
     cout << "\n\n1     Usuarios"<<endl;
@@ -80,7 +290,7 @@ void Menu::Manual_Input(){
             this->CargaManualUser();
         }else if(opt == 4){
             this->principal();
-        }else if(3){
+        }else if(opt == 3){
             List * list = List::getList();
             bool condition = true;
             string dpi,carnet;
@@ -101,6 +311,8 @@ void Menu::Manual_Input(){
             
             list->Delete(dpi);
             cout<<"Eliminacion exitosa!!!"<<endl;
+        }else if(opt == 2){
+            this->ChangeUser();
         }
 
     }else if(option == 2){
@@ -132,6 +344,9 @@ void Menu::Manual_Input(){
             
             list->Delete(indice);
             cout<<"Eliminacion exitosa!!!"<<endl;
+        }else if(opt == 2){
+            this->ChangeTask();
+
         }
 
     }
