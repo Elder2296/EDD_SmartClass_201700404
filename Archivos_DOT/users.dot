@@ -1,42 +1,33 @@
 digraph A{
 rankdir = LR;
-node [shape = box label="Carnet: 201700886\nDPI: 3502451230508\nNombre: Emilia Miramontes\nCarrera: Ingeniería en Ciencias y Sistemas\nPassword: roxodiciqi\nCreditos: 205\nEdad: 21\n Email: nicols36@hotmail.com"] 201700886
-node [shape = box label="Carnet: 201501786\nDPI: 7249529279753\nNombre: Juan Curiel\nCarrera: Ingeniería Industrial\nPassword: zanolexima\nCreditos: 245\nEdad: 24\n Email: jernimo.caballero@yahoo.com"] 201501786
-node [shape = box label="Carnet: 201822186\nDPI: 9298434863898\nNombre: Eloisa Rincón\nCarrera: Ingeniería Civil\nPassword: toqelijanu\nCreditos: 95\nEdad: 19\n Email: carolinaelizondo85@yahoo.com"] 201822186
-node [shape = box label="Carnet: 201901425\nDPI: 4131766125532\nNombre: Bernardo Hinojosa\nCarrera: Ingeniería Mecánica\nPassword: wosopumano\nCreditos: 100\nEdad: 20\n Email: alfonso03@hotmail.com"] 201901425
-node [shape = box label="Carnet: 201503186\nDPI: 8549191766348\nNombre: Manuel Manzanares\nCarrera: Ingeniería Eléctrica\nPassword: rejumudore\nCreditos: 226\nEdad: 24\n Email: benitoarmas92@gmail.com"] 201503186
-node [shape = box label="Carnet: 201123146\nDPI: 9616636196552\nNombre: Julia Corona\nCarrera: Ingeniería Electrónica\nPassword: xojobavuji\nCreditos: 237\nEdad: 26\n Email: ngela.solorio86@yahoo.com"] 201123146
-node [shape = box label="Carnet: 201704186\nDPI: 4778315315575\nNombre: Berta Carrasco\nCarrera: Ingeniería Ambiental\nPassword: gayahizatu\nCreditos: 210\nEdad: 22\n Email: carmen.montenegro@yahoo.com"] 201704186
-node [shape = box label="Carnet: 202000786\nDPI: 7382344774121\nNombre: Lola Delapaz\nCarrera: Ingeniería Química\nPassword: hujocikimi\nCreditos: 45\nEdad: 19\n Email: adriana56@gmail.com"] 202000786
-node [shape = box label="Carnet: 201611446\nDPI: 2511893949443\nNombre: Sonia Arteaga\nCarrera: Ingeniería Mecánica Industrial\nPassword: rezutafila\nCreditos: 195\nEdad: 23\n Email: esperanza.meza41@hotmail.com"] 201611446
-node [shape = box label="Carnet: 201819852\nDPI: 3423442386382\nNombre: Benjamín Asencio\nCarrera: Ingeniería Mecánica Eléctrica\nPassword: runoqozepo\nCreditos: 117\nEdad: 20\n Email: horacio.tejada15@yahoo.com"] 201819852
-node [shape = box label="Carnet: 201700404\nDPI: 3063391290315\nNombre: Elder Lopez\nCarrera: Ingenieria en Ciencias y Sistemas\nPassword: brC123abc\nCreditos: 102\nEdad: 24\n Email: el.ariel2296@gmail.com"] 201700404
-node [shape = box label="Carnet: 201800505\nDPI: 3063391290317\nNombre: Maria Jose\nCarrera: Trabajo Social\nPassword: miamiamia\nCreditos: 150\nEdad: 22\n Email: mariajosee@gmail.com"] 201800505
-node [shape = box label="Carnet: 201500406\nDPI: 5826213356546\nNombre: Desconocido\nCarrera: Desconocido\nPassword: saberquienes\nCreditos: 23\nEdad: 36\n Email: prueba.ingenieria@ingenieria.org"] 201500406
-201700886 -> 201501786
-201501786 -> 201700886
-201501786 -> 201822186
-201822186 -> 201501786
-201822186 -> 201901425
-201901425 -> 201822186
-201901425 -> 201503186
-201503186 -> 201901425
-201503186 -> 201123146
-201123146 -> 201503186
-201123146 -> 201704186
-201704186 -> 201123146
-201704186 -> 202000786
-202000786 -> 201704186
-202000786 -> 201611446
-201611446 -> 202000786
-201611446 -> 201819852
-201819852 -> 201611446
-201819852 -> 201700404
-201700404 -> 201819852
-201700404 -> 201800505
-201800505 -> 201700404
-201800505 -> 201500406
-201500406 -> 201800505
-201700886 -> 201500406
-201500406 -> 201700886
+node [shape = box label="Carnet: 201533907\nDPI: 4009702438731\nNombre: lionel messi\nCarrera: ingenieria Quimica\nPassword: f33MG\nCreditos: 149\nEdad: 26\n Email: lionelmessi45@outlook.es"] 201533907
+node [shape = box label="Carnet: 201491494\nDPI: 0626298862212\nNombre: josue perez\nCarrera: ingenieria Electrica\nPassword: jxOrwE\nCreditos: 51\nEdad: 19\n Email: josueperez76@aol.com"] 201491494
+node [shape = box label="Carnet: 201045090\nDPI: 3182879872704\nNombre: josue perez\nCarrera: ingenieria Mecanica\nPassword: c5H3hd\nCreditos: 68\nEdad: 25\n Email: josueperez.78@hotmail.org"] 201045090
+node [shape = box label="Carnet: 201027375\nDPI: 5878008078748\nNombre: auron play\nCarrera: ingenieria Electrica\nPassword: oXqp3Z\nCreditos: 100\nEdad: 23\n Email: auronplay_78@aol.es"] 201027375
+node [shape = box label="Carnet: 201340841\nDPI: 8910197965661\nNombre: lionel messi\nCarrera: ingenieria Mecanica\nPassword: 6Q3Jw\nCreditos: 18\nEdad: 20\n Email: lionelmessi91@gmail.es"] 201340841
+node [shape = box label="Carnet: 201296311\nDPI: 7220764828850\nNombre: auron play\nCarrera: ingenieria en ciencias y sistemas\nPassword: gmUE31Q\nCreditos: 188\nEdad: 19\n Email: auronplay.48@aol.com"] 201296311
+node [shape = box label="Carnet: 201835603\nDPI: 5541744429588\nNombre: alma maria hernandez\nCarrera: ingenieria Quimica\nPassword: BBjwdK\nCreditos: 39\nEdad: 21\n Email: almamariahernandez.47@gmail.es"] 201835603
+node [shape = box label="Carnet: 201639410\nDPI: 5065230216717\nNombre: lionel messi\nCarrera: ingenieria Quimica\nPassword: sW9t74\nCreditos: 7\nEdad: 20\n Email: lionelmessi39@gmail.es"] 201639410
+node [shape = box label="Carnet: 201590802\nDPI: 8963363122932\nNombre: alma maria hernandez\nCarrera: ingenieria en ciencias y sistemas\nPassword: hiRv2\nCreditos: 78\nEdad: 29\n Email: almamariahernandez_28@undefined.com"] 201590802
+node [shape = box label="Carnet: 201798433\nDPI: 2025270525778\nNombre: luis garcia\nCarrera: ingenieria Electrica\nPassword: 18WlR5\nCreditos: 18\nEdad: 20\n Email: luisgarcia8@aol.org"] 201798433
+201533907 -> 201491494
+201491494 -> 201533907
+201491494 -> 201045090
+201045090 -> 201491494
+201045090 -> 201027375
+201027375 -> 201045090
+201027375 -> 201340841
+201340841 -> 201027375
+201340841 -> 201296311
+201296311 -> 201340841
+201296311 -> 201835603
+201835603 -> 201296311
+201835603 -> 201639410
+201639410 -> 201835603
+201639410 -> 201590802
+201590802 -> 201639410
+201590802 -> 201798433
+201798433 -> 201590802
+201533907 -> 201798433
+201798433 -> 201533907
 }

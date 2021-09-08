@@ -130,7 +130,7 @@ void loadTasks::lineation(){
         for (int j = 0; j < 30; j++){
             for (int k = 0; k < 9; k++){
                 //tasks[i][j][k]
-                vector[k+9*(j+30*i)] = new Casilla(id,*tasks[i][j][k]);
+                vector[i+5*(j+30*k)] = new Casilla(id,*tasks[i][j][k]);
                 id++;
             }
                     

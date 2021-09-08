@@ -89,7 +89,7 @@ void loadFile::loadStudents(string path){
     //cout<<"llego aca"<<endl;
 }
 bool loadFile::validarCorreo(const string& mail){
-    const regex exReg("([a-z]|[A-Z]|[0-9]|.)+@([a-z]|[A-Z])+(.([a-z]|[A-Z]))+");
+    const regex exReg("([a-z0-9]|[A-Z])+((.[a-z0-9]+)|[A-Z])*@([a-z0-9]|[A-Z])+(.([a-z0-9]|[A-Z])+)*(.([a-z]{2,3}|[A-Z]))");
     return regex_match(mail,exReg);
 }
 
