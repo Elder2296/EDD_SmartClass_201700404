@@ -1,0 +1,79 @@
+from Nodo import*
+class AVL():
+    def __init__(self):
+        self.root = None
+
+    def Max(self, student1, student2):
+        if student1.getCarnet() > student2.getCarnet():
+            return student1.getCarnet()
+        else:
+            return student2.getCarnet()
+
+
+    def Insert(self, student):
+        self.root = self.Insert2(student, self.root)
+    
+    def Insert2(self, student, root):
+
+
+        if root == None:
+            return Nodo(student)
+        else:
+            if student.getCarnet() < root.getStudent().getCarnet():
+
+                root.left = self.Insert2(student,root.left)
+
+                if(self.Heigth(root.right)- self.Heigth(root.left)==-2):
+                    if student.getCarnet() < root.right.getStudent().getCarnet():
+
+                        root = self.RotationRight(root)
+                    else:
+                        root = self.RotationDoubleLeft(root)
+
+            elif student.getCarnet()> root.getStudent().getCarnet():
+                root.right = self.Insert2(student,root.right)
+                if(self.Heigth(root.right)- self.Heigth(root.left)==2):
+                    if student.getCarnet() > root.right.getStudent().getCarnet():
+                        root = self.RotationRight(root)
+                    else:
+                        root = self.RotationDoubleRight(root)
+            else:
+                root.student = student
+        root.heigth = self.Max(self.Heigth(root.left), self.Heigth(root.right))+1
+        return root
+
+                
+    def Heigth(self, nodo):
+        if nodo != None:
+            return nodo.heigth
+        return -1
+    def RotationRight(self, nodo):
+        aux = nodo.right
+        nodo.right = aux.left
+        aux.izq = nodo
+        nodo.heigth = self.Max(self.Heigth(nodo.right), self.Heigth(nodo.left))+1
+        aux.heigth = self.Max(self.Heigth(aux.right), nodo.heigth)+1
+        return aux
+    def RotationDoubleLeft(self,nodo):
+        nodo.left = self.RotationRight(nodo.left)
+        return self.RotationLeft(nodo)
+
+    def RotationLeft(self, nodo):
+        aux = nodo.left
+        nodo.left = aux.right
+        aux.right = nodo
+        nodo.heigth = self.Max(self.Heigth(nodo.right), self.Heigth(nodo.left))+1
+        aux.heigth = self.Max(self.Heigth(aux.right),nodo.heigth)+1
+        return aux
+
+    def RotationDoubleRight(self,nodo):
+        nodo.right = self.RotationRight(nodo.right)
+        return self.RotationRight(nodo)
+    def print(self):
+        self.__in(self.root)
+    def __in(self,nodo):
+        if nodo:
+            self.__in(nodo.left)
+            print("carnet: "+str(nodo.getStudent().getCarnet()))
+            self.__in(nodo.right)
+    

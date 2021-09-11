@@ -1,0 +1,16 @@
+digraph AVL{
+node [shape = circle label = "1"] 1
+node [shape = circle label = "2"] 2
+node [shape = circle label = "3"] 3
+node [shape = circle label = "4"] 4
+node [shape = circle label = "5"] 5
+node [shape = circle label = "6"] 6
+node [shape = circle label = "7"] 7
+4 -> 2 
+2 -> 1 
+2 -> 3 
+4 -> 6 
+6 -> 5 
+6 -> 7 
+
+}
