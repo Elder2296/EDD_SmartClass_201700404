@@ -5,7 +5,7 @@ import os
         self.valor = valor
         self.altura = 0
         self.izq = self.der = None*/'''
-
+'''
 class AVL:
     def __init__(self):
         self.raiz = None
@@ -103,4 +103,114 @@ class AVL:
         self.mappear(self.raiz,file)
         file.write("\n}")
         file.close()
-       
+'''
+class AVL():
+    def __init__(self):
+        self.root = None    
+    def Max(self, carnet1, carnet2):
+        if carnet1 > carnet2:
+            return carnet1
+        else:
+            return carnet2
+    def Insert(self, student):
+        self.root = self.Insert2(student, self.root)
+    
+
+    def Insert2(self, student, root):
+
+
+        if root == None:
+            return Nodo(student)
+        else:
+            if student.getCarnet() < root.getStudent().getCarnet():
+
+                root.left = self.Insert2(student,root.left)
+
+                if(self.Heigth(root.right)- self.Heigth(root.left)==-2):
+
+                    if student.getCarnet() < root.left.getStudent().getCarnet():
+
+                        root = self.RotationLeft(root)
+                    else:
+                        root = self.RotationDoubleLeft(root)
+
+            elif student.getCarnet() > root.getStudent().getCarnet():
+                root.right = self.Insert2(student,root.right)
+
+                if(self.Heigth(root.right)- self.Heigth(root.left)==2):
+                    if student.getCarnet() > root.right.getStudent().getCarnet():
+                        root = self.RotationRight(root)
+                    else:
+                        root = self.RotationDoubleRight(root)
+            else:
+                root.student = student
+        root.heigth = self.Max(self.Heigth(root.left), self.Heigth(root.right))+1
+        return root
+
+
+    def Heigth(self, nodo):
+        if nodo != None:
+            return nodo.heigth
+        return -1
+
+
+    def RotationLeft(self, nodo):
+        aux = nodo.left
+        nodo.left = aux.right
+        aux.right = nodo
+        nodo.heigth = self.Max(self.Heigth(nodo.right), self.Heigth(nodo.left))+1
+        aux.heigth = self.Max(self.Heigth(aux.left),nodo.heigth)+1
+        return aux
+
+
+    def RotationRight(self, nodo):
+        aux = nodo.right
+        nodo.right = aux.left
+        aux.izq = nodo
+        nodo.heigth = self.Max(self.Heigth(nodo.right), self.Heigth(nodo.left))+1
+        aux.heigth = self.Max(self.Heigth(aux.right), nodo.heigth)+1
+        return aux
+    
+
+
+    def RotationDoubleLeft(self,nodo):
+        nodo.left = self.RotationRight(nodo.left)
+        return self.RotationLeft(nodo)
+    
+    def RotationDoubleRight(self,nodo):
+        nodo.right = self.RotationLeft(nodo.right)
+        return self.RotationRight(nodo)
+
+    
+    
+
+
+    def print(self):
+        self.__in(self.root)
+    def __in(self,nodo):
+        if nodo:
+            self.__in(nodo.left)
+            print("carnet: "+str(nodo.getStudent().getCarnet()))
+            self.__in(nodo.right)
+    def createTree(self):
+        file = open("avl.dot","w")
+        file.write("digraph AVL{\n")
+        # file.write("node [shape = circle label = \""+str(self.raiz.valor)+"\"] "+str(self.raiz.valor)+"\n")
+        self.__inOrden(self.root,file)
+        self.mappear(self.root,file)
+        file.write("\n}")
+        file.close()
+    
+    def __inOrden(self, nodo, file):
+        if nodo:
+            self.__inOrden(nodo.left,file)
+            file.write("node [shape = circle label = \""+str(nodo.getStudent().getCarnet())+"\\n"+nodo.getStudent().getName()+"\\n"+nodo.getStudent().getCarrera()+"\"] "+str(nodo.getStudent().getCarnet())+"\n")
+            #print("Valor:", nodo.valor)
+            self.__inOrden(nodo.right,file)
+    def mappear(self, nodo, file):
+        if nodo.left:
+            file.write(str(nodo.getStudent().getCarnet())+" -> "+str(nodo.left.getStudent().getCarnet())+" \n")
+            self.mappear(nodo.left,file)
+        if nodo.right:
+            file.write(str(nodo.getStudent().getCarnet())+" -> "+str(nodo.right.getStudent().getCarnet())+" \n")
+            self.mappear(nodo.right,file)

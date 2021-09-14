@@ -1,16 +1,18 @@
 digraph AVL{
-node [shape = circle label = "1"] 1
-node [shape = circle label = "2"] 2
-node [shape = circle label = "3"] 3
-node [shape = circle label = "4"] 4
-node [shape = circle label = "5"] 5
-node [shape = circle label = "6"] 6
-node [shape = circle label = "7"] 7
-4 -> 2 
-2 -> 1 
-2 -> 3 
-4 -> 6 
-6 -> 5 
-6 -> 7 
+node [shape = circle label = "201700115\nDelmi\nCiencias y Sistemas"] 201700115
+node [shape = circle label = "201700146\nIsabel\nAmbiental"] 201700146
+node [shape = circle label = "201700396\nObed\nCiencias y Sistemas"] 201700396
+node [shape = circle label = "201700404\nElder\nCiencias y Sistemas"] 201700404
+node [shape = circle label = "201700505\nCindy\nMecanica"] 201700505
+node [shape = circle label = "201700603\nSelvin\nQuimica"] 201700603
+node [shape = circle label = "201700893\nJeny\nElectronica"] 201700893
+node [shape = circle label = "201709063\nMaría\nElectronica"] 201709063
+201700404 -> 201700146 
+201700146 -> 201700115 
+201700146 -> 201700396 
+201700404 -> 201700603 
+201700603 -> 201700505 
+201700603 -> 201709063 
+201709063 -> 201700893 
 
 }

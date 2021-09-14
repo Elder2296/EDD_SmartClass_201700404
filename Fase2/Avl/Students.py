@@ -8,7 +8,7 @@ class Student():
         self.password = password
         self.credits = credits
         self.age = age
-        self.yearsList
+        self.yearsList=0
 
     def getCarnet(self):
         return self.carnet

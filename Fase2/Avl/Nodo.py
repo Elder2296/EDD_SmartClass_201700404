@@ -1,7 +1,9 @@
 class Nodo:
-    def __init__(self,valor):
-        self.valor = valor
-        self.altura = 0
-        self.izq = self.der = None
+    def __init__(self,student):
+        self.student = student
+        self.heigth = 0
+        self.left = self.right = None
 
+    def getStudent(self):
+        return self.student
     
