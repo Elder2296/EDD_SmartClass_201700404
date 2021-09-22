@@ -1,8 +1,11 @@
-from flask import Flask, jsonify, request
+from flask import Flask, json, jsonify, request
 
 app = Flask(__name__)
 
 from products import products
+from Loads  import *
+
+principal = Load()
 @app.route('/ping')
 def ping():
     return jsonify({"message": "pong!!!"})
@@ -17,6 +20,22 @@ def getProduct(product_name):
     if (len(productsFound) > 0):
         return jsonify({'product': productsFound[0]})
     return jsonify({'message': 'Product Not found'})
+
+
+
+
+@app.route('/carga', methods=['POST'])
+def Load():
+    tipo = request.json['tipo'],
+    path =request.json['path']
+    print("tipo: "+str(tipo))
+    principal.loadStudents(str(path))
+    #print()
+    
+    return jsonify({'message':'Load succesfully'})
+
+
+
 
 
 @app.route('/products', methods=['POST'])

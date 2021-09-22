@@ -1,4 +1,4 @@
-from Avl.Avl import*
+'''from Avl.Avl import*
 from Avl.Students import*
 
 studen1 = Student(201700404,3063391290315,'Elder','Ciencias y Sistemas','el.ariel2296@gmail.com','brC123abc',106,24)
@@ -25,13 +25,38 @@ avl.Insert(studen9)
 
 
 
-'''avl.insertar(21)
-avl.insertar(12)
-avl.insertar(36)
-avl.insertar(9)
-avl.insertar(24)'''
+
 
 
 avl.print()
 avl.createTree()
-print("arbol created")
+print("arbol created")'''
+
+from Avl.Students import Student
+from Analizer.parser import parser, types
+
+if __name__ == '__main__':
+    f = open('Estudiantes.txt','r', encoding= 'utf-8')
+    message = f.read()
+    f.close()
+    #print(message)
+    parser.parse(message)
+    students = list()
+    homeworks = list()
+    print("largo de types: "+str(len(types)))
+    for i in range(len(types)):
+        
+        if types[i] == "\"user\"":
+            character = "\""
+            student = Student(types[i+1].replace(character,""),types[i+2].replace(character,""),types[i+3].replace(character,""),types[i+4].replace(character,""),types[i+5].replace(character,""),types[i+6].replace(character,""),types[i+7],types[i+8])
+            students.append(student)
+        if types[i] == "task":
+            task = "tarea "+ str(i+1)
+            homeworks.append(task)
+
+    print("ESTUDIANTES") 
+    for x in range(len(students)):
+        print("Carnet: "+students[x].getCarnet())
+        print("Carnet: "+students[x].getName())
+
+        
