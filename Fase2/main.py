@@ -1,4 +1,4 @@
-'''from Avl.Avl import*
+from Avl.Avl import*
 from Avl.Students import*
 
 studen1 = Student(201700404,3063391290315,'Elder','Ciencias y Sistemas','el.ariel2296@gmail.com','brC123abc',106,24)
@@ -23,15 +23,22 @@ avl.Insert(studen7)
 avl.Insert(studen8)
 avl.Insert(studen9)
 
-
+if(avl.search(2017004046)):
+    print(avl.getStudent(201700404).getName())
+else:
+    print("No encontrado.")
 
 
 
 
 avl.print()
 avl.createTree()
-print("arbol created")'''
+print("arbol created")
 
+
+
+
+'''
 from Avl.Students import Student
 from Analizer.parser import parser, types
 
@@ -57,6 +64,17 @@ if __name__ == '__main__':
     print("ESTUDIANTES") 
     for x in range(len(students)):
         print("Carnet: "+students[x].getCarnet())
-        print("Carnet: "+students[x].getName())
+        print("Carnet: "+students[x].getName())'''
+
+'''from Years.Years import *
+
+anios = Years()
+
+anios.Insert(2019)
+anios.Insert(2014)
+anios.Insert(2015)
+anios.Insert(2016)
+
+anios.Print()'''
 
         

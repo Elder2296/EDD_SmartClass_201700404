@@ -1,6 +1,7 @@
+from Years.Years import Years
 class Student():
     def __init__(self, carnet,dpi,name, carrera, email,password,credits, age):
-        self.carnet = carnet
+        self.carnet = int(carnet)
         self.dpi = dpi
         self.name = name
         self.carrera = carrera
@@ -8,7 +9,7 @@ class Student():
         self.password = password
         self.credits = credits
         self.age = age
-        self.yearsList=0
+        self.yearsList= Years()
 
     def getCarnet(self):
         return self.carnet
@@ -16,6 +17,11 @@ class Student():
         return self.name
     def getCarrera(self):
         return self.carrera
+    def addYear(self, year):
+        yearfound = 0
+        if not( self.yearsList.SearchYear(year)):
+            self.yearsList.Insert(year)
+        
         
 
 

@@ -1,5 +1,6 @@
 from Avl.Avl import *
 from Avl.Students import *
+from Homeworks.homework import Homework
 from Analizer.parser import parser,types
 class Load():
     avl = AVL()    
@@ -7,22 +8,45 @@ class Load():
         print("Cargas")
     
     def loadStudents(self, path):
-        print("desde la carga"+path)
+        #print("desde la carga"+path)
         file = open(path,'r', encoding= 'utf-8')
         message = file.read()
         file.close()
         #print(message)
         parser.parse(message)
         students = list()
+        homewors = list()
+        character = "\""
+        
         for i in range(len(types)):
             if types[i] == "\"user\"":
-                character = "\""
+                
                 student = Student(types[i+1].replace(character,""),types[i+2].replace(character,""),types[i+3].replace(character,""),types[i+4].replace(character,""),types[i+5].replace(character,""),types[i+6].replace(character,""),types[i+7],types[i+8])
                 students.append(student)
+            if types[i] == "\"task\"":
+                homework = Homework(types[i+1].replace(character,""),types[i+2].replace(character,""), types[i+3].replace(character,""), types[i+4].replace(character,""), types[i+5].replace(character,""), types[i+6].replace(character,""), types[i+7].replace(character,""))
+                homewors.append(homework)
+        
         for a in range(len(students)):
             self.avl.Insert(students[a])
-            print(students[a].getCarnet())    
-            
+            #print(students[a].getCarnet())
 
+        for b in range(len(homewors)):
+            
+            if (self.avl.search(homewors[b].carnet)):
+                self.avl.getStudent(homewors[b].carnet).addYear(homewors[b].date.year)
+
+        print("\nCARNET TASKS")
+        for b in range(len(homewors)):
+             print (homewors[b].carnet)
+        print("\n STUDENTS")    
         self.avl.print()
+        print("\n")
+        self.avl.PrintYears() 
+        '''if(self.avl.search(int(201900405))):
+
+            print(self.avl.getStudent(201900405).getName())
+        else:
+            print("Not found")'''
+        
         self.avl.createTree()

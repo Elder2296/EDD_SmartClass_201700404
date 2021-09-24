@@ -1,12 +1,12 @@
 digraph AVL{
-node [shape = circle label = "201432186\nEloisa Rincón\nIngenieria Civil"] 201432186
-node [shape = circle label = "201501786\nJuan Curiel\nIngenieria Industrial"] 201501786
+node [shape = circle label = "201300404\nJuan camaney\nIngenieria Civil"] 201300404
 node [shape = circle label = "201800604\nCindy Lopez\nIngenieria Civil"] 201800604
 node [shape = circle label = "201822186\nEloisa Rincón\nIngenieria Civil"] 201822186
+node [shape = circle label = "201900405\nEloisa Rincón\nIngenieria Civil"] 201900405
 node [shape = circle label = "201902125\nEmilia Miramontes\nIngenieria en Ciencias y Sistemas"] 201902125
-201501786 -> 201432186 
-201501786 -> 201822186 
 201822186 -> 201800604 
+201800604 -> 201300404 
 201822186 -> 201902125 
+201902125 -> 201900405 
 
 }

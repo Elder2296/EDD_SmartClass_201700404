@@ -10,7 +10,7 @@
         ¿item Edad = 21 $?
     ¿$element?
     ¿element type="task"?
-        ¿item Carnet = "201901425" $?
+        ¿item Carnet = "201902125" $?
         ¿item Nombre = "Tarea de Matematica" $?
         ¿item Descripcion = "Realizar la tarea del curso de matemática intermedia 1." $?
         ¿item Materia = "Matemática Intermedia 1" $?
@@ -31,41 +31,14 @@
     ¿element type="user"?
         ¿item Carnet = "201432186" $?
         ¿item DPI = "9298434863898" $?
-        ¿item Nombre = "Eloisa Rincón" $?
+        ¿item Nombre = "Naruto Shipuden" $?
         ¿item Carrera = "Ingenieria Civil" $?
         ¿item Correo = "prueba@gmail.com" $?
         ¿item Password = "toqelijanu" $?
         ¿item Creditos = 95 $?
         ¿item Edad = 19 $?
     ¿$element?
-    ¿element type="task"?
-        ¿item Carnet = "201700886" $?
-        ¿item Nombre = "Codificar en C++" $?
-        ¿item Descripcion = "Realizar la tarea del curso de Estructuras de datos" $?
-        ¿item Materia = "Estructuras de Datos" $?
-        ¿item Fecha = "14/07/2021" $?
-        ¿item Hora = "16:00" $?
-        ¿item Estado = "Pendiente" $?
-    ¿$element?
-    ¿element type="user"?
-        ¿item Carnet = "201700404" $?
-        ¿item DPI = "9298434863898" $?
-        ¿item Nombre = "Eloisa Rincón" $?
-        ¿item Carrera = "Ingenieria Civil" $?
-        ¿item Correo = "prueba@gmail.com" $?
-        ¿item Password = "toqelijanu" $?
-        ¿item Creditos = 95 $?
-        ¿item Edad = 19 $?
-    ¿$element?
-    ¿element type="task"?
-        ¿item Carnet = "201404186" $?
-        ¿item Nombre = "Tarea de Estadística" $?
-        ¿item Descripcion = "Realizar la tarea del curso de Estadística 1." $?
-        ¿item Materia = "Estadística 1" $?
-        ¿item Fecha = "14/07/2021" $?
-        ¿item Hora = "10:00" $?
-        ¿item Estado = "Cumplido" $?
-    ¿$element?
+    
     ¿element type="user"?
         ¿item Carnet = "201822186" $?
         ¿item DPI = "9298434863898" $?
@@ -85,5 +58,52 @@
         ¿item Password = "toqelijanu" $?
         ¿item Creditos = 95 $?
         ¿item Edad = 19 $?
+    ¿$element?
+    ¿element type="user"?
+        ¿item Carnet = "201900405" $?
+        ¿item DPI = "9298434863898" $?
+        ¿item Nombre = "Eloisa Rincón" $?
+        ¿item Carrera = "Ingenieria Civil" $?
+        ¿item Correo = "prueba@gmail.com" $?
+        ¿item Password = "toqelijanu" $?
+        ¿item Creditos = 95 $?
+        ¿item Edad = 19 $?
+    ¿$element?
+    ¿element type="task"?
+        ¿item Carnet = "201900405" $?
+        ¿item Nombre = "Tarea de Estadística" $?
+        ¿item Descripcion = "Realizar la tarea del curso de Estadística 1." $?
+        ¿item Materia = "Estadística 1" $?
+        ¿item Fecha = "14/07/2021" $?
+        ¿item Hora = "10:00" $?
+        ¿item Estado = "Cumplido" $?
+    ¿$element?
+    ¿element type="user"?
+        ¿item Carnet = "201300404" $?
+        ¿item DPI = "9298434863898" $?
+        ¿item Nombre = "Juan camaney" $?
+        ¿item Carrera = "Ingenieria Civil" $?
+        ¿item Correo = "prueba@gmail.com" $?
+        ¿item Password = "toqelijanu" $?
+        ¿item Creditos = 95 $?
+        ¿item Edad = 19 $?
+    ¿$element?
+    ¿element type="task"?
+        ¿item Carnet = "201300404" $?
+        ¿item Nombre = "Tarea de Estadística" $?
+        ¿item Descripcion = "Realizar la tarea del curso de Estadística 1." $?
+        ¿item Materia = "Estadística 1" $?
+        ¿item Fecha = "11/07/2014" $?
+        ¿item Hora = "10:00" $?
+        ¿item Estado = "Cumplido" $?
+    ¿$element?
+    ¿element type="task"?
+        ¿item Carnet = "201300404" $?
+        ¿item Nombre = "Tarea de Estadística2" $?
+        ¿item Descripcion = "Realizar la tarea del curso de Estadística 1." $?
+        ¿item Materia = "Estadística 1" $?
+        ¿item Fecha = "14/09/2016" $?
+        ¿item Hora = "10:00" $?
+        ¿item Estado = "Cumplido" $?
     ¿$element?
 ¿$Elements?

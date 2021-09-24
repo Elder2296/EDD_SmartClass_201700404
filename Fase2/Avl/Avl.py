@@ -106,7 +106,9 @@ class AVL:
 '''
 class AVL():
     def __init__(self):
-        self.root = None    
+        self.root = None
+        self.find = False  
+        self.find2 = 0  
     def Max(self, carnet1, carnet2):
         if carnet1 > carnet2:
             return carnet1
@@ -181,17 +183,79 @@ class AVL():
         nodo.right = self.RotationLeft(nodo.right)
         return self.RotationRight(nodo)
 
+
+   
+    def search(self,carnet):
+        self.encontrarStudiante(self.root, carnet)
+        #print("Resultado de la busqueda: "+str(self.find))
+        return self.find
+    def encontrarStudiante(self, nodo,carnet1):
+        #print("from avl")
+        #print(str(nodo.getStudent().carnet)+"---"+str(type(nodo.getStudent().carnet))+" *** " +str(carnet1)+"---"+str(type(carnet1)))
+        
+        if(nodo.getStudent().carnet == carnet1):
+            #print("ENCONTRO A ESTUDIANTES CON CARNET: "+str(nodo.getStudent().carnet))
+            
+            self.find = True
+            
+        
+        if(nodo.getStudent().carnet < carnet1):
+            if (nodo.right == None):
+                self.find = False
+            else:
+                self.encontrarStudiante(nodo.right, carnet1)
+        if(nodo.getStudent().carnet > carnet1):
+            if (nodo.left == None):
+                self.find = False
+            else:
+                self.encontrarStudiante(nodo.left, carnet1)
+
     
+    def searchStudent(self,nodo, carnet):
+        
+        if(nodo.getStudent().getCarnet() == carnet):
+            #print("FIND STUDENT  type: "+str(type(nodo.getStudent())))
+            return nodo.getStudent()
+            
+        elif (nodo.getStudent().getCarnet() < carnet):
+            return self.searchStudent(nodo.right,carnet)
+        elif (nodo.getStudent().getCarnet() > carnet):
+            return self.searchStudent(nodo.left,carnet)
+        '''if(self.find2 == 1):
+            print("SE LE AGREGARAN ANIOS A EL CARNET: "+str(nodo.getStudent().carnet))
+            self.find2 = 0
+            return nodo.getStudent()'''
+
+    def getStudent(self,carnet):
+        #print("from method GETSTUDENT *** "+str(type(self.searchStudent(self.root,carnet))))
+        return self.searchStudent(self.root,carnet)
+            
+    
+
+
     
 
 
     def print(self):
         self.__in(self.root)
+
     def __in(self,nodo):
         if nodo:
             self.__in(nodo.left)
-            print("carnet: "+str(nodo.getStudent().getCarnet()))
+            print(nodo.getStudent().getCarnet())
             self.__in(nodo.right)
+
+
+    def PrintYears(self):
+        self.Enorden(self.root)    
+
+
+    def Enorden(self, nodo):
+        if nodo:
+            self.Enorden(nodo.left)
+            print("LIST YEARS of "+str(nodo.getStudent().carnet)+" size: "+str(nodo.getStudent().yearsList.size))
+            nodo.getStudent().yearsList.Print()
+            self.Enorden(nodo.right)
     def createTree(self):
         file = open("avl.dot","w")
         file.write("digraph AVL{\n")
