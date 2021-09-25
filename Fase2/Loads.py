@@ -30,11 +30,15 @@ class Load():
         for a in range(len(students)):
             self.avl.Insert(students[a])
             #print(students[a].getCarnet())
-
+        #Add years to Student
         for b in range(len(homewors)):
             
             if (self.avl.search(homewors[b].carnet)):
                 self.avl.getStudent(homewors[b].carnet).addYear(homewors[b].date.year)
+        for c in range(len(homewors)):
+            if(self.avl.search(homewors[c].carnet)):
+                if(self.avl.getStudent(homewors[c].carnet).FindYear(homewors[c].date.year)):
+                    self.avl.getStudent(homewors[c].carnet).getYear(homewors[c].date.year).addMounth(homewors[c].date.mounth)
 
         print("\nCARNET TASKS")
         for b in range(len(homewors)):

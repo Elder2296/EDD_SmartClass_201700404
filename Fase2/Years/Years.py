@@ -20,10 +20,16 @@ class Years():
             self.last = nuevo
         
         self.size = self.size+1
+    
+
+
+
+
     def Print(self):
         aux = self.first
         while aux != None:
             print(aux.year)
+            aux.mounths.Print()
             aux = aux.next
     def SearchYear(self, year):
         found = False

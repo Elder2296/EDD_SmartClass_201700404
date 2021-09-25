@@ -9,23 +9,23 @@ class Mounths():
         if(self.first == None and self.last == None):
             self.first = nuevo
             self.last = nuevo
-            self.first.next= None
-            self.last = None
+            
         else:
             aux = self.last
             aux.next = nuevo
 
             nuevo.next = None
             nuevo.back = aux
-
             self.last = nuevo
+
         self.size = self.size +1
     def Print(self):
         aux = self.first
+        print("Mounths")
         while aux != None:
             print(aux.mounth)
             aux = aux.next
-    def SearchYear(self, mounth):
+    def SearchMounth(self, mounth):
         found = False 
         aux = self.first
         while aux != None:

@@ -1,15 +1,17 @@
 from mounths.mounths import Mounths
+from semesters.Semester import Semester
 class Nodo():
     def __init__(self, year) :
         self.year = year
         self.mounths = Mounths()
+        self.semesters = Semester()
         self.next = None
     def addMounth(self, mounth):
-        find = False
-        for i in range(len(self.mounths)):
-            if (self.mounths[i].SearchYear(mounth)):
-                find = True
-        
-        if find == False:
+        if not(self.mounths.SearchMounth(mounth)):
             self.mounths.Insert(mounth)
-        
+        else:
+            print("Mes repetido en el anio")
+    def InsertSemester(self, semester):
+        if not(semester < 1 and semester > 2):
+            if not(self.semesters.SearchSemester(semester)):
+                self.semesters.Insert(semester)

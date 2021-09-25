@@ -255,6 +255,7 @@ class AVL():
             self.Enorden(nodo.left)
             print("LIST YEARS of "+str(nodo.getStudent().carnet)+" size: "+str(nodo.getStudent().yearsList.size))
             nodo.getStudent().yearsList.Print()
+            
             self.Enorden(nodo.right)
     def createTree(self):
         file = open("avl.dot","w")

@@ -21,7 +21,10 @@ class Student():
         yearfound = 0
         if not( self.yearsList.SearchYear(year)):
             self.yearsList.Insert(year)
-        
+    def FindYear(self,year):
+        return self.yearsList.SearchYear(year)
+    def getYear(self, year):
+        return self.yearsList.getYear(year)
         
 
 

@@ -106,4 +106,13 @@
         ¿item Hora = "10:00" $?
         ¿item Estado = "Cumplido" $?
     ¿$element?
+    ¿element type="task"?
+        ¿item Carnet = "201300404" $?
+        ¿item Nombre = "Analisis Probabilistico" $?
+        ¿item Descripcion = "Realizar la tarea del curso de Estadística 1." $?
+        ¿item Materia = "Estadística 1" $?
+        ¿item Fecha = "14/10/2016" $?
+        ¿item Hora = "10:00" $?
+        ¿item Estado = "Cumplido" $?
+    ¿$element?
 ¿$Elements?
