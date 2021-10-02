@@ -18,7 +18,6 @@ class Student():
     def getCarrera(self):
         return self.carrera
     def addYear(self, year):
-        yearfound = 0
         if not( self.yearsList.SearchYear(year)):
             self.yearsList.Insert(year)
     def FindYear(self,year):

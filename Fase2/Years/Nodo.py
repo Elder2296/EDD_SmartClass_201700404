@@ -15,3 +15,6 @@ class Nodo():
         if not(semester < 1 and semester > 2):
             if not(self.semesters.SearchSemester(semester)):
                 self.semesters.Insert(semester)
+
+    def getMounth(self, mounth):
+        return self.mounths.getMounth(mounth)

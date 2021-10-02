@@ -17,7 +17,7 @@ class Load():
         students = list()
         homewors = list()
         character = "\""
-        
+        #Load students and homeworks to Lists
         for i in range(len(types)):
             if types[i] == "\"user\"":
                 
@@ -27,6 +27,8 @@ class Load():
                 homework = Homework(types[i+1].replace(character,""),types[i+2].replace(character,""), types[i+3].replace(character,""), types[i+4].replace(character,""), types[i+5].replace(character,""), types[i+6].replace(character,""), types[i+7].replace(character,""))
                 homewors.append(homework)
         
+
+        #Add students to AVL
         for a in range(len(students)):
             self.avl.Insert(students[a])
             #print(students[a].getCarnet())
@@ -35,11 +37,16 @@ class Load():
             
             if (self.avl.search(homewors[b].carnet)):
                 self.avl.getStudent(homewors[b].carnet).addYear(homewors[b].date.year)
+        #Add mounths to years list
         for c in range(len(homewors)):
             if(self.avl.search(homewors[c].carnet)):
                 if(self.avl.getStudent(homewors[c].carnet).FindYear(homewors[c].date.year)):
+                    #first insert mounth on years list
                     self.avl.getStudent(homewors[c].carnet).getYear(homewors[c].date.year).addMounth(homewors[c].date.mounth)
-
+                    #despues se inserte la tarea en la matriz
+                    hour = homewors[c].hour
+                    day = homewors[c].date.day
+                    self.avl.getStudent(homewors[c].carnet).getYear(homewors[c].date.year).getMounth(homewors[c].date.mounth).insertMatriz(hour, day, homewors[c])
         print("\nCARNET TASKS")
         for b in range(len(homewors)):
              print (homewors[b].carnet)
