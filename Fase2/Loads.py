@@ -2,6 +2,7 @@ from Avl.Avl import *
 from Avl.Students import *
 from Homeworks.homework import Homework
 from Analizer.parser import parser,types
+from Graficadora.Graficadora import Grafo
 class Load():
     avl = AVL()    
     def __init__(self):
@@ -74,3 +75,5 @@ class Load():
                 if self.avl.getStudent(carnet).SearchYear(anio):
                     if self.avl.getStudent(carnet).getYear(anio).SearchMounth(mounth):
                         print("Sí hay coincidencias")
+                        g = Grafo()
+                        g.generarMatriz(self.avl.getStudent(carnet).getYear(anio).getMounth(mounth).matriz)

@@ -125,46 +125,75 @@ class Matriz():
                     nuevolc.up = tmpCol
             else:
                 columFound = False
+                
+                
                 #encontrar el nulo de la fila
                 #Primero busca en columnas
                 tmpFila = responseRow.right
                 find = False
-                while tmpFila.right != None:
-                    if nuevolc.column > tmpFila.column and nuevolc.column < tmpFila.right.column:
-                        nuevolc.right = tmpFila.right
-                        tmpFila.right.left = nuevolc
-                        tmpFila.right = nuevolc
-                        nuevolc.left = tmpFila
-                        find = True
+                #Primero buscara coincidencias
+                #print("Buscara, coincidencia con el nodo")
+                while tmpFila != None:
                     if tmpFila.column == _day:
+                        #print("direccion de memoria: "+str(tmpFila))
                         columFound = True
+                    
                     tmpFila = tmpFila.right
-
-                if not find and not columFound:
-                    tmpFila.right = nuevolc
-                    nuevolc.left = tmpFila
                 
-
 
                 rowFound = False
                 tmpCol = responseColumn.down
                 found = False
-                while tmpCol.down != None:
-                    if nuevolc.row > tmpCol.row and nuevolc.row < tmpCol.down.row:
-                        nuevolc.down = tmpCol.down
-                        tmpCol.down.up = nuevolc
-                        tmpCol.down = nuevolc
-                        nuevolc.up = tmpCol
-                        found = True
+                while tmpCol != None:
                     if tmpCol.row == _hour and columFound:
-                        tmpCol.Insert(homework)                        
+                        #print("direccion de memoria:"+str(tmpCol))
+                        tmpCol.Insert(homework)                       
                         rowFound = True
-
+                    
                     tmpCol = tmpCol.down
 
-                if not found and not rowFound:
-                    tmpCol.down = nuevolc
-                    nuevolc.up = tmpCol
+                
+                if not (columFound and rowFound):
+                    #entraría aca para agregar un nuevo nodo
+                    tmpFila = responseRow.right
+                    find = False
+                
+                
+
+
+                    while tmpFila.right != None:
+                        if nuevolc.column > tmpFila.column and nuevolc.column < tmpFila.right.column:
+                            nuevolc.right = tmpFila.right
+                            tmpFila.right.left = nuevolc
+                            tmpFila.right = nuevolc
+                            nuevolc.left = tmpFila
+                            find = True
+                    
+                        tmpFila = tmpFila.right
+
+                    if not find :
+                        tmpFila.right = nuevolc
+                        nuevolc.left = tmpFila
+                
+
+
+                
+                    tmpCol = responseColumn.down
+                    found = False
+                   
+                    while tmpCol.down != None:
+                        if nuevolc.row > tmpCol.row and nuevolc.row < tmpCol.down.row:
+                            nuevolc.down = tmpCol.down
+                            tmpCol.down.up = nuevolc
+                            tmpCol.down = nuevolc
+                            nuevolc.up = tmpCol
+                            found = True
+                    
+                        tmpCol = tmpCol.down
+
+                    if not found :
+                        tmpCol.down = nuevolc
+                        nuevolc.up = tmpCol
 
             
         

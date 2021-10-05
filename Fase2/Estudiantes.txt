@@ -133,4 +133,13 @@
         ¿item Hora = "9:00" $?
         ¿item Estado = "Cumplido" $?
     ¿$element?
+    ¿element type="task"?
+        ¿item Carnet = "201300404" $?
+        ¿item Nombre = "Fisica 2" $?
+        ¿item Descripcion = "Realizar la tarea del curso de Física 2." $?
+        ¿item Materia = "Estadística 1" $?
+        ¿item Fecha = "04/10/2016" $?
+        ¿item Hora = "9:00" $?
+        ¿item Estado = "Cumplido" $?
+    ¿$element?
 ¿$Elements?

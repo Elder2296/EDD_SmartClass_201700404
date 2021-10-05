@@ -8,6 +8,7 @@ class Homeworks(Lista, Nodo):
         Lista.__init__(Nodo)
         self.row = 0
         self.column = 0
+        self.size = 0
     def insert(self,row,column, homework):
         task = Homework(homework)
         self.row = row
@@ -19,6 +20,7 @@ class Homeworks(Lista, Nodo):
             self.last.next = task
             task.back = self.last
             self.last = task
+        self.size = self.size+1
     def Insert(self,homework):
         task = Homework(homework)
         if self.first == None:
@@ -28,6 +30,7 @@ class Homeworks(Lista, Nodo):
             self.last.next = task
             task.back = self.last
             self.last = task
+        self.size = self.size+1
         
 
     def imprimir(self):
@@ -39,6 +42,6 @@ class Homeworks(Lista, Nodo):
         tmp = self.first
         acum = ""
         while tmp != None:
-            acum += tmp.getValue() +" "
+            acum += str(tmp.getValue()) +" "
             tmp = tmp.next
         return acum
