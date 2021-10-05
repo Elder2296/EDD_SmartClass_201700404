@@ -204,7 +204,41 @@ class Matriz():
         homeworklist = Homeworks()
         homeworklist.insert(_hour,_day, homework)
         return homeworklist
+    def SearchHeader(self,_hour,_day):
+        if self.Rows.SearchHeader(_hour) and self.Columns.SearchHeader(_day):
+            return True
+        
+        return False
+    def getNodoTareas(self, _hour, _day):
+        responseRow = self.Rows.GetHeader(_hour)
+        responseColumn = self.Columns.GetHeader(_day)
+        columFound = False
+                
+                
+                #encontrar el nulo de la fila
+                #Primero busca en columnas
+        tmpFila = responseRow.right
+        
+                #Primero buscara coincidencias
+                #print("Buscara, coincidencia con el nodo")
+        while tmpFila != None:
+            if tmpFila.column == _day:
+                        #print("direccion de memoria: "+str(tmpFila))
+                columFound = True
+                    
+            tmpFila = tmpFila.right
+                
 
+        tmpCol = responseColumn.down
+        
+        while tmpCol != None:
+            if tmpCol.row == _hour and columFound:
+                        #print("direccion de memoria:"+str(tmpCol))
+                return tmpCol                       
+                
+                    
+            tmpCol = tmpCol.down        
 
+        return None
 
     

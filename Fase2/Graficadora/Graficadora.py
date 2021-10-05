@@ -4,6 +4,33 @@ from matriz.Matriz import Matriz
 class Grafo:
     def __init__(self):
         pass
+    def generarLista(self, nodo):
+        info = "digraph List{\n"
+        info = info +"rankdir = LR;\n"
+        aux = nodo.first
+        while aux != None:
+            decla= 'node [shape = box label = \"Carnet: '+str(aux.getValue().carnet)+'\\nNombre: '+str(aux.getValue().name)+'\\nDescripcion: '+str(aux.getValue().description)+'\\nFecha: '+str(aux.getValue().date.getDate())+'\\nHora: '+str(aux.getValue().hour)+'\\nEstado: '+str(aux.getValue().state)+'\"]'+str(aux.getValue().id)+'\n'
+            info = info + decla
+            aux = aux.next
+
+        aux2 = nodo.first
+
+        while aux2.next != None:
+            apuntar = str(aux2.getValue().id)+" -> "+str(aux2.next.getValue().id)+ '\n'
+            #print(apuntar)
+            info = info+ apuntar
+            aux2 = aux2.next
+        info = info +"}"
+
+        f = open('/home/losa/Escritorio/Reportes_F2/Lista.dot','w')
+        try:
+            f.write(info)
+        finally:
+            f.close()
+
+        prog = "dot -Tpng  /home/losa/Escritorio/Reportes_F2/Lista.dot -o /home/losa/Escritorio/Reportes_F2/Lista.png"
+        os.system(prog)
+
 
     def generarMatriz(self, matriz):
         acumInfo = """digraph G{

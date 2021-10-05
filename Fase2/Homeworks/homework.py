@@ -13,3 +13,5 @@ class Homework():
         arreglo2 = hour.split(sep = ':')
         self.hour = int(arreglo2[0])
         self.state = state
+    def putId(self, id):
+        self.id = id

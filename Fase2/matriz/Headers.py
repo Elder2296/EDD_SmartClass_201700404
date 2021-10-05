@@ -44,6 +44,27 @@ class Header(Lista):
                 return tmp
 
 
+    def SearchHeader(self, header):
+        aux = self.first
+        while aux != None:
+            if aux.getValue() == header:
+                return True
+
+            aux  = aux.next
+        return False
+    def GetHeader(self, header):
+        aux = self.first
+        while aux != None:
+            if aux.getValue() == header:
+                return aux
+            aux = aux.next
+
+        return None
+            
+        
+            
+        
+        return False
     '''def imprimir(self):
         tmp = self.first
         while tmp != None:

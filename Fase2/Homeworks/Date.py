@@ -3,5 +3,7 @@ class Date():
         self.day = day
         self.mounth = mounth
         self.year = year
+    def getDate(self):
+        return str(self.day)+"/"+str(self.mounth)+"/"+str(self.year)
     
     

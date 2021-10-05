@@ -39,6 +39,7 @@ class Load():
             if (self.avl.search(homewors[b].carnet)):
                 self.avl.getStudent(homewors[b].carnet).addYear(homewors[b].date.year)
         #Add mounths to years list
+        contador =0
         for c in range(len(homewors)):
             if(self.avl.search(homewors[c].carnet)):
                 if(self.avl.getStudent(homewors[c].carnet).FindYear(homewors[c].date.year)):
@@ -47,6 +48,8 @@ class Load():
                     #despues se inserte la tarea en la matriz
                     hour = homewors[c].hour
                     day = homewors[c].date.day
+                    homewors[c].putId(contador)
+                    contador = contador+1
                     self.avl.getStudent(homewors[c].carnet).getYear(homewors[c].date.year).getMounth(homewors[c].date.mounth).insertMatriz(hour, day, homewors[c])
         
         print("\nCARNET TASKS")
@@ -77,3 +80,20 @@ class Load():
                         print("Sí hay coincidencias")
                         g = Grafo()
                         g.generarMatriz(self.avl.getStudent(carnet).getYear(anio).getMounth(mounth).matriz)
+
+        elif(type == 2):
+            carnet = int(peticion[0])
+            anio = int(peticion[1])
+            mounth = int(peticion[2])
+            day = int(peticion[3])
+            hour = int(peticion[4])
+            if self.avl.search(carnet):
+                if self.avl.getStudent(carnet).SearchYear(anio):
+                    if self.avl.getStudent(carnet).getYear(anio).SearchMounth(mounth):
+                        print("Sí hay coincidencias")
+                        #g = Grafo()
+                        #g.generarMatriz(self.avl.getStudent(carnet).getYear(anio).getMounth(mounth).matriz)
+                        if self.avl.getStudent(carnet).getYear(anio).getMounth(mounth).matriz.SearchHeader(hour,day):
+                            g = Grafo()
+                            g.generarLista(self.avl.getStudent(carnet).getYear(anio).getMounth(mounth).matriz.getNodoTareas(hour, day))
+                               
