@@ -24,6 +24,8 @@ class Student():
         return self.yearsList.SearchYear(year)
     def getYear(self, year):
         return self.yearsList.getYear(year)
+    def SearchYear(self,year):
+        return self.yearsList.SearchYear(year)
         
 
 

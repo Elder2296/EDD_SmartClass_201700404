@@ -1,6 +1,7 @@
 from Avl.Avl import*
 from Avl.Students import*
 
+
 studen1 = Student(201700404,3063391290315,'Elder','Ciencias y Sistemas','el.ariel2296@gmail.com','brC123abc',106,24)
 studen2 = Student(201700603,3063391290315,'Selvin','Quimica','el.ariel2296@gmail.com','brC123abc',106,24)
 studen3 = Student(201700111,3063391290315,'Ariel','Ciencias y Sistemas','el.ariel2296@gmail.com','brC123abc',106,24)
@@ -23,7 +24,7 @@ avl.Insert(studen7)
 avl.Insert(studen8)
 avl.Insert(studen9)
 
-if(avl.search(2017004046)):
+if(avl.search(201700404)):
     print(avl.getStudent(201700404).getName())
 else:
     print("No encontrado.")

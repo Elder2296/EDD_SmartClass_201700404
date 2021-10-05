@@ -9,6 +9,6 @@ class Lista(ABC):
     def insert(self):
         pass
 
-    @abstractmethod
-    def print(self):
-        pass
+    '''@abstractmethod
+    def Print(self):
+        pass'''

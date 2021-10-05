@@ -1,5 +1,6 @@
 from Struct.List import Lista
 from Struct.Nodo import Nodo
+from Objects.Homework import Homework
 
 class Homeworks(Lista, Nodo):
     def __init__(self):
@@ -8,26 +9,28 @@ class Homeworks(Lista, Nodo):
         self.row = 0
         self.column = 0
     def insert(self,row,column, homework):
+        task = Homework(homework)
         self.row = row
         self.column = column
         if self.first == None:
-            self.first = homework
-            self.last = homework
+            self.first = task
+            self.last = task
         else: #insertando al ultimo
-            self.last.next = homework
-            homework.back = self.last
-            self.last = homework
+            self.last.next = task
+            task.back = self.last
+            self.last = task
     def Insert(self,homework):
+        task = Homework(homework)
         if self.first == None:
-            self.first = homework
-            self.last = homework
+            self.first = task
+            self.last = task
         else: #insertando al ultimo
-            self.last.next = homework
-            homework.back = self.last
-            self.last = homework
+            self.last.next = task
+            task.back = self.last
+            self.last = task
         
 
-    def print(self):
+    def imprimir(self):
         tmp = self.first
         while tmp != None:
             print(tmp.getValue())

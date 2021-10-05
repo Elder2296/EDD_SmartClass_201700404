@@ -7,4 +7,5 @@ class Nodo():
         self.matriz = Matriz()
         #Aqui debe ir una matriz
     def insertMatriz(self,hour,day,homework):
+        #print('LLEGO A CASI INSERTAR')
         self.matriz.insert(hour,day,homework)

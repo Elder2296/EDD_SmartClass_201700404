@@ -111,8 +111,26 @@
         ¿item Nombre = "Analisis Probabilistico" $?
         ¿item Descripcion = "Realizar la tarea del curso de Estadística 1." $?
         ¿item Materia = "Estadística 1" $?
-        ¿item Fecha = "14/10/2016" $?
+        ¿item Fecha = "17/10/2016" $?
+        ¿item Hora = "14:00" $?
+        ¿item Estado = "Cumplido" $?
+    ¿$element?
+    ¿element type="task"?
+        ¿item Carnet = "201300404" $?
+        ¿item Nombre = "Tarea de Estadística2" $?
+        ¿item Descripcion = "Realizar la tarea del curso de Estadística 1." $?
+        ¿item Materia = "Estadística 4" $?
+        ¿item Fecha = "21/10/2016" $?
         ¿item Hora = "10:00" $?
+        ¿item Estado = "Cumplido" $?
+    ¿$element?
+    ¿element type="task"?
+        ¿item Carnet = "201300404" $?
+        ¿item Nombre = "Analisis Probabilistico" $?
+        ¿item Descripcion = "Realizar la tarea del curso de Estadística 1." $?
+        ¿item Materia = "Estadística 1" $?
+        ¿item Fecha = "04/10/2016" $?
+        ¿item Hora = "9:00" $?
         ¿item Estado = "Cumplido" $?
     ¿$element?
 ¿$Elements?

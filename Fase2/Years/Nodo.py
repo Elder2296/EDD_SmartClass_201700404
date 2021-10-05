@@ -18,3 +18,5 @@ class Nodo():
 
     def getMounth(self, mounth):
         return self.mounths.getMounth(mounth)
+    def SearchMounth(self, mounth):
+        return self.mounths.SearchMounth(mounth)

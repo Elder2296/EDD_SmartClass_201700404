@@ -44,8 +44,8 @@ class Header(Lista):
                 return tmp
 
 
-    def imprimir(self):
+    '''def imprimir(self):
         tmp = self.first
         while tmp != None:
             print(tmp.getValue())
-            tmp = tmp.next
+            tmp = tmp.next'''

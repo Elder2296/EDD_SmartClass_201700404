@@ -1,5 +1,6 @@
 from Avl.Nodo import *
 import os
+from PIL import Image
 '''class Nodo:
     def __init__(self,valor):
         self.valor = valor
@@ -258,14 +259,17 @@ class AVL():
             
             self.Enorden(nodo.right)
     def createTree(self):
-        file = open("avl.dot","w")
+        file = open("/home/losa/Escritorio/Reportes_F2/avl.dot","w")
         file.write("digraph AVL{\n")
         # file.write("node [shape = circle label = \""+str(self.raiz.valor)+"\"] "+str(self.raiz.valor)+"\n")
         self.__inOrden(self.root,file)
         self.mappear(self.root,file)
         file.write("\n}")
         file.close()
-    
+        prog = "dot -Tpng /home/losa/Escritorio/Reportes_F2/avl.dot -o /home/losa/Escritorio/Reportes_F2/avl.png"
+        os.system(prog)
+        im = Image.open('/home/losa/Escritorio/Reportes_F2/avl.png')
+        im.show()
     def __inOrden(self, nodo, file):
         if nodo:
             self.__inOrden(nodo.left,file)

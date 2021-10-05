@@ -47,6 +47,7 @@ class Load():
                     hour = homewors[c].hour
                     day = homewors[c].date.day
                     self.avl.getStudent(homewors[c].carnet).getYear(homewors[c].date.year).getMounth(homewors[c].date.mounth).insertMatriz(hour, day, homewors[c])
+        
         print("\nCARNET TASKS")
         for b in range(len(homewors)):
              print (homewors[b].carnet)
@@ -60,4 +61,16 @@ class Load():
         else:
             print("Not found")'''
         
-        self.avl.createTree()
+        #self.avl.createTree()
+    def Reports(self, type, peticion):
+        if(type == 0):
+            self.avl.createTree()
+        elif(type == 1):
+            #print("la peticion es: "+str(peticion[0])+" tipo: " +str(type(peticion[0]))) 
+            carnet = int(peticion[0])
+            anio = int(peticion[1])
+            mounth = int(peticion[2])
+            if self.avl.search(carnet):
+                if self.avl.getStudent(carnet).SearchYear(anio):
+                    if self.avl.getStudent(carnet).getYear(anio).SearchMounth(mounth):
+                        print("Sí hay coincidencias")

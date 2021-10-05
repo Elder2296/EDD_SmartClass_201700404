@@ -1,3 +1,4 @@
+from io import TextIOWrapper
 from flask import Flask, json, jsonify, request
 
 app = Flask(__name__)
@@ -34,6 +35,21 @@ def Load():
     
     return jsonify({'message':'Load succesfully'})
 
+@app.route('/reporte', methods=['GET'])
+def getGrafo():
+    tipo = request.json['tipo']
+    if tipo == 0:
+        principal.Reports(tipo,None)
+    elif tipo == 1:
+        peticion =[
+            request.json['carnet'],
+            request.json['año'],
+            request.json['mes']
+        ]
+        principal.Reports(tipo,peticion)
+
+    print("tipo de reporte: "+str(tipo))
+    return jsonify({'message': 'report type'})
 
 
 
