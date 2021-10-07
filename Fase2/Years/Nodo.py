@@ -27,3 +27,5 @@ class Nodo():
         else:
             self.InsertSemester(semester)
             return True
+    def searchSem(self,semester):
+        return self.semesters.SearchSemester(semester)

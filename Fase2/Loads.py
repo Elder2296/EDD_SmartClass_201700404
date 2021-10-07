@@ -104,6 +104,16 @@ class Load():
         elif type == 3:
             g = Grafo()
             g.generarGrafo(self.treeB.raiz)
+        elif type == 4:
+            carnet = int(peticion[0])
+            anio = int(peticion[1])
+            sem = int(peticion[2])
+            if self.avl.search(carnet):
+                if self.avl.getStudent(carnet).SearchYear(anio):
+                    if self.avl.getStudent(carnet).getYear(anio).searchSem(sem):
+                        g = Grafo()
+                        g.generarGrafo(self.avl.getStudent(carnet).getYear(anio).getSemester(sem).tree.raiz)
+            print("Debe generar el reporte 4")
     def LoadCursos(self, curso):
         self.treeB.insertar(curso)
     def AddCourseToStudent(self,carnet, anio, semester, course):

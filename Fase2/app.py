@@ -60,6 +60,13 @@ def getGrafo():
         principal.Reports(tipo,peticion)
     elif tipo == 3:
         principal.Reports(tipo,None)
+    elif tipo == 4:
+        peticion = [
+            request.json['carnet'],
+            request.json['año'],
+            request.json['semestre']
+        ]
+        principal.Reports(tipo,peticion)
     print("tipo de reporte: "+str(tipo))
     return jsonify({'message': 'report type'})
 
