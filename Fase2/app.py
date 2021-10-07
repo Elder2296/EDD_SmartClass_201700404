@@ -115,6 +115,30 @@ def createStuden():
     principal.createStudent(student)
     return jsonify({'message':'create student succesfuly'})
 
+@app.route('/estudiante',methods = ['PUT'])
+def updateStudent():
+    carnet = int(request.json['carnet'])
+    dpi = request.json['DPI']
+    nombre = request.json['nombre']
+    carrera = request.json['carrera']
+    email = request.json['correo']
+    pas = request.json['password']
+    creditos = request.json['creditos']
+    edad = request.json['edad']
+    student = Student(carnet,dpi,nombre,carrera,email,pas, creditos,edad)
+    principal.updateStudent(student)
+    return jsonify({'message':'update student succesfuly'})
+
+@app.route('/estudiante', methods = ['GET'])
+def getStudent():
+    carnet = request.json['carnet']
+    student = principal.getStudent(int(carnet))
+    return jsonify({'student': student})
+
+
+
+    
+
 
 '''
 

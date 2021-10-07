@@ -74,7 +74,27 @@ class Load():
 
     def createStudent(self, student):
         self.avl.Insert(student)
-        
+    def updateStudent(self, student):
+        if self.avl.search(student.carnet):
+            self.avl.getStudent(student.carnet).setDpi(student.dpi)  
+            self.avl.getStudent(student.carnet).setName(student.name)
+            self.avl.getStudent(student.carnet).setCarrera(student.carrera)
+            self.avl.getStudent(student.carnet).setEmail(student.email)
+            self.avl.getStudent(student.carnet).setPassword(student.password)
+            self.avl.getStudent(student.carnet).setCredits(student.credits)
+            self.avl.getStudent(student.carnet).setAge(student.age)
+            print("Se actualizaron los datos")
+        else:
+            print("NO SE PUDO ACTUALIZAR")
+            
+            
+    def getStudent(self, carnet):
+        if self.avl.search(carnet):
+            return self.avl.getStudent(carnet)
+        return 0
+            
+            
+            
     def Reports(self, type, peticion):
         if(type == 0):
             self.avl.createTree()

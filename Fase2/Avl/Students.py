@@ -26,7 +26,20 @@ class Student():
         return self.yearsList.getYear(year)
     def SearchYear(self,year):
         return self.yearsList.SearchYear(year)
-        
+    def setDpi(self, dpi):
+        self.dpi = dpi
+    def setName(self, name):
+        self.name = name
+    def setCarrera(self, carrera):
+        self.carrera = carrera
+    def setEmail(self, email):
+        self.email = email
+    def setPassword(self, pas):
+        self.password = pas
+    def setCredits(self,credits):
+        self.credits = credits
+    def setAge(self, age):
+        self.age = age  
 
 
 
