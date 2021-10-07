@@ -22,13 +22,12 @@ class Semester():
             print(aux.semester)
             aux = aux.next
     def SearchSemester(self, semester):
-        found = False
         aux = self.first
         while aux != None:
             if(aux.semester == semester):
-                found = True
-                break
-        return found
+                return True
+            aux = aux.next
+        return False
     
     def getSemester(self, semester):
         aux = self.first
@@ -36,5 +35,6 @@ class Semester():
         while (aux != None):
             if(aux.semester == semester):
                 return aux
+            aux = aux.next
             
         return 0

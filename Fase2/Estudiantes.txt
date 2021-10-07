@@ -19,6 +19,63 @@
         ¿item Estado = "Incumplido" $?
     ¿$element?
     ¿element type="user"?
+        ¿item Carnet = "201901423" $?
+        ¿item DPI = "3063391290316" $?
+        ¿item Nombre = "Cindy Elisa" $?
+        ¿item Carrera = "Ingenieria en Ciencias y Sistemas" $?
+        ¿item Correo = "prueba@gmail.com" $?
+        ¿item Password = "roxodiciqi" $?
+        ¿item Creditos = 205 $?
+        ¿item Edad = 21 $?
+    ¿$element?
+    ¿element type="task"?
+        ¿item Carnet = "201901423" $?
+        ¿item Nombre = "Tarea de Matematica" $?
+        ¿item Descripcion = "Realizar la tarea del curso de matemática intermedia 1." $?
+        ¿item Materia = "Matemática Intermedia 1" $?
+        ¿item Fecha = "01/07/2019" $?
+        ¿item Hora = "8:00" $?
+        ¿item Estado = "Incumplido" $?
+    ¿$element?
+    ¿element type="task"?
+        ¿item Carnet = "201901423" $?
+        ¿item Nombre = "Tarea de Matematica 3" $?
+        ¿item Descripcion = "Realizar la tarea del curso de matemática intermedia 1." $?
+        ¿item Materia = "Matemática Intermedia 1" $?
+        ¿item Fecha = "01/07/2021" $?
+        ¿item Hora = "8:00" $?
+        ¿item Estado = "Incumplido" $?
+    ¿$element?
+    ¿element type="user"?
+        ¿item Carnet = "201722412" $?
+        ¿item DPI = "3063391290316" $?
+        ¿item Nombre = "María José" $?
+        ¿item Carrera = "Ingenieria en Ciencias y Sistemas" $?
+        ¿item Correo = "prueba@gmail.com" $?
+        ¿item Password = "roxodiciqi" $?
+        ¿item Creditos = 205 $?
+        ¿item Edad = 21 $?
+    ¿$element?
+    ¿element type="task"?
+        ¿item Carnet = "201722412" $?
+        ¿item Nombre = "Tarea de Matematica" $?
+        ¿item Descripcion = "Realizar la tarea del curso de matemática intermedia 1." $?
+        ¿item Materia = "Matemática Intermedia 1" $?
+        ¿item Fecha = "01/07/2018" $?
+        ¿item Hora = "9:00" $?
+        ¿item Estado = "Incumplido" $?
+    ¿$element?
+    ¿element type="task"?
+        ¿item Carnet = "201722412" $?
+        ¿item Nombre = "Tarea de Matematica6" $?
+        ¿item Descripcion = "Realizar la tarea del curso de matemática intermedia 1." $?
+        ¿item Materia = "Matemática Intermedia 1" $?
+        ¿item Fecha = "01/07/2020" $?
+        ¿item Hora = "14:00" $?
+        ¿item Estado = "Incumplido" $?
+    ¿$element?
+    
+    ¿element type="user"?
         ¿item Carnet = "201501786" $?
         ¿item DPI = "7249529279753" $?
         ¿item Nombre = "Juan Curiel" $?
@@ -38,7 +95,6 @@
         ¿item Creditos = 95 $?
         ¿item Edad = 19 $?
     ¿$element?
-    
     ¿element type="user"?
         ¿item Carnet = "201822186" $?
         ¿item DPI = "9298434863898" $?
@@ -48,35 +104,6 @@
         ¿item Password = "toqelijanu" $?
         ¿item Creditos = 95 $?
         ¿item Edad = 19 $?
-    ¿$element?
-    ¿element type="user"?
-        ¿item Carnet = "201800604" $?
-        ¿item DPI = "9298434863898" $?
-        ¿item Nombre = "Cindy Lopez" $?
-        ¿item Carrera = "Ingenieria Civil" $?
-        ¿item Correo = "prueba@gmail.com" $?
-        ¿item Password = "toqelijanu" $?
-        ¿item Creditos = 95 $?
-        ¿item Edad = 19 $?
-    ¿$element?
-    ¿element type="user"?
-        ¿item Carnet = "201900405" $?
-        ¿item DPI = "9298434863898" $?
-        ¿item Nombre = "Eloisa Rincón" $?
-        ¿item Carrera = "Ingenieria Civil" $?
-        ¿item Correo = "prueba@gmail.com" $?
-        ¿item Password = "toqelijanu" $?
-        ¿item Creditos = 95 $?
-        ¿item Edad = 19 $?
-    ¿$element?
-    ¿element type="task"?
-        ¿item Carnet = "201900405" $?
-        ¿item Nombre = "Tarea de Estadística" $?
-        ¿item Descripcion = "Realizar la tarea del curso de Estadística 1." $?
-        ¿item Materia = "Estadística 1" $?
-        ¿item Fecha = "14/07/2021" $?
-        ¿item Hora = "10:00" $?
-        ¿item Estado = "Cumplido" $?
     ¿$element?
     ¿element type="user"?
         ¿item Carnet = "201300404" $?
@@ -142,4 +169,5 @@
         ¿item Hora = "9:00" $?
         ¿item Estado = "Cumplido" $?
     ¿$element?
+    
 ¿$Elements?

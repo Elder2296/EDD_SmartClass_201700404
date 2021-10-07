@@ -1,8 +1,56 @@
 from Avl.Avl import*
 from Avl.Students import*
+from Analizer.parser import parser,types
+from Homeworks.homework import Homework
+'''from TreeB.Curso import Curso
+from TreeB.TreeB import Arbol_B
+from Graficadora.Grafo import Grafo
+curso = Curso(101,"Matemática Básica 1",7,"","true")
+curso2 = Curso(39,"Deportes 1",7,"","true")
+curso3 = Curso(348,"Quimica General 1",7,"","true")
+curso4 = Curso(103,"Matemática Básica 2",7,"","true")
+curso5 = Curso(5,"Tecnicas de Estudio",7,"","true")
+
+arbol = Arbol_B(5)
+arbol.insertar(curso)
+arbol.insertar(curso2)
+arbol.insertar(curso3)
+arbol.insertar(curso4)
+arbol.insertar(curso5)
+
+g = Grafo()
+g.generarGrafo(arbol.raiz)'''
+path = "/home/losa/Ciencias_y_Sistemas/2021/Segundo_Semestre/Lab_Estructuras/Fase1/EDD_SmartClass_201700404/Fase2/Estudiantes.txt"
+file = open(path,'r', encoding= 'utf-8')
+message = file.read()
+file.close()
+print(message)
+parser.parse(message)
+students = list()
+homewors = list()
+character = "\""
+        #Load students and homeworks to Lists
+for i in range(len(types)):
+    if types[i] == "\"user\"":
+                
+        student = Student(types[i+1].replace(character,""),types[i+2].replace(character,""),types[i+3].replace(character,""),types[i+4].replace(character,""),types[i+5].replace(character,""),types[i+6].replace(character,""),types[i+7],types[i+8])
+        students.append(student)
+    if types[i] == "\"task\"":
+        homework = Homework(types[i+1].replace(character,""),types[i+2].replace(character,""), types[i+3].replace(character,""), types[i+4].replace(character,""), types[i+5].replace(character,""), types[i+6].replace(character,""), types[i+7].replace(character,""))
+        homewors.append(homework)
+        
+print("Usuarios encontrados: "+str(len(students)))
+print("tareas encontradas: "+str(len(homewors)))
+        #Add students to AVL
+avl =AVL()
+for a in range(len(students)):
+    #print("NAME STUDENT: "+students[a].name)
+    avl.Insert(students[a])
+avl.createTree()
 
 
-studen1 = Student(201700404,3063391290315,'Elder','Ciencias y Sistemas','el.ariel2296@gmail.com','brC123abc',106,24)
+
+'''studen1 = Student(201700404,3063391290315,'Elder','Ciencias y Sistemas','el.ariel2296@gmail.com','brC123abc',106,24)
 studen2 = Student(201700603,3063391290315,'Selvin','Quimica','el.ariel2296@gmail.com','brC123abc',106,24)
 studen3 = Student(201700111,3063391290315,'Ariel','Ciencias y Sistemas','el.ariel2296@gmail.com','brC123abc',106,24)
 studen4 = Student(201709063,3063391290315,'María','Electronica','el.ariel2296@gmail.com','brC123abc',106,24)
@@ -34,7 +82,7 @@ else:
 
 avl.print()
 avl.createTree()
-print("arbol created")
+print("arbol created")'''
 
 
 

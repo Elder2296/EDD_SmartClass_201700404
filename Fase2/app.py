@@ -1,12 +1,13 @@
 from io import TextIOWrapper
 from flask import Flask, json, jsonify, request
-
+from TreeB.Curso import Curso
 app = Flask(__name__)
 
 from products import products
 from Loads  import *
 
 principal = Load()
+'''
 @app.route('/ping')
 def ping():
     return jsonify({"message": "pong!!!"})
@@ -20,7 +21,7 @@ def getProduct(product_name):
         product for product in products if product['name'] == product_name.lower()]
     if (len(productsFound) > 0):
         return jsonify({'product': productsFound[0]})
-    return jsonify({'message': 'Product Not found'})
+    return jsonify({'message': 'Product Not found'})'''
 
 
 
@@ -57,11 +58,45 @@ def getGrafo():
             request.json["hora"]
         ]
         principal.Reports(tipo,peticion)
+    elif tipo == 3:
+        principal.Reports(tipo,None)
     print("tipo de reporte: "+str(tipo))
     return jsonify({'message': 'report type'})
 
+@app.route('/cursosPensum', methods = ['POST'])
+def LoadPensum():
+    cursos = request.json['Cursos']
+    for curso in cursos:
+        materia = Curso(curso['Codigo'],curso['Nombre'],curso['Creditos'],curso['Prerequisitos'],curso['Obligatorio'])
+        principal.LoadCursos(materia)
+        #print("Codigo: ", curso['Codigo'])
+        #print("Nombre: ", curso['Nombre'])
+@app.route('/cursosEstudiante', methods=['POST'])
+def LoadCoursesStudent():
+    students = request.json['Estudiantes']
+    for student in students:
+        print("\n\nCarnet: "+student['Carnet'])
+        
+        years = student['Años']
+        for year in years:
+            print('Year: '+ year['Año'])
+            semesters = year['Semestres']
+            for semester in semesters:
+                print('Semestre: '+ semester['Semestre'])
+                cursos = semester['Cursos']
+                for curso in cursos:
+                    print('Codigo Curso: '+curso['Codigo'])
+                    course = Curso(curso['Codigo'],curso['Nombre'],curso['Creditos'],curso['Prerequisitos'],curso['Obligatorio'])
+                    principal.AddCourseToStudent(student['Carnet'],year['Año'],semester['Semestre'],course)
+        
+
+    
+    
+    return jsonify({'message': 'Load courses succesfuly'})
 
 
+
+'''
 
 @app.route('/products', methods=['POST'])
 def addProduct():
@@ -94,6 +129,6 @@ def deleteProduct(product_name):
         return jsonify({
             'message': 'Product Deleted',
             'products': products
-        })
+        })'''
 if __name__ == '__main__':
     app.run(debug=True, port = 3000)

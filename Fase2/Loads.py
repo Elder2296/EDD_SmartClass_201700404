@@ -3,8 +3,11 @@ from Avl.Students import *
 from Homeworks.homework import Homework
 from Analizer.parser import parser,types
 from Graficadora.Graficadora import Grafo
+from Graficadora.Grafo  import Grafo
+from TreeB.TreeB import Arbol_B
 class Load():
-    avl = AVL()    
+    avl = AVL()
+    treeB = Arbol_B(5)    
     def __init__(self):
         print("Cargas")
     
@@ -28,9 +31,11 @@ class Load():
                 homework = Homework(types[i+1].replace(character,""),types[i+2].replace(character,""), types[i+3].replace(character,""), types[i+4].replace(character,""), types[i+5].replace(character,""), types[i+6].replace(character,""), types[i+7].replace(character,""))
                 homewors.append(homework)
         
-
+        print("Usuarios encontrados: "+str(len(students)))
+        print("tareas encontradas: "+str(len(homewors)))
         #Add students to AVL
         for a in range(len(students)):
+            #print("NAME STUDENT: "+students[a].name)
             self.avl.Insert(students[a])
             #print(students[a].getCarnet())
         #Add years to Student
@@ -96,4 +101,17 @@ class Load():
                         if self.avl.getStudent(carnet).getYear(anio).getMounth(mounth).matriz.SearchHeader(hour,day):
                             g = Grafo()
                             g.generarLista(self.avl.getStudent(carnet).getYear(anio).getMounth(mounth).matriz.getNodoTareas(hour, day))
-                               
+        elif type == 3:
+            g = Grafo()
+            g.generarGrafo(self.treeB.raiz)
+    def LoadCursos(self, curso):
+        self.treeB.insertar(curso)
+    def AddCourseToStudent(self,carnet, anio, semester, course):
+
+        if self.avl.search(int(carnet)):
+            if self.avl.getStudent(int(carnet)).SearchYear(int(anio)):
+                if self.avl.getStudent(int(carnet)).getYear(int(anio)).SearchSemester(int(semester)):
+                    self.avl.getStudent(int(carnet)).getYear(int(anio)).getSemester(int(semester)).tree.insertar(course)
+                    print('I maked to insertion')
+                else:
+                    print("No encontro el mes")    

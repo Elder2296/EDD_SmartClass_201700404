@@ -1,5 +1,6 @@
 import os
 from matriz.Matriz import Matriz
+from PIL import Image
 
 class Grafo:
     def __init__(self):
@@ -30,6 +31,8 @@ class Grafo:
 
         prog = "dot -Tpng  /home/losa/Escritorio/Reportes_F2/Lista.dot -o /home/losa/Escritorio/Reportes_F2/Lista.png"
         os.system(prog)
+        img = Image.open('/home/losa/Escritorio/Reportes_F2/Lista.png')
+        img.show()
 
 
     def generarMatriz(self, matriz):
@@ -128,6 +131,8 @@ class Grafo:
 
         prog = "dot -Tpng  /home/losa/Escritorio/Reportes_F2/grafo.dot -o /home/losa/Escritorio/Reportes_F2/grafo.png"
         os.system(prog)
+        img = Image.open('/home/losa/Escritorio/Reportes_F2/grafo.png')
+        img.show()
 
     def recorrerFilasMatriz(self,nodoFila):
         rank = ""
