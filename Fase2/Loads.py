@@ -71,6 +71,10 @@ class Load():
             print("Not found")'''
         
         #self.avl.createTree()
+
+    def createStudent(self, student):
+        self.avl.Insert(student)
+        
     def Reports(self, type, peticion):
         if(type == 0):
             self.avl.createTree()

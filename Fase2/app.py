@@ -101,6 +101,19 @@ def LoadCoursesStudent():
     
     return jsonify({'message': 'Load courses succesfuly'})
 
+@app.route('/estudiante',methods=['POST'])
+def createStuden():
+    carnet = int(request.json['carnet'])
+    dpi = request.json['DPI']
+    nombre = request.json['nombre']
+    carrera = request.json['carrera']
+    email = request.json['correo']
+    pas = request.json['password']
+    creditos = request.json['creditos']
+    edad = request.json['edad']
+    student = Student(carnet,dpi,nombre,carrera,email,pas, creditos,edad)
+    principal.createStudent(student)
+    return jsonify({'message':'create student succesfuly'})
 
 
 '''
