@@ -2,7 +2,7 @@ import os
 from matriz.Matriz import Matriz
 from PIL import Image
 
-class Grafo:
+class Graficadora:
     def __init__(self):
         pass
     def generarLista(self, nodo):

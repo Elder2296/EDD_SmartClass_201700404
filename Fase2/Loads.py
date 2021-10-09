@@ -2,12 +2,13 @@ from Avl.Avl import *
 from Avl.Students import *
 from Homeworks.homework import Homework
 from Analizer.parser import parser,types
-from Graficadora.Graficadora import Grafo
+from Graficadora.Graficadora import Graficadora
 from Graficadora.Grafo  import Grafo
 from TreeB.TreeB import Arbol_B
 class Load():
     avl = AVL()
-    treeB = Arbol_B(5)    
+    treeB = Arbol_B(5)   
+    contador = 0 
     def __init__(self):
         print("Cargas")
     
@@ -44,7 +45,7 @@ class Load():
             if (self.avl.search(homewors[b].carnet)):
                 self.avl.getStudent(homewors[b].carnet).addYear(homewors[b].date.year)
         #Add mounths to years list
-        contador =0
+        
         for c in range(len(homewors)):
             if(self.avl.search(homewors[c].carnet)):
                 if(self.avl.getStudent(homewors[c].carnet).FindYear(homewors[c].date.year)):
@@ -53,8 +54,8 @@ class Load():
                     #despues se inserte la tarea en la matriz
                     hour = homewors[c].hour
                     day = homewors[c].date.day
-                    homewors[c].putId(contador)
-                    contador = contador+1
+                    homewors[c].putId(self.contador)
+                    self.contador = self.contador+1
                     self.avl.getStudent(homewors[c].carnet).getYear(homewors[c].date.year).getMounth(homewors[c].date.mounth).insertMatriz(hour, day, homewors[c])
         
         print("\nCARNET TASKS")
@@ -107,7 +108,7 @@ class Load():
                 if self.avl.getStudent(carnet).SearchYear(anio):
                     if self.avl.getStudent(carnet).getYear(anio).SearchMounth(mounth):
                         print("Sí hay coincidencias")
-                        g = Grafo()
+                        g = Graficadora()
                         g.generarMatriz(self.avl.getStudent(carnet).getYear(anio).getMounth(mounth).matriz)
 
         elif(type == 2):
@@ -123,7 +124,7 @@ class Load():
                         #g = Grafo()
                         #g.generarMatriz(self.avl.getStudent(carnet).getYear(anio).getMounth(mounth).matriz)
                         if self.avl.getStudent(carnet).getYear(anio).getMounth(mounth).matriz.SearchHeader(hour,day):
-                            g = Grafo()
+                            g = Graficadora()
                             g.generarLista(self.avl.getStudent(carnet).getYear(anio).getMounth(mounth).matriz.getNodoTareas(hour, day))
         elif type == 3:
             g = Grafo()
@@ -148,4 +149,18 @@ class Load():
                     self.avl.getStudent(int(carnet)).getYear(int(anio)).getSemester(int(semester)).tree.insertar(course)
                     print('I maked to insertion')
                 else:
-                    print("No encontro el mes")    
+                    print("No encontro el mes")  
+    def AddHomework(self,homework):
+        homework.putId(self.contador)
+        self.contador = self.contador +1
+        if self.avl.search(homework.carnet):
+            if self.avl.getStudent(homework.carnet).yearsList.SearchYear(homework.date.year):
+                if self.avl.getStudent(homework.carnet).yearsList.getYear(homework.date.year).SearchMounth(homework.date.mounth):  
+                    self.avl.getStudent(homework.carnet).yearsList.getYear(homework.date.year).getMounth(homework.date.mounth).insertMatriz(homework.hour,homework.date.day,homework)
+                
+                    print('Insertion Perfect')
+            else:
+                self.avl.getStudent(homework.carnet).yearsList.addYear(homework.date.year)
+                if self.avl.getStudent(homework.carnet).yearsList.getYear(homework.date.year).SearchMounth(homework.date.mounth):  
+                    self.avl.getStudent(homework.carnet).yearsList.getYear(homework.date.year).getMounth(homework.date.mounth).insertMatriz(homework.hour,homework.date.day,homework)
+                    print("Insertion Perfect")

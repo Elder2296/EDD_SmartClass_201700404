@@ -1,6 +1,8 @@
 from io import TextIOWrapper
+import re
 from flask import Flask, json, jsonify, request
 from TreeB.Curso import Curso
+from Homeworks.homework import Homework
 app = Flask(__name__)
 
 from products import products
@@ -133,8 +135,30 @@ def updateStudent():
 def getStudent():
     carnet = request.json['carnet']
     student = principal.getStudent(int(carnet))
-    return jsonify({'student': student})
+    carnet = student.carnet
+    dpi = student.dpi
+    nombre= student.name
+    carrera = student.carrera
+    email = student.email
+    pas = student.password
+    credits = student.credits
+    age = student.age 
 
+    return jsonify({'carnet':carnet,'dpi':dpi,'nombre':nombre,'carrera':carrera,'email':email,'password': pas,'creditos':credits,'edad':age})
+
+@app.route('/recordatorio',methods = ['POST'])
+def AddHomework():
+    carnet = request.json['Carnet']
+    name = request.json['Nombre']
+    desc = request.json['Descripcion']
+    materia = request.json['Materia']
+    date = request.json['Fecha']
+    hour = request.json['Hora']
+    state = request.json['Estado']
+    task = Homework(carnet,name,desc,materia,date,hour,state)
+
+    principal.AddHomework(task)
+    return jsonify({'message':'sucess'})
 
 
     
