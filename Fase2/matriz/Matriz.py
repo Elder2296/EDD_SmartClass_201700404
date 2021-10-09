@@ -194,6 +194,38 @@ class Matriz():
                     if not found :
                         tmpCol.down = nuevolc
                         nuevolc.up = tmpCol
+    def getTask(self,hour, day, position):
+        responseRow = self.Rows.GetHeader(hour)
+        responseColumn = self.Columns.GetHeader(day)
+        columFound = False
+                
+                
+                #encontrar el nulo de la fila
+                #Primero busca en columnas
+        tmpFila = responseRow.right
+        
+                #Primero buscara coincidencias
+                #print("Buscara, coincidencia con el nodo")
+        while tmpFila != None:
+            if tmpFila.column == day:
+                        #print("direccion de memoria: "+str(tmpFila))
+                columFound = True
+                    
+            tmpFila = tmpFila.right
+                
+
+        tmpCol = responseColumn.down
+        
+        while tmpCol != None:
+            if tmpCol.row == hour and columFound:
+                        #print("direccion de memoria:"+str(tmpCol))
+                return tmpCol                       
+                
+                    
+            tmpCol = tmpCol.down        
+
+        return None
+
 
             
         

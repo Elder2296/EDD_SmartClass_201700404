@@ -1,6 +1,7 @@
 from io import TextIOWrapper
 import re
 from flask import Flask, json, jsonify, request
+from Homeworks.Date import Date
 from TreeB.Curso import Curso
 from Homeworks.homework import Homework
 app = Flask(__name__)
@@ -159,6 +160,36 @@ def AddHomework():
 
     principal.AddHomework(task)
     return jsonify({'message':'sucess'})
+
+
+@app.route('/recordatorio', methods = ['GET'])
+def getHomework():
+    carnet = request.json['Carnet']
+    f = request.json['Fecha']
+    h = request.json['Hora']
+    position = request.json['Posicion']
+    arreglo = f.split(sep='/')
+    day = int(arreglo[0])
+    mounth = int(arreglo[1])
+    year = int(arreglo[2])
+    date = Date(day,mounth,year)
+    arreglo2 = h.split(sep = ':')
+    hour = int(arreglo2[0])
+    if principal.getHomework(int(carnet),date,hour,position) != None:
+
+        task = principal.getHomework(int(carnet),date,hour,position)
+        carnet = task.carnet
+        name = task.name
+        desc = task.description
+        materia = task.materia
+        date2 = task.date.getDate()
+        hour2 = task.hour
+        state = task.state
+
+        return jsonify({'carnet':carnet, 'name':name,'description':desc,'materia': materia,'fecha':date2,'hora':hour2,'estado':state})
+    else:
+        return jsonify({'message':'Not found'})
+
 
 
     

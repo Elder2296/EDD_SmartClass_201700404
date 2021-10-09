@@ -42,6 +42,7 @@ class Header(Lista):
 
             if nuevo.getValue() == tmp.getValue():  # devuleve el valor que es igual
                 return tmp
+    
 
 
     def SearchHeader(self, header):

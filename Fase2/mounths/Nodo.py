@@ -9,3 +9,5 @@ class Nodo():
     def insertMatriz(self,hour,day,homework):
         #print('LLEGO A CASI INSERTAR')
         self.matriz.insert(hour,day,homework)
+    def getTask(self, hour,day,position):
+        self.matriz.getTask(hour,day,position)

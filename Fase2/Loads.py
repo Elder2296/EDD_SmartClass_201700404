@@ -164,3 +164,25 @@ class Load():
                 if self.avl.getStudent(homework.carnet).yearsList.getYear(homework.date.year).SearchMounth(homework.date.mounth):  
                     self.avl.getStudent(homework.carnet).yearsList.getYear(homework.date.year).getMounth(homework.date.mounth).insertMatriz(homework.hour,homework.date.day,homework)
                     print("Insertion Perfect")
+    def getHomework(self,carnet,date,hour, position):
+
+        if self.avl.search(carnet):
+            if self.avl.getStudent(carnet).yearsList.SearchYear(date.year):
+                if self.avl.getStudent(carnet).yearsList.getYear(date.year).SearchMounth(date.mounth):  
+                    print("encontro el Mes:")
+                    if self.avl.getStudent(carnet).yearsList.getYear(date.year).getMounth(date.mounth).matriz.getNodoTareas(hour, date.day) != None:
+
+                        return self.methodaux(self.avl.getStudent(carnet).yearsList.getYear(date.year).getMounth(date.mounth).matriz.getNodoTareas(hour, date.day),position)
+                    else:
+                        return None
+                    
+        
+    def methodaux(self, nodo,posicion):
+        c = 1
+        aux = nodo.first
+        while aux != None:
+            if c == posicion:
+                return aux.getValue() 
+            aux = aux.next
+        
+        return None
