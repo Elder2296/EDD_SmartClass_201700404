@@ -186,3 +186,16 @@ class Load():
             aux = aux.next
         
         return None
+    def updateTask(self, task, position):
+        if self.avl.search(task.carnet):
+            if self.avl.getStudent(task.carnet).yearsList.SearchYear(task.date.year):
+                if self.avl.getStudent(task.carnet).yearsList.getYear(task.date.year).SearchMounth(task.date.mounth):  
+                    print("encontro el Mes:")
+                    if self.avl.getStudent(task.carnet).yearsList.getYear(task.date.year).getMounth(task.date.mounth).matriz.getNodoTareas(task.hour, task.date.day) != None:
+                        
+                        self.methodaux(self.avl.getStudent(task.carnet).yearsList.getYear(task.date.year).getMounth(task.date.mounth).matriz.getNodoTareas(task.hour, task.date.day),position).name = task.name
+                        self.methodaux(self.avl.getStudent(task.carnet).yearsList.getYear(task.date.year).getMounth(task.date.mounth).matriz.getNodoTareas(task.hour, task.date.day),position).description = task.description
+                        self.methodaux(self.avl.getStudent(task.carnet).yearsList.getYear(task.date.year).getMounth(task.date.mounth).matriz.getNodoTareas(task.hour, task.date.day),position).materia = task.materia
+                        self.methodaux(self.avl.getStudent(task.carnet).yearsList.getYear(task.date.year).getMounth(task.date.mounth).matriz.getNodoTareas(task.hour, task.date.day),position).state = task.state
+
+                    

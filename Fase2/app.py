@@ -190,6 +190,25 @@ def getHomework():
     else:
         return jsonify({'message':'Not found'})
 
+@app.route('/recordatorio', methods = ['PUT'])
+def updateHomework():
+    carnet = request.json['Carnet']
+    nombre = request.json['Nombre']
+    desc = request.json['Descripcion']
+    materia = request.json['Materia']
+    fecha = request.json['Fecha']
+    hora = request.json['Hora']
+    estado = request.json['Estado']
+    posicion = request.json['Posicion']
+    task = Homework(int(carnet),nombre,desc,materia,fecha,hora,estado)
+    principal.updateTask(task,posicion)
+    return jsonify({'message':'success'})
+    
+    
+    
+    
+    
+    
 
 
     
