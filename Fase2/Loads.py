@@ -25,8 +25,9 @@ class Load():
         #Load students and homeworks to Lists
         for i in range(len(types)):
             if types[i] == "\"user\"":
-                
-                student = Student(types[i+1].replace(character,""),types[i+2].replace(character,""),types[i+3].replace(character,""),types[i+4].replace(character,""),types[i+5].replace(character,""),types[i+6].replace(character,""),types[i+7],types[i+8])
+                carnet = types[i+1].replace(character,"")
+                print ("Carnet : "+str(carnet)+" tipo: "+str(type(carnet)))
+                student = Student(carnet,types[i+2],types[i+3],types[i+4],types[i+5],types[i+6],types[i+7],types[i+8])
                 students.append(student)
             if types[i] == "\"task\"":
                 homework = Homework(types[i+1].replace(character,""),types[i+2].replace(character,""), types[i+3].replace(character,""), types[i+4].replace(character,""), types[i+5].replace(character,""), types[i+6].replace(character,""), types[i+7].replace(character,""))
@@ -134,11 +135,21 @@ class Load():
             anio = int(peticion[1])
             sem = int(peticion[2])
             if self.avl.search(carnet):
+                print("Encontro estudiante")
                 if self.avl.getStudent(carnet).SearchYear(anio):
+                    print("Encontro año")
                     if self.avl.getStudent(carnet).getYear(anio).searchSem(sem):
+                        print("encontro semestre")
                         g = Grafo()
                         g.generarGrafo(self.avl.getStudent(carnet).getYear(anio).getSemester(sem).tree.raiz)
-            print("Debe generar el reporte 4")
+                        print("Debe generar el reporte 4")
+                    else:
+                        print("No encontro el semestre")
+                else:
+                    print("No encontro el año")
+            else:
+                print("No encontro Estudiante")
+            
     def LoadCursos(self, curso):
         self.treeB.insertar(curso)
     def AddCourseToStudent(self,carnet, anio, semester, course):
@@ -198,4 +209,10 @@ class Load():
                         self.methodaux(self.avl.getStudent(task.carnet).yearsList.getYear(task.date.year).getMounth(task.date.mounth).matriz.getNodoTareas(task.hour, task.date.day),position).materia = task.materia
                         self.methodaux(self.avl.getStudent(task.carnet).yearsList.getYear(task.date.year).getMounth(task.date.mounth).matriz.getNodoTareas(task.hour, task.date.day),position).state = task.state
 
-                    
+    def deleteTask(self, carnet, date, hour, position):
+        if self.avl.search(carnet):
+            if self.avl.getStudent(carnet).yearsList.SearchYear(date.year):
+                if self.avl.getStudent(carnet).yearsList.getYear(date.year).SearchMounth(date.mounth):  
+                    print("encontro el Mes:")
+                    if self.avl.getStudent(carnet).yearsList.getYear(date.year).getMounth(date.mounth).matriz.getNodoTareas(hour, date.day)!=None:
+                        print()        

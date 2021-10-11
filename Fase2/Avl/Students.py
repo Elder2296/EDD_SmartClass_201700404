@@ -2,11 +2,12 @@ from Years.Years import Years
 class Student():
     def __init__(self, carnet,dpi,name, carrera, email,password,credits, age):
         self.carnet = int(carnet)
-        self.dpi = dpi
-        self.name = name
-        self.carrera = carrera
-        self.email = email
-        self.password = password
+        character = "\""
+        self.dpi = dpi.replace(character,"")
+        self.name = name.replace(character,"")
+        self.carrera = carrera.replace(character,"")
+        self.email = email.replace(character,"")
+        self.password = str(password).replace(character,"")
         self.credits = credits
         self.age = age
         self.yearsList= Years()

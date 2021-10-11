@@ -81,6 +81,7 @@ def LoadPensum():
         principal.LoadCursos(materia)
         #print("Codigo: ", curso['Codigo'])
         #print("Nombre: ", curso['Nombre'])
+    return jsonify({'message':'load succes'})
 @app.route('/cursosEstudiante', methods=['POST'])
 def LoadCoursesStudent():
     students = request.json['Estudiantes']
@@ -99,7 +100,6 @@ def LoadCoursesStudent():
                     course = Curso(curso['Codigo'],curso['Nombre'],curso['Creditos'],curso['Prerequisitos'],curso['Obligatorio'])
                     principal.AddCourseToStudent(student['Carnet'],year['Año'],semester['Semestre'],course)
         
-
     
     
     return jsonify({'message': 'Load courses succesfuly'})
@@ -203,12 +203,21 @@ def updateHomework():
     task = Homework(int(carnet),nombre,desc,materia,fecha,hora,estado)
     principal.updateTask(task,posicion)
     return jsonify({'message':'success'})
+@app.route('/recordatorio', methods = ['DELETE'])
+def deleteHomework():
+    carnet = request.json['Carnet']
+    f = request.json['Fecha']
+    hour = request.json['Hora']
+    position = request.json['Posicion']
+
+
+    arreglo = f.split(sep='/')
+    day = int(arreglo[0])
+    mounth = int(arreglo[1])
+    year = int(arreglo[2])
+    date = Date(day,mounth,year)
     
-    
-    
-    
-    
-    
+
 
 
     
