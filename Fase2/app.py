@@ -1,9 +1,13 @@
 from io import TextIOWrapper
 import re
 from flask import Flask, json, jsonify, request
+from flask_cors import CORS
+
 from Homeworks.Date import Date
 from TreeB.Curso import Curso
 from Homeworks.homework import Homework
+
+
 app = Flask(__name__)
 
 from products import products
@@ -216,8 +220,21 @@ def deleteHomework():
     mounth = int(arreglo[1])
     year = int(arreglo[2])
     date = Date(day,mounth,year)
-    
+@app.route('/Autentication', methods ={'POST'})
+def Autentication():
+    carnet = request.json['CARNET']
+    password = request.json['PASS']
+    user = principal.Autentication(carnet,password)
+    return jsonify({'found':user.found,'tipo': user.type,'name':user.name,'carnet':user.carnet})
 
+@app.route('/Apuntes', methods = {'POST'})
+def createNote():
+    carnet = request.json['CARNET']
+    title = request.json['TITULO']
+    content = request.json['CONTENIDO']
+    print("Carnet:"+ str(carnet)+"\nTITULO: "+str(title)+"\nCONTENIDO: "+str(content))
+    principal.loadApunte(carnet,title,content)
+    return jsonify({'server message':'succesfully'})
 
 
     
@@ -258,4 +275,12 @@ def deleteProduct(product_name):
             'products': products
         })'''
 if __name__ == '__main__':
+    CORS(app)
     app.run(debug=True, port = 3000)
+
+
+
+"""
+Enable CORS. Disable it if you don't need CORS
+https://parzibyte.me/blog
+"""

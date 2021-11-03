@@ -1,13 +1,16 @@
 from Years.Years import Years
+import hashlib
 class Student():
     def __init__(self, carnet,dpi,name, carrera, email,password,credits, age):
         self.carnet = int(carnet)
         character = "\""
-        self.dpi = dpi.replace(character,"")
+        self.dpi = dpi
         self.name = name.replace(character,"")
         self.carrera = carrera.replace(character,"")
         self.email = email.replace(character,"")
-        self.password = str(password).replace(character,"")
+        pas = password.replace(character,"")
+        pass2 = hashlib.sha256(str(pas).encode())
+        self.password = str(pass2.hexdigest())
         self.credits = credits
         self.age = age
         self.yearsList= Years()
@@ -41,6 +44,10 @@ class Student():
         self.credits = credits
     def setAge(self, age):
         self.age = age  
+    def usertype(self, type):
+        self.type = type
+    def userFound(self):
+        self.found = False
 
 
 

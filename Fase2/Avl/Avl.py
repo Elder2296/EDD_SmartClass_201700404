@@ -171,7 +171,7 @@ class AVL():
     def __inOrden(self, nodo, file):
         if nodo:
             self.__inOrden(nodo.left,file)
-            file.write("node [shape = box label = \""+str(nodo.getStudent().getCarnet())+"\\n"+nodo.getStudent().getName()+"\\n"+nodo.getStudent().getCarrera()+"\"] "+str(nodo.getStudent().getCarnet())+"\n")
+            file.write("node [shape = box label = \""+str(nodo.getStudent().getCarnet())+"\\n"+nodo.getStudent().dpi+"\\n"+nodo.getStudent().getName()+"\\n"+nodo.getStudent().getCarrera()+"\\n"+nodo.getStudent().password+"\"] "+str(nodo.getStudent().getCarnet())+"\n")
             #print("Valor:", nodo.valor)
             self.__inOrden(nodo.right,file)
     def mappear(self, nodo, file):

@@ -1,3 +1,4 @@
+from os import PRIO_PGRP
 from Avl.Avl import *
 from Avl.Students import *
 from Homeworks.homework import Homework
@@ -5,13 +6,26 @@ from Analizer.parser import parser,types
 from Graficadora.Graficadora import Graficadora
 from Graficadora.Grafo  import Grafo
 from TreeB.TreeB import Arbol_B
+import hashlib
+from TablaHash.TablaHash import TablaHash
+from TablaHash.Note import Note
+from Graficadora.Graph_TableHash import GraphTableHash
 class Load():
     avl = AVL()
     treeB = Arbol_B(5)   
+    tablaHash = TablaHash(7)
     contador = 0 
     def __init__(self):
         print("Cargas")
     
+    def loadApunte(self,carnet,title, content):
+        note = Note(title,content)
+        self.tablaHash.Insert(carnet,note)
+        pass
+    def CreateGraphTableHash(self):
+        graficator = GraphTableHash()
+        graficator.graficar(self.tablaHash)
+        
     def loadStudents(self, path):
         #print("desde la carga"+path)
         file = open(path,'r', encoding= 'utf-8')
@@ -27,7 +41,15 @@ class Load():
             if types[i] == "\"user\"":
                 carnet = types[i+1].replace(character,"")
                 print ("Carnet : "+str(carnet)+" tipo: "+str(type(carnet)))
-                student = Student(carnet,types[i+2],types[i+3],types[i+4],types[i+5],types[i+6],types[i+7],types[i+8])
+                h = hashlib.sha256(str(types[i+6]).encode())
+                character = "\""
+                
+                dpi = str(types[i+2]).replace(character,"")
+                g = hashlib.sha256(str(dpi).encode())
+
+                print(h.hexdigest())  
+
+                student = Student(carnet,dpi,types[i+3],types[i+4],types[i+5],types[i+6],types[i+7],types[i+8])
                 students.append(student)
             if types[i] == "\"task\"":
                 homework = Homework(types[i+1].replace(character,""),types[i+2].replace(character,""), types[i+3].replace(character,""), types[i+4].replace(character,""), types[i+5].replace(character,""), types[i+6].replace(character,""), types[i+7].replace(character,""))
@@ -216,3 +238,29 @@ class Load():
                     print("encontro el Mes:")
                     if self.avl.getStudent(carnet).yearsList.getYear(date.year).getMounth(date.mounth).matriz.getNodoTareas(hour, date.day)!=None:
                         print()        
+    def Autentication(self, carnet, pas):
+        user = Student(0,"","","","","",0,0)
+        user.userFound()
+        user.usertype('None')
+        if(carnet == "Admin" and pas =="Admin"):
+            user.found = True
+            user.usertype('Admin')
+            return user
+        else:
+            carnet = int(carnet)
+        
+        
+            if self.avl.search(carnet):
+            #Arreglar condicional 
+                print("FOUND STUDENT")
+                h = hashlib.sha256(str(pas).encode())
+                if self.avl.getStudent(carnet).password == str(h.hexdigest()):
+                #print("entro")
+                    print("FOUND PASSWORD")
+                    user = self.avl.getStudent(carnet)
+                    user.usertype('Student')
+                    user.found = True
+                    return user
+                return user
+        
+            return user

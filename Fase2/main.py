@@ -2,6 +2,35 @@ from Avl.Avl import*
 from Avl.Students import*
 from Analizer.parser import parser,types
 from Homeworks.homework import Homework
+import hashlib
+from TablaHash.Note import Note
+from TablaHash.TablaHash import TablaHash
+from Graficadora.Graph_TableHash import GraphTableHash
+note = Note("titulo1","contenido1")
+note2 = Note("titulo2","contenido2")
+note3 = Note("titulo3","contenido3")
+note4 = Note("titulo4","contenido4")
+note5 = Note("titulo5","contenido5")
+note6 = Note("titulo6","contenido6")
+note7 = Note("titulo7","contenido7")
+note8 = Note("titulo8","contenido8")
+
+table = TablaHash(7)
+table.Insert("201700404",note)
+table.Insert("201700603",note2)
+table.Insert("201981256",note3)
+table.Insert("202032564",note4)
+table.Insert("201800256",note5)
+table.Insert("201800256",note3)
+table.Insert("201538322",note6)
+table.Insert("201700404",note7)
+table.Insert("201700404",note8)
+grafica = GraphTableHash()
+grafica.graficar(table)
+table.printNodos()
+
+
+
 '''from TreeB.Curso import Curso
 from TreeB.TreeB import Arbol_B
 from Graficadora.Grafo import Grafo
@@ -20,7 +49,7 @@ arbol.insertar(curso5)
 
 g = Grafo()
 g.generarGrafo(arbol.raiz)'''
-path = "/home/losa/Ciencias_y_Sistemas/2021/Segundo_Semestre/Lab_Estructuras/Fase1/EDD_SmartClass_201700404/Fase2/Estudiantes.txt"
+'''path = "/home/losa/Ciencias_y_Sistemas/2021/Segundo_Semestre/Lab_Estructuras/Fase1/EDD_SmartClass_201700404/Fase2/Estudiantes.txt"
 file = open(path,'r', encoding= 'utf-8')
 message = file.read()
 file.close()
@@ -46,7 +75,10 @@ avl =AVL()
 for a in range(len(students)):
     #print("NAME STUDENT: "+students[a].name)
     avl.Insert(students[a])
-avl.createTree()
+avl.createTree()'''
+
+#h = hashlib.sha256("brC123abc".encode())
+#print(h.hexdigest())
 
 
 
@@ -125,5 +157,22 @@ anios.Insert(2015)
 anios.Insert(2016)
 
 anios.Print()'''
+def nextCousin(numero):
+    nLimite = numero+10
 
-        
+    for c  in range(numero,nLimite,1):
+        if(c>numero):
+            lista = list()
+            for div in range(c+1):
+                if(div!=0):
+                    if(c%div)==0:
+                        lista.append(div)
+
+            if(lista.__len__())==2:
+                return c
+                
+    return nextCousin(nLimite)
+
+
+number = 6000
+#print("el siguiente numero primo de: "+str(number)+" ES: " + str(nextCousin(number)))
