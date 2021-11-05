@@ -1,4 +1,5 @@
 from TablaHash.Nodo import Nodo
+from TablaHash.NodoNote import NodoNote
 class TablaHash:
     def __init__(self,_size) -> None:
         self.size = _size
@@ -20,9 +21,76 @@ class TablaHash:
             else:
                 #aqui va el codigo, para aumentar el tamaño la siguiente numero primero
                 self.size = self.nextCousin(self.size)
+                self.recargar()
+                self.first = self.firstaux
+                self.id = self.idaux
                 self.Insert(carnet1, apunte)
                 
-    
+    def recargar(self):
+        temp = self.first
+        self.firstaux = None
+        self.idaux = 0
+        while temp != None:
+            llv = temp.carnet % self.size
+            #Declarar un nodo nuevo
+            nodo = Nodo(None,None,None)
+            nodo.key = llv
+            nodo.notes = temp.notes
+            nodo.carnet = temp.carnet
+            self.recargarHash(nodo,llv)
+            temp = temp.siguiente
+
+
+    def recargarHash(self, nodo,key):
+        nodo.key = key
+        if self.firstaux == None:
+           
+            self.firstaux = nodo
+            self.idaux +=1
+            return
+               
+        if self.buscarLlvAux(nodo.key):
+            i=1
+            pos = self.buscarPosaux(nodo,i)
+            self.recargarHash(nodo,pos)
+            
+        else:
+            tmp = self.firstaux 
+            
+            if nodo.key < tmp.key:
+                nodo.siguiente = tmp
+                self.firstaux= nodo
+                self.idaux += 1
+            else:
+                
+                while tmp.siguiente != None:
+                    tmp2 = tmp.siguiente
+                    if nodo.key <tmp2.key:
+                        tmp.siguiente = nodo
+                        nodo.siguiente = tmp2
+                        self.idaux +=1
+                        break
+                    tmp = tmp.siguiente
+                if tmp.siguiente == None:
+                    tmp.siguiente = nodo
+                    self.idaux += 1
+        
+    def buscarPosaux(self, nodo,i):
+        pos = nodo.key + i*i
+        n_pos = pos % self.size
+        if self.buscarLlv(n_pos):
+            i+=1
+            return self.buscarPos(nodo,i)
+        return n_pos
+        
+    def buscarLlvAux(self, llv):
+        tmp = self.firstaux
+        while tmp != None:
+            if llv == tmp.key:
+                return True
+            tmp = tmp.siguiente
+        return False
+
     def InsertarHash(self,carnet, apunte, llv):
         nuevo = Nodo(llv, carnet, apunte)
 
@@ -102,4 +170,11 @@ class TablaHash:
         while temp != None:
             print("Llave: "+str(temp.key)+" Carnet: "+str(temp.carnet))
             temp = temp.siguiente
+
+
+class ListaAux():
+    def __init__(self):
+        self.first = None
+        pass
+
             
