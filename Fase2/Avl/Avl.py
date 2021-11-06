@@ -169,6 +169,13 @@ class AVL():
         os.system(prog)
         im = Image.open('/home/losa/Escritorio/Reportes_F3/avl.png')
         im.show()
+
+
+        
+
+        
+
+
     def __inOrden(self, nodo, file,clave):
         if nodo:
             self.__inOrden(nodo.left,file,clave)

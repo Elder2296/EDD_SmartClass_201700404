@@ -43,8 +43,9 @@ def Load():
     
     return jsonify({'message':'Load succesfully'})
 
-@app.route('/reporte', methods=['GET'])
+@app.route('/reporte', methods=['POST'])
 def getGrafo():
+    
     tipo = request.json['tipo']
     if tipo == 0:
         principal.Reports(tipo,None)
