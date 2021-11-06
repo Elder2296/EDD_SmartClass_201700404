@@ -4,7 +4,7 @@ from flask import Flask, json, jsonify, request
 from flask_cors import CORS
 
 from Homeworks.Date import Date
-from TreeB.Curso import Curso
+from Grafo.Curso import Curso
 from Homeworks.homework import Homework
 
 
@@ -74,6 +74,9 @@ def getGrafo():
             request.json['semestre']
         ]
         principal.Reports(tipo,peticion)
+    elif tipo == 5:
+        peticion = request.json['Codigo']
+        principal.Reports(tipo,peticion)
     print("tipo de reporte: "+str(tipo))
     return jsonify({'message': 'report type'})
 
@@ -102,7 +105,7 @@ def LoadCoursesStudent():
                 for curso in cursos:
                     print('Codigo Curso: '+curso['Codigo'])
                     course = Curso(curso['Codigo'],curso['Nombre'],curso['Creditos'],curso['Prerequisitos'],curso['Obligatorio'])
-                    principal.AddCourseToStudent(student['Carnet'],year['Año'],semester['Semestre'],course)
+                    #principal.AddCourseToStudent(student['Carnet'],year['Año'],semester['Semestre'],course)
         
     
     

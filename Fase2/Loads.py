@@ -10,11 +10,17 @@ import hashlib
 from TablaHash.TablaHash import TablaHash
 from TablaHash.Note import Note
 from Graficadora.Graph_TableHash import GraphTableHash
+from Grafo.Lista import Lista
+from Graficadora.Red import Red
+
+
+
 class Load():
     avl = AVL()
     treeB = Arbol_B(5)   
     tablaHash = TablaHash(7)
     contador = 0 
+    listacursos = Lista()
     def __init__(self):
         print("Cargas")
     
@@ -171,9 +177,16 @@ class Load():
                     print("No encontro el año")
             else:
                 print("No encontro Estudiante")
+        elif type ==5:
+            red = Red()
+            red.Graficar(self.listacursos,peticion)
+            #self.listacursos.PrintAllCourses()
             
     def LoadCursos(self, curso):
-        self.treeB.insertar(curso)
+        self.listacursos.InsertarCurso(curso)
+
+
+        #self.treeB.insertar(curso)
     def AddCourseToStudent(self,carnet, anio, semester, course):
 
         if self.avl.search(int(carnet)):
