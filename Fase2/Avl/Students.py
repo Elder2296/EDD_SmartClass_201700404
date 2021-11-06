@@ -5,12 +5,10 @@ class Student():
         self.carnet = int(carnet)
         character = "\""
         self.dpi = dpi
-        self.name = name.replace(character,"")
+        self.name = name
         self.carrera = carrera.replace(character,"")
-        self.email = email.replace(character,"")
-        pas = password.replace(character,"")
-        pass2 = hashlib.sha256(str(pas).encode())
-        self.password = str(pass2.hexdigest())
+        self.email = email
+        self.password = password
         self.credits = credits
         self.age = age
         self.yearsList= Years()

@@ -1,6 +1,7 @@
 from Avl.Nodo import *
 import os
 from PIL import Image
+from cryptography.fernet import Fernet
 
 class AVL():
     def __init__(self):
@@ -156,24 +157,26 @@ class AVL():
             nodo.getStudent().yearsList.Print()
             
             self.Enorden(nodo.right)
-    def createTree(self):
-        file = open("/home/losa/Escritorio/Reportes_F2/avl.dot","w")
+    def createTree(self,clave):
+        file = open("/home/losa/Escritorio/Reportes_F3/avl.dot","w")
         file.write("digraph AVL{\n")
         # file.write("node [shape = circle label = \""+str(self.raiz.valor)+"\"] "+str(self.raiz.valor)+"\n")
-        self.__inOrden(self.root,file)
+        self.__inOrden(self.root,file,clave)
         self.mappear(self.root,file)
         file.write("\n}")
         file.close()
-        prog = "dot -Tpng /home/losa/Escritorio/Reportes_F2/avl.dot -o /home/losa/Escritorio/Reportes_F2/avl.png"
+        prog = "dot -Tpng /home/losa/Escritorio/Reportes_F3/avl.dot -o /home/losa/Escritorio/Reportes_F3/avl.png"
         os.system(prog)
-        im = Image.open('/home/losa/Escritorio/Reportes_F2/avl.png')
+        im = Image.open('/home/losa/Escritorio/Reportes_F3/avl.png')
         im.show()
-    def __inOrden(self, nodo, file):
+    def __inOrden(self, nodo, file,clave):
         if nodo:
-            self.__inOrden(nodo.left,file)
-            file.write("node [shape = box label = \""+str(nodo.getStudent().getCarnet())+"\\n"+nodo.getStudent().dpi+"\\n"+nodo.getStudent().getName()+"\\n"+nodo.getStudent().getCarrera()+"\\n"+nodo.getStudent().password+"\"] "+str(nodo.getStudent().getCarnet())+"\n")
+            self.__inOrden(nodo.left,file,clave)
+            self.capa = Fernet(clave)
+            id = self.capa.encrypt(str(nodo.getStudent().getCarnet()).encode())
+            file.write("node [shape = box label = \""+id.decode('utf-8')[0:10]+"\\n"+nodo.getStudent().dpi.decode('utf-8')[0:10]+"\\n"+nodo.getStudent().getName().decode('utf-8')[0:10]+"\\n"+nodo.getStudent().getCarrera()+"\\n"+nodo.getStudent().password.decode('utf-8')[0:10]+"\"] "+str(nodo.getStudent().getCarnet())+"\n")
             #print("Valor:", nodo.valor)
-            self.__inOrden(nodo.right,file)
+            self.__inOrden(nodo.right,file,clave)
     def mappear(self, nodo, file):
         if nodo.left:
             file.write(str(nodo.getStudent().getCarnet())+" -> "+str(nodo.left.getStudent().getCarnet())+" \n")

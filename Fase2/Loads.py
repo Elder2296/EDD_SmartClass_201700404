@@ -12,6 +12,7 @@ from TablaHash.Note import Note
 from Graficadora.Graph_TableHash import GraphTableHash
 from Grafo.Lista import Lista
 from Graficadora.Red import Red
+from cryptography.fernet import Fernet
 
 
 
@@ -21,8 +22,12 @@ class Load():
     tablaHash = TablaHash(7)
     contador = 0 
     listacursos = Lista()
+    
+    
     def __init__(self):
         print("Cargas")
+        self.clave = Fernet.generate_key()
+        self.capa = Fernet(self.clave)
     
     def loadApunte(self,carnet,title, content):
         note = Note(title,content)
@@ -45,17 +50,27 @@ class Load():
         #Load students and homeworks to Lists
         for i in range(len(types)):
             if types[i] == "\"user\"":
-                carnet = types[i+1].replace(character,"")
-                print ("Carnet : "+str(carnet)+" tipo: "+str(type(carnet)))
-                h = hashlib.sha256(str(types[i+6]).encode())
-                character = "\""
-                
                 dpi = str(types[i+2]).replace(character,"")
-                g = hashlib.sha256(str(dpi).encode())
+                carnet = types[i+1].replace(character,"")
+                name = types[i+3].replace(character,"")
+                email =types[i+5].replace(character,"")
+                contrasenia = types[i+6].replace(character,"")
+                age = types[i+8]
+                passEncript = hashlib.sha256(str(contrasenia).encode())
+                
+                
+                
+                
+                nuevodpi = self.capa.encrypt(str(dpi).encode())
+                nuevoname = self.capa.encrypt(str(name).encode())
+                nuevoemail = self.capa.encrypt(str(email).encode())
+                nuevopass = self.capa.encrypt(str(passEncript).encode())
+                nuevaedad = self.capa.encrypt(str(age).encode())
+                
 
-                print(h.hexdigest())  
+                #print(h.hexdigest())  
 
-                student = Student(carnet,dpi,types[i+3],types[i+4],types[i+5],types[i+6],types[i+7],types[i+8])
+                student = Student(carnet,nuevodpi,nuevoname,types[i+4],nuevoemail,nuevopass,types[i+7],nuevaedad)
                 students.append(student)
             if types[i] == "\"task\"":
                 homework = Homework(types[i+1].replace(character,""),types[i+2].replace(character,""), types[i+3].replace(character,""), types[i+4].replace(character,""), types[i+5].replace(character,""), types[i+6].replace(character,""), types[i+7].replace(character,""))
@@ -125,9 +140,14 @@ class Load():
             
             
             
+
+
+    ##REPORTES
+
+
     def Reports(self, type, peticion):
         if(type == 0):
-            self.avl.createTree()
+            self.avl.createTree(self.clave)
         elif(type == 1):
             #print("la peticion es: "+str(peticion[0])+" tipo: " +str(type(peticion[0]))) 
             carnet = int(peticion[0])
@@ -182,6 +202,12 @@ class Load():
             red.Graficar(self.listacursos,peticion)
             #self.listacursos.PrintAllCourses()
             
+
+
+
+
+    #CARGA DE CURSOS AL GRAFO   
+
     def LoadCursos(self, curso):
         self.listacursos.InsertarCurso(curso)
 
