@@ -1,5 +1,5 @@
 import os
-
+from PIL import Image
 class GraphTableHash:
     def __init__(self) -> None:
         
@@ -65,10 +65,12 @@ class GraphTableHash:
 
         return lineas
     def createFile(self, lineas):
-        f = open('/home/losa/Escritorio/Reportes_F2/tablaHash.dot','w')
+        f = open('/home/losa/Escritorio/Reportes_F3/tablaHash.dot','w')
         try:
             f.write(lineas)
         finally:
             f.close()        
-        prog = "dot -Tpng  /home/losa/Escritorio/Reportes_F2/tablaHash.dot -o /home/losa/Escritorio/Reportes_F2/tablaHash.png"
+        prog = "dot -Tpng  /home/losa/Escritorio/Reportes_F3/tablaHash.dot -o /home/losa/Escritorio/Reportes_F3/tablaHash.png"
         os.system(prog)
+        img = Image.open('/home/losa/Escritorio/Reportes_F3/tablaHash.png')
+        img.show()

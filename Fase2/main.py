@@ -26,8 +26,8 @@ table.Insert("201538322",note6)
 table.Insert("201700404",note7)
 table.Insert("201700404",note8)
 grafica = GraphTableHash()
-grafica.graficar(table)
-table.printNodos()
+#grafica.graficar(table)
+#table.printNodos()
 
 
 
@@ -77,8 +77,8 @@ for a in range(len(students)):
     avl.Insert(students[a])
 avl.createTree()'''
 
-#h = hashlib.sha256("brC123abc".encode())
-#print(h.hexdigest())
+h = hashlib.sha256("brC123abc".encode())
+print(h.hexdigest()+str(type(h)))
 
 
 

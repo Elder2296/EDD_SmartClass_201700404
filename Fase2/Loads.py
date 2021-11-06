@@ -5,6 +5,7 @@ from Homeworks.homework import Homework
 from Analizer.parser import parser,types
 from Graficadora.Graficadora import Graficadora
 from Graficadora.Grafo  import Grafo
+from Graficadora.Graph_TableHash import GraphTableHash
 from TreeB.TreeB import Arbol_B
 import hashlib
 from TablaHash.TablaHash import TablaHash
@@ -13,6 +14,7 @@ from Graficadora.Graph_TableHash import GraphTableHash
 from Grafo.Lista import Lista
 from Graficadora.Red import Red
 from cryptography.fernet import Fernet
+
 
 
 
@@ -147,7 +149,12 @@ class Load():
 
     def Reports(self, type, peticion):
         if(type == 0):
-            self.avl.createTree(self.clave)
+            tipo = peticion[0]
+            if tipo == "Encrypt":
+                self.avl.createTree(self.clave)
+            else:
+                self.avl.createTreeDes(self.clave)
+                print("ARBOL DESENCRIPTADO")
         elif(type == 1):
             #print("la peticion es: "+str(peticion[0])+" tipo: " +str(type(peticion[0]))) 
             carnet = int(peticion[0])
@@ -201,6 +208,11 @@ class Load():
             red = Red()
             red.Graficar(self.listacursos,peticion)
             #self.listacursos.PrintAllCourses()
+        elif type == 6:
+            graficartabla = GraphTableHash()
+            graficartabla.graficar(self.tablaHash)
+            
+            pass
             
 
 
@@ -303,3 +315,24 @@ class Load():
                 return user
         
             return user
+    def loadNotes(self):
+        note = Note("titulo1","contenido1")
+        note2 = Note("titulo2","contenido2")
+        note3 = Note("titulo3","contenido3")
+        note4 = Note("titulo4","contenido4")
+        note5 = Note("titulo5","contenido5")
+        note6 = Note("titulo6","contenido6")
+        note7 = Note("titulo7","contenido7")
+        note8 = Note("titulo8","contenido8")
+
+        
+        self.tablaHash.Insert("201700404",note)
+        self.tablaHash.Insert("201700603",note2)
+        self.tablaHash.Insert("201981256",note3)
+        self.tablaHash.Insert("202032564",note4)
+        self.tablaHash.Insert("201800256",note5)
+        self.tablaHash.Insert("201800256",note3)
+        self.tablaHash.Insert("201538322",note6)
+        self.tablaHash.Insert("201700404",note7)
+        self.tablaHash.Insert("201700404",note8)
+        pass

@@ -170,6 +170,30 @@ class AVL():
         im = Image.open('/home/losa/Escritorio/Reportes_F3/avl.png')
         im.show()
 
+    def createTreeDes(self,clave):
+        file = open("/home/losa/Escritorio/Reportes_F3/avlDES.dot","w")
+        file.write("digraph AVL{\n")
+        # file.write("node [shape = circle label = \""+str(self.raiz.valor)+"\"] "+str(self.raiz.valor)+"\n")
+        self.__inOrdenDES(self.root,file,clave)
+        self.mappear(self.root,file)
+        file.write("\n}")
+        file.close()
+        prog = "dot -Tpng /home/losa/Escritorio/Reportes_F3/avlDES.dot -o /home/losa/Escritorio/Reportes_F3/avlDES.png"
+        os.system(prog)
+        im = Image.open('/home/losa/Escritorio/Reportes_F3/avlDES.png')
+        im.show()
+
+    def __inOrdenDES(self, nodo, file,clave):
+        if nodo:
+            self.__inOrdenDES(nodo.left,file,clave)
+            self.capa = Fernet(clave)
+
+            dpi =self.capa.decrypt(nodo.getStudent().dpi)
+            name = self.capa.decrypt(nodo.getStudent().getName())
+            password = (self.capa.decrypt(nodo.getStudent().password)).hex()
+            file.write("node [shape = box label = \""+str(nodo.getStudent().carnet)+"\\n"+dpi.decode('utf-8')+"\\n"+name.decode('utf-8')+"\\n"+nodo.getStudent().getCarrera()+"\\n"+password+"\"] "+str(nodo.getStudent().getCarnet())+"\n")
+            #print("Valor:", nodo.valor)
+            self.__inOrdenDES(nodo.right,file,clave)
 
         
 

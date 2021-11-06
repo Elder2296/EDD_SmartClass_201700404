@@ -48,7 +48,8 @@ def getGrafo():
     
     tipo = request.json['tipo']
     if tipo == 0:
-        principal.Reports(tipo,None)
+        peticion =[request.json['opcion']]
+        principal.Reports(tipo,peticion)
     elif tipo == 1:
         peticion =[
             request.json['carnet'],
@@ -78,6 +79,8 @@ def getGrafo():
     elif tipo == 5:
         peticion = request.json['Codigo']
         principal.Reports(tipo,peticion)
+    elif tipo ==6:
+        principal.Reports(tipo,None)    
     print("tipo de reporte: "+str(tipo))
     return jsonify({'message': 'report type'})
 
@@ -193,7 +196,6 @@ def getHomework():
         date2 = task.date.getDate()
         hour2 = task.hour
         state = task.state
-
         return jsonify({'carnet':carnet, 'name':name,'description':desc,'materia': materia,'fecha':date2,'hora':hour2,'estado':state})
     else:
         return jsonify({'message':'Not found'})
@@ -240,6 +242,12 @@ def createNote():
     principal.loadApunte(carnet,title,content)
     return jsonify({'server message':'succesfully'})
 
+
+@app.route('/cargarapuntes', methods ={'POST'})
+def loadapuntes():
+    principal.loadNotes()
+
+    return jsonify({'server message':'succesfully'})
 
     
 
