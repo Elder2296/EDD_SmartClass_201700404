@@ -6,6 +6,7 @@ class Student():
         character = "\""
         self.dpi = dpi
         self.name = name
+        self.nameDES =""
         self.carrera = carrera.replace(character,"")
         self.email = email
         self.password = password

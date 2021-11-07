@@ -233,7 +233,7 @@ def Autentication():
     carnet = request.json['CARNET']
     password = request.json['PASS']
     user = principal.Autentication(carnet,password)
-    return jsonify({'found':user.found,'tipo': user.type,'name':user.name,'carnet':user.carnet})
+    return jsonify({'found':user.found,'tipo': user.type,'name':user.nameDES,'carnet':user.carnet})
 
 @app.route('/Apuntes', methods = {'POST'})
 def createNote():

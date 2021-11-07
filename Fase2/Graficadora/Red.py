@@ -10,8 +10,8 @@ class Red:
     def Graficar(self, lista, codigo):
         self.listacursos = lista
         
-        linesToFile ="graph {\n"
-        linesToFile+= "rankdir = RL\n\n"
+        linesToFile ="digraph {\n"
+        linesToFile+= "rankdir = LR\n\n"
         self.listacursos.GenerateBodyDot(codigo)
         #Se debe eliminar todos los repetidos antes
         self.listacursos.verifyExist(self.listacursos.listaAuxbody.first)
@@ -21,7 +21,7 @@ class Red:
         self.listacursos.bodyline=""
         linesToFile+="\n\n"
         
-        self.listacursos.GenerateDirection(codigo)
+        self.listacursos.GenerateDirection(codigo,"ponderado")
         self.listacursos.verifyExist(self.listacursos.listaaux.first)
         linesToFile+= self.listacursos.getdireciones()
         self.listacursos.bodyline=""

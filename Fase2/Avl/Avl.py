@@ -190,8 +190,8 @@ class AVL():
 
             dpi =self.capa.decrypt(nodo.getStudent().dpi)
             name = self.capa.decrypt(nodo.getStudent().getName())
-            password = (self.capa.decrypt(nodo.getStudent().password)).hex()
-            file.write("node [shape = box label = \""+str(nodo.getStudent().carnet)+"\\n"+dpi.decode('utf-8')+"\\n"+name.decode('utf-8')+"\\n"+nodo.getStudent().getCarrera()+"\\n"+password+"\"] "+str(nodo.getStudent().getCarnet())+"\n")
+            password = (self.capa.decrypt(nodo.getStudent().password))
+            file.write("node [shape = box label = \""+str(nodo.getStudent().carnet)+"\\n"+dpi.decode('utf-8')+"\\n"+name.decode('utf-8')+"\\n"+nodo.getStudent().getCarrera()+"\\n"+password.decode('utf-8')+"\"] "+str(nodo.getStudent().getCarnet())+"\n")
             #print("Valor:", nodo.valor)
             self.__inOrdenDES(nodo.right,file,clave)
 

@@ -58,8 +58,8 @@ class Load():
                 email =types[i+5].replace(character,"")
                 contrasenia = types[i+6].replace(character,"")
                 age = types[i+8]
-                passEncript = hashlib.sha256(str(contrasenia).encode())
-                
+                pa = hashlib.sha256(str(contrasenia).encode())
+                passEncript = pa.hexdigest()
                 
                 
                 
@@ -72,7 +72,7 @@ class Load():
 
                 #print(h.hexdigest())  
 
-                student = Student(carnet,nuevodpi,nuevoname,types[i+4],nuevoemail,nuevopass,types[i+7],nuevaedad)
+                student = Student(carnet,nuevodpi,nuevoname,types[i+4],nuevoemail,passEncript,types[i+7],nuevaedad)
                 students.append(student)
             if types[i] == "\"task\"":
                 homework = Homework(types[i+1].replace(character,""),types[i+2].replace(character,""), types[i+3].replace(character,""), types[i+4].replace(character,""), types[i+5].replace(character,""), types[i+6].replace(character,""), types[i+7].replace(character,""))
@@ -308,9 +308,12 @@ class Load():
             #Arreglar condicional 
                 print("FOUND STUDENT")
                 h = hashlib.sha256(str(pas).encode())
+                
+
                 if self.avl.getStudent(carnet).password == str(h.hexdigest()):
                 #print("entro")
                     print("FOUND PASSWORD")
+                    user.nameDES = self.capa.decrypt(self.avl.getStudent(carnet).name)
                     user = self.avl.getStudent(carnet)
                     user.usertype('Student')
                     user.found = True

@@ -48,7 +48,7 @@ class Lista:
 
     
 
-    def GenerateDirection(self,codigo):
+    def GenerateDirection(self,codigo,tipo):
         aux = self.first
 
         while aux!=None:
@@ -59,15 +59,23 @@ class Lista:
                 temp = aux.curso.requisitos.first
 
                 while temp != None:
-                    direccion = str(codigo)+"--"+str(temp.id)
-                       
+                    direccion=""
+                    if(tipo =="ponderado"):
+                        direccion = str(temp.id)+"->"+str(codigo)+" [label =\""+str(self.getCreditos(temp.id))+"\"]"
+                    else:
+                        direccion = str(codigo)+"--"+str(temp.id)      
                     self.listaaux.Insertar(direccion)
-                    self.GenerateDirection(temp.id)
+                    self.GenerateDirection(temp.id,tipo)
                     temp = temp.siguiente
                 
 
             aux = aux.siguiente
-            
+    def getCreditos(self, codigo):
+        aux = self.first
+        while aux != None:
+            if aux.curso.Codigo == codigo:
+                return aux.curso.creditos
+            aux = aux.siguiente
         
 
     def getdireciones(self):
@@ -120,7 +128,7 @@ class Lista:
             while temp != None:
                 direccion = str(aux.curso.Codigo)+"--"+str(temp.id)
                 self.listaaux.Insertar(direccion)
-                self.GenerateDirection(temp.id)
+                self.GenerateDirection(temp.id,"")
                 temp = temp.siguiente
       
             aux = aux.siguiente
