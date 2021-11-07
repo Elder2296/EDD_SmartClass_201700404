@@ -12,28 +12,18 @@ class Lista:
         if self.first == None:
             self.first = nuevo
             self.last = nuevo
+            self.size += 1
+
         else:
-            if self.verifyEquals(codigo):
-                #Sí encuentra uno repetido, no lo agrega
-                pass
-            else:
-                aux = self.last
-                aux.siguiente = nuevo
-                self.last = nuevo
-        self.size += 1
-    def verifyEquals(self,codigo):
-        aux = self.first
+            
+            aux = self.last
+            aux.siguiente = nuevo
+            nuevo.anterior = aux
+            
+            self.last = nuevo
+            self.size += 1
+    
 
-        while aux!=None:
-            #print("EXISTENTE: "+str(aux.id)+" NUEVO: "+str(codigo))
-            if(aux.id is codigo):
-                print("ENCONTRO IGUALES")
-                return True
-
-            aux = aux.siguiente
-
-        
-        return False
     def PrintCodigo(self):
         aux = self.first
 

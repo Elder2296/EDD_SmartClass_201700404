@@ -5,8 +5,8 @@ class Lista:
         self.first = None
         self.last = None
         self.listaaux = Aux()
+        self.listaAuxbody = Aux()
         self.bodyline =""
-        pass
     def InsertarCurso(self,curso):
         nuevo = Nodo(curso)
 
@@ -30,9 +30,10 @@ class Lista:
 
         while aux!=None:
             if aux.curso.Codigo == codigo:
-                self.bodyline +="node [ shape= box label= \""+aux.curso.Codigo+"\\n"+aux.curso.nombre+"\"] "+str(aux.curso.Codigo)+"\n"
-                
-                
+                cabezas ="node [shape=box label=\""+aux.curso.Codigo+"\\n"+aux.curso.nombre+"\"] "+str(aux.curso.Codigo)
+                  
+                self.listaAuxbody.Insertar(cabezas)
+                    
                 temp = aux.curso.requisitos.first
 
                 while temp != None:
@@ -42,7 +43,11 @@ class Lista:
 
             aux = aux.siguiente
 
-        return self.bodyline
+        
+        
+
+    
+
     def GenerateDirection(self,codigo):
         aux = self.first
 
@@ -55,14 +60,15 @@ class Lista:
 
                 while temp != None:
                     direccion = str(codigo)+"--"+str(temp.id)
+                       
                     self.listaaux.Insertar(direccion)
                     self.GenerateDirection(temp.id)
                     temp = temp.siguiente
                 
 
             aux = aux.siguiente
-        self.getdireciones()
-        return self.bodyline
+            
+        
 
     def getdireciones(self):
         aux = self.listaaux.first
@@ -72,5 +78,71 @@ class Lista:
             aux = aux.siguiente
         
         self.listaaux = Aux()
+        return self.bodyline
+    def getBody(self):
+        aux = self.listaAuxbody.first
+
+        while aux != None:
+            self.bodyline+=aux.id+"\n"
+            aux = aux.siguiente
+        
+        self.listaAuxbody = Aux()
+        return self.bodyline
+    def GenerateRedCompleta(self):
+        aux = self.first
+
+        while aux!=None:
+
+            cabeza = "node [shape=box label=\""+aux.curso.Codigo+"\\n"+aux.curso.nombre+"\"] "+str(aux.curso.Codigo)
+            self.listaAuxbody.Insertar(cabeza)
+            if not(aux.curso.requisitos.first ==None):
+                
+                temp = aux.curso.requisitos.first
+
+                while temp != None:
+                    self.GenerateBodyDot(temp.id)
+                    temp = temp.siguiente
+                
+
+            aux = aux.siguiente
+
+
+        
+
+    def GenerateAllDirections(self):
+        aux = self.first
+
+        while aux!=None:
+            
+                
+            temp = aux.curso.requisitos.first
+
+            while temp != None:
+                direccion = str(aux.curso.Codigo)+"--"+str(temp.id)
+                self.listaaux.Insertar(direccion)
+                self.GenerateDirection(temp.id)
+                temp = temp.siguiente
+      
+            aux = aux.siguiente
+            
+        
+    def verifyExist(self,nodo):
+        
+        aux = nodo.siguiente
+
+        while aux!= None:
+            if aux.id == nodo.id:
+                aux.anterior.siguiente = aux.siguiente
+
+                if aux.siguiente != None:
+                    aux.siguiente.anterior = aux.anterior
+            
+            aux = aux.siguiente
+        
+        if nodo.siguiente != None:
+            return self.verifyExist(nodo.siguiente)
+        
+        return
+
 
     

@@ -1,5 +1,4 @@
-from io import TextIOWrapper
-import re
+from multiprocessing import Process
 from flask import Flask, json, jsonify, request
 from flask_cors import CORS
 
@@ -80,7 +79,10 @@ def getGrafo():
         peticion = request.json['Codigo']
         principal.Reports(tipo,peticion)
     elif tipo ==6:
-        principal.Reports(tipo,None)    
+        principal.Reports(tipo,None) 
+
+    elif tipo == 7:
+        principal.Reports(tipo,None)   
     print("tipo de reporte: "+str(tipo))
     return jsonify({'message': 'report type'})
 
@@ -287,8 +289,15 @@ def deleteProduct(product_name):
             'products': products
         })'''
 if __name__ == '__main__':
+    
+
+    
     CORS(app)
+    
+
     app.run(debug=True, port = 3000)
+    
+    
 
 
 

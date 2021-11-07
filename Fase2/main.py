@@ -6,7 +6,7 @@ import hashlib
 from TablaHash.Note import Note
 from TablaHash.TablaHash import TablaHash
 from Graficadora.Graph_TableHash import GraphTableHash
-note = Note("titulo1","contenido1")
+'''note = Note("titulo1","contenido1")
 note2 = Note("titulo2","contenido2")
 note3 = Note("titulo3","contenido3")
 note4 = Note("titulo4","contenido4")
@@ -25,7 +25,7 @@ table.Insert("201800256",note3)
 table.Insert("201538322",note6)
 table.Insert("201700404",note7)
 table.Insert("201700404",note8)
-grafica = GraphTableHash()
+grafica = GraphTableHash()'''
 #grafica.graficar(table)
 #table.printNodos()
 
@@ -76,6 +76,26 @@ for a in range(len(students)):
     #print("NAME STUDENT: "+students[a].name)
     avl.Insert(students[a])
 avl.createTree()'''
+
+from Grafo.Requisitos.Lista import Lista
+
+lista = Lista()
+
+lista.Insertar("node [shape=box label=\"0235\\nipc2\"] 0772\n")
+lista.Insertar("node [shape=box label=\"0235\\nipc2\"] 0772\n")
+lista.Insertar("node [shape=box label=\"0235\\nipc2\"] 0772\n")
+lista.Insertar("node [shape=box label=\"0235\\nipc2\"] 0772\n")
+lista.Insertar("node [shape=box label=\"0235\\nipc2\"] 0772\n")
+lista.Insertar("node [shape=box label=\"0235\\nipc2\"] 0772\n")
+lista.Insertar("node [shape=box label=\"0235\\nipc2\"] 0772\n")
+lista.Insertar("node [shape=box label=\"0235\\nipc2\"] 0772\n")
+lista.Insertar("node [shape=box label=\"0235\\nipc2\"] 0772\n")
+
+lista.PrintCodigo()
+
+
+
+
 
 h = hashlib.sha256("brC123abc".encode())
 print(h.hexdigest()+str(type(h)))

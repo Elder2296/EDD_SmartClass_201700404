@@ -212,6 +212,9 @@ class Load():
             graficartabla = GraphTableHash()
             graficartabla.graficar(self.tablaHash)
             
+        elif type == 7:
+            red = Red()
+            red.GraficarTodo(self.listacursos)
             pass
             
 
