@@ -14,6 +14,7 @@ export default function Login() {
         PASS : pass
       }
       JSON.stringify(data)
+      console.log(data)
       let user = localStorage.getItem("user")
       async function Autentication() {
         //aquí va la comunicacion con la api
@@ -24,8 +25,10 @@ export default function Login() {
           name : info.data.name,
           carnet: info.data.carnet
         }
+        
         if(info.data.tipo ==="Admin"){
           localStorage.setItem("user",JSON.stringify(information))
+          
           history.push('/Admin')
         }else if(info.data.tipo === "Student"){
           localStorage.setItem("user",JSON.stringify(information))

@@ -2,8 +2,11 @@ import React,{useState} from 'react'
 
 import '../Styles/TxtArea.css'
 
+const axios = require('axios').default
+
 export default function Nuevoapunte() {
     const [titulo, settitulo] = useState("")
+    const [content, setcontent] = useState("")
     let [user, setuser] = useState("None")
     let [carnet, setcarnet] = useState(0)
     var data = localStorage.getItem('user')
@@ -15,6 +18,18 @@ export default function Nuevoapunte() {
         if(data.user ==='Student'){
             user = data.name
             carnet = data.carnet
+        }
+    }
+    const send = () =>{
+        var data = {
+            CARNET : carnet,
+            TITULO : titulo,
+            CONTENIDO : content
+
+        }
+        JSON.stringify(data)
+        async function sendNote(){
+            const info = await axios.post('http://localhost:3000/Apuntes',data)
         }
     }
 
@@ -36,7 +51,7 @@ export default function Nuevoapunte() {
         </div>
         <br/>
         <div>
-            <textarea placeholder="Escribe tu apunte" className="tamanio">
+            <textarea placeholder="Escribe tu apunte" className="tamanio" onChange={e=>setcontent(e.target.value)}>
         </textarea>
         </div>
         
