@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
 import { BrowserRouter as Router,Route,Link } from 'react-router-dom';
 import Nuevoapunte from './Nuevoapunte';
-import listaapuntes from './listaapuntes';
+import listaapuntes from './ListNotes';
 import "../Styles/TxtArea.css"
 export default function Apuntes() {
    

@@ -72,7 +72,7 @@ class Load():
 
                 #print(h.hexdigest())  
 
-                student = Student(carnet,nuevodpi,nuevoname,types[i+4],nuevoemail,passEncript,types[i+7],nuevaedad)
+                student = Student(carnet,nuevodpi,nuevoname,types[i+4],nuevoemail,nuevopass,types[i+7],nuevaedad)
                 students.append(student)
             if types[i] == "\"task\"":
                 homework = Homework(types[i+1].replace(character,""),types[i+2].replace(character,""), types[i+3].replace(character,""), types[i+4].replace(character,""), types[i+5].replace(character,""), types[i+6].replace(character,""), types[i+7].replace(character,""))
@@ -309,8 +309,9 @@ class Load():
                 print("FOUND STUDENT")
                 h = hashlib.sha256(str(pas).encode())
                 
-
-                if self.avl.getStudent(carnet).password == str(h.hexdigest()):
+                password = self.capa.decrypt(self.avl.getStudent(carnet).password).decode('utf-8')
+                print("AVL: "+password+" Login: "+str(h.hexdigest()))
+                if password == str(h.hexdigest()):
                 #print("entro")
                     print("FOUND PASSWORD")
                     user.nameDES = self.capa.decrypt(self.avl.getStudent(carnet).name)
@@ -341,4 +342,7 @@ class Load():
         self.tablaHash.Insert("201538322",note6)
         self.tablaHash.Insert("201700404",note7)
         self.tablaHash.Insert("201700404",note8)
-        pass
+        
+    def getNotes(self,carnet):
+        return self.tablaHash.getLista(carnet)
+        

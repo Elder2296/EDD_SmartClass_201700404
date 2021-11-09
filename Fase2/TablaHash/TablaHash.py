@@ -170,6 +170,13 @@ class TablaHash:
         while temp != None:
             print("Llave: "+str(temp.key)+" Carnet: "+str(temp.carnet))
             temp = temp.siguiente
+    def getLista(self,carnet):
+        temp = self.first
+        while temp != None:
+            if temp.carnet ==carnet:
+                return temp.notes
+            temp = temp.siguiente
+        return None
 
 
 class ListaAux():

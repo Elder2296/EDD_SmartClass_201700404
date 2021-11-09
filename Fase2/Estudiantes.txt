@@ -106,7 +106,7 @@
         ¿item Edad = 19 $?
     ¿$element?
     ¿element type="user"?
-        ¿item Carnet = "201300404" $?
+        ¿item Carnet = "201700404" $?
         ¿item DPI = "9298434863898" $?
         ¿item Nombre = "Juan camaney" $?
         ¿item Carrera = "Ingenieria Civil" $?
@@ -116,7 +116,7 @@
         ¿item Edad = 19 $?
     ¿$element?
     ¿element type="task"?
-        ¿item Carnet = "201300404" $?
+        ¿item Carnet = "201700404" $?
         ¿item Nombre = "Tarea de Estadística" $?
         ¿item Descripcion = "Realizar la tarea del curso de Estadística 1." $?
         ¿item Materia = "Estadística 1" $?
@@ -125,7 +125,7 @@
         ¿item Estado = "Cumplido" $?
     ¿$element?
     ¿element type="task"?
-        ¿item Carnet = "201300404" $?
+        ¿item Carnet = "201700404" $?
         ¿item Nombre = "Tarea de Estadística2" $?
         ¿item Descripcion = "Realizar la tarea del curso de Estadística 1." $?
         ¿item Materia = "Estadística 1" $?
@@ -134,7 +134,7 @@
         ¿item Estado = "Cumplido" $?
     ¿$element?
     ¿element type="task"?
-        ¿item Carnet = "201300404" $?
+        ¿item Carnet = "201700404" $?
         ¿item Nombre = "Analisis Probabilistico" $?
         ¿item Descripcion = "Realizar la tarea del curso de Estadística 1." $?
         ¿item Materia = "Estadística 1" $?
@@ -143,7 +143,7 @@
         ¿item Estado = "Cumplido" $?
     ¿$element?
     ¿element type="task"?
-        ¿item Carnet = "201300404" $?
+        ¿item Carnet = "201700404" $?
         ¿item Nombre = "Tarea de Estadística2" $?
         ¿item Descripcion = "Realizar la tarea del curso de Estadística 1." $?
         ¿item Materia = "Estadística 4" $?
@@ -152,7 +152,7 @@
         ¿item Estado = "Cumplido" $?
     ¿$element?
     ¿element type="task"?
-        ¿item Carnet = "201300404" $?
+        ¿item Carnet = "201700404" $?
         ¿item Nombre = "Analisis Probabilistico" $?
         ¿item Descripcion = "Realizar la tarea del curso de Estadística 1." $?
         ¿item Materia = "Estadística 1" $?
@@ -161,7 +161,7 @@
         ¿item Estado = "Cumplido" $?
     ¿$element?
     ¿element type="task"?
-        ¿item Carnet = "201300404" $?
+        ¿item Carnet = "201700404" $?
         ¿item Nombre = "Fisica 2" $?
         ¿item Descripcion = "Realizar la tarea del curso de Física 2." $?
         ¿item Materia = "Estadística 1" $?

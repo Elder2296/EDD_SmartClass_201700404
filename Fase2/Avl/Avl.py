@@ -205,7 +205,12 @@ class AVL():
             self.__inOrden(nodo.left,file,clave)
             self.capa = Fernet(clave)
             id = self.capa.encrypt(str(nodo.getStudent().getCarnet()).encode())
-            file.write("node [shape = box label = \""+id.decode('utf-8')[0:10]+"\\n"+nodo.getStudent().dpi.decode('utf-8')[0:10]+"\\n"+nodo.getStudent().getName().decode('utf-8')[0:10]+"\\n"+nodo.getStudent().getCarrera()+"\\n"+nodo.getStudent().password.decode('utf-8')[0:10]+"\"] "+str(nodo.getStudent().getCarnet())+"\n")
+            carnet =id.decode('utf-8')[0:10]
+            dpi = nodo.getStudent().dpi.decode('utf-8')[0:10]
+            name = nodo.getStudent().getName().decode('utf-8')[0:10]
+            carrera = nodo.getStudent().getCarrera()
+            pasword = nodo.getStudent().password.decode('utf-8')[0:10]
+            file.write("node [shape = box label = \""+carnet+"\\n"+dpi+"\\n"+name+"\\n"+carrera+"\\n"+pasword+"\"] "+str(nodo.getStudent().getCarnet())+"\n")
             #print("Valor:", nodo.valor)
             self.__inOrden(nodo.right,file,clave)
     def mappear(self, nodo, file):

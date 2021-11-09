@@ -31,6 +31,7 @@ export default function Nuevoapunte() {
         async function sendNote(){
             const info = await axios.post('http://localhost:3000/Apuntes',data)
         }
+        sendNote()
     }
 
     return (
@@ -58,7 +59,7 @@ export default function Nuevoapunte() {
     </form>
     <div>
         <br/>
-    <button class="blue ui  button">Guardar</button>
+    <button class="blue ui  button" onClick={send}>Guardar</button>
     </div>
         </>
     )

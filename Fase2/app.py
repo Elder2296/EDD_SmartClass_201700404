@@ -251,6 +251,28 @@ def loadapuntes():
 
     return jsonify({'server message':'succesfully'})
 
+
+@app.route('/listaapuntes', methods = {'POST'})
+def Arryapuntes():
+    carnet = request.json['carnet']
+    result=[]
+    lista = principal.getNotes(carnet)
+
+    aux = lista.first
+
+    while aux!= None:
+        nota = {
+            'titulo':aux.note.title,
+            'contenido': aux.note.content,
+        }
+        result.append(nota)
+        aux = aux.siguiente
+
+
+
+    return jsonify({'Notas':result})
+
+    
     
 
 
