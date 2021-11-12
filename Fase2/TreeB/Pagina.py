@@ -1,7 +1,7 @@
-from TreeB.Curso import Curso
+from Grafo.Curso  import Curso
 class Pagina:
     def __init__(self, orden):
-        self.cuenta = 0;
+        self.cuenta = 0
         self.m = orden
         self.claves = [Curso(0,"",0,"","") for x in range(orden)]
         self.ramas = [Pagina for x in range(orden)]

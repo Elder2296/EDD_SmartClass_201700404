@@ -37,9 +37,10 @@ class Years():
         while aux != None:
             if(aux.year == year):
                 found = True
-                break
+                return found
             aux = aux.next
-        return found
+        self.Insert(year)
+        return self.SearchYear(year)
     def getYear(self, year):
         aux = self.first
         while aux != None:

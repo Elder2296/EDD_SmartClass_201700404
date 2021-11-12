@@ -14,6 +14,9 @@ from Graficadora.Graph_TableHash import GraphTableHash
 from Grafo.Lista import Lista
 from Graficadora.Red import Red
 from cryptography.fernet import Fernet
+from Merkle.Build.Lista import Lista as Merkle
+from Merkle.Build.Nodo import Nodo as NodoMerkle
+
 
 
 
@@ -24,7 +27,8 @@ class Load():
     tablaHash = TablaHash(7)
     contador = 0 
     listacursos = Lista()
-    
+    listaasignaciones = Merkle()
+    listaApuntes = Merkle()
     
     def __init__(self):
         print("Cargas")
@@ -226,12 +230,14 @@ class Load():
     def LoadCursos(self, curso):
         self.listacursos.InsertarCurso(curso)
 
-
+    def GetCurso(self, codigo):
+        return self.listacursos.getCurso(codigo)
         #self.treeB.insertar(curso)
     def AddCourseToStudent(self,carnet, anio, semester, course):
 
         if self.avl.search(int(carnet)):
             if self.avl.getStudent(int(carnet)).SearchYear(int(anio)):
+                print("Inserto el año: "+str(anio))
                 if self.avl.getStudent(int(carnet)).getYear(int(anio)).SearchSemester(int(semester)):
                     self.avl.getStudent(int(carnet)).getYear(int(anio)).getSemester(int(semester)).tree.insertar(course)
                     print('I maked to insertion')
@@ -345,4 +351,12 @@ class Load():
         
     def getNotes(self,carnet):
         return self.tablaHash.getLista(carnet)
+    def createAsigancion(self, data):
+        nuevo = NodoMerkle(data)
+        self.listaasignaciones.Insertar(nuevo)
+    def createApunteMerkle(self, data):
+        nuevo = NodoMerkle(data)
+        self.listaApuntes.Insertar(nuevo)
+    def getAllCursos(self):
+        return self.listacursos
         

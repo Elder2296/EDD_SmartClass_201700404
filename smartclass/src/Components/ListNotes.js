@@ -4,6 +4,7 @@ import Tabla from './Tabla'
 const axios = require('axios').default
 export default function ListaApuntes() {
 const [notes, setnotes] = useState([])
+const [loading, setloading] = useState(false)
     var user =localStorage.getItem("user")
     if (user == null || user == undefined){
         return (
@@ -22,10 +23,13 @@ const [notes, setnotes] = useState([])
             const lista = await axios.post('http://localhost:3000/listaapuntes',data)
             //console.log(lista.data.Notas)
             setnotes(lista.data.Notas) 
-             
+            setloading(true) 
              
         }
-        fillTable()
+        if(loading ===false){
+            fillTable()
+        }
+        
 
         return (
             <Tabla notas = {notes}></Tabla>

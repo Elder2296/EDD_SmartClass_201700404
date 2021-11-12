@@ -49,7 +49,7 @@ class Grafo:
 
         i = 1
         while i <= actual.cuenta:
-            acumulador[0] += '|<c{}> {} |<r{}>'.format(str(i),str(actual.claves[i].id)+'\\n'+str(actual.claves[i].name),str(i))
+            acumulador[0] += '|<c{}> {} |<r{}>'.format(str(i),str(actual.claves[i].Codigo)+'\\n'+str(actual.claves[i].nombre),str(i))
 
             if actual.ramas[i] != None:
                 acumulador[3] += 1 # contador auxiliar

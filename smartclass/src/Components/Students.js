@@ -5,6 +5,8 @@ import Inicio from './InitStudents'
 import Apuntes from './Apuntes';
 import Red from './Red';
 import Tareas from './Tareas';
+import Asignacion from './Asignacion';
+import ReportAsignacion from './ReportAsignacion';
 export default function Students() {
     return (
         <>
@@ -20,6 +22,9 @@ export default function Students() {
                     <Route exact path ="/Student/Apuntes" component ={Apuntes}/>
                     <Route exact path ="/Student/Tareas" component ={Tareas}/>
                     <Route exact path ="/Student/Red" component ={Red}/>
+                    <Route exact path ="/Student/Asignacion" component ={Asignacion}/>
+                    <Route exact path ="/Student/ReporteAsignacion" component ={ReportAsignacion}/>
+                    
                 </div>
 
             </div>

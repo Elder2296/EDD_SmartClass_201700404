@@ -38,7 +38,18 @@ export default class MenuExampleInvertedSecondary extends Component {
                         onClick = {this.handleItemClick}
                         as = {Link} to={'/Student/Red'}
                     />
-                    
+                    <Menu.Item
+                        name = 'Asignacion'
+                        active = {activeItem ==='Asignacion'}
+                        onClick = {this.handleItemClick}
+                        as = {Link} to={'/Student/Asignacion'}
+                    />
+                    <Menu.Item
+                        name = 'ReporteAsignacion'
+                        active = {activeItem ==='ReporteAsignacion'}
+                        onClick = {this.handleItemClick}
+                        as = {Link} to={'/Student/ReporteAsignacion'}
+                    />
                     <div class="right item">
                     <div class="right item">
                        

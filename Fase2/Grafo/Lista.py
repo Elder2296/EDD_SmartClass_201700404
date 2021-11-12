@@ -17,6 +17,13 @@ class Lista:
             aux = self.last
             aux.siguiente = nuevo
             self.last = nuevo
+    def getCurso(self,codigo):
+        aux = self.first
+        while aux!= None:
+            if (aux.curso.id == codigo):
+                return aux.curso
+            aux = aux.siguiente
+        return
     def PrintAllCourses(self):
         aux = self.first
 

@@ -3,6 +3,7 @@ from Grafo.Requisitos.Lista import Lista
 class Curso:
 
     def __init__(self, Codigo, Nombre, creditos, prerequisitos, obligatorio):
+        self.id = int(Codigo)
         self.Codigo = Codigo
         self.nombre = Nombre
         self.creditos = int(creditos)
@@ -19,6 +20,7 @@ class Curso:
             lista2 = arreglo.split(sep=',')
             for n in range(len(lista2)):
                 identificador = lista2[n]
+                
                 self.requisitos.Insertar(identificador)
         
     def PrintCodigos(self):

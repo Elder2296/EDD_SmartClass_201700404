@@ -271,10 +271,38 @@ def Arryapuntes():
 
 
     return jsonify({'Notas':result})
-
+@app.route('/cursos',methods = {'POST'})
+def getCursos():    
+    lista = principal.getAllCursos()
+    result = []
+    aux = lista.first
+    while aux != None:
+        curso ={
+            'curso': str(aux.curso.Codigo)+'--'+aux.curso.nombre
+        }
+        result.append(curso)
+        aux = aux.siguiente
     
+    return jsonify({'Cursos':result})
     
-
+@app.route('/Asignar',methods ={'POST'})
+def Asignar():
+    carnet = request.json['Carnet']
+    semestre = request.json['Semestre']
+    año = request.json['Anio']
+    cursos = request.json['Cursos']
+    print(semestre)
+    array = semestre.split(sep='-')
+    print("Carnet: "+carnet+" semestre: "+str(array[1])+" Año: "+ año)
+    for curso in cursos:
+        arreglo= curso.split(sep='--')
+        codigo = arreglo[0]
+        print("codigo de curso: "+codigo)
+        id = int(codigo)
+        curso = principal.GetCurso(id)
+        principal.AddCourseToStudent(carnet,año,str(array[1]),curso)
+    
+    return jsonify({'message':'succesfully'})
 
 '''
 

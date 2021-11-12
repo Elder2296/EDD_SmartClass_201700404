@@ -50,7 +50,7 @@ class Arbol_B:
         encontrado = False
         #print(pagina_actual.claves[1])
         #print(str(pagina_actual.claves[1])+" TYPE: "+str(type(pagina_actual.claves[1])))
-        if valor.id < pagina_actual.claves[1].id :
+        if valor.id < pagina_actual.claves[1].id:
             camino[0] = 0   # Indica que vajaremos por la rama 0
             encontrado = False
 
