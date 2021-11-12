@@ -117,18 +117,39 @@ def LoadCoursesStudent():
     
     return jsonify({'message': 'Load courses succesfuly'})
 
+@app.route('/estudiantes',methods=['POST'])
+def createStudent():
+    estudiantes = request.json['estudiantes']
+    for estudiante in estudiantes:
+
+        carnet = int(estudiante['carnet'])
+        dpi = str(estudiante['DPI'])
+        nombre = estudiante['nombre']
+        carrera = estudiante['carrera']
+        email = estudiante['correo']
+        pas = estudiante['password']
+        creditos = 0
+        edad = estudiante['edad']
+        
+        data = str(carnet)+"--"+dpi+"--"+nombre
+        principal.createStudent(carnet,dpi,nombre,carrera,email,pas,creditos,edad,data)
+    
+    return jsonify({'message':'create student succesfuly'})
+
+
 @app.route('/estudiante',methods=['POST'])
 def createStuden():
     carnet = int(request.json['carnet'])
-    dpi = request.json['DPI']
+    dpi = str( request.json['DPI'])
     nombre = request.json['nombre']
     carrera = request.json['carrera']
     email = request.json['correo']
     pas = request.json['password']
-    creditos = request.json['creditos']
+    creditos = 0
     edad = request.json['edad']
-    student = Student(carnet,dpi,nombre,carrera,email,pas, creditos,edad)
-    principal.createStudent(student)
+    
+    data = str(carnet)+"--"+dpi+"--"+nombre
+    principal.createStudent(carnet,dpi,nombre,carrera,email,pas,creditos,edad,data)
     return jsonify({'message':'create student succesfuly'})
 
 @app.route('/estudiante',methods = ['PUT'])
@@ -241,13 +262,23 @@ def createNote():
     title = request.json['TITULO']
     content = request.json['CONTENIDO']
     print("Carnet:"+ str(carnet)+"\nTITULO: "+str(title)+"\nCONTENIDO: "+str(content))
-    principal.loadApunte(carnet,title,content)
+    data = str(carnet) +" -- "+title+" -- "+content
+    principal.loadApunte(carnet,title,content,data)
     return jsonify({'server message':'succesfully'})
 
 
 @app.route('/cargarapuntes', methods ={'POST'})
 def loadapuntes():
-    principal.loadNotes()
+    usuarios = request.json['usuarios']
+    for usuario in usuarios:
+        carnet = usuario['carnet']
+        apuntes = usuario['apuntes']
+        for apunte in apuntes:
+            titulo = apunte['Título']
+            contenido = apunte['Contenido']
+            data = str(carnet) +" -- "+titulo+" -- "+contenido
+            principal.loadNotes(carnet,titulo,contenido,data)
+    
 
     return jsonify({'server message':'succesfully'})
 
@@ -293,7 +324,7 @@ def Asignar():
     cursos = request.json['Cursos']
     print(semestre)
     array = semestre.split(sep='-')
-    print("Carnet: "+carnet+" semestre: "+str(array[1])+" Año: "+ año)
+    print("Carnet: "+str(carnet)+" semestre: "+str(array[1])+" Año: "+ año)
     for curso in cursos:
         arreglo= curso.split(sep='--')
         codigo = arreglo[0]

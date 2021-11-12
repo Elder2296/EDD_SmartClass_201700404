@@ -35,7 +35,7 @@ class Load():
         self.clave = Fernet.generate_key()
         self.capa = Fernet(self.clave)
     
-    def loadApunte(self,carnet,title, content):
+    def loadApunte(self,carnet,title, content,data):
         note = Note(title,content)
         self.tablaHash.Insert(carnet,note)
         pass
@@ -123,7 +123,24 @@ class Load():
         
         #self.avl.createTree()
 
-    def createStudent(self, student):
+    def createStudent(self, carnet, dpi,nombre,carrera,email, pas, creditos,edad,data):
+        age = edad
+        pa = hashlib.sha256(str(pas).encode())
+        passEncript = pa.hexdigest()
+                
+                
+                
+        nuevodpi = self.capa.encrypt(str(dpi).encode())
+        nuevoname = self.capa.encrypt(str(nombre).encode())
+        nuevoemail = self.capa.encrypt(str(email).encode())
+        nuevopass = self.capa.encrypt(str(passEncript).encode())
+        nuevaedad = self.capa.encrypt(str(age).encode())
+                
+
+                #print(h.hexdigest())  
+
+        student = Student(carnet,nuevodpi,nuevoname,carrera,nuevoemail,nuevopass,creditos,nuevaedad)
+
         self.avl.Insert(student)
     def updateStudent(self, student):
         if self.avl.search(student.carnet):
@@ -328,26 +345,9 @@ class Load():
                 return user
         
             return user
-    def loadNotes(self):
-        note = Note("titulo1","contenido1")
-        note2 = Note("titulo2","contenido2")
-        note3 = Note("titulo3","contenido3")
-        note4 = Note("titulo4","contenido4")
-        note5 = Note("titulo5","contenido5")
-        note6 = Note("titulo6","contenido6")
-        note7 = Note("titulo7","contenido7")
-        note8 = Note("titulo8","contenido8")
-
-        
-        self.tablaHash.Insert("201700404",note)
-        self.tablaHash.Insert("201700603",note2)
-        self.tablaHash.Insert("201981256",note3)
-        self.tablaHash.Insert("202032564",note4)
-        self.tablaHash.Insert("201800256",note5)
-        self.tablaHash.Insert("201800256",note3)
-        self.tablaHash.Insert("201538322",note6)
-        self.tablaHash.Insert("201700404",note7)
-        self.tablaHash.Insert("201700404",note8)
+    def loadNotes(self,carnet,titulo,contenido,data):
+        note = Note(titulo,contenido)
+        self.tablaHash.Insert(carnet,note)
         
     def getNotes(self,carnet):
         return self.tablaHash.getLista(carnet)

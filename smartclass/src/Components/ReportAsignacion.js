@@ -6,17 +6,31 @@ export default function ReportAsignacion() {
     const [semestre, setsemestre] = useState(1)
 
     const enviar= () => {
-        var data ={
-            tipo:4,
-            carnet:"201700404",
-            año: anio,
-            semestre: semestre
+
+        var user = localStorage.getItem("user")
+        if (user == null || user == undefined){
+            
+
+        }else{
+            user = JSON.parse(user)
+            var data ={
+                tipo:4,
+                carnet:user.carnet,
+                año: anio,
+                semestre: semestre
+            }
+            JSON.stringify(data)
+            async function Report(){
+                const info = await axios.post('http://localhost:3000/reporte',data)
+            }
+            Report()
+
         }
-        JSON.stringify(data)
-        async function Report(){
-            const info = await axios.post('http://localhost:3000/reporte',data)
-        }
-        Report()
+
+
+
+
+        
     }
 
     return (

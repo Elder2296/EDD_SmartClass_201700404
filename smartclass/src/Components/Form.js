@@ -23,22 +23,7 @@ export default function Form(props) {
 
     }
     const Asignar = ()=>{
-        alert("pantalones")
-        var data = {
-            Carnet:"201700404",
-            Semestre:semestre,
-            Anio:year,
-            Cursos: asignar
-
-        }
-
-        JSON.stringify(data)
         
-        async function asignacion(){
-            const info = await axios.post('http://localhost:3000/Asignar',data)
-        }
-        
-        asignacion()
 
 
         var user = localStorage.getItem("user")
@@ -46,7 +31,23 @@ export default function Form(props) {
             
 
         }else{
-            
+            alert("apunto de asignarse")
+            user = JSON.parse(user)
+            var data = {
+                Carnet:user.carnet,
+                Semestre:semestre,
+                Anio:year,
+                Cursos: asignar
+
+            }
+
+            JSON.stringify(data)
+            console.log(data)
+            async function asignacion(){
+                const info = await axios.post('http://localhost:3000/Asignar',data)
+            }
+        
+            asignacion()
 
         }
 
@@ -68,6 +69,11 @@ export default function Form(props) {
         </select>
                 
              
+            </div>
+            <br/>
+            <div class="uid">
+            <button onClick={view} class="positive ui button">Ver Curso</button>
+                <button onClick={agregar} class="positive ui button">Agregar</button>
             </div>
             <br/>
             <div class="ui ">
@@ -105,8 +111,7 @@ export default function Form(props) {
                 </div>
                 <br/>
                 <br/>
-                <button onClick={view} class="positive ui button">Ver Curso</button>
-                <button onClick={agregar} class="positive ui button">Agregar</button>
+                
                 
                 <button onClick={Asignar} class="positive ui button">Asignar</button>
             </div>
