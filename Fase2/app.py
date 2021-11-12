@@ -82,7 +82,14 @@ def getGrafo():
         principal.Reports(tipo,None) 
 
     elif tipo == 7:
-        principal.Reports(tipo,None)   
+        principal.Reports(tipo,None)
+    elif tipo == 8:
+        principal.Reports(tipo,None)
+    elif tipo == 9:
+        principal.Reports(tipo,None)
+    elif tipo == 10:
+        principal.Reports(tipo,None)
+       
     print("tipo de reporte: "+str(tipo))
     return jsonify({'message': 'report type'})
 
@@ -262,7 +269,7 @@ def createNote():
     title = request.json['TITULO']
     content = request.json['CONTENIDO']
     print("Carnet:"+ str(carnet)+"\nTITULO: "+str(title)+"\nCONTENIDO: "+str(content))
-    data = str(carnet) +" -- "+title+" -- "+content
+    data = str(carnet) +"--"+title+"--"+content
     principal.loadApunte(carnet,title,content,data)
     return jsonify({'server message':'succesfully'})
 
@@ -276,8 +283,8 @@ def loadapuntes():
         for apunte in apuntes:
             titulo = apunte['Título']
             contenido = apunte['Contenido']
-            data = str(carnet) +" -- "+titulo+" -- "+contenido
-            principal.loadNotes(carnet,titulo,contenido,data)
+            data = str(carnet) +"--"+titulo+"--"+contenido
+            principal.loadApunte(carnet,titulo,contenido,data)
     
 
     return jsonify({'server message':'succesfully'})
@@ -322,17 +329,20 @@ def Asignar():
     semestre = request.json['Semestre']
     año = request.json['Anio']
     cursos = request.json['Cursos']
+    codigos=""
     print(semestre)
     array = semestre.split(sep='-')
     print("Carnet: "+str(carnet)+" semestre: "+str(array[1])+" Año: "+ año)
     for curso in cursos:
         arreglo= curso.split(sep='--')
         codigo = arreglo[0]
+        codigos+=codigo+"//"
         print("codigo de curso: "+codigo)
         id = int(codigo)
         curso = principal.GetCurso(id)
         principal.AddCourseToStudent(carnet,año,str(array[1]),curso)
-    
+    data = str(carnet)+"--"+str(año)+"--"+str(semestre)+"--"+str(codigos)
+    principal.loadDataToAsignacion(data)
     return jsonify({'message':'succesfully'})
 
 '''

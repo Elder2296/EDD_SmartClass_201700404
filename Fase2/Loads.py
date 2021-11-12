@@ -13,6 +13,7 @@ from TablaHash.Note import Note
 from Graficadora.Graph_TableHash import GraphTableHash
 from Grafo.Lista import Lista
 from Graficadora.Red import Red
+from Graficadora.Merkle import Merkle as GraphMerkle
 from cryptography.fernet import Fernet
 from Merkle.Build.Lista import Lista as Merkle
 from Merkle.Build.Nodo import Nodo as NodoMerkle
@@ -29,16 +30,21 @@ class Load():
     listacursos = Lista()
     listaasignaciones = Merkle()
     listaApuntes = Merkle()
+    listaEstudiantes = Merkle()
     
     def __init__(self):
         print("Cargas")
         self.clave = Fernet.generate_key()
         self.capa = Fernet(self.clave)
+        self.id =1
     
     def loadApunte(self,carnet,title, content,data):
+        
         note = Note(title,content)
+        nodo = NodoMerkle(data)
+        self.listaApuntes.Insertar(nodo)
         self.tablaHash.Insert(carnet,note)
-        pass
+    
     def CreateGraphTableHash(self):
         graficator = GraphTableHash()
         graficator.graficar(self.tablaHash)
@@ -124,6 +130,8 @@ class Load():
         #self.avl.createTree()
 
     def createStudent(self, carnet, dpi,nombre,carrera,email, pas, creditos,edad,data):
+        nodo = NodoMerkle(data)
+        self.listaEstudiantes.Insertar(nodo)
         age = edad
         pa = hashlib.sha256(str(pas).encode())
         passEncript = pa.hexdigest()
@@ -236,13 +244,103 @@ class Load():
         elif type == 7:
             red = Red()
             red.GraficarTodo(self.listacursos)
-            pass
+        elif type == 8:
+            #Recuperacion de estado
+            self.id = 1
+            self.listaApuntes.rellenar()
+            #lista que llevara los encabezados encriptados
+            listaEncrypt = Merkle()
+            #se hace un clon de la lista principal de data
+            self.listaApuntes.clone(listaEncrypt)
+            #se encrypta la lista de headers
+            self.listaApuntes.Encrypt(listaEncrypt)
+            self.putId(self.listaApuntes, listaEncrypt)
+
+            
+            self.BuildTreeMerkle(listaEncrypt,Merkle())
+
+            buildTree = GraphMerkle(self.listaApuntes,'apuntes')
+            buildTree.generarFile()
+            self.listaApuntes.QuitarCeros()
+        elif type == 9:
+            self.id =1
+            #Recuperacion de estado
+            self.listaasignaciones.rellenar()
+            #lista que llevara los encabezados encriptados
+            listaEncrypt = Merkle()
+            #se hace un clon de la lista principal de data
+            self.listaasignaciones.clone(listaEncrypt)
+            #se encrypta la lista de headers
+            self.listaasignaciones.Encrypt(listaEncrypt)
+            self.putId(self.listaasignaciones, listaEncrypt)
+
+            
+            self.BuildTreeMerkle(listaEncrypt,Merkle())
+
+            buildTree = GraphMerkle(self.listaasignaciones,'Asignaciones')
+            buildTree.generarFile()
+            self.listaasignaciones.QuitarCeros()
+        elif type == 10:
+            self.id =1
+            #Recuperacion de estado
+            self.listaEstudiantes.rellenar()
+            #lista que llevara los encabezados encriptados
+            listaEncrypt = Merkle()
+            #se hace un clon de la lista principal de data
+            self.listaEstudiantes.clone(listaEncrypt)
+            #se encrypta la lista de headers
+            self.listaEstudiantes.Encrypt(listaEncrypt)
+            self.putId(self.listaEstudiantes, listaEncrypt)
+
+            
+            self.BuildTreeMerkle(listaEncrypt,Merkle())
+
+            buildTree = GraphMerkle(self.listaEstudiantes,'Estudiantes')
+            buildTree.generarFile()
+            self.listaEstudiantes.QuitarCeros()
+            
             
 
 
 
 
     #CARGA DE CURSOS AL GRAFO   
+    def putId(self,lista1,lista2):
+        aux = lista1.first
+        
+        while aux != None:
+            aux.id = self.id
+            self.id +=1
+            aux = aux.siguiente
+        
+        
+        temp = lista2.first
+        while temp != None:
+            temp.id = self.id
+            self.id+= 1
+            temp = temp.siguiente
+
+
+    def BuildTreeMerkle(self,listInit,finalList):
+        if listInit.size == 1:
+            return
+        else:
+            aux = listInit.first
+            while aux != None:
+                aux.data
+                aux.siguiente.data
+                data = aux.data + aux.siguiente.data
+                h = hashlib.sha256(str(data).encode())
+                nodo = NodoMerkle(h.hexdigest())
+                nodo.id = self.id
+                self.id += 1
+                aux.arriba = nodo
+                aux.siguiente.arriba = nodo
+                finalList.Insertar(nodo)
+
+                aux = aux.siguiente.siguiente
+            self.BuildTreeMerkle(finalList,Merkle())
+
 
     def LoadCursos(self, curso):
         self.listacursos.InsertarCurso(curso)
@@ -259,7 +357,11 @@ class Load():
                     self.avl.getStudent(int(carnet)).getYear(int(anio)).getSemester(int(semester)).tree.insertar(course)
                     print('I maked to insertion')
                 else:
-                    print("No encontro el mes")  
+                    print("No encontro el mes")
+    def loadDataToAsignacion(self,data):
+        nodo = NodoMerkle(data)
+        self.listaasignaciones.Insertar(nodo)
+        
     def AddHomework(self,homework):
         homework.putId(self.contador)
         self.contador = self.contador +1
@@ -345,15 +447,11 @@ class Load():
                 return user
         
             return user
-    def loadNotes(self,carnet,titulo,contenido,data):
-        note = Note(titulo,contenido)
-        self.tablaHash.Insert(carnet,note)
+    
         
     def getNotes(self,carnet):
         return self.tablaHash.getLista(carnet)
-    def createAsigancion(self, data):
-        nuevo = NodoMerkle(data)
-        self.listaasignaciones.Insertar(nuevo)
+    
     def createApunteMerkle(self, data):
         nuevo = NodoMerkle(data)
         self.listaApuntes.Insertar(nuevo)

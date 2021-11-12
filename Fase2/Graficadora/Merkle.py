@@ -1,7 +1,8 @@
 import os
 from Merkle.ListaLimpia.ListaLimpia.ListaLimpia import ListaLimpia
 class Merkle:
-    def __init__(self,data  ):
+    def __init__(self,data, namefile  ):
+        self.namefile = namefile
         self.listaAux = ListaLimpia()
         self.listaAuxDirecciones = ListaLimpia() 
         self.lineas ="digraph G{\n\nrankdir = BT\n\n"
@@ -32,12 +33,12 @@ class Merkle:
         self.getBodyHeaders()
         self.getBodyDirections()
         self.lineas += "\n\n}"
-        f = open('/home/losa/Escritorio/Reportes_F3/Merkle.dot','w')
+        f = open('/home/losa/Escritorio/Reportes_F3/Merkle'+self.namefile+'.dot','w')
         try:
             f.write(self.lineas)
         finally:
             f.close()
-        prog = "dot -Tpng  /home/losa/Escritorio/Reportes_F3/Merkle.dot -o /home/losa/Escritorio/Reportes_F3/Merkle.png"
+        prog = 'dot -Tpng  /home/losa/Escritorio/Reportes_F3/Merkle'+self.namefile+'.dot -o /home/losa/Escritorio/Reportes_F3/Merkle'+self.namefile+'.png'
         os.system(prog)
 
     def getBodyHeaders(self):

@@ -26,7 +26,7 @@ class Lista:
         else:
             return ntam
     def rellenar(self):
-        tamanio = self.VerificarLista(1)
+        tamanio = self.VerificarLista(0)
         relleno =""
         for i in range(tamanio-self.size):
             relleno +="0"
@@ -34,8 +34,9 @@ class Lista:
             
             self.Insertar(nodo)
     def QuitarCeros(self):
-        if(self.last==None):
+        if(self.first==None and self.last == None):
             print()
+            return
         else:
             aux = self.first
             c = 0

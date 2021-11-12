@@ -54,6 +54,43 @@ export default function Reports() {
         generateGrafo()
 
     }
+    
+    const MerkleTreeApuntes = () =>{
+       
+        var data = {
+            tipo : 8
+        }
+        JSON.stringify(data)
+        async function generateGrafo(){
+            const info = await axios.post('http://localhost:3000/reporte',data )
+        }
+        generateGrafo()
+
+    }
+    const MerkleTreeAsignaciones = () =>{
+       
+        var data = {
+            tipo : 9
+        }
+        JSON.stringify(data)
+        async function generateGrafo(){
+            const info = await axios.post('http://localhost:3000/reporte',data )
+        }
+        generateGrafo()
+
+    }
+    const MerkleTreeEstudiantes = () =>{
+       
+        var data = {
+            tipo : 10
+        }
+        JSON.stringify(data)
+        async function generateGrafo(){
+            const info = await axios.post('http://localhost:3000/reporte',data )
+        }
+        generateGrafo()
+
+    }
     return (
         <>
         <div>
@@ -67,8 +104,9 @@ export default function Reports() {
         <div>
             <div class="blue ui buttons">
             <button class="ui button" onClick={generateGrafoPensum} >Red</button>
-            <button class="ui button" onClick={generateAVL_DES}>Tree Merkle</button>
-            
+            <button class="ui button" onClick={MerkleTreeApuntes}>Tree Merkle Apuntes</button>
+            <button class="ui button" onClick={MerkleTreeAsignaciones}>Tree Merkle Asignaciones</button>
+            <button class="ui button" onClick={MerkleTreeEstudiantes}>Tree Merkle Estudiantes</button>
             </div>
         </div>
         </>
