@@ -1,4 +1,5 @@
 import os
+from PIL import Image
 from Merkle.ListaLimpia.ListaLimpia.ListaLimpia import ListaLimpia
 class Merkle:
     def __init__(self,data, namefile  ):
@@ -40,6 +41,8 @@ class Merkle:
             f.close()
         prog = 'dot -Tpng  /home/losa/Escritorio/Reportes_F3/Merkle'+self.namefile+'.dot -o /home/losa/Escritorio/Reportes_F3/Merkle'+self.namefile+'.png'
         os.system(prog)
+        img = Image.open('/home/losa/Escritorio/Reportes_F3/Merkle'+self.namefile+'.png')
+        img.show()
 
     def getBodyHeaders(self):
         aux = self.listaAux.first

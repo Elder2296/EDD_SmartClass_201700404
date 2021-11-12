@@ -29,13 +29,13 @@ class Grafo:
 
         acumulador[0] += "}\n"
 
-        f = open('/home/losa/Escritorio/Reportes_F2/treeB.dot', 'w')
+        f = open('/home/losa/Escritorio/Reportes_F3/treeB.dot', 'w')
         try:
             f.write(acumulador[0])
         finally:
             f.close()
 
-        prog = "dot -Tpng  /home/losa/Escritorio/Reportes_F2/treeB.dot -o /home/losa/Escritorio/Reportes_F2/treeB.png"
+        prog = "dot -Tpng  /home/losa/Escritorio/Reportes_F3/treeB.dot -o /home/losa/Escritorio/Reportes_F3/treeB.png"
         os.system(prog)
         img = Image.open('/home/losa/Escritorio/Reportes_F2/treeB.png')
         img.show()
